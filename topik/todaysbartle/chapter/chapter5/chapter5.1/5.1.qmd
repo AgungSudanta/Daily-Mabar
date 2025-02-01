@@ -3,7 +3,7 @@ title: "Ch 5.1 Continuous Functions"
 format:
   html:
     theme:
-      light: cosmo
+      light: flatly
       dark: darkly
     css: styles.css
     toc: true
