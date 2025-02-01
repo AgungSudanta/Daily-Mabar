@@ -1,0 +1,9 @@
+---
+title: "Today's Bartle"
+format: html
+---
+
+**Chapter 5**
+
+[Ch 5.1 Continuous Function](./chapter/chapter5/chapter5.1/5.1.qmd)
+

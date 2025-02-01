@@ -1,0 +1,17 @@
+---
+title: | 
+  ![](./maxresdefault_(2).png)
+  Daily Mabar
+---
+
+**Topic**
+
+[Today's Bartle](./topik/todaysbartle/todaysbartle.qmd)
+
+
+
+
+
+
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
