@@ -1,6 +1,12 @@
 ---
 title: "Today's Bartle"
-format: html
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
 ---
 
 **Chapter 5**
