@@ -1,0 +1,11 @@
+---
+title: "Ch 2.2 Absolute Value and the Real Line"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+

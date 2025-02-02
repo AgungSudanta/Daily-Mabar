@@ -1,0 +1,11 @@
+---
+title: "Ch 2.4 Applications of the Supremum Propertyperty"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+

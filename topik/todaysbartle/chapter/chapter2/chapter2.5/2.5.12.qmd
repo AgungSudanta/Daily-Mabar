@@ -1,0 +1,11 @@
+---
+title: "Ch 2.5 Interval"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+

@@ -1,0 +1,11 @@
+---
+title: "Ch 2.1 The Algebraic and Order Properties of $\\mathbb{R}$"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
