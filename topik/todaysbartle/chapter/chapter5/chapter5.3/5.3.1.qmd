@@ -8,3 +8,13 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$ and let $f : I \to \mathbb{R}$ be a continuous function such that $f(x) > 0$ for each $x$ in $I$. Prove that there exist a number $\alpha > 0$ such that $f(x) \geq \alpha$ for all $x \in I$
+
+Answer
+
+It will be proven that $\exists\alpha>0 \ni f(x) \geq \alpha \; \forall x \in I$
+
+Because $I$ is closed bounded interval and $f$ continuous on $I$, by boundedness theorem it follows that $f$ is bounded on $I$ thus $\exists M > 0 \ni |f(x)| < M \;  \forall x \in I$. Because $f(x) > 0 \; \forall x \in I$, then $0 < f(x) < M \; \forall x \in I$. Now let $f(I) := \{f(x) : x \in I\}$. Because 0 is lower bound, by completeness property $f(I)$ must have an infimum. Let $\alpha = \inf f(I)$, thus by definition of infimum $\alpha \leq c \; \forall c \in f(I)$ which implies $\alpha \leq f(x) \; \forall x \in I$
+
+$\therefore \; \exists\alpha>0 \ni f(x) \geq \alpha \; \forall x \in I$ 

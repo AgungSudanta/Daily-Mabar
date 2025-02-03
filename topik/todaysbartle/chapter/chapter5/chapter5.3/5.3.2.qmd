@@ -8,3 +8,13 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$ and let $f : I \to \mathbb{R}$ and $g : I \to \mathbb{R}$ be a continuous function on $I$. Show that the set $E := \{x \in I : f(x) = g(x)\}$ has the property that if $(x_n) \subseteq E$ and $x_n \to x_0$, then $x_0 \in E$
+
+Answer
+
+It will be shown that if $(x_n) \subseteq E$ and $x_n \to x_0$, then $x_0 \in E$
+
+Because $(x_n) \subseteq E$, then it follows that $f(x_n) = g(x_n)$. Because $f$ and $g$ a continuous function on $I$, then by sequential criteria it follows that if $x_0 \in I$ implies $f(x_n) \to f(x_0)$ and $g(x_n) \to g(x_0)$. Because $f(x_n) = g(x_n)$, then by sequential limit property $f(x_0)$ must equal to $g(x_0)$ which means $x_0 \in E$
+
+$\therefore$ if $(x_n) \subseteq E$ and $x_n \to x_0$, then $x_0 \in E$
