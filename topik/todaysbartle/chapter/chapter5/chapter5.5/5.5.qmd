@@ -1,0 +1,30 @@
+---
+title: "5.5 Continuity and Gauges"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+                                          
+[5.5.1](./5.5.1.qmd)
+                                          
+[5.5.2](./5.5.2.qmd)
+                                          
+[5.5.3](./5.5.3.qmd)
+                                          
+[5.5.4](./5.5.4.qmd)
+                                          
+[5.5.5](./5.5.5.qmd)
+                                          
+[5.5.6](./5.5.6.qmd)
+                                          
+[5.5.7](./5.5.7.qmd)
+                                          
+[5.5.8](./5.5.8.qmd)
+                                          
+[5.5.9](./5.5.9.qmd)
+                                          
+[5.5.10](./5.5.10.qmd)

@@ -1,0 +1,10 @@
+---
+title: "5.2.7"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---

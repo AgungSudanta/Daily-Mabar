@@ -1,14 +1,40 @@
 ---
-title: "Ch 5.1 Continuous Functions"
+title: "5.1 Continuous Functions"
 format:
-  html:
-    theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
-    toc: true
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
 ---
-
+                                          
 [5.1.1](./5.1.1.qmd)
-
+                                          
+[5.1.2](./5.1.2.qmd)
+                                          
 [5.1.3](./5.1.3.qmd)
+                                          
+[5.1.4](./5.1.4.qmd)
+                                          
+[5.1.5](./5.1.5.qmd)
+                                          
+[5.1.6](./5.1.6.qmd)
+                                          
+[5.1.7](./5.1.7.qmd)
+                                          
+[5.1.8](./5.1.8.qmd)
+                                          
+[5.1.9](./5.1.9.qmd)
+                                          
+[5.1.10](./5.1.10.qmd)
+                                          
+[5.1.11](./5.1.11.qmd)
+                                          
+[5.1.12](./5.1.12.qmd)
+                                          
+[5.1.13](./5.1.13.qmd)
+                                          
+[5.1.14](./5.1.14.qmd)
+                                          
+[5.1.15](./5.1.15.qmd)
