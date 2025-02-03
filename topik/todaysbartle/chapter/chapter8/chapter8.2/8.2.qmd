@@ -1,5 +1,5 @@
 ---
-title: "8.2  Interchange of Limits"
+title: "8.2 Interchange of Limits"
 format:
     html:
         theme:

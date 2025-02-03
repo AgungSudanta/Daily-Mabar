@@ -1,5 +1,5 @@
 ---
-title: "8.1 Pointwise and Uniform Convergence "
+title: "8.1 Pointwise and Uniform Convergence"
 format:
     html:
         theme:

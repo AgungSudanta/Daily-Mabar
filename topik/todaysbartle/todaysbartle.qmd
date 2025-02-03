@@ -68,3 +68,17 @@ format:
 [Ch 6.3 L’Hospital’s Rules](./chapter/chapter6/chapter6.3/6.3.qmd)
 
 [Ch 6.4 Taylor’s Theorem](./chapter/chapter6/chapter6.4/6.4.qmd)
+
+**Chapter 7**
+
+[Ch 7.1 Riemann Integral](./chapter/chapter7/chapter7.1/7.1.qmd)
+
+[Ch 7.2 Riemann Integrable Functions](./chapter/chapter7/chapter7.2/7.2.qmd)
+
+[Ch 7.3 The Fundamental Theorem](./chapter/chapter7/chapter7.3/7.3.qmd)
+
+**Chapter 8**
+
+[Ch 8.1 Pointwise and Uniform Convergence](./chapter/chapter8/chapter8.1/8.1.qmd)
+
+[Ch 8.2 Interchange of Limits](./chapter/chapter8/chapter8.2/8.2.qmd)
