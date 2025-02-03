@@ -9,4 +9,4 @@ format:
     toc: true
 ---
 
-**Chapter 10 Review of Mathematical Statistics**(./chapter/chapter10/10.qmd)
+**Chapter 10 Review of Mathematical Statistics**(./chapter/chapter10/ch10.qmd)
