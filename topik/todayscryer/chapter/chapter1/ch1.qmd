@@ -1,0 +1,13 @@
+---
+title: "Chapter 1 Introduction"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+[Single Exponential Smoothing - Alpha Animation](./Single Exponential Smoothing - Alpha Animation.qmd)
+
+[1.1.1](./1.1.1.qmd)

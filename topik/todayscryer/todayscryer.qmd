@@ -1,0 +1,12 @@
+---
+title: "Today's Cryer"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+[**Chapter 1 Introduction**](./chapter/chapter1/ch1.qmd)

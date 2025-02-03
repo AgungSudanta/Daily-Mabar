@@ -1,0 +1,12 @@
+---
+title: "Single Exponential Smoothing - Alpha Animation"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+{{< video download.mp4 >}}
