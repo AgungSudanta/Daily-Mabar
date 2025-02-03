@@ -1,0 +1,12 @@
+---
+title: "Today's Klugman"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+**Chapter 10 Review of Mathematical Statistics**(./chapter/chapter10/10.qmd)
