@@ -8,3 +8,11 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that every polynomial of odd degree with real coefficients has at least one real root \\
+
+Answer
+
+It will be shown that every polynomial of odd degree with real coefficients has at least one real root
+
+Let $p:I \to \mathbb{R}$ be an odd degree polynomial. It can be shown that $p$ is continuous on any real-valued interval. If n is odd, then $x^n \leq 0 \; \forall x \leq 0$. Thus we can choose $a \in I$ and $a \leq 0$ such that $p(a) < 0$ for big enough $a$. With similiar reasoning, we can choose $b \in I$ and $b \geq 0$ such that $p(b) > 0$. Thus $p(a) < 0 < p(b)$, which by Intermediate Value Theorem guaranteed the existence of $c \in I \ni f(c) = 0$

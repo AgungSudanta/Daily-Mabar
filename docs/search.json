@@ -278,5 +278,33 @@
     "title": "8.1 Pointwise and Uniform Convergence",
     "section": "",
     "text": "8.1.1\n8.1.2\n8.1.3\n8.1.4\n8.1.5\n8.1.6\n8.1.7\n8.1.8\n8.1.9\n8.1.10\n8.1.11\n8.1.12\n8.1.13\n8.1.14\n8.1.15\n8.1.16\n8.1.17\n8.1.18\n8.1.19\n8.1.20\n8.1.21\n8.1.22\n8.1.23\n8.1.24"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "title": "5.3.2",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) and \\(g : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\). Show that the set \\(E := \\{x \\in I : f(x) = g(x)\\}\\) has the property that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nAnswer\nIt will be shown that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nBecause \\((x_n) \\subseteq E\\), then it follows that \\(f(x_n) = g(x_n)\\). Because \\(f\\) and \\(g\\) a continuous function on \\(I\\), then by sequential criteria it follows that if \\(x_0 \\in I\\) implies \\(f(x_n) \\to f(x_0)\\) and \\(g(x_n) \\to g(x_0)\\). Because \\(f(x_n) = g(x_n)\\), then by sequential limit property \\(f(x_0)\\) must equal to \\(g(x_0)\\) which means \\(x_0 \\in E\\)\n\\(\\therefore\\) if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "title": "5.3.1",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function such that \\(f(x) &gt; 0\\) for each \\(x\\) in \\(I\\). Prove that there exist a number \\(\\alpha &gt; 0\\) such that \\(f(x) \\geq \\alpha\\) for all \\(x \\in I\\)\nAnswer\nIt will be proven that \\(\\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)\nBecause \\(I\\) is closed bounded interval and \\(f\\) continuous on \\(I\\), by boundedness theorem it follows that \\(f\\) is bounded on \\(I\\) thus \\(\\exists M &gt; 0 \\ni |f(x)| &lt; M \\;  \\forall x \\in I\\). Because \\(f(x) &gt; 0 \\; \\forall x \\in I\\), then \\(0 &lt; f(x) &lt; M \\; \\forall x \\in I\\). Now let \\(f(I) := \\{f(x) : x \\in I\\}\\). Because 0 is lower bound, by completeness property \\(f(I)\\) must have an infimum. Let \\(\\alpha = \\inf f(I)\\), thus by definition of infimum \\(\\alpha \\leq c \\; \\forall c \\in f(I)\\) which implies \\(\\alpha \\leq f(x) \\; \\forall x \\in I\\)\n\\(\\therefore \\; \\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "title": "5.3.4",
+    "section": "",
+    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root \\\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "title": "5.3.3",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\) such that for each \\(x\\) in \\(I\\) there exist \\(y\\) in \\(I\\) such that \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\). Prove there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nAnswer\nIt will be shown that there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\) using contradiction\nAssume that \\(\\nexists c \\in I \\ni f(c) = 0\\)\nLet \\(x = x_0\\) where \\(|f(x_0)|\\) is the absolute maximum of \\(|f|\\) on \\(I\\). Let \\(s := \\sup |f|\\), thus \\(|f(y)| \\leq \\frac{1}{2}|f(x_0)| &lt; |f(x_0)|\\).\nNotice that if \\(s \\neq 0\\), then \\(|f(x_0)|\\) is not the absolute maximum because \\(\\exists y \\in I \\ni |f(y)| &lt; |f(x_0)|\\) which contradict our assumption.\nThis implies that \\(s = 0\\) is a must which result in \\(|f(x)| = 0 \\; \\forall x \\in I\\) because \\(|f(x)| \\geq 0\\) by definition of absolute value. Therefore \\(f(c) = 0\\) must exist on \\(I\\)"
   }
 ]

@@ -8,3 +8,17 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$ and let $f : I \to \mathbb{R}$ be a continuous function on $I$ such that for each $x$ in $I$ there exist $y$ in $I$ such that $|f(y)| \leq \frac{1}{2}|f(x)|$. Prove there exist a point $c$ in $I$ such that $f(c) = 0$
+
+Answer 
+
+It will be shown that there exist a point $c$ in $I$ such that $f(c) = 0$ using contradiction
+
+Assume that $\nexists c \in I \ni f(c) = 0$
+
+Let $x = x_0$ where $|f(x_0)|$ is the absolute maximum of $|f|$ on $I$. Let $s := \sup |f|$, thus $|f(y)| \leq \frac{1}{2}|f(x_0)| < |f(x_0)|$.
+
+Notice that if $s \neq 0$, then $|f(x_0)|$ is not the absolute maximum because $\exists y \in I \ni |f(y)| < |f(x_0)|$ which contradict our assumption. 
+
+This implies that $s = 0$ is a must which result in $|f(x)| = 0 \; \forall x \in I$ because $|f(x)| \geq 0$ by definition of absolute value. Therefore $f(c) = 0$ must exist on $I$
