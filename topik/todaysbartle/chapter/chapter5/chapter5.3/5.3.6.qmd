@@ -8,3 +8,16 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $f$ be continuous on the interval [0, 1] to $\mathbb{R}$ and such that $f(0) = f(1)$. Prove that there exists a point $c$ in $[0, \frac{1}{2}]$ such that $f(c) = f(c + \frac{1}{2})$
+
+Answer
+
+It will be shown that $\exists c \in [0, \frac{1}{2}] \ni f(c) = f(c + \frac{1}{2})$
+
+Let $g$ be a function defined as $g(x) := f(x) - f(x + \frac{1}{2})$. We have $$g(0) = f(0) - f(\frac{1}{2})$$ $$g(\frac{1}{2}) = f(\frac{1}{2}) - f(1)$$
+
+
+By adding the two equation then $g(0) + g(\frac{1}{2}) = 0$ thus $g(0) = -g(\frac{1}{2})$
+
+Thus by Intermediate Value Theorem, $g(c) = 0$ must exist if $c \in [0, \frac{1}{2}]$. Therefore $f(c) - f(c + \frac{1}{2}) = 0$ or $f(c) = f(c+\frac{1}{2})$

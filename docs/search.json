@@ -333,13 +333,27 @@
     "href": "topik/todaysklugman/chapter/chapter10/ch10.html",
     "title": "Chapter 10 Review of Mathematical Statistics",
     "section": "",
-    "text": "10.1.1"
+    "text": "10.1"
   },
   {
     "objectID": "topik/todaysklugman/chapter/chapter11/ch11.html",
     "href": "topik/todaysklugman/chapter/chapter11/ch11.html",
     "title": "Chapter 11 Review of Mathematical Statistics",
     "section": "",
-    "text": "11.1.1"
+    "text": "11.1"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.5.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.5.html",
+    "title": "5.3.5",
+    "section": "",
+    "text": "Show that the polynomial \\(p(x) := x^4 + 7x^3 - 9\\) has at least two real roots. Use a calculator to locate these roots to within two decimal places\nAnswer\nIt will be shown that \\(p(x) := x^4 + 7x^3 - 9\\) has at least two real roots\nNotice that \\(p\\) is continuous on any \\(I \\subseteq \\mathbb{R}\\) because \\(\\forall c \\in \\mathbb{R}, \\; p(c) = \\displaystyle{\\lim_{x \\to c}} \\; p(x)\\). Let \\(a = 0\\), then \\(p(a) = -9\\) which mean \\(a\\) is not root of \\(p\\)\nIf \\(p(\\alpha) \\geq 0\\), then \\[\\begin{align}\n    \\alpha^4 + 7\\alpha^3 - 9 \\geq 0\n\\end{align}\\]\nBecause \\(c^4 \\geq 0 \\; \\forall c \\in \\mathbb{R}\\), then the above equation always hold if \\(7\\alpha^3 \\geq 9\\) which have a real solution \\(\\alpha \\geq \\sqrt[3]{\\frac{9}{7}}\\). Thus if we let \\(I_1 := [a, b_1]\\) where \\(b_1 = \\sqrt[3]{\\frac{9}{7}}\\), then \\(p(a_1) &lt; 0\\) and \\(p(b_1) &gt; 0\\). Therefore by Location of Root Theorem \\(\\exists c_1 \\in I_1 \\ni p(c_1) = 0\\)\nNotice that ^4 + 7^3 - 9 also true if \\(\\alpha = -10\\) because \\((-10)^4 + 7(-10)^3 - 9 = 10000 - 7000 - 9 &gt; 0\\), thus if we let \\(I_2 := [a, b_2]\\) where \\(b_2 = -10\\), then by Location of Root Theorem \\(\\exists c_2 \\in I_2 \\ni p(c_2) = 0\\)\n\\(\\therefore p(x)\\) has at least 2 real roots because there are 2 closed intervals \\(I_1\\) and \\(I_2\\) which have \\(c_1 \\in I_!\\) and \\(c_2 \\in I2\\) where \\(c_1 \\neq c_2\\) resulting in \\(p(c_1) = 0 = p(c_2)\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.6.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.6.html",
+    "title": "5.3.6",
+    "section": "",
+    "text": "Let \\(f\\) be continuous on the interval [0, 1] to \\(\\mathbb{R}\\) and such that \\(f(0) = f(1)\\). Prove that there exists a point \\(c\\) in \\([0, \\frac{1}{2}]\\) such that \\(f(c) = f(c + \\frac{1}{2})\\)\nAnswer\nIt will be shown that \\(\\exists c \\in [0, \\frac{1}{2}] \\ni f(c) = f(c + \\frac{1}{2})\\)\nLet \\(g\\) be a function defined as \\(g(x) := f(x) - f(x + \\frac{1}{2})\\). We have \\[g(0) = f(0) - f(\\frac{1}{2})\\] \\[g(\\frac{1}{2}) = f(\\frac{1}{2}) - f(1)\\]\nBy adding the two equation then \\(g(0) + g(\\frac{1}{2}) = 0\\) thus \\(g(0) = -g(\\frac{1}{2})\\)\nThus by Intermediate Value Theorem, \\(g(c) = 0\\) must exist if \\(c \\in [0, \\frac{1}{2}]\\). Therefore \\(f(c) - f(c + \\frac{1}{2}) = 0\\) or \\(f(c) = f(c+\\frac{1}{2})\\)"
   }
 ]

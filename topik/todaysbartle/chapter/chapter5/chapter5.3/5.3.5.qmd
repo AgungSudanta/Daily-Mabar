@@ -8,3 +8,22 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the polynomial $p(x) := x^4 + 7x^3 - 9$ has at least two real roots. Use a calculator to locate these roots to within two decimal places
+
+Answer
+
+It will be shown that $p(x) := x^4 + 7x^3 - 9$ has at least two real roots 
+
+Notice that $p$ is continuous on any $I \subseteq \mathbb{R}$ because $\forall c \in \mathbb{R}, \; p(c) = \displaystyle{\lim_{x \to c}} \; p(x)$. Let $a = 0$, then $p(a) = -9$ which mean $a$ is not root of $p$
+
+If $p(\alpha) \geq 0$, then 
+\begin{align}
+    \alpha^4 + 7\alpha^3 - 9 \geq 0
+\end{align}
+
+Because $c^4 \geq 0 \; \forall c \in \mathbb{R}$, then the above equation always hold if $7\alpha^3 \geq 9$ which have a real solution $\alpha \geq \sqrt[3]{\frac{9}{7}}$. Thus if we let $I_1 := [a, b_1]$ where $b_1 = \sqrt[3]{\frac{9}{7}}$, then $p(a_1) < 0$ and $p(b_1) > 0$. Therefore by Location of Root Theorem $\exists c_1 \in I_1 \ni p(c_1) = 0$
+
+Notice that \alpha^4 + 7\alpha^3 - 9 \geq 0 also true if $\alpha = -10$ because $(-10)^4 + 7(-10)^3 - 9 = 10000 - 7000 - 9 > 0$, thus if we let $I_2 := [a, b_2]$ where $b_2 = -10$, then by Location of Root Theorem $\exists c_2 \in I_2 \ni p(c_2) = 0$
+
+$\therefore p(x)$ has at least 2 real roots because there are 2 closed intervals $I_1$ and $I_2$ which have $c_1 \in I_!$ and $c_2 \in I2$ where $c_1 \neq c_2$ resulting in $p(c_1) = 0 = p(c_2)$ 
