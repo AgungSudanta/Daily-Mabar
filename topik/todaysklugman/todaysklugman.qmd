@@ -10,3 +10,5 @@ format:
 ---
 
 [**Chapter 10 Review of Mathematical Statistics**](./chapter/chapter10/ch10.qmd)
+
+[**Chapter 11 Review of Mathematical Statistics**](./chapter/chapter11/ch11.qmd)
