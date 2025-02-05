@@ -1,45 +1,101 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": " Daily Mabar",
+    "objectID": "topik/todaysklugman/todaysklugman.html",
+    "href": "topik/todaysklugman/todaysklugman.html",
+    "title": "Today’s Klugman",
     "section": "",
-    "text": "Topic\nToday’s Bartle\nToday’s Klugman\nToday’s Cryer\nToday’s Finan\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Chapter 10 Review of Mathematical Statistics\nChapter 11 Review of Mathematical Statistics"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "topik/todaysklugman/chapter/chapter11/11.1.html",
+    "href": "topik/todaysklugman/chapter/chapter11/11.1.html",
+    "title": "11.1",
     "section": "",
-    "text": "Mabar Analysis fr"
+    "text": "Tes\n\\(\\N\\)"
   },
   {
-    "objectID": "topik/todaysbartle/todaysbartle.html",
-    "href": "topik/todaysbartle/todaysbartle.html",
-    "title": "Today’s Bartle",
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.4.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.4.html",
+    "title": "10.4",
     "section": "",
-    "text": "Chapter 2\nCh 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)\nCh 2.2 Absolute Value and the Real Line\nCh 2.3 The Completeness Property of \\(\\mathbb{R}\\)\nCh 2.4 Applications of the Supremum Property\nCh 2.5 Intervals\nChapter 3\nCh 3.1 Sequences and Their Limits\nCh 3.2 Limit Theorems\nCh 3.3 Monotone Sequences\nCh 3.4 Subsequences and the Bolzano-Weierstrass Theorem\nCh 3.5 The Cauchy Criterion\nCh 3.6 Properly Divergent Sequences\nCh 3.7 Introduction to Infinite Series\nChapter 4\nCh 4.1 Limits of Functions\nCh 4.2 Limit Theorems\nCh 4.3 Some Extensions of the Limit Concept\nChapter 5\nCh 5.1 Continuous Function\nCh 5.2 Combinations of Continuous Functions\nCh 5.3 Continuous Functions on Intervals\nCh 5.4 Continuous Functions on Intervals\nCh 5.5 Continuous Functions on Intervals\nCh 5.6 Continuous Functions on Intervals\nChapter 6\nCh 6.1 The Derivative\nCh 6.2 The Mean Value Theorem\nCh 6.3 L’Hospital’s Rules\nCh 6.4 Taylor’s Theorem\nChapter 7\nCh 7.1 Riemann Integral\nCh 7.2 Riemann Integrable Functions\nCh 7.3 The Fundamental Theorem\nChapter 8\nCh 8.1 Pointwise and Uniform Convergence\nCh 8.2 Interchange of Limits"
+    "text": "It appears you don't have a PDF plugin for this browser.\n    No biggie... you can click here to\n    download the PDF file."
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.1.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.1.html",
-    "title": "5.1.1",
+    "objectID": "topik/todaysfinan/todaysfinan.html",
+    "href": "topik/todaysfinan/todaysfinan.html",
+    "title": "Today’s Finan",
     "section": "",
-    "text": "\\(1+1=2\\)\nBuktikan!"
+    "text": "Chapter 44 Amortization of Premium or Discount"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
-    "title": "5.1 Continuous Functions",
+    "objectID": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "href": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "title": "44.18",
     "section": "",
-    "text": "5.1.1\n5.1.2\n5.1.3\n5.1.4\n5.1.5\n5.1.6\n5.1.7\n5.1.8\n5.1.9\n5.1.10\n5.1.11\n5.1.12\n5.1.13\n5.1.14\n5.1.15"
+    "text": "Laura buys two bonds at time \\(0\\).\nBond \\(X\\) is a \\(1000\\) par value \\(14\\) year bond with \\(10\\%\\) annual coupons. It is bought at a price to yield an annual effective rate of \\(8\\%\\).\nBond \\(Y\\) is a \\(14\\) year par value bond with \\(6.75\\%\\) annual coupons and a face amount of \\(F\\).\nLaura pays \\(P\\) for the bond to yield an annual effective rate of \\(8\\%\\). During year \\(6\\) the writedown in premium (principal adjustment) on bond \\(X\\) is equal to the writeup in discount (principal adjustment) on bond \\(Y\\). Calculate \\(P\\).\nAnswer\nBond \\(X\\)\n\n\\(F = 1000\\)\n\\(r = 10\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nBond \\(Y\\)\n\n\\(r = 6.75\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nAssume F = C\nCalculating \\(P_6\\) for Bond \\(X\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(X)} &= 1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\nCalculating \\(P_6\\) for Bond \\(Y\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(Y)} &= F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\n\\[\\begin{align*}\nP_{6(X)} & = P_{6(Y)} \\\\\n1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1} & = F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1} \\\\\n1000\\left(10\\%-8\\%\\right) & = F\\left(6.75\\%-8\\%\\right) \\\\\nF = 1600\n\\end{align*}\\]\nThus,\n\\[\\begin{align*}\nP &= Fr\\left(\\frac{1-(1+i)^{-n}}{i}\\right) + F(1+i)^{-n} \\\\\n&= 1435.11\n\\end{align*}\\]"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
-    "title": "5.3 Continuous Functions on Intervals",
+    "objectID": "topik/todayscryer/chapter/chapter1/1.1.1.html",
+    "href": "topik/todayscryer/chapter/chapter1/1.1.1.html",
+    "title": "1.1.1",
     "section": "",
-    "text": "5.3.1\n5.3.2\n5.3.3\n5.3.4\n5.3.5\n5.3.6\n5.3.7\n5.3.8\n5.3.9\n5.3.10\n5.3.11\n5.3.12\n5.3.13\n5.3.14\n5.3.15\n5.3.16\n5.3.17\n5.3.18\n5.3.19"
+    "text": "Tes"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
+    "href": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
+    "title": "8.2 Interchange of Limits",
+    "section": "",
+    "text": "8.2.1\n8.2.2\n8.2.3\n8.2.4\n8.2.5\n8.2.6\n8.2.7\n8.2.8\n8.2.9\n8.2.10\n8.2.11\n8.2.12\n8.2.13\n8.2.14\n8.2.15\n8.2.16\n8.2.17\n8.2.18\n8.2.19\n8.2.20"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
+    "href": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
+    "title": "7.3 The Fundamental Theorem",
+    "section": "",
+    "text": "7.3.1\n7.3.2\n7.3.3\n7.3.4\n7.3.5\n7.3.6\n7.3.7\n7.3.8\n7.3.9\n7.3.10\n7.3.11\n7.3.12\n7.3.13\n7.3.14\n7.3.15\n7.3.16\n7.3.17\n7.3.18\n7.3.19\n7.3.20\n7.3.21\n7.3.22"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
+    "href": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
+    "title": "7.1 Riemann Integral",
+    "section": "",
+    "text": "7.1.1\n7.1.2\n7.1.3\n7.1.4\n7.1.5\n7.1.6\n7.1.7\n7.1.8\n7.1.9\n7.1.10\n7.1.11\n7.1.12\n7.1.13\n7.1.14\n7.1.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
+    "title": "6.4 Taylor�s Theorem",
+    "section": "",
+    "text": "6.4.1\n6.4.2\n6.4.3\n6.4.4\n6.4.5\n6.4.6\n6.4.7\n6.4.8\n6.4.9\n6.4.10\n6.4.11\n6.4.12\n6.4.13\n6.4.14\n6.4.15\n6.4.16\n6.4.17\n6.4.18\n6.4.19\n6.4.20\n6.4.21\n6.4.22\n6.4.23\n6.4.24"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
+    "title": "6.2 The Mean Value Theorem",
+    "section": "",
+    "text": "6.2.1\n6.2.2\n6.2.3\n6.2.4\n6.2.5\n6.2.6\n6.2.7\n6.2.8\n6.2.9\n6.2.10\n6.2.11\n6.2.12\n6.2.13\n6.2.14\n6.2.15\n6.2.16\n6.2.17\n6.2.18\n6.2.19\n6.2.20"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
+    "title": "5.4 Uniform Continuity",
+    "section": "",
+    "text": "5.4.1\n5.4.2\n5.4.3\n5.4.4\n5.4.5\n5.4.6\n5.4.7\n5.4.8\n5.4.9\n5.4.10\n5.4.11\n5.4.12\n5.4.13\n5.4.14\n5.4.15\n5.4.16"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "title": "5.3.3",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\) such that for each \\(x\\) in \\(I\\) there exist \\(y\\) in \\(I\\) such that \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\). Prove there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nAnswer\nIt will be shown that there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nBecause for any \\(x \\in I\\) the inequality \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\) is true, then we have the following\n\\[\\begin{align*}\n    |f(y_0)| & \\leq \\frac{1}{2}|f(x)| \\\\\n    |f(y_1)| & \\leq \\frac{1}{2}|f(y_0)|  \\leq \\frac{1}{2^2}|f(x)|\\\\\n    .\\\\\n    .\\\\\n    .\\\\\n    |f(y_n)| & \\leq \\frac{1}{2}|f(y_{n-1})| \\leq \\frac{1}{2^n+1}|f(x)|\n\\end{align*}\\]\nThus we can construct a sequence \\(|y| = (|f(y_n)|)\\) which has a property that it is monotonically decreasing sequence. By definition of absolute value, infimum of \\(\\{|y_n| : n \\in \\mathbb{N}\\}\\) is equal to 0. Thus from Monotone Convergence Theorem \\(\\lim |f(y_n)| = 0\\). From property of continuity function, \\(|f|\\) also continuous because \\(f\\) continuous thus \\(|f(c)| = 0\\) which implies \\(f(c) = 0\\)\n\\(\\therefore \\exists c \\in I \\ni f(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "title": "5.3.1",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function such that \\(f(x) &gt; 0\\) for each \\(x\\) in \\(I\\). Prove that there exist a number \\(\\alpha &gt; 0\\) such that \\(f(x) \\geq \\alpha\\) for all \\(x \\in I\\)\nAnswer\nIt will be proven that \\(\\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)\nBecause \\(I\\) is closed bounded interval and \\(f\\) continuous on \\(I\\), by boundedness theorem it follows that \\(f\\) is bounded on \\(I\\) thus \\(\\exists M &gt; 0 \\ni |f(x)| &lt; M \\;  \\forall x \\in I\\). Because \\(f(x) &gt; 0 \\; \\forall x \\in I\\), then \\(0 &lt; f(x) &lt; M \\; \\forall x \\in I\\). Now let \\(f(I) := \\{f(x) : x \\in I\\}\\). Because 0 is lower bound, by completeness property \\(f(I)\\) must have an infimum. Let \\(\\alpha = \\inf f(I)\\), thus by definition of infimum \\(\\alpha \\leq c \\; \\forall c \\in f(I)\\) which implies \\(\\alpha \\leq f(x) \\; \\forall x \\in I\\)\n\\(\\therefore \\; \\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.3.html",
@@ -47,6 +103,20 @@
     "title": "5.1.3",
     "section": "",
     "text": "Let \\(a &lt; b &lt; c\\). Suppose that \\(f\\) is continuous on \\([a, b]\\), that \\(g\\) is continuous on \\([b, c]\\), and that \\(f(b) = g(b)\\). Define \\(h\\) on \\([a,c]\\) by \\(h(x) := f(x)\\) for \\(x \\in [a, b]\\) and \\(h(x) = := g(x)\\) for \\(x \\in [b,c]\\). Prove that \\(h\\) is continuous on \\([a, c]\\)\nAnswer\nPreliminary Analysis\nNotice that \\(h(x) = \\begin{cases}\n    f(x) & x \\in [a,b] \\\\\n    g(x) & x \\in [b,c]\n\\end{cases}\\).\nThus for \\([a,b]\\), \\(h\\) continuous because \\(f\\) continuous, and for \\([b,c]\\), \\(h\\) continuous because \\(g\\) continuous. Also, because \\(f(b) = g(b)\\), then it follows that \\(h(b) = f(b) = g(b)\\) which implies that \\(h\\) continuous at \\(x = b\\). Therefore \\(h\\) continuous on \\([a,c]\\) \\\nFormal Proof\n\\(h\\) continuous on \\([a,c]\\) because \\(h\\) continuous on \\([a,b]\\) and \\([b,c]\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
+    "title": "3.5 The Cauchy Criterion",
+    "section": "",
+    "text": "3.5.1\n3.5.2\n3.5.3\n3.5.4\n3.5.5\n3.5.6\n3.5.7\n3.5.8\n3.5.9\n3.5.10\n3.5.11\n3.5.12\n3.5.13\n3.5.14"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
+    "title": "3.2 Limit Theorems",
+    "section": "",
+    "text": "3.2.1\n3.2.2\n3.2.3\n3.2.4\n3.2.5\n3.2.6\n3.2.7\n3.2.8\n3.2.9\n3.2.10\n3.2.11\n3.2.12\n3.2.13\n3.2.14\n3.2.15\n3.2.16\n3.2.17\n3.2.18\n3.2.19\n3.2.20\n3.2.21\n3.2.22\n3.2.23\n3.2.24"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.5/2.5.html",
@@ -70,6 +140,20 @@
     "text": "2.3.1\n2.3.2\n2.3.3\n2.3.4\n2.3.5\n2.3.6\n2.3.7\n2.3.8\n2.3.9\n2.3.10\n2.3.11\n2.3.12\n2.3.13\n2.3.14"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": " Daily Mabar",
+    "section": "",
+    "text": "Topic\nToday’s Bartle\nToday’s Klugman\nToday’s Cryer\nToday’s Finan\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Mabar Analysis fr"
+  },
+  {
     "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.1/2.1.html",
     "href": "topik/todaysbartle/chapter/chapter2/chapter2.1/2.1.html",
     "title": "Ch 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)",
@@ -84,67 +168,11 @@
     "text": "2.2.1\n2.2.2\n2.2.3\n2.2.4\n2.2.5\n2.2.6\n2.2.7\n2.2.8\n2.2.9\n2.2.10\n2.2.11\n2.2.12\n2.2.13\n2.2.14\n2.2.15\n2.2.16\n2.2.17\n2.2.18\n2.2.19"
   },
   {
-    "objectID": "topik/todaysklugman/todaysklugman.html",
-    "href": "topik/todaysklugman/todaysklugman.html",
-    "title": "Today’s Klugman",
-    "section": "",
-    "text": "Chapter 10 Review of Mathematical Statistics\nChapter 11 Review of Mathematical Statistics"
-  },
-  {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.1.1.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.1.1.html",
-    "title": "10.1.1",
-    "section": "",
-    "text": "Tes"
-  },
-  {
-    "objectID": "topik/todaysklugman/chapter/chapter10/ch10.html",
-    "href": "topik/todaysklugman/chapter/chapter10/ch10.html",
-    "title": "Chapter 10 Review of Mathematical Statistics",
-    "section": "",
-    "text": "10.1.1"
-  },
-  {
-    "objectID": "topik/todayscryer/todayscryer.html",
-    "href": "topik/todayscryer/todayscryer.html",
-    "title": "Today’s Cryer",
-    "section": "",
-    "text": "Chapter 1 Introduction"
-  },
-  {
-    "objectID": "topik/todayscryer/chapter/chapter1/1.1.1.html",
-    "href": "topik/todayscryer/chapter/chapter1/1.1.1.html",
-    "title": "1.1.1",
-    "section": "",
-    "text": "Tes"
-  },
-  {
-    "objectID": "topik/todayscryer/chapter/chapter1/ch1.html",
-    "href": "topik/todayscryer/chapter/chapter1/ch1.html",
-    "title": "Chapter 1 Introduction",
-    "section": "",
-    "text": "Single Exponential Smoothing - Alpha Animation\n1.1.1"
-  },
-  {
     "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.1/3.1.html",
     "href": "topik/todaysbartle/chapter/chapter3/chapter3.1/3.1.html",
     "title": "3.1 Sequences and Their Limits",
     "section": "",
     "text": "3.1.1\n3.1.2\n3.1.3\n3.1.4\n3.1.5\n3.1.6\n3.1.7\n3.1.8\n3.1.9\n3.1.10\n3.1.11\n3.1.12\n3.1.13\n3.1.14\n3.1.15\n3.1.16\n3.1.17\n3.1.18"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
-    "href": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
-    "title": "3.6 Properly Divergent Sequences",
-    "section": "",
-    "text": "3.6.1\n3.6.2\n3.6.3\n3.6.4\n3.6.5\n3.6.6\n3.6.7\n3.6.8\n3.6.9\n3.6.10"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
-    "href": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
-    "title": "3.4 Subsequences and the Bolzano-Weierstrass Theorem",
-    "section": "",
-    "text": "3.4.1\n3.4.2\n3.4.3\n3.4.4\n3.4.5\n3.4.6\n3.4.7\n3.4.8\n3.4.9\n3.4.10\n3.4.11\n3.4.12\n3.4.13\n3.4.14\n3.4.15\n3.4.16\n3.4.17\n3.4.18\n3.4.19"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.3/3.3.html",
@@ -154,32 +182,18 @@
     "text": "3.3.1\n3.3.2\n3.3.3\n3.3.4\n3.3.5\n3.3.6\n3.3.7\n3.3.8\n3.3.9\n3.3.10\n3.3.11\n3.3.12\n3.3.13\n3.3.14\n3.3.15\n3.3.16"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
-    "href": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
-    "title": "3.2 Limit Theorems",
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
+    "title": "3.4 Subsequences and the Bolzano-Weierstrass Theorem",
     "section": "",
-    "text": "3.2.1\n3.2.2\n3.2.3\n3.2.4\n3.2.5\n3.2.6\n3.2.7\n3.2.8\n3.2.9\n3.2.10\n3.2.11\n3.2.12\n3.2.13\n3.2.14\n3.2.15\n3.2.16\n3.2.17\n3.2.18\n3.2.19\n3.2.20\n3.2.21\n3.2.22\n3.2.23\n3.2.24"
+    "text": "3.4.1\n3.4.2\n3.4.3\n3.4.4\n3.4.5\n3.4.6\n3.4.7\n3.4.8\n3.4.9\n3.4.10\n3.4.11\n3.4.12\n3.4.13\n3.4.14\n3.4.15\n3.4.16\n3.4.17\n3.4.18\n3.4.19"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
-    "href": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
-    "title": "3.5 The Cauchy Criterion",
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
+    "title": "3.6 Properly Divergent Sequences",
     "section": "",
-    "text": "3.5.1\n3.5.2\n3.5.3\n3.5.4\n3.5.5\n3.5.6\n3.5.7\n3.5.8\n3.5.9\n3.5.10\n3.5.11\n3.5.12\n3.5.13\n3.5.14"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
-    "href": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
-    "title": "4.3 Some Extensions of the Limit Concept",
-    "section": "",
-    "text": "4.3.1\n4.3.2\n4.3.3\n4.3.4\n4.3.5\n4.3.6\n4.3.7\n4.3.8\n4.3.9\n4.3.10\n4.3.11\n4.3.12\n4.3.13"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
-    "href": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
-    "title": "4.2 Limit Theorems",
-    "section": "",
-    "text": "4.2.1\n4.2.2\n4.2.3\n4.2.4\n4.2.5\n4.2.6\n4.2.7\n4.2.8\n4.2.9\n4.2.10\n4.2.11\n4.2.12\n4.2.13\n4.2.14\n4.2.15"
+    "text": "3.6.1\n3.6.2\n3.6.3\n3.6.4\n3.6.5\n3.6.6\n3.6.7\n3.6.8\n3.6.9\n3.6.10"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.1/4.1.html",
@@ -189,18 +203,25 @@
     "text": "4.1.1\n4.1.2\n4.1.3\n4.1.4\n4.1.5\n4.1.6\n4.1.7\n4.1.8\n4.1.9\n4.1.10\n4.1.11\n4.1.12\n4.1.13\n4.1.14\n4.1.15\n4.1.16\n4.1.17"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
-    "title": "5.6 Monotone and Inverse Functions",
+    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
+    "href": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
+    "title": "4.2 Limit Theorems",
     "section": "",
-    "text": "5.6.1\n5.6.2\n5.6.3\n5.6.4\n5.6.5\n5.6.6\n5.6.7\n5.6.8\n5.6.9\n5.6.10\n5.6.11\n5.6.12\n5.6.13\n5.6.14\n5.6.15"
+    "text": "4.2.1\n4.2.2\n4.2.3\n4.2.4\n4.2.5\n4.2.6\n4.2.7\n4.2.8\n4.2.9\n4.2.10\n4.2.11\n4.2.12\n4.2.13\n4.2.14\n4.2.15"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
-    "title": "5.5 Continuity and Gauges",
+    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
+    "href": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
+    "title": "4.3 Some Extensions of the Limit Concept",
     "section": "",
-    "text": "5.5.1\n5.5.2\n5.5.3\n5.5.4\n5.5.5\n5.5.6\n5.5.7\n5.5.8\n5.5.9\n5.5.10"
+    "text": "4.3.1\n4.3.2\n4.3.3\n4.3.4\n4.3.5\n4.3.6\n4.3.7\n4.3.8\n4.3.9\n4.3.10\n4.3.11\n4.3.12\n4.3.13"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
+    "title": "5.1 Continuous Functions",
+    "section": "",
+    "text": "5.1.1\n5.1.2\n5.1.3\n5.1.4\n5.1.5\n5.1.6\n5.1.7\n5.1.8\n5.1.9\n5.1.10\n5.1.11\n5.1.12\n5.1.13\n5.1.14\n5.1.15"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.2/5.2.html",
@@ -210,25 +231,39 @@
     "text": "5.2.1\n5.2.2\n5.2.3\n5.2.4\n5.2.5\n5.2.6\n5.2.7\n5.2.8\n5.2.9\n5.2.10\n5.2.11\n5.2.12\n5.2.13\n5.2.14\n5.2.15"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
-    "title": "5.4 Uniform Continuity",
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "title": "5.3.2",
     "section": "",
-    "text": "5.4.1\n5.4.2\n5.4.3\n5.4.4\n5.4.5\n5.4.6\n5.4.7\n5.4.8\n5.4.9\n5.4.10\n5.4.11\n5.4.12\n5.4.13\n5.4.14\n5.4.15\n5.4.16"
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) and \\(g : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\). Show that the set \\(E := \\{x \\in I : f(x) = g(x)\\}\\) has the property that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nAnswer\nIt will be shown that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nBecause \\((x_n) \\subseteq E\\), then it follows that \\(f(x_n) = g(x_n)\\). Because \\(f\\) and \\(g\\) a continuous function on \\(I\\), then by sequential criteria it follows that if \\(x_0 \\in I\\) implies \\(f(x_n) \\to f(x_0)\\) and \\(g(x_n) \\to g(x_0)\\). Because \\(f(x_n) = g(x_n)\\), then by sequential limit property \\(f(x_0)\\) must equal to \\(g(x_0)\\) which means \\(x_0 \\in E\\)\n\\(\\therefore\\) if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
-    "href": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
-    "title": "6.4 Taylor�s Theorem",
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "title": "5.3.4",
     "section": "",
-    "text": "6.4.1\n6.4.2\n6.4.3\n6.4.4\n6.4.5\n6.4.6\n6.4.7\n6.4.8\n6.4.9\n6.4.10\n6.4.11\n6.4.12\n6.4.13\n6.4.14\n6.4.15\n6.4.16\n6.4.17\n6.4.18\n6.4.19\n6.4.20\n6.4.21\n6.4.22\n6.4.23\n6.4.24"
+    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root \\\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
-    "href": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
-    "title": "6.2 The Mean Value Theorem",
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
+    "title": "5.3 Continuous Functions on Intervals",
     "section": "",
-    "text": "6.2.1\n6.2.2\n6.2.3\n6.2.4\n6.2.5\n6.2.6\n6.2.7\n6.2.8\n6.2.9\n6.2.10\n6.2.11\n6.2.12\n6.2.13\n6.2.14\n6.2.15\n6.2.16\n6.2.17\n6.2.18\n6.2.19\n6.2.20"
+    "text": "5.3.1\n5.3.2\n5.3.3\n5.3.4\n5.3.5\n5.3.6\n5.3.7\n5.3.8\n5.3.9\n5.3.10\n5.3.11\n5.3.12\n5.3.13\n5.3.14\n5.3.15\n5.3.16\n5.3.17\n5.3.18\n5.3.19"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
+    "title": "5.5 Continuity and Gauges",
+    "section": "",
+    "text": "5.5.1\n5.5.2\n5.5.3\n5.5.4\n5.5.5\n5.5.6\n5.5.7\n5.5.8\n5.5.9\n5.5.10"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
+    "title": "5.6 Monotone and Inverse Functions",
+    "section": "",
+    "text": "5.6.1\n5.6.2\n5.6.3\n5.6.4\n5.6.5\n5.6.6\n5.6.7\n5.6.8\n5.6.9\n5.6.10\n5.6.11\n5.6.12\n5.6.13\n5.6.14\n5.6.15"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.1/6.1.html",
@@ -245,32 +280,11 @@
     "text": "6.3.1\n6.3.2\n6.3.3\n6.3.4\n6.3.5\n6.3.6\n6.3.7\n6.3.8\n6.3.9\n6.3.10\n6.3.11\n6.3.12\n6.3.13\n6.3.14"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
-    "href": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
-    "title": "7.3 The Fundamental Theorem",
-    "section": "",
-    "text": "7.3.1\n7.3.2\n7.3.3\n7.3.4\n7.3.5\n7.3.6\n7.3.7\n7.3.8\n7.3.9\n7.3.10\n7.3.11\n7.3.12\n7.3.13\n7.3.14\n7.3.15\n7.3.16\n7.3.17\n7.3.18\n7.3.19\n7.3.20\n7.3.21\n7.3.22"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
-    "href": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
-    "title": "7.1 Riemann Integral",
-    "section": "",
-    "text": "7.1.1\n7.1.2\n7.1.3\n7.1.4\n7.1.5\n7.1.6\n7.1.7\n7.1.8\n7.1.9\n7.1.10\n7.1.11\n7.1.12\n7.1.13\n7.1.14\n7.1.15"
-  },
-  {
     "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.2/7.2.html",
     "href": "topik/todaysbartle/chapter/chapter7/chapter7.2/7.2.html",
     "title": "7.2 Riemann Integrable Functions",
     "section": "",
     "text": "7.2.1\n7.2.2\n7.2.3\n7.2.4\n7.2.5\n7.2.6\n7.2.7\n7.2.8\n7.2.9\n7.2.10\n7.2.11\n7.2.12\n7.2.13\n7.2.14\n7.2.15\n7.2.16\n7.2.17\n7.2.18\n7.2.19\n7.2.20"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
-    "href": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
-    "title": "8.2 Interchange of Limits",
-    "section": "",
-    "text": "8.2.1\n8.2.2\n8.2.3\n8.2.4\n8.2.5\n8.2.6\n8.2.7\n8.2.8\n8.2.9\n8.2.10\n8.2.11\n8.2.12\n8.2.13\n8.2.14\n8.2.15\n8.2.16\n8.2.17\n8.2.18\n8.2.19\n8.2.20"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter8/chapter8.1/8.1.html",
@@ -280,46 +294,25 @@
     "text": "8.1.1\n8.1.2\n8.1.3\n8.1.4\n8.1.5\n8.1.6\n8.1.7\n8.1.8\n8.1.9\n8.1.10\n8.1.11\n8.1.12\n8.1.13\n8.1.14\n8.1.15\n8.1.16\n8.1.17\n8.1.18\n8.1.19\n8.1.20\n8.1.21\n8.1.22\n8.1.23\n8.1.24"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
-    "title": "5.3.2",
+    "objectID": "topik/todaysbartle/todaysbartle.html",
+    "href": "topik/todaysbartle/todaysbartle.html",
+    "title": "Today’s Bartle",
     "section": "",
-    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) and \\(g : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\). Show that the set \\(E := \\{x \\in I : f(x) = g(x)\\}\\) has the property that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nAnswer\nIt will be shown that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nBecause \\((x_n) \\subseteq E\\), then it follows that \\(f(x_n) = g(x_n)\\). Because \\(f\\) and \\(g\\) a continuous function on \\(I\\), then by sequential criteria it follows that if \\(x_0 \\in I\\) implies \\(f(x_n) \\to f(x_0)\\) and \\(g(x_n) \\to g(x_0)\\). Because \\(f(x_n) = g(x_n)\\), then by sequential limit property \\(f(x_0)\\) must equal to \\(g(x_0)\\) which means \\(x_0 \\in E\\)\n\\(\\therefore\\) if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)"
+    "text": "Chapter 2\nCh 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)\nCh 2.2 Absolute Value and the Real Line\nCh 2.3 The Completeness Property of \\(\\mathbb{R}\\)\nCh 2.4 Applications of the Supremum Property\nCh 2.5 Intervals\nChapter 3\nCh 3.1 Sequences and Their Limits\nCh 3.2 Limit Theorems\nCh 3.3 Monotone Sequences\nCh 3.4 Subsequences and the Bolzano-Weierstrass Theorem\nCh 3.5 The Cauchy Criterion\nCh 3.6 Properly Divergent Sequences\nCh 3.7 Introduction to Infinite Series\nChapter 4\nCh 4.1 Limits of Functions\nCh 4.2 Limit Theorems\nCh 4.3 Some Extensions of the Limit Concept\nChapter 5\nCh 5.1 Continuous Function\nCh 5.2 Combinations of Continuous Functions\nCh 5.3 Continuous Functions on Intervals\nCh 5.4 Continuous Functions on Intervals\nCh 5.5 Continuous Functions on Intervals\nCh 5.6 Continuous Functions on Intervals\nChapter 6\nCh 6.1 The Derivative\nCh 6.2 The Mean Value Theorem\nCh 6.3 L’Hospital’s Rules\nCh 6.4 Taylor’s Theorem\nChapter 7\nCh 7.1 Riemann Integral\nCh 7.2 Riemann Integrable Functions\nCh 7.3 The Fundamental Theorem\nChapter 8\nCh 8.1 Pointwise and Uniform Convergence\nCh 8.2 Interchange of Limits"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
-    "title": "5.3.1",
+    "objectID": "topik/todayscryer/chapter/chapter1/ch1.html",
+    "href": "topik/todayscryer/chapter/chapter1/ch1.html",
+    "title": "Chapter 1 Introduction",
     "section": "",
-    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function such that \\(f(x) &gt; 0\\) for each \\(x\\) in \\(I\\). Prove that there exist a number \\(\\alpha &gt; 0\\) such that \\(f(x) \\geq \\alpha\\) for all \\(x \\in I\\)\nAnswer\nIt will be proven that \\(\\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)\nBecause \\(I\\) is closed bounded interval and \\(f\\) continuous on \\(I\\), by boundedness theorem it follows that \\(f\\) is bounded on \\(I\\) thus \\(\\exists M &gt; 0 \\ni |f(x)| &lt; M \\;  \\forall x \\in I\\). Because \\(f(x) &gt; 0 \\; \\forall x \\in I\\), then \\(0 &lt; f(x) &lt; M \\; \\forall x \\in I\\). Now let \\(f(I) := \\{f(x) : x \\in I\\}\\). Because 0 is lower bound, by completeness property \\(f(I)\\) must have an infimum. Let \\(\\alpha = \\inf f(I)\\), thus by definition of infimum \\(\\alpha \\leq c \\; \\forall c \\in f(I)\\) which implies \\(\\alpha \\leq f(x) \\; \\forall x \\in I\\)\n\\(\\therefore \\; \\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)"
+    "text": "Single Exponential Smoothing - Alpha Animation\n1.1.1"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
-    "title": "5.3.4",
+    "objectID": "topik/todayscryer/todayscryer.html",
+    "href": "topik/todayscryer/todayscryer.html",
+    "title": "Today’s Cryer",
     "section": "",
-    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root \\\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
-    "title": "5.3.3",
-    "section": "",
-    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\) such that for each \\(x\\) in \\(I\\) there exist \\(y\\) in \\(I\\) such that \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\). Prove there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nAnswer\nIt will be shown that there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nBecause for any \\(x \\in I\\) the inequality \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\) is true, then we have the following\n\\[\\begin{align*}\n    |f(y_0)| & \\leq \\frac{1}{2}|f(x)| \\\\\n    |f(y_1)| & \\leq \\frac{1}{2}|f(y_0)|  \\leq \\frac{1}{2^2}|f(x)|\\\\\n    .\\\\\n    .\\\\\n    .\\\\\n    |f(y_n)| & \\leq \\frac{1}{2}|f(y_{n-1})| \\leq \\frac{1}{2^n+1}|f(x)|\n\\end{align*}\\]\nThus we can construct a sequence \\(|y| = (|f(y_n)|)\\) which has a property that it is monotonically decreasing sequence. By definition of absolute value, infimum of \\(\\{|y_n| : n \\in \\mathbb{N}\\}\\) is equal to 0. Thus from Monotone Convergence Theorem \\(\\lim |f(y_n)| = 0\\). From property of continuity function, \\(|f|\\) also continuous because \\(f\\) continuous thus \\(|f(c)| = 0\\) which implies \\(f(c) = 0\\)\n\\(\\therefore \\exists c \\in I \\ni f(c) = 0\\)"
-  },
-  {
-    "objectID": "topik/todaysfinan/todaysfinan.html",
-    "href": "topik/todaysfinan/todaysfinan.html",
-    "title": "Today’s Finan",
-    "section": "",
-    "text": "Chapter 44 Amortization of Premium or Discount"
-  },
-  {
-    "objectID": "topik/todaysfinan/chapter/chapter44/44.18.html",
-    "href": "topik/todaysfinan/chapter/chapter44/44.18.html",
-    "title": "44.18",
-    "section": "",
-    "text": "Laura buys two bonds at time \\(0\\).\nBond \\(X\\) is a \\(1000\\) par value \\(14\\) year bond with \\(10\\%\\) annual coupons. It is bought at a price to yield an annual effective rate of \\(8\\%\\).\nBond \\(Y\\) is a \\(14\\) year par value bond with \\(6.75\\%\\) annual coupons and a face amount of \\(F\\).\nLaura pays \\(P\\) for the bond to yield an annual effective rate of \\(8\\%\\). During year \\(6\\) the writedown in premium (principal adjustment) on bond \\(X\\) is equal to the writeup in discount (principal adjustment) on bond \\(Y\\). Calculate \\(P\\).\nAnswer\nBond \\(X\\)\n\n\\(F = 1000\\)\n\\(r = 10\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nBond \\(Y\\)\n\n\\(r = 6.75\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nAssume F = C\nCalculating \\(P_6\\) for Bond \\(X\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(X)} &= 1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\nCalculating \\(P_6\\) for Bond \\(Y\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(Y)} &= F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\n\\[\\begin{align*}\nP_{6(X)} & = P_{6(Y)} \\\\\n1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1} & = F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1} \\\\\n1000\\left(10\\%-8\\%\\right) & = F\\left(6.75\\%-8\\%\\right) \\\\\nF = 1600\n\\end{align*}\\]\nThus,\n\\[\\begin{align*}\nP &= Fr\\left(\\frac{1-(1+i)^{-n}}{i}\\right) + F(1+i)^{-n} \\\\\n&= 1435.11\n\\end{align*}\\]"
+    "text": "Chapter 1 Introduction"
   },
   {
     "objectID": "topik/todaysfinan/chapter/chapter44/ch44.html",
@@ -329,11 +322,18 @@
     "text": "44.18"
   },
   {
-    "objectID": "topik/todaysklugman/chapter/chapter11/11.1.1.html",
-    "href": "topik/todaysklugman/chapter/chapter11/11.1.1.html",
-    "title": "11.1.1",
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.1.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.1.html",
+    "title": "10.1",
     "section": "",
     "text": "Tes"
+  },
+  {
+    "objectID": "topik/todaysklugman/chapter/chapter10/ch10.html",
+    "href": "topik/todaysklugman/chapter/chapter10/ch10.html",
+    "title": "Chapter 10 Review of Mathematical Statistics",
+    "section": "",
+    "text": "10.1.1"
   },
   {
     "objectID": "topik/todaysklugman/chapter/chapter11/ch11.html",

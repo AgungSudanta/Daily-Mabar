@@ -1,5 +1,5 @@
 ---
-title: "10.1.1"
+title: "10.1"
 format:
   html:
     theme:
