@@ -1,0 +1,12 @@
+---
+title: "Today's Finan"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+[**Chapter 44 Amortization of Premium or Discount**](./chapter/chapter44/ch44.qmd)

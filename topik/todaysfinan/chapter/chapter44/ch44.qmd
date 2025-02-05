@@ -1,0 +1,12 @@
+---
+title: "Chapter 44 Amortization of Premium or Discount"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+[44.18](./44.18.qmd)

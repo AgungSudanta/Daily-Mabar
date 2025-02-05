@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": " Daily Mabar",
     "section": "",
-    "text": "Topic\nToday’s Bartle\nToday’s Klugman\nToday’s Cryer\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Topic\nToday’s Bartle\nToday’s Klugman\nToday’s Cryer\nToday’s Finan\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -306,5 +306,26 @@
     "title": "5.3.3",
     "section": "",
     "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\) such that for each \\(x\\) in \\(I\\) there exist \\(y\\) in \\(I\\) such that \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\). Prove there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nAnswer\nIt will be shown that there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nBecause for any \\(x \\in I\\) the inequality \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\) is true, then we have the following\n\\[\\begin{align*}\n    |f(y_0)| & \\leq \\frac{1}{2}|f(x)| \\\\\n    |f(y_1)| & \\leq \\frac{1}{2}|f(y_0)|  \\leq \\frac{1}{2^2}|f(x)|\\\\\n    .\\\\\n    .\\\\\n    .\\\\\n    |f(y_n)| & \\leq \\frac{1}{2}|f(y_{n-1})| \\leq \\frac{1}{2^n+1}|f(x)|\n\\end{align*}\\]\nThus we can construct a sequence \\(|y| = (|f(y_n)|)\\) which has a property that it is monotonically decreasing sequence. By definition of absolute value, infimum of \\(\\{|y_n| : n \\in \\mathbb{N}\\}\\) is equal to 0. Thus from Monotone Convergence Theorem \\(\\lim |f(y_n)| = 0\\). From property of continuity function, \\(|f|\\) also continuous because \\(f\\) continuous thus \\(|f(c)| = 0\\) which implies \\(f(c) = 0\\)\n\\(\\therefore \\exists c \\in I \\ni f(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/todaysfinan.html",
+    "href": "topik/todaysfinan/todaysfinan.html",
+    "title": "Today’s Finan",
+    "section": "",
+    "text": "Chapter 44 Amortization of Premium or Discount"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "href": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "title": "44.18",
+    "section": "",
+    "text": "Laura buys two bonds at time \\(0\\).\nBond \\(X\\) is a \\(1000\\) par value \\(14\\) year bond with \\(10\\%\\) annual coupons. It is bought at a price to yield an annual effective rate of \\(8\\%\\).\nBond \\(Y\\) is a \\(14\\) year par value bond with \\(6.75\\%\\) annual coupons and a face amount of \\(F\\).\nLaura pays \\(P\\) for the bond to yield an annual effective rate of \\(8\\%\\). During year \\(6\\) the writedown in premium (principal adjustment) on bond \\(X\\) is equal to the writeup in discount (principal adjustment) on bond \\(Y\\). Calculate \\(P\\).\nAnswer\nBond \\(X\\)\n\n\\(F = 1000\\)\n\\(r = 10\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nBond \\(Y\\)\n\n\\(r = 6.75\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nAssume F = C\nCalculating \\(P_6\\) for Bond \\(X\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(X)} &= 1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\nCalculating \\(P_6\\) for Bond \\(Y\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(Y)} &= F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\n\\[\\begin{align*}\nP_{6(X)} & = P_{6(Y)} \\\\\n1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1} & = F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1} \\\\\n1000\\left(10\\%-8\\%\\right) & = F\\left(6.75\\%-8\\%\\right) \\\\\nF = 1600\n\\end{align*}\\]\nThus,\n\\[\\begin{align*}\nP &= Fr\\left(\\frac{1-(1+i)^{-n}}{i}\\right) + F(1+i)^{-n} \\\\\n&= 1435.11\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter44/ch44.html",
+    "href": "topik/todaysfinan/chapter/chapter44/ch44.html",
+    "title": "Chapter 44 Amortization of Premium or Discount",
+    "section": "",
+    "text": "44.18"
   }
 ]

@@ -12,6 +12,7 @@ title: |
 
 [Today's Cryer](./topik/todayscryer/todayscryer.qmd)
 
+[Today's Finan](./topik/todaysfinan/todaysfinan.qmd)
 
 
 

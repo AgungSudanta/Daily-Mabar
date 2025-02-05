@@ -1,0 +1,76 @@
+---
+title: "44.18"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+Laura buys two bonds at time $0$.
+
+Bond $X$ is a $1000$ par value $14$ year bond with $10\%$ annual coupons. It is
+bought at a price to yield an annual effective rate of $8\%$.
+
+Bond $Y$ is a $14$ year par value bond with $6.75\%$ annual coupons and a face
+amount of $F$.
+
+Laura pays $P$ for the bond to yield an annual effective rate of $8\%$. During
+year $6$ the writedown in premium (principal adjustment) on bond $X$ is equal
+to the writeup in discount (principal adjustment) on bond $Y$. Calculate $P$.
+
+
+
+
+**Answer**
+
+
+Bond $X$
+
+- $F = 1000$
+
+- $r = 10\%$ p.a.
+
+- $i = 8\%$ p.a.
+
+- $n = 14$ years
+
+
+Bond $Y$
+
+- $r = 6.75\%$ p.a.
+
+- $i = 8\%$ p.a.
+
+- $n = 14$ years
+
+Assume F = C
+
+Calculating $P_6$ for Bond $X$
+\begin{align*}
+P_t &= C\left(\frac{Fr}{C}-i\right)v^{n-t+1} \\
+P_{6(X)} &= 1000\left(\frac{1000 \cdot 10\%}{1000}-8\%\right)(1+8\%)^{-14+6-1} 
+\end{align*}
+
+Calculating $P_6$ for Bond $Y$
+\begin{align*}
+P_t &= C\left(\frac{Fr}{C}-i\right)v^{n-t+1} \\
+P_{6(Y)} &= F\left(\frac{F \cdot 6.75\%}{F}-8\%\right)(1+8\%)^{-14+6-1} 
+\end{align*}
+
+
+\begin{align*}
+P_{6(X)} & = P_{6(Y)} \\
+1000\left(\frac{1000 \cdot 10\%}{1000}-8\%\right)(1+8\%)^{-14+6-1} & = F\left(\frac{F \cdot 6.75\%}{F}-8\%\right)(1+8\%)^{-14+6-1} \\
+1000\left(10\%-8\%\right) & = F\left(6.75\%-8\%\right) \\
+F = 1600
+\end{align*}
+
+Thus, 
+
+\begin{align*}
+P &= Fr\left(\frac{1-(1+i)^{-n}}{i}\right) + F(1+i)^{-n} \\
+&= 1435.11
+\end{align*}
