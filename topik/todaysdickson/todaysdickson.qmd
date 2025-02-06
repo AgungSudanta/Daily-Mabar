@@ -9,7 +9,7 @@ format:
     toc: true
 ---
 
-[Rangkuman Kontingensi Jiwa 1](./rangkumankonji1)
+[Rangkuman Kontingensi Jiwa 1](./rangkumankonji1.qmd)
 
 [**Chapter 42 Types of Bonds**](./chapter/chapter42/ch42.qmd)
 
