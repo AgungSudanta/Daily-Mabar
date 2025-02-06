@@ -8,3 +8,9 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the equation $x = \cos x$ has a solution in the interval $[0, \frac{\pi}{2}]$
+
+Answer
+
+Let $I := [0, \frac{\pi}{2}]$ and let $g:I \to \mathbb{R}$ be defined as $g(x) := x - \cos x$. Notice that $g(0) = 0 - \cos 0 = -1$ and $g(\frac{\pi}{2}) = \frac{\pi}{2} - \cos \frac{\pi}{2} = \frac{\pi}{2} - \frac{\sqrt{2}}{2} > 0$. Thus $g(0) < 0 < g(\frac{\pi}{2})$, and $g$ continuous because $f(x) = x$ and $h(x) = \cos x$ continuous on $I$ thus by continuity property $g$ also continuous. Therefore by Location of Root Theorem $\exists c \in I \ni g(c) = 0$

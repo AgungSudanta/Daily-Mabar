@@ -8,3 +8,11 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the function $f(x) := 2\ln x + \sqrt{x} - 2$ has root in the interval $[1,2]$
+
+Answer
+
+It will be shown that $f(x) := 2\ln x + \sqrt{x} - 2$ has root in the interval $[1,2]$
+
+Notice that $f(1) = 2\ln 1 + \sqrt{1} - 2 = 1 - 2 = -1$ and $f(2) = 2\ln 2 + \sqrt{2} - 2 = \ln(\frac{4e^\sqrt{2}}{e^2})$. Because $\sqrt{2} < 2$, then $f(2) = \ln(\frac{4}{e^{2 - \sqrt{2}}})$. We know that $1 < \sqrt{2} < 2$ thus $e^{2 - \sqrt{2}} < e < 3$ which means $f(2) > \ln(\frac{4}{3}) > 0$. Therefore we have $f(1) < 0 < f(2)$ which by Location of Root Theorem $f$ has a root in the interval $[1,2]$

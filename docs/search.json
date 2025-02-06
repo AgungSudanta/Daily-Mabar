@@ -242,7 +242,7 @@
     "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
     "title": "5.3.4",
     "section": "",
-    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root \\\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
+    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
   },
   {
     "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
@@ -394,8 +394,36 @@
   {
     "objectID": "topik/todaysfinan/chapter/chapter42/42.7.html",
     "href": "topik/todaysfinan/chapter/chapter42/42.7.html",
-    "title": "42.4",
+    "title": "42.7",
     "section": "",
     "text": "It appears you don’t have a PDF plugin for this browser. No biggie… you can click here to download the PDF file."
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.8.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.8.html",
+    "title": "5.3.8",
+    "section": "",
+    "text": "Show that the function \\(f(x) := 2\\ln x + \\sqrt{x} - 2\\) has root in the interval \\([1,2]\\)\nAnswer\nIt will be shown that \\(f(x) := 2\\ln x + \\sqrt{x} - 2\\) has root in the interval \\([1,2]\\)\nNotice that \\(f(1) = 2\\ln 1 + \\sqrt{1} - 2 = 1 - 2 = -1\\) and \\(f(2) = 2\\ln 2 + \\sqrt{2} - 2 = \\ln(\\frac{4e^\\sqrt{2}}{e^2})\\). Because \\(\\sqrt{2} &lt; 2\\), then \\(f(2) = \\ln(\\frac{4}{e^{2 - \\sqrt{2}}})\\). We know that \\(1 &lt; \\sqrt{2} &lt; 2\\) thus \\(e^{2 - \\sqrt{2}} &lt; e &lt; 3\\) which means \\(f(2) &gt; \\ln(\\frac{4}{3}) &gt; 0\\). Therefore we have \\(f(1) &lt; 0 &lt; f(2)\\) which by Location of Root Theorem \\(f\\) has a root in the interval \\([1,2]\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.7.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.7.html",
+    "title": "5.3.7",
+    "section": "",
+    "text": "Show that the equation \\(x = \\cos x\\) has a solution in the interval \\([0, \\frac{\\pi}{2}]\\)\nAnswer\nLet \\(I := [0, \\frac{\\pi}{2}]\\) and let \\(g:I \\to \\mathbb{R}\\) be defined as \\(g(x) := x - \\cos x\\). Notice that \\(g(0) = 0 - \\cos 0 = -1\\) and \\(g(\\frac{\\pi}{2}) = \\frac{\\pi}{2} - \\cos \\frac{\\pi}{2} = \\frac{\\pi}{2} - \\frac{\\sqrt{2}}{2} &gt; 0\\). Thus \\(g(0) &lt; 0 &lt; g(\\frac{\\pi}{2})\\), and \\(g\\) continuous because \\(f(x) = x\\) and \\(h(x) = \\cos x\\) continuous on \\(I\\) thus by continuity property \\(g\\) also continuous. Therefore by Location of Root Theorem \\(\\exists c \\in I \\ni g(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.10.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.10.html",
+    "title": "5.3.10",
+    "section": "",
+    "text": "If the Bisection Method is used on an interval of length 1 to find \\(p_n\\) with error \\(|p_n-c| &lt; 10^{-5}\\). determine the least value of \\(n\\) that will assure this accuracy\nAnswer\nLet \\(I_1 = [a,b]\\) where \\(b-a = 1\\) and let \\(f\\) be a random continuous function. Now let \\(p_n := \\frac{\\sup I_n + \\inf I_n}{2}\\) and let \\(I_n = \\begin{cases}\n    [p_{n-1}, c_1] & \\text{if } f(p_{n-1}) &lt; 0 \\\\\n    [c_2, p_{n-1}] & \\text{if } f(p_{n-1}) &gt; 0\n\\end{cases}\\), where \\(c_1 = \\sup I_{n-1}\\) and \\(c_2 = \\inf I_{n-1}\\)\nIt will be shown that \\(p_n = \\inf I_n + \\frac{1}{2^n} \\; \\forall n \\in \\mathbb{N}\\) using mathematical induction\nBasic step :\nfor \\(n = 1\\), then \\(p_1 = \\frac{b+a}{2} = \\frac{1 + a + a}{2} = \\frac{1}{2} + a = \\frac{1}{2} + \\inf I_1\\)\nInduction step :\nAssume for \\(n = k\\), \\(p_k = \\inf I_k + \\frac{1}{2^k}\\) is true\nIt will be shown that for \\(n = k+1\\) then \\(p_{k+1} = \\frac{1}{2^{k+1}}\\)\nFrom definition, we have \\(p_{k+1} = \\frac{\\sup I_{k+1} + \\inf I_{k+1}}{2}\\). Without Loss of Generality, assume \\(I_{k+1} = [p_k, \\; c]\\) where \\(c = \\sup I_k\\). It can be shown that \\(p_k = \\inf I_{k+1}\\) and \\(c = \\sup I_{k+1}\\), thus \\(p_{k+1} = \\frac{c + p_k}{2}\\). From our ossumption we have \\[p_{k+1} = \\frac{c + \\inf I_k + 1/2^k}{2} = \\frac{c + \\inf I_k}{2} + \\frac{1}{2^{k+1}} = p_k + \\frac{1}{2^{k+1}} = \\inf I_k + \\frac{1}{2^{k+1}}\\]\nTherefore by mathematical induction \\(p_n = \\inf I_n + \\frac{1}{2^n}\\)\nBecause we need \\(c \\in [a,b]\\) to use Bisection Method, then \\(c &gt; a \\geq \\inf I_n \\; \\forall n \\in \\mathbb{N}\\). Therefore \\(0 &lt; \\frac{1}{2^k} &lt; p_n - c = \\inf I_n + \\frac{1}{2^n}\\) which implies \\(\\frac{1}{2^n} &lt; 10^{-5}\\) is achieved if \\(n &gt; 5\\log_2(10) \\approx 16.6\\)\n\\(\\therefore n &gt; 5\\log_2(10), n \\in \\mathbb{N}\\) will assure that \\(|p_n - c| &lt; 10^{-5}\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.9.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.9.html",
+    "title": "5.3.9",
+    "section": "",
+    "text": "The function \\(f(x) := (x-1)(x-2)(x-3)(x-4)(x-5)\\) has five roots in the interval [0, 7]. If the Bisection Method is applied on this interval, which of the roots is located?\nSame question for \\(g(x) := (x-2)(x-3)(x-4)(x-5)(x-6)\\) on the interval [0,7]\n\nAnswer\n\nChoose \\(p_1 = \\frac{7}{2}\\) thus \\(f(p_1) &gt; 0\\). Now let \\(I_2 = [0, \\frac{7}{2}]\\) then choose \\(p_2 = \\frac{7}{4}\\) thus \\(f(p_2) &lt; 0\\)\nNow let \\(I_3 = [0, \\frac{7}{4}]\\) then choose \\(p_3 = \\frac{7}{8}\\) thus \\(f(p_3) &lt; 0\\)\nNow let \\(I_4 = [\\frac{7}{8}, \\frac{7}{4}]\\) then choose \\(p_4 = \\frac{7}{16}\\) thus \\(f(p_4) &lt; 0\\). Doing this over and over will eventually result in \\(f(p_n) = 0\\) as \\(p_n\\) approach 1\nTherefore by bisection method \\(f\\) has a root 1\nSimiliarly like (a), by choosing midpoint \\(p_1 = \\frac{7}{2}\\) thus \\(g(p_1) &lt; 0\\) and choosing \\(I_2 = [\\frac{7}{2}, 7]\\). Repeating this process will result in \\(g(p_n) = 0\\) where \\(p_n\\). approach 6 Therefore by bisection method \\(g\\) has a root 6"
   }
 ]

@@ -9,7 +9,7 @@ format:
         toc: true
 ---
 
-Show that every polynomial of odd degree with real coefficients has at least one real root \\
+Show that every polynomial of odd degree with real coefficients has at least one real root
 
 Answer
 

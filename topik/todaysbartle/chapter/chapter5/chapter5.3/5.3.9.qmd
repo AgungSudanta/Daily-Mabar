@@ -8,3 +8,19 @@ format:
         css: styles.css
         toc: true
 ---
+
+a) The function $f(x) := (x-1)(x-2)(x-3)(x-4)(x-5)$ has five roots in the interval [0, 7]. If the Bisection Method is applied on this interval, which of the roots is located?
+
+b) Same question for $g(x) := (x-2)(x-3)(x-4)(x-5)(x-6)$ on the interval [0,7]
+
+Answer
+
+a) Choose $p_1 = \frac{7}{2}$ thus $f(p_1) > 0$. Now let $I_2 = [0, \frac{7}{2}]$ then choose $p_2 = \frac{7}{4}$ thus $f(p_2) < 0$
+
+    Now let $I_3 = [0, \frac{7}{4}]$ then choose $p_3 = \frac{7}{8}$ thus $f(p_3) < 0$
+
+    Now let $I_4 = [\frac{7}{8}, \frac{7}{4}]$ then choose $p_4 = \frac{7}{16}$ thus $f(p_4) < 0$. Doing this over and over will eventually result in $f(p_n) = 0$ as $p_n$ approach 1
+
+    Therefore by bisection method $f$ has a root 1
+
+b) Similiarly like (a), by choosing midpoint $p_1 = \frac{7}{2}$ thus $g(p_1) < 0$ and choosing $I_2 = [\frac{7}{2}, 7]$. Repeating this process will result in $g(p_n) = 0$ where $p_n$. approach 6 Therefore by bisection method $g$ has a root 6

@@ -68,81 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="text/x-mathjax-config">
-
-    MathJax.Hub.Config({
-
-      TeX: { equationNumbers: {autoNumber: "AMS"} },
-
-      tex2jax: {inlineMath: [ ['$','$'], ["\\(","\\)"] ]}
-
-    });
-
-    </script>
-
-    
-
-    <!-- MathJax 3+ Add section numbers to equations -->
-
-    <script>
-
-    MathJax = {
-
-      loader: {load: ['[tex]/tagformat']},
-
-      section: 1,
-
-      tex: {
-
-        packages: {'[+]': ['tagformat']},
-
-        tags: 'ams',
-
-        tagformat: {
-
-          number: (n) => MathJax.config.section + '.' + n,
-
-          id: (tag) => 'eqn-id:' + tag
-
-        }
-
-      },
-
-      startup: {
-
-        ready() {
-
-          MathJax.startup.defaultReady();
-
-          MathJax.startup.input[0].preFilters.add(({math}) => {
-
-            if (math.inputData.recompile) {
-
-              MathJax.config.section = math.inputData.recompile.section;
-
-            }
-
-          });
-
-          MathJax.startup.input[0].postFilters.add(({math}) => {
-
-            if (math.inputData.recompile) {
-
-              math.inputData.recompile.section = MathJax.config.section;
-
-            }
-
-          });
-
-        }
-
-      }
-
-    };
-
-    </script>
-
-    
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -240,7 +165,7 @@ window.Quarto = {
 </header>
 
 
-<p>Show that every polynomial of odd degree with real coefficients has at least one real root \</p>
+<p>Show that every polynomial of odd degree with real coefficients has at least one real root</p>
 <p>Answer</p>
 <p>It will be shown that every polynomial of odd degree with real coefficients has at least one real root</p>
 <p>Let <span class="math inline">\(p:I \to \mathbb{R}\)</span> be an odd degree polynomial. It can be shown that <span class="math inline">\(p\)</span> is continuous on any real-valued interval. If n is odd, then <span class="math inline">\(x^n \leq 0 \; \forall x \leq 0\)</span>. Thus we can choose <span class="math inline">\(a \in I\)</span> and <span class="math inline">\(a \leq 0\)</span> such that <span class="math inline">\(p(a) &lt; 0\)</span> for big enough <span class="math inline">\(a\)</span>. With similiar reasoning, we can choose <span class="math inline">\(b \in I\)</span> and <span class="math inline">\(b \geq 0\)</span> such that <span class="math inline">\(p(b) &gt; 0\)</span>. Thus <span class="math inline">\(p(a) &lt; 0 &lt; p(b)\)</span>, which by Intermediate Value Theorem guaranteed the existence of <span class="math inline">\(c \in I \ni f(c) = 0\)</span></p>

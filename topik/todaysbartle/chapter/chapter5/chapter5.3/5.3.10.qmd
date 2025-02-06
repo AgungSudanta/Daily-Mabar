@@ -8,3 +8,32 @@ format:
         css: styles.css
         toc: true
 ---
+
+If the Bisection Method is used on an interval of length 1 to find $p_n$ with error $|p_n-c| < 10^{-5}$. determine the least value of $n$ that will assure this accuracy
+
+Answer
+
+Let $I_1 = [a,b]$ where $b-a = 1$ and let $f$ be a random continuous function. Now let $p_n := \frac{\sup I_n + \inf I_n}{2}$ and let $I_n = \begin{cases}
+    [p_{n-1}, c_1] & \text{if } f(p_{n-1}) < 0 \\
+    [c_2, p_{n-1}] & \text{if } f(p_{n-1}) > 0 
+\end{cases}$, where $c_1 = \sup I_{n-1}$ and $c_2 = \inf I_{n-1}$
+
+It will be shown that $p_n = \inf I_n + \frac{1}{2^n} \; \forall n \in \mathbb{N}$ using mathematical induction
+
+Basic step : 
+
+for $n = 1$, then $p_1 = \frac{b+a}{2} = \frac{1 + a + a}{2} = \frac{1}{2} + a = \frac{1}{2} + \inf I_1$
+
+Induction step :
+
+Assume for $n = k$, $p_k = \inf I_k + \frac{1}{2^k}$ is true
+
+It will be shown that for $n = k+1$ then $p_{k+1} = \frac{1}{2^{k+1}}$
+
+From definition, we have $p_{k+1} = \frac{\sup I_{k+1} + \inf I_{k+1}}{2}$. Without Loss of Generality, assume $I_{k+1} = [p_k, \; c]$ where $c = \sup I_k$. It can be shown that $p_k = \inf I_{k+1}$ and $c = \sup I_{k+1}$, thus $p_{k+1} = \frac{c + p_k}{2}$. From our ossumption we have $$p_{k+1} = \frac{c + \inf I_k + 1/2^k}{2} = \frac{c + \inf I_k}{2} + \frac{1}{2^{k+1}} = p_k + \frac{1}{2^{k+1}} = \inf I_k + \frac{1}{2^{k+1}}$$
+
+Therefore by mathematical induction $p_n = \inf I_n + \frac{1}{2^n}$
+
+Because we need $c \in [a,b]$ to use Bisection Method, then $c > a \geq \inf I_n \; \forall n \in \mathbb{N}$. Therefore $0 < \frac{1}{2^k} < p_n - c = \inf I_n + \frac{1}{2^n}$ which implies $\frac{1}{2^n} < 10^{-5}$ is achieved if $n > 5\log_2(10) \approx 16.6$
+
+$\therefore n > 5\log_2(10), n \in \mathbb{N}$ will assure that $|p_n - c| < 10^{-5}$
