@@ -369,5 +369,26 @@
     "title": "Chapter 42 Types of Bonds",
     "section": "",
     "text": "42.4"
+  },
+  {
+    "objectID": "topik/todaysdickson/todaysdickson.html",
+    "href": "topik/todaysdickson/todaysdickson.html",
+    "title": "Today’s Dickson",
+    "section": "",
+    "text": "Rangkuman Kontingensi Jiwa 1\nChapter 42 Types of Bonds"
+  },
+  {
+    "objectID": "topik/todaysdickson/rangkumankonji1.html",
+    "href": "topik/todaysdickson/rangkumankonji1.html",
+    "title": "Kontingensi Jiwa 1",
+    "section": "",
+    "text": "Notasi:\n\n\\((x)\\) menyatakan seseorang berusia \\(x\\) tahun, \\(x \\geq 0\\)\n\\(T_x\\) menyatakan variabel acak sisa hidup (future lifetime), \\(T_x \\geq 0\\)\nUsia meninggal dari \\((x)\\) adalah \\(x+T_x\\)\n\n\\(a_{\\enclose{actuarial}{1}}\\)"
+  },
+  {
+    "objectID": "topik/todaysdickson/rangkumankonji1.html#variabel-acak-future-lifetime",
+    "href": "topik/todaysdickson/rangkumankonji1.html#variabel-acak-future-lifetime",
+    "title": "Kontingensi Jiwa 1",
+    "section": "",
+    "text": "Notasi:\n\n\\((x)\\) menyatakan seseorang berusia \\(x\\) tahun, \\(x \\geq 0\\)\n\\(T_x\\) menyatakan variabel acak sisa hidup (future lifetime), \\(T_x \\geq 0\\)\nUsia meninggal dari \\((x)\\) adalah \\(x+T_x\\)\n\n\\(a_{\\enclose{actuarial}{1}}\\)"
   }
 ]

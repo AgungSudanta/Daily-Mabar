@@ -1,0 +1,15 @@
+---
+title: "Today's Dickson"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+[Rangkuman Kontingensi Jiwa 1](./rangkumankonji1)
+
+[**Chapter 42 Types of Bonds**](./chapter/chapter42/ch42.qmd)
+

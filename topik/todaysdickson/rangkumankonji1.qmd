@@ -1,0 +1,27 @@
+---
+title: "Kontingensi Jiwa 1"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+
+---
+
+# Model Survival
+
+## Variabel Acak Future Lifetime
+
+Notasi: 
+
+- $(x)$ menyatakan seseorang berusia $x$ tahun, $x \geq 0$
+
+- $T_x$ menyatakan variabel acak sisa hidup (future lifetime), $T_x \geq 0$
+
+- Usia meninggal dari $(x)$ adalah $x+T_x$
+
+
+$a_{\enclose{actuarial}{1}}$

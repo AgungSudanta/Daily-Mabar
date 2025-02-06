@@ -14,7 +14,7 @@ title: |
 
 [Today's Finan](./topik/todaysfinan/todaysfinan.qmd)
 
-
+[Today's Dickson](./topik/todaysdickson/todaysdickson.qmd)
 
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
