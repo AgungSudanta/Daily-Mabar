@@ -1,0 +1,51 @@
+---
+title: "42.4"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+An investor purchases a $26$-week T-bill with face value of $\$10,000$ and with a discount yield of $d$ for $\$9,600$.
+
+(a) Find $d$.
+
+(b) Even though T-bills are not usually quoted on an annual effective yield basis, the annual effective yield can still be determined. Find the annual effective rate of interest of this investment, assuming the investment period is exactly half a year.
+
+
+
+**Answer**
+
+- $F = 10000$
+
+- $P = 9600$
+
+- $n = 26$ week
+
+Let $d'$ is the weekly effective disount yield rate, thus
+
+\begin{align*}
+P &= F(1-d')^n\\
+
+9600 &=  1000(1-d')^{26}\\
+
+d' &= 0.00156884
+
+\end{align*}
+
+
+We must find the annual effective discount yield rate as $d$, and the annual effective rate of interest as $i$
+
+\begin{align*}
+(1-d')^26 &= (1-d)^{0.5}\\
+d &= 0.0783998
+\end{align*}
+
+
+\begin{align*}
+(1-d')^26 &= (1+i)^{-0.5}\\
+i &=0.0850692
+\end{align*}

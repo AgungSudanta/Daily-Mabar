@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>44.18 – Daily Mabar</title>
+<title>42.4 – Daily Mabar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">44.18</h1>
+<h1 class="title">42.4</h1>
 </div>
 
 
@@ -165,43 +165,34 @@ window.Quarto = {
 </header>
 
 
-<p>Laura buys two bonds at time <span class="math inline">\(0\)</span>.</p>
-<p>Bond <span class="math inline">\(X\)</span> is a <span class="math inline">\(1000\)</span> par value <span class="math inline">\(14\)</span> year bond with <span class="math inline">\(10\%\)</span> annual coupons. It is bought at a price to yield an annual effective rate of <span class="math inline">\(8\%\)</span>.</p>
-<p>Bond <span class="math inline">\(Y\)</span> is a <span class="math inline">\(14\)</span> year par value bond with <span class="math inline">\(6.75\%\)</span> annual coupons and a face amount of <span class="math inline">\(F\)</span>.</p>
-<p>Laura pays <span class="math inline">\(P\)</span> for the bond to yield an annual effective rate of <span class="math inline">\(8\%\)</span>. During year <span class="math inline">\(6\)</span> the writedown in premium (principal adjustment) on bond <span class="math inline">\(X\)</span> is equal to the writeup in discount (principal adjustment) on bond <span class="math inline">\(Y\)</span>. Calculate <span class="math inline">\(P\)</span>.</p>
+<p>An investor purchases a <span class="math inline">\(26\)</span>-week T-bill with face value of <span class="math inline">\(\$10,000\)</span> and with a discount yield of <span class="math inline">\(d\)</span> for <span class="math inline">\(\$9,600\)</span>.</p>
+<ol type="a">
+<li><p>Find <span class="math inline">\(d\)</span>.</p></li>
+<li><p>Even though T-bills are not usually quoted on an annual effective yield basis, the annual effective yield can still be determined. Find the annual effective rate of interest of this investment, assuming the investment period is exactly half a year.</p></li>
+</ol>
 <p><strong>Answer</strong></p>
-<p>Bond <span class="math inline">\(X\)</span></p>
 <ul>
-<li><p><span class="math inline">\(F = 1000\)</span></p></li>
-<li><p><span class="math inline">\(r = 10\%\)</span> p.a.</p></li>
-<li><p><span class="math inline">\(i = 8\%\)</span> p.a.</p></li>
-<li><p><span class="math inline">\(n = 14\)</span> years</p></li>
+<li><p><span class="math inline">\(F = 10000\)</span></p></li>
+<li><p><span class="math inline">\(P = 9600\)</span></p></li>
+<li><p><span class="math inline">\(n = 26\)</span> week</p></li>
 </ul>
-<p>Bond <span class="math inline">\(Y\)</span></p>
-<ul>
-<li><p><span class="math inline">\(r = 6.75\%\)</span> p.a.</p></li>
-<li><p><span class="math inline">\(i = 8\%\)</span> p.a.</p></li>
-<li><p><span class="math inline">\(n = 14\)</span> years</p></li>
-</ul>
-<p>Assume F = C</p>
-<p>Calculating <span class="math inline">\(P_6\)</span> for Bond <span class="math inline">\(X\)</span> <span class="math display">\[\begin{align*}
-P_t &amp;= C\left(\frac{Fr}{C}-i\right)v^{n-t+1} \\
-P_{6(X)} &amp;= 1000\left(\frac{1000 \cdot 10\%}{1000}-8\%\right)(1+8\%)^{-14+6-1}
+<p>Let <span class="math inline">\(d'\)</span> is the weekly effective disount yield rate, thus</p>
+<p><span class="math display">\[\begin{align*}
+P &amp;= F(1-d')^n\\
+
+9600 &amp;=  1000(1-d')^{26}\\
+
+d' &amp;= 0.00156884
+
 \end{align*}\]</span></p>
-<p>Calculating <span class="math inline">\(P_6\)</span> for Bond <span class="math inline">\(Y\)</span> <span class="math display">\[\begin{align*}
-P_t &amp;= C\left(\frac{Fr}{C}-i\right)v^{n-t+1} \\
-P_{6(Y)} &amp;= F\left(\frac{F \cdot 6.75\%}{F}-8\%\right)(1+8\%)^{-14+6-1}
+<p>We must find the annual effective discount yield rate as <span class="math inline">\(d\)</span>, and the annual effective rate of interest as <span class="math inline">\(i\)</span></p>
+<p><span class="math display">\[\begin{align*}
+(1-d')^26 &amp;= (1-d)^{0.5}\\
+d &amp;= 0.0783998
 \end{align*}\]</span></p>
 <p><span class="math display">\[\begin{align*}
-P_{6(X)} &amp; = P_{6(Y)} \\
-1000\left(\frac{1000 \cdot 10\%}{1000}-8\%\right)(1+8\%)^{-14+6-1} &amp; = F\left(\frac{F \cdot 6.75\%}{F}-8\%\right)(1+8\%)^{-14+6-1} \\
-1000\left(10\%-8\%\right) &amp; = F\left(6.75\%-8\%\right) \\
-F = 1600
-\end{align*}\]</span></p>
-<p>Thus,</p>
-<p><span class="math display">\[\begin{align*}
-P &amp;= Fr\left(\frac{1-(1+i)^{-n}}{i}\right) + F(1+i)^{-n} \\
-&amp;= 1435.11
+(1-d')^26 &amp;= (1+i)^{-0.5}\\
+i &amp;=0.0850692
 \end{align*}\]</span></p>
 
 
