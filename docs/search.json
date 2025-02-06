@@ -18,7 +18,7 @@
     "href": "topik/todaysklugman/chapter/chapter10/10.4.html",
     "title": "10.4",
     "section": "",
-    "text": "It appears you don’t have a PDF plugin for this browser. No biggie… you can click here to download the PDF file."
+    "text": "It appears you don’t have a PDF plugin for this browser. No biggie… you can click here to download the PDF file.\n\n\n&lt;embed"
   },
   {
     "objectID": "topik/todaysfinan/todaysfinan.html",
@@ -333,7 +333,7 @@
     "href": "topik/todaysklugman/chapter/chapter10/ch10.html",
     "title": "Chapter 10 Review of Mathematical Statistics",
     "section": "",
-    "text": "10.1"
+    "text": "10.1 10.4"
   },
   {
     "objectID": "topik/todaysklugman/chapter/chapter11/ch11.html",
@@ -390,5 +390,12 @@
     "title": "Kontingensi Jiwa 1",
     "section": "",
     "text": "Notasi:\n\n\\((x)\\) menyatakan seseorang berusia \\(x\\) tahun, \\(x \\geq 0\\)\n\\(T_x\\) menyatakan variabel acak sisa hidup (future lifetime), \\(T_x \\geq 0\\)\nUsia meninggal dari \\((x)\\) adalah \\(x+T_x\\)\n\n\\(a_{\\enclose{actuarial}{1}}\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.7.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.7.html",
+    "title": "42.4",
+    "section": "",
+    "text": "It appears you don’t have a PDF plugin for this browser. No biggie… you can click here to download the PDF file."
   }
 ]
