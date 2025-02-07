@@ -10,7 +10,7 @@ format:
 ---
 
 
-<object data="topik\todaysfinan\chapter\chapter42\pdf42finan\Todays_Finan_42_7.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
+<object data="topik/todaysfinan/chapter/chapter42/pdf42finan/Todays_Finan_42_7.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
     <p>It appears you don't have a PDF plugin for this browser.
-    No biggie... you can <a href="topik\todaysfinan\chapter\chapter42\pdf42finan\Todays_Finan_42_7.pdf">click here to download the PDF file.</a></p>
+    No biggie... you can <a href="topik/todaysfinan/chapter/chapter42/pdf42finan/Todays_Finan_42_7.pdf">click here to download the PDF file.</a></p>
 </object>
