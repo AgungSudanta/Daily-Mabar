@@ -8,3 +8,11 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$, let $f:I \to \mathbb{R}$ be continuous on $I$, and assume that $f(a) < 0$, $f(b) > 0$. Let $W := \{x \in I : f(x) < 0 \}$, and let $w := \sup W$. Prove that $f(w) = 0$
+
+Answer
+
+It will be shown that $f(w) = 0$ by contradiction
+
+By supremum definition, we have $x \leq w \; \forall x \in W$. Because $f$ is continuous, then $f(w) = \displaystyle{\lim_{x \to w^-}} \; f(x)$ and by limit property $\displaystyle{\lim_{x \to w^-}} \; f(x) \leq 0$ because $f(x) < 0$ which means $f(w) \leq 0$. Notice that if $f(w) \neq 0$, then $w \in W$ which implies $\exists \delta \neq 0 \ni f(w) < f(w+\delta) < 0$ (Density Theorem). Thus $w \neq \sup W$ which is a contradiction. Therefore $f(w)$ must equal to 0

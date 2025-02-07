@@ -28,7 +28,7 @@ Induction step :
 
 Assume for $n = k$, $p_k = \inf I_k + \frac{1}{2^k}$ is true
 
-It will be shown that for $n = k+1$ then $p_{k+1} = \frac{1}{2^{k+1}}$
+It will be shown that for $n = k+1$ then $p_{k+1} = \inf I_k + \frac{1}{2^{k+1}}$
 
 From definition, we have $p_{k+1} = \frac{\sup I_{k+1} + \inf I_{k+1}}{2}$. Without Loss of Generality, assume $I_{k+1} = [p_k, \; c]$ where $c = \sup I_k$. It can be shown that $p_k = \inf I_{k+1}$ and $c = \sup I_{k+1}$, thus $p_{k+1} = \frac{c + p_k}{2}$. From our ossumption we have $$p_{k+1} = \frac{c + \inf I_k + 1/2^k}{2} = \frac{c + \inf I_k}{2} + \frac{1}{2^{k+1}} = p_k + \frac{1}{2^{k+1}} = \inf I_k + \frac{1}{2^{k+1}}$$
 
