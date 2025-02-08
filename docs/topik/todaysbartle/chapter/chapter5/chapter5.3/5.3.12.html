@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(I := [0, \frac{\pi}{2}]\)</span> and let <span class="math inline">\(f : I \to \mathbb{R}\)</span> be defined by <span class="math inline">\(f(x) := \sup\{x^2, \cos x\}\)</span> for <span class="math inline">\(x \in I\)</span>. Show there exists an absolute minimum point <span class="math inline">\(x_0 \in I\)</span> for <span class="math inline">\(f\)</span> on <span class="math inline">\(I\)</span>. Show that <span class="math inline">\(x_0\)</span> is a solution to the equation <span class="math inline">\(\cos x = x^2\)</span></p>
+<p>Answer</p>
+<p>It will be shown that <span class="math inline">\(\exists x_0 \in I \ni f(x_0) \leq f(x) \; \forall x \in I\)</span>, and then show that <span class="math inline">\(\cos x_0 = x_0^2\)</span></p>
+<p>Let <span class="math inline">\(g:I \to \mathbb{R}\)</span> and <span class="math inline">\(h : I \to \mathbb{R}\)</span> be defined by <span class="math inline">\(g(x) := x^2\)</span> and <span class="math inline">\(h(x) := \cos x\)</span> which can be proven continuous on <span class="math inline">\(I\)</span>. Now let <span class="math inline">\(k(x) := g(x) - h(x)\)</span> which also continuous on <span class="math inline">\(I\)</span>, notice that <span class="math inline">\(k(0) = 0 - 1 &lt; 0\)</span> and <span class="math inline">\(k(\frac{\pi}{2}) &gt; 0\)</span> because <span class="math inline">\(\cos x \leq x^2 \; \forall x \geq 1\)</span>. Therefore by Location of Roots Theorem <span class="math inline">\(\exists x_1 \in I \ni g(x_1) = h(x_1)\)</span>. This implies that <span class="math inline">\(\exists x_1 \in I \ni x^2 &lt; \cos x \; \forall x &lt; x_1\)</span> because <span class="math inline">\(x_1\)</span> is the only root for <span class="math inline">\(k\)</span> on <span class="math inline">\(I\)</span>.</p>
+<p>Thus we can define <span class="math inline">\(f\)</span> as <span class="math display">\[f(x) = \begin{cases}
+    \cos x &amp; 0 \leq x &lt; x_1 \\
+    x^2 &amp; x_1 \leq x \leq \frac{\pi}{2}
+\end{cases}\]</span></p>
+<p>This implies that <span class="math inline">\(f\)</span> continuous, thus there must be absolute minimum point <span class="math inline">\(x_0\)</span> for <span class="math inline">\(f\)</span> on <span class="math inline">\(I\)</span>.</p>
+<p>Thus <span class="math inline">\(g\)</span> have absolute minimum point <span class="math inline">\(x_0\)</span> on <span class="math inline">\([0, x_1)\)</span> say <span class="math inline">\(c_1\)</span>, and <span class="math inline">\(h\)</span> have absolute minimum point <span class="math inline">\(x_0\)</span> on <span class="math inline">\([x_1, \frac{\pi}{2}]\)</span> say <span class="math inline">\(c_2\)</span>, which can be proven that <span class="math inline">\(c_1 = c_2\)</span>. Therefore <span class="math inline">\(c_1 = \cos x_0 = x_0^2 = c_2\)</span></p>
 
 
 
