@@ -8,3 +8,39 @@ format:
         css: styles.css
         toc: true
 ---
+
+Suppose that $f : \mathbb{R} \to \mathbb{R}$ is continuous on $\mathbb{R}$ and that $\displaystyle{\lim_{x \to -\infty}} \; f = 0$ and $\displaystyle{\lim_{x\to \infty}} \; f = 0$. Prove that $f$ is bounded on $\mathbb{R}$ and attains either a maximum or minimum on $\mathbb{R}$. Give an example to show that both a maximum and a minimum need not be attained.
+
+Answer
+
+It will be shown that $f$ is bounded on $\mathbb{R}$, then show that $f$ attains either a maximum or minimum
+
+Let $a_1, a_2\in \mathbb{R}$ where $a_1 < a_2$. By limit definition, we have 
+
+\begin{equation}
+    \forall \epsilon_1 > 0 \; \exists K(\epsilon_1) < a_1 \ni \forall x_1 < K(\epsilon_1) \implies |f(x_1)| < \epsilon_1
+\end{equation}
+
+\begin{center}
+    and
+\end{center}
+
+\begin{equation}
+    \forall \epsilon_2 > 0 \; \exists K(\epsilon_2) > a_2 \ni \forall x_2 > K(\epsilon_2) \implies |f(x_2)| < \epsilon_2
+\end{equation}
+
+Let $I := [a_1, a_2]$. Because $I \subset \mathbb{R}$ and $f$ continuous on $\mathbb{R}$ then $\exists c_1 \in I \ni f(x) \geq f(c_1) \; \forall x \in I$ and $\exists c_2 \in I \ni f(x) \leq f(c_2) \; \forall x \in I$. Thus $$f(c_1) \leq f(x) \leq f(c_2)$$
+Choose $M_0 = \max\{|f(c_1)|, |f(c_2)|\}$, thus 
+\begin{equation}
+    |f(x)| \leq M_0 \; \forall x \in I
+\end{equation}
+
+From the 3 equation, we can now choose $M = \max \{|f(c_1)|, |f(c_2)|, \epsilon_1, \epsilon_2\}$ which result in $$|f(x)| \leq M \; \forall x \in \mathbb{R}$$
+
+Therefore by definition $f$ is bounded on $\mathbb{R}$
+
+Because $c_1$ and $c_2$ is absolute minimum and absolute maximum on $I$ respecively, then $f$ must have either one of them because $\displaystyle{\lim_{x \to -\infty}} \; f = 0$ and $\displaystyle{\lim_{x\to \infty}} \; f = 0$.
+
+Example that $f$ only has absolute maximum 
+
+Let $f(x) = \frac{x^2 + 1}{x^4 + 1}$. It can be shown that $\sup f(\mathbb{R}) = \frac{1 + \sqrt{2}}{2} = f(\frac{1}{\sqrt{1 + \sqrt{2}}})$ while $\inf f(\mathbb{R}) = 0$ and $\nexists x \in \mathbb{R} \ni f(x) = 0$
