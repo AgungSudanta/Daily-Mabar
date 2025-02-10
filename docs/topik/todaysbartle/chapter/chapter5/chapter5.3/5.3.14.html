@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(f: \mathbb{R} \to \mathbb{R}\)</span> be continuous on <span class="math inline">\(\mathbb{R}\)</span> and let <span class="math inline">\(\beta \in \mathbb{R}\)</span>. Show that if <span class="math inline">\(x_0 \in \mathbb{R}\)</span> is such that <span class="math inline">\(f(x_0) &lt; \beta\)</span>, then there exists a <span class="math inline">\(\delta\)</span>-neighborhood <span class="math inline">\(U\)</span> of <span class="math inline">\(x_0\)</span> such that <span class="math inline">\(f(x) &lt; \beta\)</span> for all <span class="math inline">\(x \in U\)</span></p>
+<p>Answer</p>
+<p>It will be shown that if <span class="math inline">\(x_0 \in \mathbb{R}\)</span> is such that <span class="math inline">\(f(x_0) &lt; \beta\)</span>, then there exists a <span class="math inline">\(\delta\)</span>-neighborhood <span class="math inline">\(U\)</span> of <span class="math inline">\(x_0\)</span> such that <span class="math inline">\(f(x) &lt; \beta\)</span> for all <span class="math inline">\(x \in U\)</span></p>
+<p>Because <span class="math inline">\(f\)</span> continuous on <span class="math inline">\(\mathbb{R}\)</span>, then by definition <span class="math display">\[\forall \epsilon &gt; 0 \; \exists \delta &gt; 0 \ni \text{ if } |x - x_0| &lt; \delta \implies |f(x) - f(x_0)| &lt; \epsilon\]</span> Thus we also have</p>
+<p><span class="math display">\[\begin{align*}
+    &amp; |f(x) - f(x_0)| &lt; \epsilon \\
+    -\epsilon &lt; &amp; f(x) - f(x_0) &lt; \epsilon \\
+    f(x_0) - \epsilon &lt;  &amp; f(x) &lt; \epsilon + f(x_0) \\
+\end{align*}\]</span></p>
+<p>Because <span class="math inline">\(f(x_0) &lt; \beta\)</span>, then <span class="math inline">\(b - f(x_0) &gt; 0\)</span>. Thus if we choose <span class="math inline">\(\epsilon = b - f(x_0)\)</span> we have <span class="math display">\[f(x) &lt; \epsilon + f(x_0) = \beta - f(x_0) + f(x_0) = \beta\]</span></p>
+<p>We also have <span class="math inline">\(\delta &gt; 0\)</span> that satisfies the condition from continuous definition, thus we can define <span class="math inline">\(\delta\)</span>-neighborhood as <span class="math inline">\(U_\delta(x_0) := \{x \in \mathbb{R} : |x - x_0| &lt; \delta\}\)</span></p>
+<p><span class="math inline">\(\therefore \; \exists \delta &gt; 0 \ni U_\delta(x_0) := \{x \in \mathbb{R} : |x - x_0| &lt; \delta \}\)</span> must exist, and satisfy <span class="math inline">\(f(x) &lt; \epsilon + f(x_0) = \beta - f(x_0) + f(x_0) = \beta\)</span></p>
 
 
 

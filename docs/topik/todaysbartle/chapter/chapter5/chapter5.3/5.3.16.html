@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Examine the mapping of open [respectively, closed] intervals under the functions <span class="math inline">\(g(x) := \frac{1}{x^2 + 1}\)</span> and <span class="math inline">\(h(x) := x^3\)</span> for <span class="math inline">\(x \in \mathbb{R}\)</span></p>
+<p>Answer</p>
+<p>Firstly we will search the mapping for <span class="math inline">\(g\)</span>. We consider 3 cases for <span class="math inline">\(a,b \in \mathbb{R}\)</span></p>
+<ol type="1">
+<li><p><span class="math inline">\(a &lt; 0 &lt; b\)</span></p>
+<p>Then an open interval <span class="math inline">\((a,b)\)</span> will be mapped into <span class="math inline">\((c, 1]\)</span> where <span class="math inline">\(c:=\inf\{ \frac{1}{a^2 + 1}, \frac{1}{b^2 + 1} \}\)</span>, and for closed interval <span class="math inline">\([a,b]\)</span> will be mapped into <span class="math inline">\([c, 1]\)</span></p></li>
+<li><p><span class="math inline">\(a &lt; b &lt; 0\)</span> and $ 0 &lt; a &lt; b$</p>
+<p>Then an open interval <span class="math inline">\((a,b)\)</span> will be mapped into <span class="math inline">\((\frac{1}{b^2 + 1}, \frac{1}{a^2 + 1})\)</span>, and for closed interval <span class="math inline">\([a,b]\)</span> will be mapped into <span class="math inline">\([\frac{1}{b^2 + 1}, \frac{1}{a^2 + 1}]\)</span></p></li>
+<li><p><span class="math inline">\(a = -1, \; b = 1\)</span></p>
+<p>Then an open interval <span class="math inline">\((-1, 1)\)</span> will be mapped into <span class="math inline">\((\frac{1}{2}, 1)\)</span>, and for closed interval <span class="math inline">\([-1, 1]\)</span> will be mapped into <span class="math inline">\([\frac{1}{2}, 1]\)</span></p></li>
+</ol>
+<p>For an unbounded open interval, then the map of <span class="math inline">\(g\)</span> will become <span class="math inline">\((0, \alpha)\)</span> or <span class="math inline">\(0, \alpha]\)</span> where <span class="math inline">\(\alpha\)</span> can be found using the first 2 cases</p>
+<p>Now for <span class="math inline">\(h\)</span>, there’s only 1 case for <span class="math inline">\(c,d \in \mathbb{R}\)</span> which is <span class="math inline">\(a &lt; b\)</span>.</p>
+<p>An open interval <span class="math inline">\((c,d)\)</span> will be mapped into <span class="math inline">\((c^3, d^3)\)</span>, and for closed interval <span class="math inline">\([c,d]\)</span> will be mapped into <span class="math inline">\([c^3, d^3]\)</span>. If the interval does not have lower bound (respectively for upper bound), then the mapping interval also doesn’t have lower bound (respectively for upper bound)</p>
 
 
 

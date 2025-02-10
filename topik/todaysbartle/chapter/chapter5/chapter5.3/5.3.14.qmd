@@ -8,3 +8,24 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $f: \mathbb{R} \to \mathbb{R}$ be continuous on $\mathbb{R}$ and let $\beta \in \mathbb{R}$. Show that if $x_0 \in \mathbb{R}$ is such that $f(x_0) < \beta$, then there exists a $\delta$-neighborhood $U$ of $x_0$ such that $f(x) < \beta$ for all $x \in U$
+
+Answer
+
+It will be shown that if $x_0 \in \mathbb{R}$ is such that $f(x_0) < \beta$, then there exists a $\delta$-neighborhood $U$ of $x_0$ such that $f(x) < \beta$ for all $x \in U$
+
+Because $f$ continuous on $\mathbb{R}$, then by definition $$\forall \epsilon > 0 \; \exists \delta > 0 \ni \text{ if } |x - x_0| < \delta \implies |f(x) - f(x_0)| < \epsilon$$
+Thus we also have
+
+\begin{align*}
+    & |f(x) - f(x_0)| < \epsilon \\
+    -\epsilon < & f(x) - f(x_0) < \epsilon \\
+    f(x_0) - \epsilon <  & f(x) < \epsilon + f(x_0) \\
+\end{align*}
+
+Because $f(x_0) < \beta$, then $b - f(x_0) > 0$. Thus if we choose $\epsilon = b - f(x_0)$ we have $$f(x) < \epsilon + f(x_0) = \beta - f(x_0) + f(x_0) = \beta$$
+
+We also have $\delta > 0$ that satisfies the condition from continuous definition, thus we can define $\delta$-neighborhood as $U_\delta(x_0) := \{x \in \mathbb{R} : |x - x_0| < \delta\}$
+
+$\therefore \; \exists \delta > 0 \ni U_\delta(x_0) := \{x \in \mathbb{R} : |x - x_0| < \delta \}$ must exist, and satisfy $f(x) < \epsilon + f(x_0) = \beta - f(x_0) + f(x_0) = \beta$

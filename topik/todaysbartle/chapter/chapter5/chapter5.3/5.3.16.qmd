@@ -8,3 +8,27 @@ format:
         css: styles.css
         toc: true
 ---
+
+Examine the mapping of open [respectively, closed] intervals under the functions $g(x) := \frac{1}{x^2 + 1}$ and $h(x) := x^3$ for $x \in \mathbb{R}$
+
+Answer
+
+Firstly we will search the mapping for $g$. We consider 3 cases for $a,b \in \mathbb{R}$
+
+1. $a < 0 < b$
+
+    Then an open interval $(a,b)$ will be mapped into $(c, 1]$ where $c:=\inf\{ \frac{1}{a^2 + 1}, \frac{1}{b^2 + 1} \}$, and for closed interval $[a,b]$ will be mapped into $[c, 1]$
+
+2. $a < b < 0$ and $ 0 < a < b$
+
+    Then an open interval $(a,b)$ will be mapped into $(\frac{1}{b^2 + 1}, \frac{1}{a^2 + 1})$, and for closed interval $[a,b]$ will be mapped into $[\frac{1}{b^2 + 1}, \frac{1}{a^2 + 1}]$
+
+3. $a = -1, \; b = 1$
+
+    Then an open interval $(-1, 1)$ will be mapped into $(\frac{1}{2}, 1)$, and for closed interval $[-1, 1]$ will be mapped into $[\frac{1}{2}, 1]$
+
+For an unbounded open interval, then the map of $g$ will become $(0, \alpha)$ or $0, \alpha]$ where $\alpha$ can be found using the first 2 cases
+
+Now for $h$, there's only 1 case for $c,d \in \mathbb{R}$ which is $a < b$.
+
+An open interval $(c,d)$ will be mapped into $(c^3, d^3)$, and for closed interval $[c,d]$ will be mapped into $[c^3, d^3]$. If the interval does not have lower bound (respectively for upper bound), then the mapping interval also doesn't have lower bound (respectively for upper bound)

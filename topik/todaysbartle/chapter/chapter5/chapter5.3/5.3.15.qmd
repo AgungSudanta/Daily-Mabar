@@ -8,3 +8,23 @@ format:
         css: styles.css
         toc: true
 ---
+
+Examine which open [respectively, closed] intervals are mapped by $f(x) := x^2$ for $x\in \mathbb{R}$ onto open [respectively, closed] intervals
+
+Answer
+
+We consider 3 cases for $a,b \in \mathbb{R}$
+
+1. $0 < a < b$
+
+    Then an open interval $(a,b)$ will be mapped into $(a^2, b^2)$, and for closed interval $[a,b]$ will be mapped into $[a^2, b^2]$
+
+2. $a < b < 0$
+
+    Then an open interval $(a,b)$ will be mapped into $(b^2, a^2)$, and for closed interval $[a,b]$ will be mapped into $[b^2, a^2]$
+
+3. $a < 0 < b$
+
+    Then an open interval $(a,b)$ will be mapped into $[0, c)$ where $c = \max\{ a^2, b^2\}$, and for closed interval $[a,b]$ will be mapped into $[0, c]$
+
+For an unbounded interval such as $(-\infty, a)$, $(a, \infty)$, the mapping will be similar with above cases except there won't be an upper bound for the mapping intervals
