@@ -8,3 +8,21 @@ format:
         css: styles.css
         toc: true
 ---
+
+If $f : [0,1] \to \mathbb{R}$ is continuous and has only rational [respectively, irrational] values, must $f$ be constant? Prove your assertion
+
+Answer
+
+It will be shown that if $f : [0,1] \to \mathbb{R}$ is continuous and has only rational [respectively, irrational] values, must $f$ be constant by contradiction
+
+Assume that $f : [0,1] \to \mathbb{R}$ is continuous and has only rational [respectively, irrational] values, and $f$ does not necessarily constant
+
+if $f$ constant, then it trivially follows that $f : [0,1] \to \mathbb{R}$ is continuous and has only rational [respectively, irrational] values
+
+If $f$ is not a constant function, then if we let $I := [0,1]$, and choose $a,b \in I \ni f(a) < f(b)$. We know that $f$ has only rational [respectively, irrational], thus $f(a),f(b) \in \mathbb{Q}$ [respectively, $f(a),f(b) \in \mathbb{Q}^c$]. By Density Theorem, there must be $k \in \mathbb{Q}^c$ [respectively, $k \in \mathbb{Q}$] between $f(a)$ and $f(b)$
+
+By Intermediate Value Theorem, then it must follow that $\exists c \in (a,b)$ such that $f(c) = k$. But we know that $\forall x \in I, \; f(x) \in \mathbb{Q}$ [respectively, $\forall x \in I, \; f(x) \in \mathbb{Q}^c$], which implies that $f(c) = k$ does not exists
+
+This contradicts our assumption that $f$ does not necessarily a constant
+
+$\Therefore$ $f$ must be constant

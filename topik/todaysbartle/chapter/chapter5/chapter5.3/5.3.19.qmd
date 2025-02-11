@@ -8,3 +8,11 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $J := (a,b)$ and let $g : J \to \mathbb{R}$ be a continuous function with the property that for every $x \in J$, the function $g$ is bounded on neighborhood $V_{\delta_x}(x)$ of $x$. Show by example that $g$ is not necessarily bounded on $J$
+
+Answer
+
+Let $g(y) := \frac{1}{y}$. It can be proven that $g$ is continuous on $J$, thus by definition $$\forall \epsilon > 0 \; \exists \delta_x > 0 \ni \forall y \in J, |y - x| < \delta_x \implies |\frac{1}{y} - \frac{1}{x}| < \epsilon$$
+
+This means that $\exists V_{\delta_x}(x) := \{y \in J : |y - x| < \delta_x \}$ such that $g$ is bounded on neighborhood. Now notice that $\displaystyle{\lim_{y \to 0^+}} \; g(y) = \infty$ or by definition $f(x) > \alpha \; \forall \alpha \in \mathbb{R}$ or implies that $g$ is unbounded

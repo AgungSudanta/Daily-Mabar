@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>If <span class="math inline">\(f : [0,1] \to \mathbb{R}\)</span> is continuous and has only rational [respectively, irrational] values, must <span class="math inline">\(f\)</span> be constant? Prove your assertion</p>
+<p>Answer</p>
+<p>It will be shown that if <span class="math inline">\(f : [0,1] \to \mathbb{R}\)</span> is continuous and has only rational [respectively, irrational] values, must <span class="math inline">\(f\)</span> be constant by contradiction</p>
+<p>Assume that <span class="math inline">\(f : [0,1] \to \mathbb{R}\)</span> is continuous and has only rational [respectively, irrational] values, and <span class="math inline">\(f\)</span> does not necessarily constant</p>
+<p>if <span class="math inline">\(f\)</span> constant, then it trivially follows that <span class="math inline">\(f : [0,1] \to \mathbb{R}\)</span> is continuous and has only rational [respectively, irrational] values</p>
+<p>If <span class="math inline">\(f\)</span> is not a constant function, then if we let <span class="math inline">\(I := [0,1]\)</span>, and choose <span class="math inline">\(a,b \in I \ni f(a) &lt; f(b)\)</span>. We know that <span class="math inline">\(f\)</span> has only rational [respectively, irrational], thus <span class="math inline">\(f(a),f(b) \in \mathbb{Q}\)</span> [respectively, <span class="math inline">\(f(a),f(b) \in \mathbb{Q}^c\)</span>]. By Density Theorem, there must be <span class="math inline">\(k \in \mathbb{Q}^c\)</span> [respectively, <span class="math inline">\(k \in \mathbb{Q}\)</span>] between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span></p>
+<p>By Intermediate Value Theorem, then it must follow that <span class="math inline">\(\exists c \in (a,b)\)</span> such that <span class="math inline">\(f(c) = k\)</span>. But we know that <span class="math inline">\(\forall x \in I, \; f(x) \in \mathbb{Q}\)</span> [respectively, <span class="math inline">\(\forall x \in I, \; f(x) \in \mathbb{Q}^c\)</span>], which implies that <span class="math inline">\(f(c) = k\)</span> does not exists</p>
+<p>This contradicts our assumption that <span class="math inline">\(f\)</span> does not necessarily a constant</p>
+<p><span class="math inline">\(\Therefore\)</span> <span class="math inline">\(f\)</span> must be constant</p>
 
 
 

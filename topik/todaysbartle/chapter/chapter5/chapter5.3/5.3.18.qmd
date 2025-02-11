@@ -8,3 +8,22 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$ and let $f: I \to \mathbb{R}$ be a (not necessarily continuous) function with the property that for every $x \in I$, the function $f$ is bounded on a neighborhood $V_{\delta_x}(x)$ of $x$. Prove that $f$ is bounded on $I$
+
+Answer
+
+If $f$ is continuous on $I$, then by Boundedness Theorem $f$ must be bounded
+
+If $f$ is not continuous, It will be shown that if $f$ have property that $\forall x \in I$, $f$ is bounded on $V_{\delta_x}(x)$ of $x$, then $f$ is bounded on $I$ by contradiction
+
+Assume $f$ have property that $\forall x \in I$, $f$ is bounded on $V_{\delta_x}(x)$ of $x$, and $f$ is not bounded on $I$
+
+Let $M$ be arbitrary positive value, Let $(x_n)$ be a sequence in $I$ that will result in $f$ not bounded. Then by definition $$|f(x_n)| > M \; \forall n \in \mathbb{N}$$
+
+Because $(x_n)$ in $I$, then there exists a subsequence $(x_{n_k})$ of $(x_n)$ that converge, say $x_0$ which is in $I$. Let $K >0$, from our function property it follows that $$|f(y)| \leq K \; \forall y \in I \cap V_{\delta_{x_0}}(x_0)$$
+Because $x_n \to x_0$, it follows that $x_n \in V_{\delta_{x_0}}(x_0)$ for $n \geq K(\epsilon)$ where $K(\epsilon)$ a natural number
+
+This contradicts from the first inequality, thus our assumption does not true. 
+
+$\Therefore$ $f$ is bounded on $I$
