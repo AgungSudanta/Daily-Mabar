@@ -8,3 +8,24 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the function $f(x) := \frac{1}{1+x^2}$ for $x \in \mathbb{R}$ is uniformly continuous on $\mathbb{R}$
+
+Answer
+
+It will be shown that $f$ uniformly continuous on $\mathbb{R}$
+
+Let $x,c \in \mathbb{R}$ be arbitrary
+
+Notice the following
+\begin{align*}
+    |f(x) - f(c)| & = |\frac{1}{1+x^2} - \frac{1}{1+c^2}| \\
+    & = |\frac{(1+c^2) - (1+x^2)}{(1+x^2)(1+c^2)}| \\
+    & = \frac{|x^2 - c^2|}{|(1+x^2)(1+c^2)|} \\
+    & = \frac{|(x+c)(x-c)|}{(1+x^2)(1+c^2)} \\
+    & = \frac{|x+c||x-c|}{(1+x^2)(1+c^2)}
+\end{align*}
+
+Because $|x+c| \geq 0$ and $(1+x^2)(1+c^2) > 0$, then $\frac{|x+c|}{(1+x^2)(1+c^2)} > 0$. Thus if we choose $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$, $f$ satisfy a Lipschitz Condition on $\mathbb{R}$ because $\exists K > 0$ where $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$ such that $|f(x) - f(c)| \leq K|x-c|$ for all $x,c \in \mathbb{R}$. Therefore by theorem $f$ is uniformly continuous on $\mathbb{R}$
+
+$\therefore f$ is uniformly continuous on $\mathbb{R}$ because $\exists K > 0$ where $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$ such that $|f(x) - f(c)| \leq K|x-c|$ for all $x,c \in \mathbb{R}$ which satisfy Lipschitz condition on $\mathbb{R}$ 

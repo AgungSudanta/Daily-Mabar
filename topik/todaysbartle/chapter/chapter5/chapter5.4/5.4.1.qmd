@@ -8,3 +8,26 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the function $f(x) := \frac{1}{x}$ is uniformly continuous on the set $A:=[a, \infty)$, where $a$ is a positive constant
+
+Answer
+
+Let $c \in A$ and $\epsilon > 0$ 
+
+It will be shown that there exists $\delta > 0$ where $\delta$ does not depends on $c$, such that $\forall x \in A, \; |x - c| < \delta \implies |f(x) - f(c)| < \epsilon$
+
+Notice the following
+\begin{align*}
+    |f(x) - f(c)| & = |\frac{1}{x} - \frac{1}{c}| \\
+    & = |\frac{c - x}{xc}| \\
+    & = |\frac{x - c}{xc}| \\
+    & = \frac{|x - c|}{|x||c|}
+\end{align*}
+
+Because $x,c \in A$ then $x \geq a > 0$ and $c \geq a > 0$ which result in 
+$$|f(x) - f(c)| = \frac{|x-c|}{xc} \leq \frac{|x-c|}{a^2}$$
+
+Thus if $|x-c| < \delta$, it follows that if we choose $\delta = a^2\epsilon$ then $$|f(x) - f(c)| < \frac{\delta}{a^2} = \frac{a^2\epsilon}{a^2} = \epsilon$$
+
+Therefore $f(x) = \frac{1}{x}$ is uniformly continuous on $A$ by definition

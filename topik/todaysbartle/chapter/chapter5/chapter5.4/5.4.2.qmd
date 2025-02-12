@@ -8,3 +8,39 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that the function $f(x) := \frac{1}{x^2}$ is uniformly continuous on the set $A:=[1, \infty)$, but that it is not uniformly continuous on $B:= (0, \infty)$
+
+Answer
+
+It will be shown that $f$ is uniformly continuous on $A$ but does not uniformly continuous on $B$
+
+Let $c > 0$ and $\epsilon > 0$. We will search for $\delta > 0$ such that if $|x - c| < \delta$ for all $x$ in domain, then $|f(x) - f(c)| < \delta$
+
+Notice the following 
+\begin{align*}
+    |f(x) - f(c)| & = |\frac{1}{x^2} - \frac{1}{c^2}| \\
+    & = |\frac{x^2 - c^2}{x^2c^2}| \\
+    & = \frac{|x^2 - c^2|}{|x^2c^2|} \\
+    & = \frac{|(x-c)(x+c)|}{(xc)^2} \\
+    & = \frac{|x-c||x+c|}{(xc)^2}
+\end{align*}
+
+- If we choose $x,c \in A$, then it follows that $$|f(x) - f(c)| \leq |x-c|\frac{|x+c|}{c^2}$$
+Choose $\delta_1 = 1$, then $||x| - |c|| \leq |x-c| < 1$ or $|x| < 1 + |c|$. Because $x,c \in A$, it follows that $|x+c| = x+c$, $|x| = x$, and $|c| = c$ thus $$|f(x) - f(c)| < |x-c|\frac{2c + 1}{c^2} = |x-c|(\frac{2}{c} + \frac{1}{c^2}) \leq |x-c|(2 + 1) = 3|x-c|$$
+Now we choose $\delta_2 = \frac{\epsilon}{3}$ such that $|x-c| < \delta$, thus $$|f(x) - f(c)| < 3\frac{\epsilon}{3} = \epsilon$$
+
+    Therefore if we choose $\delta = \min(1, \frac{\epsilon}{3})$ will result in $|f(x) - f(c)| < \epsilon$ which by definition $f$ uniformly continuous
+
+- If we choose $x,c \in (0,1)$, then it follows that $$|f(x) - f(c)| \leq |x-c|\frac{2}{(xc)^2}$$
+
+    Choose $\delta_1 = \frac{1}{2}c$, thus
+\begin{align*}
+    -\frac{1}{2}c < x - c < \frac{1}{2}c \\
+    \frac{1}{2}c < x < \frac{3}{2}c
+\end{align*}
+    From this, we can rewrite the inequality into $$|f(x) - f(c)| \leq |x-c|\frac{1}{x^2}\frac{2}{c^2} < |x-c|\frac{4}{c^2}\frac{2}{c^2} = |x-c|\frac{8}{c^2} < \frac{8\delta_2}{c^2}$$
+
+    Choose $\delta_2 = \frac{c^2\epsilon}{8}$, thus $$|f(x) - f(c)| < \frac{8}{c^2}\frac{c^2\epsilon}{8} = \epsilon$$
+
+    Therefore if we choose $\delta = \min(\frac{1}{2}c, \frac{c^2\epsilon}{8})$ then it will assure that if $|x-c| < \delta$ then $|f(x) - f(c)| < \epsilon$, but $\delta$ depends on $c$ thus by definition $f$ does not uniformly continuous on $(0,1)$ which also implies $f$ does not uniformly continuous on $B$
