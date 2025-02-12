@@ -11,7 +11,7 @@ format:
 
 ---
 
-<object data="topik/todaysklugman/chapter/chapter10/KoleksiPDFLatex-Chapter10/Todays_Klugman-10.4.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
+<object data="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysklugman/chapter/chapter10/KoleksiPDFLatex-Chapter10/Todays_Klugman-10.4.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
     <p>It appears you don't have a PDF plugin for this browser.
     No biggie... you can <a href="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysklugman/chapter/chapter10/KoleksiPDFLatex-Chapter10/Todays_Klugman-10.4.pdf">click here to download the PDF file.</a></p>
 </object>
