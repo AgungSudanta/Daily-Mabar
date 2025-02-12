@@ -165,7 +165,7 @@ window.Quarto = {
 </header>
 
 
-<p>Solve the pure initial value problem <span class="math display">\[u_t + u_x - 3u = t, \; x \in \mathbb{R}, \; t &gt; 0\]</span> <span class="math display">\[u(x,0) = x^2, \; x \in \mathbb{R}\]</span> \</p>
+<p>Solve the pure initial value problem <span class="math display">\[u_t + u_x - 3u = t, \; x \in \mathbb{R}, \; t &gt; 0\]</span> <span class="math display">\[u(x,0) = x^2, \; x \in \mathbb{R}\]</span></p>
 <p>Answer</p>
 <p>Let <span class="math inline">\(\xi = x - t\)</span>, <span class="math inline">\(\tau = t\)</span>, and <span class="math inline">\(U(\xi, \tau) = u(x,t)\)</span> . By chain rule we have <span class="math display">\[u_x = U_\xi \xi_x + U_\tau \tau_x =   U_\xi\]</span> <span class="math display">\[u_t = U_\xi \xi_t + U_\tau \tau_t = U_\tau - U_\xi\]</span> Substituting all the changes to the original PDE, we have <span class="math display">\[U_\tau - 3U = \tau\]</span> Integrating factor of above ODE is given by <span class="math display">\[e^{\int -3 \;d\tau} = e^{-3\tau}\]</span> Thus by multiplying the ODE with integrating factor we got <span class="math display">\[\begin{align*}
     e^{-3\tau}U_\tau - 3e^{-3\tau}U &amp; = e^{-3\tau}\tau \\
