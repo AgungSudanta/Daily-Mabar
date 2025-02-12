@@ -1,0 +1,22 @@
+---
+title: "1.1.10"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+Show that the function $u(x, y) = \arctan(\frac{y}{x})$ satisfies the two-dimensional Laplace’s equation $u_{xx} + u_{yy} = 0$ \\
+
+Answer
+
+By taking partial derivative, we have $$u_x = \frac{1}{1 + (y/x)^2}\cdot(-\frac{y}{x^2}) = -\frac{y}{x^2 + y^2}$$
+$$u_y = \frac{1}{1 + (y/x)^2} \cdot \frac{1}{x} = \frac{x}{x^2 + y^2}$$
+$$u_{xx} = \frac{2xy}{(x^2 + y^2)^2}$$
+$$u_{yy} = \frac{-2xy}{(x^2 + y^2)^2}$$
+Substituting to the Laplace's equation will result in $\frac{2xy}{(x^2 + y^2)^2} - \frac{2xy}{(x^2 + y^2)^2} = 0$
+
+$\therefore u(x,y) = \arctan(\frac{y}{x})$ satisfies $u_{xx} + u_{yy} = 0$

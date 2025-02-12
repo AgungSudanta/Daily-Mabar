@@ -1,0 +1,18 @@
+---
+title: "1.1.7"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+For what values of a and b is the function $u(x, t) = e^{at}\sin bx$ a solution to the heat equation $$u_t = ku_{xx}$$
+
+Answer
+
+Differentiating $u(x, t) = e^{at}\sin bx$ respect to $t$ and $x$ will result in $$u_t = ae^{at}\sin bx$$ $$u_{xx} = -b^2e^{at}\sin bx$$
+Substituting into the heat equation will result in $$ae^{at}\sin bx = -kb^2e^{at}\sin bx$$
+Thus any arbitrary $a,b\in\mathbb{R}$ with $a = -kb^2, \; k \in \mathbb{R}$ is a valid value so that $u(x, t) = e^{at}\sin bx$ a solution to the heat equation

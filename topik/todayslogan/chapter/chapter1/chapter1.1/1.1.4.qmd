@@ -1,0 +1,18 @@
+---
+title: "1.1.4"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+Derive the solution $u(x,y) = axy + bx + cy + d$ of the PDE $$u_{xx}^2 + u_{yy}^2 = 0$$
+
+Answer
+
+Notice that $x^2 \geq 0 \; \forall x \in \mathbb{R}$, thus the PDE can be separated into $$u_{xx}^2 = 0 \quad \land \quad u_{yy}^2 = 0$$
+
+For $u_{xx}^2 = 0$, then $u(x,x)$ must contain degree 1 or 0 of x because $\frac{d^2}{dx^2} ax = 0$ where $a$ a constant. Similarly for $u_{yy}^2 = 0$, it only contain degree 1 or 0 of y. Therefore by combining the two condition, the only solution for both $u_{yy}^2 = 0$ and $u_{xx}^2 = 0$ is in the form of $u(x,y) = axy + bx + cy + d$ where $a,b,c,d \in \mathbb{R}$

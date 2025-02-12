@@ -1,0 +1,12 @@
+---
+title: "1.5 Vibrations and Acoustics"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+[1.5.5](./1.5.5.qmd)

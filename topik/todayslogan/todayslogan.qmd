@@ -1,0 +1,24 @@
+---
+title: "Today's Logan"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+**Chapter 1**
+
+[Chapter 1.1 PDE Models](./chapter/chapter1/chapter1.1/1.1.qmd)
+
+[Chapter 1.2 Conservation Laws](./chapter/chapter1/chapter1.2/1.2.qmd)
+
+[Chapter 1.3 Diffusion](./chapter/chapter1/chapter1.3/1.3.qmd)
+
+[Chapter 1.5 Vibrations and Acoustics](./chapter/chapter1/chapter1.5/1.5.qmd)
+
+[Chapter 1.8 Laplace's Equation](./chapter/chapter1/chapter1.8/1.8.qmd)
+
+[Chapter 1.9 Classification of PDEs](./chapter/chapter1/chapter1.9/1.9.qmd)

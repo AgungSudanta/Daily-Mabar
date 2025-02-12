@@ -144,7 +144,7 @@
     "href": "index.html",
     "title": " Daily Mabar",
     "section": "",
-    "text": "Topic\nToday’s Bartle\nToday’s Klugman\nToday’s Cryer\nToday’s Finan\nToday’s Dickson\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Topic\nToday’s Bartle\nToday’s Logan\nToday’s Klugman\nToday’s Cryer\nToday’s Finan\nToday’s Dickson\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -509,5 +509,89 @@
     "title": "5.4.1",
     "section": "",
     "text": "Show that the function \\(f(x) := \\frac{1}{x}\\) is uniformly continuous on the set \\(A:=[a, \\infty)\\), where \\(a\\) is a positive constant\nAnswer\nLet \\(c \\in A\\) and \\(\\epsilon &gt; 0\\)\nIt will be shown that there exists \\(\\delta &gt; 0\\) where \\(\\delta\\) does not depends on \\(c\\), such that \\(\\forall x \\in A, \\; |x - c| &lt; \\delta \\implies |f(x) - f(c)| &lt; \\epsilon\\)\nNotice the following \\[\\begin{align*}\n    |f(x) - f(c)| & = |\\frac{1}{x} - \\frac{1}{c}| \\\\\n    & = |\\frac{c - x}{xc}| \\\\\n    & = |\\frac{x - c}{xc}| \\\\\n    & = \\frac{|x - c|}{|x||c|}\n\\end{align*}\\]\nBecause \\(x,c \\in A\\) then \\(x \\geq a &gt; 0\\) and \\(c \\geq a &gt; 0\\) which result in \\[|f(x) - f(c)| = \\frac{|x-c|}{xc} \\leq \\frac{|x-c|}{a^2}\\]\nThus if \\(|x-c| &lt; \\delta\\), it follows that if we choose \\(\\delta = a^2\\epsilon\\) then \\[|f(x) - f(c)| &lt; \\frac{\\delta}{a^2} = \\frac{a^2\\epsilon}{a^2} = \\epsilon\\]\nTherefore \\(f(x) = \\frac{1}{x}\\) is uniformly continuous on \\(A\\) by definition"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.8.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.8.html",
+    "title": "1.2.8",
+    "section": "",
+    "text": "Solve the pure initial value problem \\[u_t + u_x - 3u = t, \\; x \\in \\mathbb{R}, \\; t &gt; 0\\] \\[u(x,0) = x^2, \\; x \\in \\mathbb{R}\\] \\\nAnswer\nLet \\(\\xi = x - t\\), \\(\\tau = t\\), and \\(U(\\xi, \\tau) = u(x,t)\\) . By chain rule we have \\[u_x = U_\\xi \\xi_x + U_\\tau \\tau_x =   U_\\xi\\] \\[u_t = U_\\xi \\xi_t + U_\\tau \\tau_t = U_\\tau - U_\\xi\\] Substituting all the changes to the original PDE, we have \\[U_\\tau - 3U = \\tau\\] Integrating factor of above ODE is given by \\[e^{\\int -3 \\;d\\tau} = e^{-3\\tau}\\] Thus by multiplying the ODE with integrating factor we got \\[\\begin{align*}\n    e^{-3\\tau}U_\\tau - 3e^{-3\\tau}U & = e^{-3\\tau}\\tau \\\\\n    \\frac{d}{d\\tau}(e^{-3\\tau}U) & = e^{-3\\tau}\\tau \\\\\n    e^{-3\\tau}U = \\int e^{-3\\tau}\\tau \\; d\\tau\n\\end{align*}\\] Using partial integral we will obtain that \\[\\int e^{-3\\tau}\\tau \\; d\\tau = -\\frac{\\tau e^{-3\\tau}}{3} + \\frac{1}{3}\\int e^{-3\\tau} \\; d\\tau = -\\frac{\\tau e^{-3\\tau}}{3} - \\frac{e^{-3\\tau}}{9} + h(\\xi)\\] Therefore \\[U(\\xi, \\tau) = -\\frac{\\tau}{3} - \\frac{1}{9} + h(\\xi)e^{3\\tau}\\]\nChanging back our variable to \\(t\\) and \\(x\\) will result in \\[u(x, t) = - \\frac{t}{3} - \\frac{1}{9} + h(x - t)e^{3t}\\] If we apply the initial condition, then \\[\\begin{align*}\n    x^2 = h(x) - \\frac{1}{9} \\\\\n    h(x) = x^2 + \\frac{1}{9}\n\\end{align*}\\] Therefore our solution is \\[u(x, t) = -\\frac{t}{3} - \\frac{1}{9} +  ((x-t)^2 + \\frac{1}{9})e^{3t}\\]"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.7.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.7.html",
+    "title": "1.1.7",
+    "section": "",
+    "text": "For what values of a and b is the function \\(u(x, t) = e^{at}\\sin bx\\) a solution to the heat equation \\[u_t = ku_{xx}\\]\nAnswer\nDifferentiating \\(u(x, t) = e^{at}\\sin bx\\) respect to \\(t\\) and \\(x\\) will result in \\[u_t = ae^{at}\\sin bx\\] \\[u_{xx} = -b^2e^{at}\\sin bx\\] Substituting into the heat equation will result in \\[ae^{at}\\sin bx = -kb^2e^{at}\\sin bx\\] Thus any arbitrary \\(a,b\\in\\mathbb{R}\\) with \\(a = -kb^2, \\; k \\in \\mathbb{R}\\) is a valid value so that \\(u(x, t) = e^{at}\\sin bx\\) a solution to the heat equation"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.4.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.4.html",
+    "title": "1.1.4",
+    "section": "",
+    "text": "Derive the solution \\(u(x,y) = axy + bx + cy + d\\) of the PDE \\[u_{xx}^2 + u_{yy}^2 = 0\\]\nAnswer\nNotice that \\(x^2 \\geq 0 \\; \\forall x \\in \\mathbb{R}\\), thus the PDE can be separated into \\[u_{xx}^2 = 0 \\quad \\land \\quad u_{yy}^2 = 0\\]\nFor \\(u_{xx}^2 = 0\\), then \\(u(x,x)\\) must contain degree 1 or 0 of x because \\(\\frac{d^2}{dx^2} ax = 0\\) where \\(a\\) a constant. Similarly for \\(u_{yy}^2 = 0\\), it only contain degree 1 or 0 of y. Therefore by combining the two condition, the only solution for both \\(u_{yy}^2 = 0\\) and \\(u_{xx}^2 = 0\\) is in the form of \\(u(x,y) = axy + bx + cy + d\\) where \\(a,b,c,d \\in \\mathbb{R}\\)"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.10.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.10.html",
+    "title": "1.1.10",
+    "section": "",
+    "text": "Show that the function \\(u(x, y) = \\arctan(\\frac{y}{x})\\) satisfies the two-dimensional Laplace’s equation \\(u_{xx} + u_{yy} = 0\\) \\\nAnswer\nBy taking partial derivative, we have \\[u_x = \\frac{1}{1 + (y/x)^2}\\cdot(-\\frac{y}{x^2}) = -\\frac{y}{x^2 + y^2}\\] \\[u_y = \\frac{1}{1 + (y/x)^2} \\cdot \\frac{1}{x} = \\frac{x}{x^2 + y^2}\\] \\[u_{xx} = \\frac{2xy}{(x^2 + y^2)^2}\\] \\[u_{yy} = \\frac{-2xy}{(x^2 + y^2)^2}\\] Substituting to the Laplace’s equation will result in \\(\\frac{2xy}{(x^2 + y^2)^2} - \\frac{2xy}{(x^2 + y^2)^2} = 0\\)\n\\(\\therefore u(x,y) = \\arctan(\\frac{y}{x})\\) satisfies \\(u_{xx} + u_{yy} = 0\\)"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.5.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.5.html",
+    "title": "1.1.5",
+    "section": "",
+    "text": "Find a function \\(u = u(x,t)\\) that satisfies the PDE \\[u_{xx} = 0, \\; 0 &lt; x &lt; 1, \\; t &gt; 0\\] subject to the boundary conditions \\[u(0,t) = t^2, \\; u(1,t) = 1, \\; t &gt; 0\\]\nAnswer\nLet \\(u(x,t) = t^2 - xt^2 + x\\). thus \\(u_x = -1 + 1 = 0\\) and \\(u_{xx} = 0\\), also \\(u(0,t) = t^2 - 0 \\cdot t^2 + 0= t^2\\) and \\(u(1,t) = t^2 - 1 \\cdot t^2 + 1 = 1\\)\n\\(\\therefore u(x,t) = t^2 - xt^2 + x\\) satisfies \\(u_{xx} = 0\\) and the initial conditions \\(u(0,t) = t^2, \\; u(1,t) = 1, \\; t &gt; 0\\)"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.html",
+    "title": "1.1 PDE Models",
+    "section": "",
+    "text": "1.1.4\n1.1.5\n1.1.6\n1.1.7\n1.1.10"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.html",
+    "title": "1.2 Conservation Laws",
+    "section": "",
+    "text": "1.2.3\n1.2.8"
+  },
+  {
+    "objectID": "topik/todayslogan/todayslogan.html",
+    "href": "topik/todayslogan/todayslogan.html",
+    "title": "Today’s Logan",
+    "section": "",
+    "text": "Chapter 1\nChapter 1.1 PDE Models\nChapter 1.2 Conservation Laws\nChapter 1.3 Diffusion\nChapter 1.5 Vibrations and Acoustics\nChapter 1.8 Laplace’s Equation\nChapter 1.9 Classification of PDEs"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.html",
+    "title": "1.3 Diffusion",
+    "section": "",
+    "text": "1.3.1"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.5/1.5.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.5/1.5.html",
+    "title": "1.5 Vibrations and Acoustics",
+    "section": "",
+    "text": "1.5.5"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.8/1.8.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.8/1.8.html",
+    "title": "1.8 Laplace’s Equation",
+    "section": "",
+    "text": "1.8.3"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.9/1.9.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.9/1.9.html",
+    "title": "1.9 Classification of PDEs",
+    "section": "",
+    "text": "1.9.3"
   }
 ]

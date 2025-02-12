@@ -8,6 +8,8 @@ title: |
 
 [Today's Bartle](./topik/todaysbartle/todaysbartle.qmd)
 
+[Today's Logan](./topik/todayslogan/todayslogan.qmd)
+
 [Today's Klugman](./topik/todaysklugman/todaysklugman.qmd)
 
 [Today's Cryer](./topik/todayscryer/todayscryer.qmd)

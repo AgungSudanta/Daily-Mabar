@@ -1,0 +1,19 @@
+---
+title: "1.1.5"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+Find a function $u = u(x,t)$ that satisfies the PDE $$u_{xx} = 0, \; 0 < x < 1, \; t > 0$$
+subject to the boundary conditions $$u(0,t) = t^2, \; u(1,t) = 1, \; t > 0$$
+
+Answer
+
+Let $u(x,t) = t^2 - xt^2 + x$. thus $u_x = -1 + 1 = 0$ and $u_{xx} = 0$, also $u(0,t) = t^2 - 0 \cdot t^2 + 0= t^2$ and $u(1,t) = t^2 - 1 \cdot t^2 + 1 = 1$
+
+$\therefore u(x,t) = t^2 - xt^2 + x$ satisfies $u_{xx} = 0$ and the initial conditions $u(0,t) = t^2, \; u(1,t) = 1, \; t > 0$
