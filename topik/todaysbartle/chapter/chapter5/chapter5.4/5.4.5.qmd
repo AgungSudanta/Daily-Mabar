@@ -8,3 +8,22 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that if $f$ and $g$ are uniformly continuous on a subset $A$ of $\mathbb{R}$, then $f + g$ is uniformly continuous on $A$
+
+Answer
+
+It will be shown that if $f$ and $g$ are uniformly continuous on a subset $A$, then $f+g$ is uniformly continuous on $A$
+
+Because $f$ and $g$ is uniformly continuous, then by definition
+$$\forall \epsilon_1 >0 \; \exists \zeta(\epsilon_1) >0 \ni \forall x,c \in A, \; |x - c| < \zeta(\epsilon_1) \implies |f(x) - f(c)| < \epsilon_1$$
+$$\forall \epsilon_2 > 0 \; \exists \gamma(\epsilon_2) > 0 \ni \forall x,c \in A, \; |x - c| < \gamma(\epsilon_2) \implies |g(x) - g(c)| < \epsilon_2$$
+
+Notice the following
+\begin{align*}
+    |f(x) + g(x) - f(c) - g(c)| & = |(f(x) - f(c)) + (g(x) - g(c))| \\
+    & \leq |f(x) - f(c)| + |g(x) - g(c)| \\
+    & < \epsilon_1 + \epsilon_2
+\end{align*}
+
+Let $\epsilon = \epsilon_1 + \epsilon_2$, and choose $\delta = \max\{\zeta(\epsilon_1), \gamma(\epsilon_2)\}$ which must exist because $f$ and $g$ uniformly continuous and does not depends on any $c \in A$, then by definition $f+g$ is uniformly continuous on $A$

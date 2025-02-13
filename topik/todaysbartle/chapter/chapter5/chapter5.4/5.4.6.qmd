@@ -8,3 +8,48 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that if $f$ and $g$ are uniformly continuous on $A \subseteq \mathbb{R}$ and if they are \textit{both} bounded on $A$, then their product $fg$ is uniformly continuous on $A$
+
+Answer
+
+It will be shown that if $f$ and $g$ are uniformly continuous on $A \subseteq \mathbb{R}$ and if they are \textit{both} bounded on $A$, then their product $fg$ is uniformly continuous on $A$
+
+We will consider 2 cases for $A$ which is
+1. $A := (a,b)$ where $a,b \in \mathbb{R}, \; a < b$
+
+    Because $f$ and $g$ is uniformly continuous on $A$, then by continuous extension theorem $F(x) := \begin{cases}
+        f(x), & x \in A \\
+        \displaystyle{\lim_{x \to a}}\; f(x), & x = a \\
+        \displaystyle{\lim_{x \to b}}\; f(x), & x = b
+    \end{cases}$ and $G(x) := \begin{cases}
+        g(x), & x \in A \\
+        \displaystyle{\lim_{x \to a}}\; g(x), & x = a \\
+        \displaystyle{\lim_{x \to b}}\; g(x), & x = b
+        \end{cases}$ must also be continuous
+
+    Thus $F(x)G(x) = \begin{cases}
+        f(x)g(x), & x \in A \\
+        \displaystyle{\lim_{x \to a}}\; f(x)g(x), & x = a \\
+        \displaystyle{\lim_{x \to b}}\; f(x)g(x), & x = b
+    \end{cases}$ is continuous on $A$, which by the same theorem implies $fg$ is uniformly continuous on $A$
+
+    *Note : Proof for $A:(a,b]$, $A:=[a,b)$ is similar
+
+2. $A := [a,b]$ where $a,b \in \mathbb{R}, \; a < b$
+
+    Let $M,N>0$ such that $|f(x)| \leq M$ and $|g(x)| \leq N$ for all $x \in A$. Because $f$ and $g$ is uniformly continuous, then
+    $$\forall \epsilon_1 >0 \; \exists \zeta(\epsilon_1) >0 \ni \forall x,c \in A, \; |x - c| < \zeta(\epsilon_1) \implies |f(x) - f(c)| < \epsilon_1$$
+    $$\forall \epsilon_2 > 0 \; \exists \gamma(\epsilon_2) > 0 \ni \forall x,c \in A, \; |x - c| < \gamma(\epsilon_2) \implies |g(x) - g(c)| < \epsilon_2$$
+
+    Notice that
+    \begin{align*}
+        |f(x)g(x) - f(c)g(c)| & = |f(x)g(x) - f(c)g(x) - f(c)g(c) + f(c)g(x)| \\
+        & = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\
+        & \leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\
+        & < N\epsilon_1 + M\epsilon_2 \quad
+    \end{align*}
+
+    Thus if we choose $\epsilon = N\epsilon_1 + M\epsilon_2$ and $\delta = \max\{\zeta(\epsilon_1), \gamma(\epsilon_2)$, $fg$ uniformly continuous by definition
+
+Therefore $fg$ must uniformly continuous on $A$ from the 2 cases

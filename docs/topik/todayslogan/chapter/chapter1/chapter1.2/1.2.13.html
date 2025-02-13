@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5.4.6 – Daily Mabar</title>
+<title>1.2 Conservation Laws – Daily Mabar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5.4.6</h1>
+<h1 class="title">1.2 Conservation Laws</h1>
 </div>
 
 
@@ -165,39 +165,14 @@ window.Quarto = {
 </header>
 
 
-<p>Show that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are uniformly continuous on <span class="math inline">\(A \subseteq \mathbb{R}\)</span> and if they are bounded on <span class="math inline">\(A\)</span>, then their product <span class="math inline">\(fg\)</span> is uniformly continuous on <span class="math inline">\(A\)</span></p>
+<p>Write a formula for the general solution of the equation <span class="math display">\[u_t + cu_x = f(x)u\]</span></p>
 <p>Answer</p>
-<p>It will be shown that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are uniformly continuous on <span class="math inline">\(A \subseteq \mathbb{R}\)</span> and if they are bounded on <span class="math inline">\(A\)</span>, then their product <span class="math inline">\(fg\)</span> is uniformly continuous on <span class="math inline">\(A\)</span></p>
-<p>We will consider 2 cases for <span class="math inline">\(A\)</span> which is 1. <span class="math inline">\(A := (a,b)\)</span> where <span class="math inline">\(a,b \in \mathbb{R}, \; a &lt; b\)</span></p>
-<pre><code>Because $f$ and $g$ is uniformly continuous on $A$, then by continuous extension theorem $F(x) := \begin{cases}
-    f(x), &amp; x \in A \\
-    \displaystyle{\lim_{x \to a}}\; f(x), &amp; x = a \\
-    \displaystyle{\lim_{x \to b}}\; f(x), &amp; x = b
-\end{cases}$ and $G(x) := \begin{cases}
-    g(x), &amp; x \in A \\
-    \displaystyle{\lim_{x \to a}}\; g(x), &amp; x = a \\
-    \displaystyle{\lim_{x \to b}}\; g(x), &amp; x = b
-    \end{cases}$ must also be continuous
-
-Thus $F(x)G(x) = \begin{cases}
-    f(x)g(x), &amp; x \in A \\
-    \displaystyle{\lim_{x \to a}}\; f(x)g(x), &amp; x = a \\
-    \displaystyle{\lim_{x \to b}}\; f(x)g(x), &amp; x = b
-\end{cases}$ is continuous on $A$, which by the same theorem implies $fg$ is uniformly continuous on $A$
-
-*Note : Proof for $A:(a,b]$, $A:=[a,b)$ is similar</code></pre>
-<ol start="2" type="1">
-<li><p><span class="math inline">\(A := [a,b]\)</span> where <span class="math inline">\(a,b \in \mathbb{R}, \; a &lt; b\)</span></p>
-<p>Let <span class="math inline">\(M,N&gt;0\)</span> such that <span class="math inline">\(|f(x)| \leq M\)</span> and <span class="math inline">\(|g(x)| \leq N\)</span> for all <span class="math inline">\(x \in A\)</span>. Because <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> is uniformly continuous, then <span class="math display">\[\forall \epsilon_1 &gt;0 \; \exists \zeta(\epsilon_1) &gt;0 \ni \forall x,c \in A, \; |x - c| &lt; \zeta(\epsilon_1) \implies |f(x) - f(c)| &lt; \epsilon_1\]</span> <span class="math display">\[\forall \epsilon_2 &gt; 0 \; \exists \gamma(\epsilon_2) &gt; 0 \ni \forall x,c \in A, \; |x - c| &lt; \gamma(\epsilon_2) \implies |g(x) - g(c)| &lt; \epsilon_2\]</span></p>
-<p>Notice that <span class="math display">\[\begin{align*}
-     |f(x)g(x) - f(c)g(c)| &amp; = |f(x)g(x) - f(c)g(x) - f(c)g(c) + f(c)g(x)| \\
-     &amp; = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\
-     &amp; \leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\
-     &amp; &lt; N\epsilon_1 + M\epsilon_2 \quad
+<p>Assume <span class="math inline">\(c\)</span> a real valued constant, then we can do change of variables so that <span class="math inline">\(U(\xi, \tau) = u(x,t)\)</span> where <span class="math display">\[\xi = x - ct\]</span> <span class="math display">\[\tau = t\]</span> Using chain rule, we got <span class="math display">\[u_t = U_\xi \xi_t + U_\tau \tau_t = U_\tau - cU_\xi\]</span> <span class="math display">\[u_x = U_\xi \xi_x + U_\tau \tau_x = U_\xi\]</span> Substituting back to the original PDE will result in <span class="math display">\[U_\tau = f(\xi + c\tau)U\]</span> Solving this ODE with Factor of Integration will result in<br>
+<span class="math display">\[\begin{align*}
+    e^{-\int f(\xi + c\tau) \; d\tau}f(\xi+\tau)U &amp; = h(\xi) \\
+    U &amp;  = \frac{h(\xi)}{f(\xi+\tau)}e^{\int f(\xi + c\tau) \; d\tau} \\
+    u(x,t) &amp; = \frac{h(x - ct)}{f(x)} e^{\int \; f(x) dt}
 \end{align*}\]</span></p>
-<p>Thus if we choose <span class="math inline">\(\epsilon = N\epsilon_1 + M\epsilon_2\)</span> and <span class="math inline">\(\delta = \max\{\zeta(\epsilon_1), \gamma(\epsilon_2)\)</span>, <span class="math inline">\(fg\)</span> uniformly continuous by definition</p></li>
-</ol>
-<p>Therefore <span class="math inline">\(fg\)</span> must uniformly continuous on <span class="math inline">\(A\)</span> from the 2 cases</p>
 
 
 

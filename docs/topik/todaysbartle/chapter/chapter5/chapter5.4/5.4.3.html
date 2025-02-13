@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,12 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8b864f0777c60eecff11d75b6b2e1175.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-f3c2ea88cadbcfb37ba28ffa2c97cfc1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../../site_libs/bootstrap/bootstrap-dark-ae2d0dcda2edce4ab590422bb373b64f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-d5c296a9e60ed6c9f30b3dc68ebc3f1a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-702685a22860ed684eee09d32ccd0b65.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Use the Nonuniform Continuity Criterion 5.4.2 to show that the following functions are not uniformly continuous on the given sets</p>
+<ul>
+<li><p><span class="math inline">\(f(x) := x^2, \quad A := [0, \infty)\)</span></p></li>
+<li><p><span class="math inline">\(g(x) := \sin(\frac{1}{x}), \quad B:=(0, \infty)\)</span></p></li>
+</ul>
+<p>Answer</p>
+<ul>
+<li><p>It will be shown that <span class="math inline">\(f\)</span> are not uniformly continuous on <span class="math inline">\(A\)</span></p>
+<p>Choose <span class="math inline">\(\epsilon_0 = \frac{1}{2}\)</span>, <span class="math inline">\((x_n) = (\sqrt{n})\)</span>, and <span class="math inline">\((u_n) = (\sqrt{n+1})\)</span>. Notice that <span class="math inline">\(x_n,u_n \in A \; \forall n \in \mathbb{N}\)</span>, and <span class="math inline">\(\lim(x_n - u_n) = 0\)</span></p>
+<p>Thus we have</p>
+<p><span class="math display">\[\begin{align*}
+      |f(x_n) - f(u_n)| &amp; = |n - (n+1)| \\
+      &amp; = |-1| = 1 &gt; \frac{1}{2} = \epsilon_0
+  \end{align*}\]</span></p>
+<p>Therefore by Nonuniform Continuity Theorem it follows that <span class="math inline">\(f\)</span> are not uniformly continuous on <span class="math inline">\(A\)</span> because <span class="math inline">\(\exists \epsilon_0 &gt; 0\)</span> where <span class="math inline">\(\epsilon_0 = \frac{1}{2}\)</span> and two sequences <span class="math inline">\((x_n), \; (u_n)\)</span> in <span class="math inline">\(A\)</span> such that <span class="math inline">\(\lim(x_n - u_n) = 0\)</span> and $ |f(x_n) - f(u_n)| = |n - (n+1)| = |-1| = 1 &gt; = _0 ; n $</p></li>
+<li><p>It will be shown that <span class="math inline">\(g\)</span> are not uniformly continuous on <span class="math inline">\(B\)</span></p>
+<p>Choose <span class="math inline">\(\epsilon_0 = \frac{1}{2}\)</span>, <span class="math inline">\((x_n) = (\frac{\pi(2n + 1)}{2})\)</span>, and <span class="math inline">\((u_n) = (\frac{1}{\pi n})\)</span>. Because <span class="math inline">\(\sin (x_n) = \sin(\frac{\pi}{2} + \pi n) = \pm 1\)</span> and <span class="math inline">\(\sin (u_n) = \sin(\pi n) = 0\)</span> for all <span class="math inline">\(n \in \mathbb{N}\)</span> then <span class="math display">\[|g(x_n) - g(u_n)| = 1 &gt; \frac{1}{2} = \epsilon_9\]</span> Therefore by Nonuniform Continuity Theorem it follows that <span class="math inline">\(g\)</span> are not uniformly continuous on <span class="math inline">\(B\)</span></p></li>
+</ul>
 
 
 
@@ -366,6 +413,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -476,6 +525,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

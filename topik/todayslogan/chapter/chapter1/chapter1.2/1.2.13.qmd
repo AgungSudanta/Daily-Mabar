@@ -1,0 +1,29 @@
+---
+title: "1.2 Conservation Laws"
+format:
+    html:
+        theme:
+            light: flatly
+            dark: darkly
+        css: styles.css
+        toc: true
+---
+
+Write a formula for the general solution of the equation $$u_t + cu_x = f(x)u$$
+
+Answer
+
+Assume $c$ a real valued constant, then we can do change of variables so that $U(\xi, \tau) = u(x,t)$ where
+$$\xi = x - ct$$
+$$\tau = t$$
+Using chain rule, we got
+$$u_t = U_\xi \xi_t + U_\tau \tau_t = U_\tau - cU_\xi$$
+$$u_x = U_\xi \xi_x + U_\tau \tau_x = U_\xi$$
+Substituting back to the original PDE will result in
+$$U_\tau = f(\xi + c\tau)U$$
+Solving this ODE with Factor of Integration will result in  
+\begin{align*}
+    e^{-\int f(\xi + c\tau) \; d\tau}f(\xi+\tau)U & = h(\xi) \\
+    U &  = \frac{h(\xi)}{f(\xi+\tau)}e^{\int f(\xi + c\tau) \; d\tau} \\
+    u(x,t) & = \frac{h(x - ct)}{f(x)} e^{\int \; f(x) dt}
+\end{align*}

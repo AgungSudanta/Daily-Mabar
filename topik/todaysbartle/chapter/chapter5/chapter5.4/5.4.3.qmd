@@ -8,3 +8,30 @@ format:
         css: styles.css
         toc: true
 ---
+
+Use the Nonuniform Continuity Criterion 5.4.2 to show that the following functions are not
+uniformly continuous on the given sets
+
+- $f(x) := x^2, \quad A := [0, \infty)$
+
+- $g(x) := \sin(\frac{1}{x}), \quad B:=(0, \infty)$
+
+Answer
+
+- It will be shown that $f$ are not uniformly continuous on $A$
+
+    Choose $\epsilon_0 = \frac{1}{2}$, $(x_n) = (\sqrt{n})$, and $(u_n) = (\sqrt{n+1})$. Notice that $x_n,u_n \in A \; \forall n \in \mathbb{N}$, and $\lim(x_n - u_n) = 0$
+
+    Thus we have
+
+    \begin{align*}
+        |f(x_n) - f(u_n)| & = |n - (n+1)| \\ 
+        & = |-1| = 1 > \frac{1}{2} = \epsilon_0
+    \end{align*}
+
+    Therefore by Nonuniform Continuity Theorem it follows that $f$ are not uniformly continuous on $A$ because $\exists \epsilon_0 > 0$ where $\epsilon_0 = \frac{1}{2}$ and two sequences $(x_n), \; (u_n)$ in $A$ such that $\lim(x_n - u_n) = 0$ and $ |f(x_n) - f(u_n)| = |n - (n+1)| = |-1| = 1 > \frac{1}{2} = \epsilon_0 \; \forall n \in \mathbb{N}$
+
+- It will be shown that $g$ are not uniformly continuous on $B$
+
+    Choose $\epsilon_0 = \frac{1}{2}$, $(x_n) = (\frac{\pi(2n + 1)}{2})$, and $(u_n) = (\frac{1}{\pi n})$. Because $\sin (x_n) = \sin(\frac{\pi}{2} + \pi n) = \pm 1$ and $\sin (u_n) = \sin(\pi n) = 0$ for all $n \in \mathbb{N}$ then $$|g(x_n) - g(u_n)| = 1 > \frac{1}{2} = \epsilon_9$$
+    Therefore by Nonuniform Continuity Theorem it follows that $g$ are not uniformly continuous on $B$
