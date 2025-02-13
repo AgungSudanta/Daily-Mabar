@@ -6,15 +6,27 @@ title: |
 
 **Topic**
 
+**Real Analysis**
+
 [Today's Bartle](./topik/todaysbartle/todaysbartle.qmd)
+
+**Numerical Differential Equation**
 
 [Today's Logan](./topik/todayslogan/todayslogan.qmd)
 
+**Risk Modelling**
+
 [Today's Klugman](./topik/todaysklugman/todaysklugman.qmd)
 
-[Today's Cryer](./topik/todayscryer/todayscryer.qmd)
+**Time Series**
+
+[ Today's Cryer](./topik/todayscryer/todayscryer.qmd)
+
+**Financial Mathematics**
 
 [Today's Finan](./topik/todaysfinan/todaysfinan.qmd)
+
+**Life Contingencies**
 
 [Today's Dickson](./topik/todaysdickson/todaysdickson.qmd)
 
