@@ -10,7 +10,7 @@ title: |
 
 [Today's Bartle](./topik/todaysbartle/todaysbartle.qmd)
 
-**Numerical Differential Equation**
+**Differential Equation**
 
 [Today's Logan](./topik/todayslogan/todayslogan.qmd)
 

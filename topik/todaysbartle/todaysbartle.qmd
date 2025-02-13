@@ -53,11 +53,11 @@ format:
 
 [Ch 5.3 Continuous Functions on Intervals](./chapter/chapter5/chapter5.3/5.3.qmd)
 
-[Ch 5.4 Continuous Functions on Intervals](./chapter/chapter5/chapter5.4/5.4.qmd)
+[Ch 5.4 Uniform Continuity](./chapter/chapter5/chapter5.4/5.4.qmd)
 
-[Ch 5.5 Continuous Functions on Intervals](./chapter/chapter5/chapter5.5/5.5.qmd)
+[Ch 5.5 Continuity and Gauges](./chapter/chapter5/chapter5.5/5.5.qmd)
 
-[Ch 5.6 Continuous Functions on Intervals](./chapter/chapter5/chapter5.6/5.6.qmd)
+[Ch 5.6 Monotone and Inverse Functions](./chapter/chapter5/chapter5.6/5.6.qmd)
 
 **Chapter 6**
 

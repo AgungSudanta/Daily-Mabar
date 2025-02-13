@@ -15,7 +15,7 @@ Answer
 
 It will be shown that $f$ uniformly continuous on $\mathbb{R}$
 
-Let $x,c \in \mathbb{R}$ be arbitrary
+Let $c \in \mathbb{R}$ and $\epsilon > 0$. We will search for $\delta > 0$ such that if $x,c \in \mathbb{R}$ and $|x - c| < \delta$, then $|f(x) - f(c)| < \delta$
 
 Notice the following
 \begin{align*}
@@ -23,9 +23,23 @@ Notice the following
     & = |\frac{(1+c^2) - (1+x^2)}{(1+x^2)(1+c^2)}| \\
     & = \frac{|x^2 - c^2|}{|(1+x^2)(1+c^2)|} \\
     & = \frac{|(x+c)(x-c)|}{(1+x^2)(1+c^2)} \\
-    & = \frac{|x+c||x-c|}{(1+x^2)(1+c^2)}
+    & = \frac{|x+c||x-c|}{(1+x^2)(1+c^2)} \\
 \end{align*}
 
-Because $|x+c| \geq 0$ and $(1+x^2)(1+c^2) > 0$, then $\frac{|x+c|}{(1+x^2)(1+c^2)} > 0$. Thus if we choose $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$, $f$ satisfy a Lipschitz Condition on $\mathbb{R}$ because $\exists K > 0$ where $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$ such that $|f(x) - f(c)| \leq K|x-c|$ for all $x,c \in \mathbb{R}$. Therefore by theorem $f$ is uniformly continuous on $\mathbb{R}$
+Because $x^2 \geq 0 \; \forall x \in \mathbb{R}$, then $\frac{1}{1+x^2} \leq 1$. Thus $$|f(x) - f(c)| \leq \frac{|x+c|}{1 + c^2}|x-c| \leq \frac{|x| + |c|}{1 + c^2}|x-c|$$ 
+Let $\delta_1 = 1$, then it follows that $|x| < 1 + |c|$ thus 
+\begin{align*}
+    |f(x) - f(c)| & < \frac{1 + 2|c|}{1 + c^2}|x-c| \\
+    & \leq \frac{(1 + |c|)^2}{1 + c^2}|x-c| \quad\text{(Bernoulli Inequality)} \\
+    & = \frac{c^2 + 2|c| + 1}{1 + c^2}|x-c| \\
+    & = (\frac{c^2 + 1}{1 + c^2} + 2\frac{|c|}{1 + c^2})|x-c| \\
+    & = (1 + \frac{|c|}{\frac{1}{2}(1 + |c|^2)})|x-c|
+\end{align*}
 
-$\therefore f$ is uniformly continuous on $\mathbb{R}$ because $\exists K > 0$ where $K = \frac{|x+c|}{(1+x^2)(1+c^2)}$ such that $|f(x) - f(c)| \leq K|x-c|$ for all $x,c \in \mathbb{R}$ which satisfy Lipschitz condition on $\mathbb{R}$ 
+If $c = 0$, then it instantly follows that $|f(x) - f(c)| < |x-c|$
+
+If $c \neq 0$, then by Arithmetic-Geometric Mean Inequality $|c| = \sqrt{|c|^2} \leq \frac{1}{2}(1 + |c|^2)$ or $\frac{1}{\frac{1}{2}(1+|c|^2)} \leq \frac{1}{|c|}$ thus $$|f(x)-f(c)| < (1 + \frac{|c|}{|c|})|x-c| = 2|x-c| < 2\delta$$
+
+Choose $\delta_2 = \frac{\epsilon}{2}$, thus $|f(x) - f(c)| < \epsilon$ for all cases of $c$
+
+Therefore if we choose $\delta = \min(1, \frac{\epsilon}{2})$ it satisfies the definition of continuity, and because $\delta$ does not depend on $c$, it is uniformly continuous

@@ -68,81 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="text/x-mathjax-config">
-
-    MathJax.Hub.Config({
-
-      TeX: { equationNumbers: {autoNumber: "AMS"} },
-
-      tex2jax: {inlineMath: [ ['$','$'], ["\\(","\\)"] ]}
-
-    });
-
-    </script>
-
-    
-
-    <!-- MathJax 3+ Add section numbers to equations -->
-
-    <script>
-
-    MathJax = {
-
-      loader: {load: ['[tex]/tagformat']},
-
-      section: 1,
-
-      tex: {
-
-        packages: {'[+]': ['tagformat']},
-
-        tags: 'ams',
-
-        tagformat: {
-
-          number: (n) => MathJax.config.section + '.' + n,
-
-          id: (tag) => 'eqn-id:' + tag
-
-        }
-
-      },
-
-      startup: {
-
-        ready() {
-
-          MathJax.startup.defaultReady();
-
-          MathJax.startup.input[0].preFilters.add(({math}) => {
-
-            if (math.inputData.recompile) {
-
-              MathJax.config.section = math.inputData.recompile.section;
-
-            }
-
-          });
-
-          MathJax.startup.input[0].postFilters.add(({math}) => {
-
-            if (math.inputData.recompile) {
-
-              math.inputData.recompile.section = MathJax.config.section;
-
-            }
-
-          });
-
-        }
-
-      }
-
-    };
-
-    </script>
-
-    
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -262,9 +187,9 @@ window.Quarto = {
 <p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html">Ch 5.1 Continuous Function</a></p>
 <p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.2/5.2.html">Ch 5.2 Combinations of Continuous Functions</a></p>
 <p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html">Ch 5.3 Continuous Functions on Intervals</a></p>
-<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html">Ch 5.4 Continuous Functions on Intervals</a></p>
-<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html">Ch 5.5 Continuous Functions on Intervals</a></p>
-<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html">Ch 5.6 Continuous Functions on Intervals</a></p>
+<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html">Ch 5.4 Uniform Continuity</a></p>
+<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html">Ch 5.5 Continuity and Gauges</a></p>
+<p><a href="../../topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html">Ch 5.6 Monotone and Inverse Functions</a></p>
 <p><strong>Chapter 6</strong></p>
 <p><a href="../../topik/todaysbartle/chapter/chapter6/chapter6.1/6.1.html">Ch 6.1 The Derivative</a></p>
 <p><a href="../../topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html">Ch 6.2 The Mean Value Theorem</a></p>

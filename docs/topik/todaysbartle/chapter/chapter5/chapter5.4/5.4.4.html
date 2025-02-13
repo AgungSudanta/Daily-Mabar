@@ -168,16 +168,25 @@ window.Quarto = {
 <p>Show that the function <span class="math inline">\(f(x) := \frac{1}{1+x^2}\)</span> for <span class="math inline">\(x \in \mathbb{R}\)</span> is uniformly continuous on <span class="math inline">\(\mathbb{R}\)</span></p>
 <p>Answer</p>
 <p>It will be shown that <span class="math inline">\(f\)</span> uniformly continuous on <span class="math inline">\(\mathbb{R}\)</span></p>
-<p>Let <span class="math inline">\(x,c \in \mathbb{R}\)</span> be arbitrary</p>
+<p>Let <span class="math inline">\(c \in \mathbb{R}\)</span> and <span class="math inline">\(\epsilon &gt; 0\)</span>. We will search for <span class="math inline">\(\delta &gt; 0\)</span> such that if <span class="math inline">\(x,c \in \mathbb{R}\)</span> and <span class="math inline">\(|x - c| &lt; \delta\)</span>, then <span class="math inline">\(|f(x) - f(c)| &lt; \delta\)</span></p>
 <p>Notice the following <span class="math display">\[\begin{align*}
     |f(x) - f(c)| &amp; = |\frac{1}{1+x^2} - \frac{1}{1+c^2}| \\
     &amp; = |\frac{(1+c^2) - (1+x^2)}{(1+x^2)(1+c^2)}| \\
     &amp; = \frac{|x^2 - c^2|}{|(1+x^2)(1+c^2)|} \\
     &amp; = \frac{|(x+c)(x-c)|}{(1+x^2)(1+c^2)} \\
-    &amp; = \frac{|x+c||x-c|}{(1+x^2)(1+c^2)}
+    &amp; = \frac{|x+c||x-c|}{(1+x^2)(1+c^2)} \\
 \end{align*}\]</span></p>
-<p>Because <span class="math inline">\(|x+c| \geq 0\)</span> and <span class="math inline">\((1+x^2)(1+c^2) &gt; 0\)</span>, then <span class="math inline">\(\frac{|x+c|}{(1+x^2)(1+c^2)} &gt; 0\)</span>. Thus if we choose <span class="math inline">\(K = \frac{|x+c|}{(1+x^2)(1+c^2)}\)</span>, <span class="math inline">\(f\)</span> satisfy a Lipschitz Condition on <span class="math inline">\(\mathbb{R}\)</span> because <span class="math inline">\(\exists K &gt; 0\)</span> where <span class="math inline">\(K = \frac{|x+c|}{(1+x^2)(1+c^2)}\)</span> such that <span class="math inline">\(|f(x) - f(c)| \leq K|x-c|\)</span> for all <span class="math inline">\(x,c \in \mathbb{R}\)</span>. Therefore by theorem <span class="math inline">\(f\)</span> is uniformly continuous on <span class="math inline">\(\mathbb{R}\)</span></p>
-<p><span class="math inline">\(\therefore f\)</span> is uniformly continuous on <span class="math inline">\(\mathbb{R}\)</span> because <span class="math inline">\(\exists K &gt; 0\)</span> where <span class="math inline">\(K = \frac{|x+c|}{(1+x^2)(1+c^2)}\)</span> such that <span class="math inline">\(|f(x) - f(c)| \leq K|x-c|\)</span> for all <span class="math inline">\(x,c \in \mathbb{R}\)</span> which satisfy Lipschitz condition on <span class="math inline">\(\mathbb{R}\)</span></p>
+<p>Because <span class="math inline">\(x^2 \geq 0 \; \forall x \in \mathbb{R}\)</span>, then <span class="math inline">\(\frac{1}{1+x^2} \leq 1\)</span>. Thus <span class="math display">\[|f(x) - f(c)| \leq \frac{|x+c|}{1 + c^2}|x-c| \leq \frac{|x| + |c|}{1 + c^2}|x-c|\]</span> Let <span class="math inline">\(\delta_1 = 1\)</span>, then it follows that <span class="math inline">\(|x| &lt; 1 + |c|\)</span> thus <span class="math display">\[\begin{align*}
+    |f(x) - f(c)| &amp; &lt; \frac{1 + 2|c|}{1 + c^2}|x-c| \\
+    &amp; \leq \frac{(1 + |c|)^2}{1 + c^2}|x-c| \quad\text{(Bernoulli Inequality)} \\
+    &amp; = \frac{c^2 + 2|c| + 1}{1 + c^2}|x-c| \\
+    &amp; = (\frac{c^2 + 1}{1 + c^2} + 2\frac{|c|}{1 + c^2})|x-c| \\
+    &amp; = (1 + \frac{|c|}{\frac{1}{2}(1 + |c|^2)})|x-c|
+\end{align*}\]</span></p>
+<p>If <span class="math inline">\(c = 0\)</span>, then it instantly follows that <span class="math inline">\(|f(x) - f(c)| &lt; |x-c|\)</span></p>
+<p>If <span class="math inline">\(c \neq 0\)</span>, then by Arithmetic-Geometric Mean Inequality <span class="math inline">\(|c| = \sqrt{|c|^2} \leq \frac{1}{2}(1 + |c|^2)\)</span> or <span class="math inline">\(\frac{1}{\frac{1}{2}(1+|c|^2)} \leq \frac{1}{|c|}\)</span> thus <span class="math display">\[|f(x)-f(c)| &lt; (1 + \frac{|c|}{|c|})|x-c| = 2|x-c| &lt; 2\delta\]</span></p>
+<p>Choose <span class="math inline">\(\delta_2 = \frac{\epsilon}{2}\)</span>, thus <span class="math inline">\(|f(x) - f(c)| &lt; \epsilon\)</span> for all cases of <span class="math inline">\(c\)</span></p>
+<p>Therefore if we choose <span class="math inline">\(\delta = \min(1, \frac{\epsilon}{2})\)</span> it satisfies the definition of continuity, and because <span class="math inline">\(\delta\)</span> does not depend on <span class="math inline">\(c\)</span>, it is uniformly continuous</p>
 
 
 
