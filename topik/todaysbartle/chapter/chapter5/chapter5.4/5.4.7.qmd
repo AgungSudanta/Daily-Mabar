@@ -8,3 +8,35 @@ format:
         css: styles.css
         toc: true
 ---
+
+If $f(x) := x$ and $g(x) := \sin x$, show that both $f$ and $g$ are uniformly continuous on $\mathbb{R}$, but that their product $fg$ is not uniformly continuous on $\mathbb{R}$
+
+Answer
+
+It will be shown that $f$ and $g$ are uniformly continuous on $\mathbb{R}$
+
+$f$ is trivially a uniformly continuous function because $|f(x) - f(c)| = |x - c| < 2|x-c| \; \forall x,c \in \mathbb{R}$ which satisfy Lipschitz condition, and by theorem $f$ is uniformly continuous
+
+For $g$, notice the following
+\begin{align*}
+    |\sin x - \sin c| & = |2\cos(\frac{x + c}{2})\sin(\frac{x - c}{2})| \\
+    & \leq2|1 \cdot \frac{x-c}{2}| \quad \text{ (Because $\cos x \leq 1$ and $|\sin x| \leq x$)} \\
+    & = |x-c|
+\end{align*}
+Thus $g$ satisfy Lipschitz condition which implies $g$ is uniformly continuous
+
+
+Now we will show that $fg$ is not uniformly continuous on $\mathbb{R}$
+
+Choose $(x_n) = (2n\pi)$, and $(u_n) = (2n\pi + \frac{1}{n})$. Notice that $\lim(x_n - u_n) = 0$ and $\sin(u_n) = \sin (2n\pi + \frac{1}{n}) = \sin(2n\pi)\cos(\frac{1}{n}) + \sin(\frac{1}{n})\cos(2n\pi) = \sin(\frac{1}{n})$. Thus
+\begin{align*}
+    |x_n\sin x_n - u_n\sin u_n| & = |(2n\pi + \frac{1}{n})\sin(\frac{1}{n})| \\
+    & > |2n\pi\sin(\frac{1}{n})|\\
+      & > |\sin(\frac{1}{n}) \\
+      & \geq \frac{1}{n}|\sin(\frac{1}{n}) | \quad \text{ (Because $n \in \mathbb{N}$, then $\frac{1}{n}\leq 1$)} \\
+      & \geq |\sin(\frac{1}{n})||\sin(\frac{1}{n})| \\
+      & = \sin^2(\frac{1}{n})
+\end{align*}
+Because $\frac{1}{n} \neq 2n\pi \; \forall n \in \mathbb{N}$, this implies that $\sin^2(\frac{1}{n}) \neq 0$. Thus by density theorem we can always choose $\epsilon_0$ where $0 < \epsilon_0 \leq \sin^2{\frac{1}{n}}$ such that $$|x_n\sin x_n - u_n\sin u_n| \geq \epsilon_0$$
+
+Therefore by Nonuniform Continuity Theorem, $fg$ is not uniformly continuous on $\mathbb{R}$
