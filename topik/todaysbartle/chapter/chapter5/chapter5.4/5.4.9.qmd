@@ -8,3 +8,24 @@ format:
         css: styles.css
         toc: true
 ---
+
+If $f$ is uniformly continuous on $A \subseteq \mathbb{R}$, and $|f(x)| \geq k > 0$ for all $x \in A$, show that $\frac{1}{f}$ is uniformly continuous on $A$
+
+Answer
+
+If $f$ is uniformly continuous on $A \subseteq \mathbb{R}$, and $|f(x)| \geq k > 0$ for all $x \in A$, show that $\frac{1}{f}$ is uniformly continuous on $A$
+
+Let $c \in A$ and $\epsilon >0$. We will search for $\delta > 0$ such that if $|x-c| < \delta \implies |\frac{1}{f(x)} - \frac{1}{f(c)}| < \epsilon$ 
+
+Because $|f(x)| \geq k > 0$ for all $x \in A$ then $|f(c)| \geq k$ or $\frac{1}{|f(c)|} \leq \frac{1}{k}$
+
+$f$ is uniformly continuous on $A$, then by definition $$\forall \epsilon_0 \; \exists \delta_0 > 0 \ni \forall x,c\in A,  \; |x-c| < \delta_0 \implies |f(x) - f(c)| < \epsilon$$
+
+Notice that
+\begin{align*}
+    |\frac{1}{f(x)} - \frac{1}{f(c)}| & = |\frac{f(x)-f(c)}{f(x)f(c)}|\\
+    & \leq \frac{|f(x)-f(c)|}{k^2} \\
+    & < \frac{\epsilon_0}{k^2}
+\end{align*}
+
+Because $\epsilon_0$ is arbitrary, then we can choose $\epsilon = \frac{\epsilon_0}{k^2}$, and $\delta$ must exist. Therefore $\frac{1}{f}$ is uniformly continuous on $A$ by definition
