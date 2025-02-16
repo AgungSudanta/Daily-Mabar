@@ -8,3 +8,18 @@ format:
         css: styles.css
         toc: true
 ---
+
+Prove that if $f$ and $g$ are each uniformly continuous on $\mathbb{R}$, then the composite function $f \circ g$ is uniformly continuous on $\mathbb{R}$
+
+Answer
+
+It will be shown that if $f$ and $g$ are each uniformly continuous on $\mathbb{R}$, then $f \circ g$ is uniformly continuous on $\mathbb{R}$
+
+Because $f$ and $g$ are uniformly continuous, then by definition
+$$\forall \epsilon > 0 \; \exists \delta(\epsilon) > 0 \ni \forall x,c \in \mathbb{R} \text{ where } |x-c| < \delta \implies |f(x) - f(c)| < \epsilon$$
+\begin{center}
+    and
+\end{center}
+$$\forall \epsilon_1 > 0 \; \exists \delta_1(\epsilon_1) > 0 \ni \forall x,c \in \mathbb{R} \text{ where } |x-c| < \delta_1 \implies |g(x) - g(c)| < \epsilon_1$$
+
+Because $\epsilon_1$ is arbitrary and from definition of $f$, if we choose $\delta = \epsilon_1$ then $$\forall \epsilon > 0 \; \exists \delta >0 \text{ where } \delta = \epsilon_1 \ni \forall x,c \in \mathbb{R}, \; |g(x) - g(c)| < \delta \implies |f(g(x)) - f(g(c))| < \epsilon$$

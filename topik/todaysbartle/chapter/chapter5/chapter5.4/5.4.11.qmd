@@ -8,3 +8,27 @@ format:
         css: styles.css
         toc: true
 ---
+
+If $g(x) := \sqrt{x}$ for $x \in [0,1]$, show that there does not exists a constant $K$ such that $|g(x)| \leq K|x|$ for all $x \in [0,1]$. Conclude that the uniformly continuous $g$ is not a Lipschitz function on [0,1]
+
+Answer
+
+It will be shown that $\nexists K > 0 \ni |g(x)| \leq K|x| \; \forall x \in [0,1]$ by contradiction
+
+Assume that $\exists K > 0 \ni |g(x)| \leq K|x| \; \forall x \in [0,1]$. Notice the following
+\begin{align*}
+    |\sqrt{x}| & \leq K|x| \\
+    |\frac{\sqrt{x}}{x}| & \leq K \\
+    |\frac{1}{\sqrt{x}}| = \frac{1}{\sqrt{x}} & \leq K
+\end{align*}
+
+It can be shown that $\displaystyle{\lim_{x \to 0^+}} \; \frac{1}{\sqrt{x}} = \infty$, thus by definition $\nexists K > 0 \ni \frac{1}{\sqrt{x}} \leq K \; \forall x \in [0,1]$ which contradicts our assumption. Therefore $K$ does not exists \\
+
+Because $\displaystyle{\lim_{x\to c}} \; \sqrt{x} = \sqrt{c} \; \forall c \in [0,1]$, then $g$ must be continuous and by Uniform Continuity Theorem $g$ must be uniformly continuous
+
+Notice the following
+\begin{align*}
+    |\sqrt{x}| & = |\sqrt{x} - \sqrt{0}| \\
+    & > K|x| = K|x-0|
+\end{align*}
+Thus it does not satisfy Lipschitz condition because $c = 0$ will not result in $|\sqrt{x} - \sqrt{c}| \leq L|x-c|$ where $L > 0$

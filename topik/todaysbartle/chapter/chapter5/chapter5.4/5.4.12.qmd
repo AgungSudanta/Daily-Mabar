@@ -8,3 +8,16 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that if $f$ is continuous on [0, $\infty$) and uniformly continuous on [$a, \infty$) for some positive constant $a$, then $f$ is uniformly continuous on [0, $\infty$)
+
+Answer
+
+$f$ is continuous on $[0, \infty]$, thus $f$ is continuous on $I := [0, a+1]$ because $I \subset [0, \infty)$. By Uniform Continuity Theorem, then $f$ must be uniformly continuous on $I$., and uniformly continuous on [$a, \infty$) thus by definition
+$$\forall \epsilon_1 > 0 \; \exists \delta_1 > 0 \ni \forall x,c \in I. \; |x - c| < \delta_1 \implies |f(x) - f(c)| < \epsilon_1$$
+\begin{center}
+    and
+\end{center}
+$$\forall \epsilon_2 > 0 \; \exists \delta_2 > 0 \ni \forall x,c [a, \infty) \; |x - c| < \delta_2 \implies |f(x) - f(c)| < \epsilon_1$$
+
+Choose $\delta = \min(\delta_1, \delta_2)$, then it must implies that $|f(x) - f(c)| < \epsilon_1$  or $|f(x) - f(c)| < \epsilon_2$. Therefore $f$ must be uniformly continuous

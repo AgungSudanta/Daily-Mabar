@@ -8,3 +8,13 @@ format:
         css: styles.css
         toc: true
 ---
+
+Prove that if $f$ is uniformly continuous on a bounded subset $A$ of $\mathbb{R}$, then $f$ is bounded on $A$
+
+Answer
+
+It will be shown by contradiction that if $f$ is uniformly continuous on a bounded subset $A$ of $\mathbb{R}$, then $f$ is bounded on $A$
+
+Suppose $f$ is uniformly continuous on a bounded subset $A$ of $\mathbb{R}$ and $f$ is not bounded on $A$. Then by definition $$\nexists M > 0 \ni |f(x)| \leq M \; \forall x \in A$$
+
+Let $(x_n)$ be a sequence in $A$. Because $A$ is bounded, then by theorem $x_n \in A \; \forall n \in \mathbb{N}$ and must be bounded. By Bolzano Theorem, there must exists a subsequence $(x_{n_k})$ of $(x_n)$ that converge to some $c \in A$. Because $f$ is uniformly continuous, then $(f(x_{n_k}))$ converge to $f(c)$. Thus by theorem $(f(x_{n_k}))$ must be bounded or $\exists K > 0 \ni |f(x_{n_k})| \leq K$. This contradicts the assumption, therefore $f$ must be bounded on $A$
