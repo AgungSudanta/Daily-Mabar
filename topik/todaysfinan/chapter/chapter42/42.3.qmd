@@ -1,0 +1,40 @@
+---
+title: "42.3"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+John buys a $13$-week T-bill with par value $\$10,000$ at a simple discount rate of $7.5\%$. What price did he pay for the bond?
+
+**Answer**
+
+$F = 10000$
+
+$n = 13$ week
+
+$d = 7.5\%$, simple, assuming effective annualy
+
+Suppose P is the price paid for the bond. Observe that
+
+\begin{align*}
+(1-d) &= \left(1 - \frac{d_{(52)}} \right)^{52}\\
+d_{52} &= 0.00149814
+\end{align*}
+
+where $d_{(52)} is the discount rate effective weekly. Thus we have
+
+\begin{align*}
+P &= F \cdot (1-n\cdot d_{(52)})\\
+&= 10000 \cdot (1-13\cdot 0.00149814)\\
+&= 9805.2418
+\end{align*}
+
+$\therefore$ The price paid for the bond is $\$ 9805.2418$

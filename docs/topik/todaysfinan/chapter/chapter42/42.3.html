@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="GD">
 <meta name="dcterms.date" content="2025-02-17">
 
-<title>42.1 – Daily Mabar</title>
+<title>42.3 – Daily Mabar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,13 +150,19 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">42.1</h1>
+<h1 class="title">42.3</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>GD </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -172,18 +179,23 @@ window.Quarto = {
 </header>
 
 
-<p>A zero bond will pay <span class="math inline">\(\$1000\)</span> at the end of <span class="math inline">\(10\)</span> years, and is currently selling for <span class="math inline">\(\$500\)</span>. What is the annual return earned by the purchaser?</p>
+<p>John buys a <span class="math inline">\(13\)</span>-week T-bill with par value <span class="math inline">\(\$10,000\)</span> at a simple discount rate of <span class="math inline">\(7.5\%\)</span>. What price did he pay for the bond?</p>
 <p><strong>Answer</strong></p>
-<p><span class="math inline">\(P = 500\)</span></p>
-<p><span class="math inline">\(C = 1000\)</span></p>
-<p><span class="math inline">\(n = 10\)</span> years</p>
-<p>Observe that</p>
+<p><span class="math inline">\(F = 10000\)</span></p>
+<p><span class="math inline">\(n = 13\)</span> week</p>
+<p><span class="math inline">\(d = 7.5\%\)</span>, simple, assuming effective annualy</p>
+<p>Suppose P is the price paid for the bond. Observe that</p>
 <p><span class="math display">\[\begin{align*}
-P &amp;= C \cdot (1+i)^{-n}\\
-500 &amp;= 1000 \cdot (1+i)^{-10}\\
+(1-d) &amp;= \left(1 - \frac{d_{(52)}} \right)^{52}\\
+d_{52} &amp;= 0.00149814
 \end{align*}\]</span></p>
-<p>gives <span class="math inline">\(i = 0.071773\)</span> or <span class="math inline">\(i =-2.0718\)</span>.</p>
-<p><span class="math inline">\(\therefore\)</span> Since the return must be positive, we have <span class="math inline">\(i \approx 7.18\%\)</span></p>
+<p>where $d_{(52)} is the discount rate effective weekly. Thus we have</p>
+<p><span class="math display">\[\begin{align*}
+P &amp;= F \cdot (1-n\cdot d_{(52)})\\
+&amp;= 10000 \cdot (1-13\cdot 0.00149814)\\
+&amp;= 9805.2418
+\end{align*}\]</span></p>
+<p><span class="math inline">\(\therefore\)</span> The price paid for the bond is <span class="math inline">\(\$ 9805.2418\)</span></p>
 
 
 
