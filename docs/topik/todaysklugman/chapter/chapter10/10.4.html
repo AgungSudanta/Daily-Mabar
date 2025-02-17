@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -137,12 +166,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<object data="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysklugman/chapter/chapter10/KoleksiPDFLatex-Chapter10/Todays_Klugman-10.4.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
-<p>
-It appears you don’t have a PDF plugin for this browser. No biggie… you can <a href="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysklugman/chapter/chapter10/KoleksiPDFLatex-Chapter10/Todays_Klugman-10.4.pdf">click here to download the PDF file.</a>
-</p>
-</object>
-<p><embed src="Todays_Klugman-10.4.pdf" style="width:100.0%" height="10000"></p>
+<p>Explain why the sample mean may not be a consistent estimator of the population mean for a Pareto distribution.</p>
+<p><strong>Answer</strong></p>
+<p>By definition, an estimator is (weakly) consistent if it satisfies the following con dition:\</p>
+<p>Let <span class="math inline">\(\hat{\theta_n}\)</span> be an estimator of <span class="math inline">\(\theta\)</span>, if <span class="math inline">\(\forall \delta &gt; 0\)</span> and any <span class="math inline">\(\theta\)</span>, <span class="math inline">\(\lim_{n \to \infty} Pr(  \lvert \hat{\theta_n} - \theta \rvert &gt; \delta) = 0\)</span>, then <span class="math inline">\(\hat{\theta_n}\)</span> is a (weakly) consistent estimator of <span class="math inline">\(\theta\)</span>.\</p>
+<p>Aside from definition, we can try to prove that the sample mean may not be a consistent estimator of the population mean for a Pareto distribution using the following theorem:\</p>
+<p>If $<em>{n } E[] = $ and $</em>{n } Var[] = 0 $, then <span class="math inline">\(\hat{\theta_n}\)</span> is (weakly) consistent.\</p>
+<p>The expectation and variation of a Pareto distribution with parameter <span class="math inline">\((\alpha, \theta)\)</span> are (with <span class="math inline">\(\alpha \geq 1 \cap 2)\)</span>:\</p>
+<p><span class="math display">\[\begin{align}
+    E[X] = \frac{\theta}{\alpha-1}\\
+    Var[X] = \frac{\theta^2 \times \alpha}{ {(\alpha-1)}^2 \times (\alpha-2) }
+\end{align}\]</span></p>
+<p>We can immediately answer the question without using the above definition nor theorem (we may do so anyway later) and without involving the more complicated form of the expectation and variation of a Pareto distribution, observe that, if <span class="math inline">\(\alpha = 1\)</span>, the expectation would not exist, thus it is impossible for the sample mean, which will always exist to accurately estimate it.\</p>
+<p>If we go to the page for Pareto distribution, we can also see that if <span class="math inline">\(\alpha &lt;=1\)</span>, then the mean for the Pareto distribution would not exist, thus if we only use the sample mean, which does not account for the value of <span class="math inline">\(\alpha\)</span> and will always exist, we cannot accurately estimate the mean for the Pareto distribution.\</p>
+<p><strong>Other Answer</strong> If we do not know the value of <span class="math inline">\(\alpha\)</span>, then if <span class="math inline">\(\alpha \leq 1\)</span>, we can see that: <span class="math display">\[\begin{align*}
+    \lim_{n \to \infty} E[\hat{\theta_n}] &amp;= \lim_{n \to \infty} E[\theta]\\
+    &amp;= \infty
+\end{align*}\]</span> which is an inconclusive form and thus the limit does not exist and we cannot use the theorem to always prove that the mean sample is a (weakly) consistent estimator of a Pareto distribution mean.\</p>
+<p>With the Chebyshev equation, that is <span class="math inline">\(Pr( \lvert X - \mu \rvert \geq k\sigma) \leq \frac{1}{k^2}\)</span> and the definition of (weakly) consistent estimator, choose $ k = = $\</p>
+<p>Let <span class="math inline">\(\mu\)</span> be the mean of a pareto distribution, then: <span class="math display">\[\begin{align*}
+    Pr( \lvert X - \mu \rvert \geq k\sigma) \leq \frac{1}{k^2} &amp;= Pr( \lvert \hat{\theta_n} - \mu \rvert \geq \frac{\delta \sqrt{n}{ \sqrt{Var[\hat{\theta_n}]} }} {\sqrt{Var[\hat{\theta_n}]}} )\leq \frac{Var[\hat{\theta_n}] }{ \delta^2 n }\\
+    &amp;= Pr( \lvert \hat{\theta_n} - \mu \rvert )\geq
+\end{align*}\]</span></p>
 
 
 
