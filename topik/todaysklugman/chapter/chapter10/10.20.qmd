@@ -1,0 +1,65 @@
+---
+title: "10.20"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+A claim process is a mixtore of two r.v. $A$ and $B$
+
+$A \sim exp(\theta=1)$
+
+$B \sim exp(\theta=10)$
+
+weight $p$ to $A$ and $1-p$ to $B$. Standard deviation of the mixture is $2$
+
+Estimate $p$ by the methods of moment.
+
+**Answer**
+
+$$f(x) = pe^{-x}+(1-p)e^{\frac{-x}{10}}$$
+
+
+Sifat distribusi eksponensial
+$X \sim exp(\theta)$
+
+$E[X] = \frac{1}{\theta}$
+
+$Var[X] = \frac{1}{\theta^2}$
+
+$E[X^2] = Var[X] + (E[X])^2$
+
+
+\begin{align*}
+E[X] &= p\cdot E[A] + (1-p)\cdot E[B]\\
+&= p \cdot 1 + (1-p) \cdot 10\\
+&= 10-9p
+\end{align*}
+
+
+\begin{align*}
+E[X^2] &= p\cdot E[A^2] + (1-p)\cdot E[B^2]\\
+&= p \cdot 2 + (1-p) \cdot 200\\
+&= 200-198p
+\end{align*}
+
+
+\begin{align*}
+Var[X] &= E[X^2] - (E[X])^2\\
+&= (200-198p) - (10-9p)^2\\
+&= 100-18p-81p^2
+\end{align*}
+
+\begin{align*}
+sd(x) &= \sqrt{Var[X]}\\
+2 &= \sqrt{100-18p-81p^2}\\
+\end{align*}
+
+
+Didapat $\hat{p_1}=0.983206$ dan $\hat{p_2} = -1.20543$.
+
+$\therefore p = 0.983206$

@@ -1,0 +1,35 @@
+---
+title: "11.18"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+$$F(x) = 1-\frac{\theta}{x}, \quad x>\theta$$
+
+Loss observation: 9 below 10, 6 between 10 and 25, 5 in excess of 25
+
+Find maximum likelihood estimator for $\theta$
+
+**Answer**
+
+\begin{align*}
+L[\hat{\theta}] &= [F(10)]^9 \cdot [F(25)-F(10)]^6 + [S(25)]^5\\
+&= \left[1-\frac{\theta}{10} \right]^9 \cdot \left[1-\frac{\theta}{25} - \left(1-\frac{\theta}{10} \right)\right]^6 \cdot \left[\frac{\theta}{25} \right]^5\\
+&= \left[1- \frac{\theta}{10}\right]^9 \cdot \left[ \frac{3\theta}{50} \right]^6 \cdot \left[\frac{\theta}{25}\right]^5\\
+\end{align*}
+
+
+\begin{align*}
+\ln{(L[\hat{\theta}])} = 9 \ln{1-\frac{\theta}{10}} + 6 \ln{\frac{3\theta}{05}} + 5\ln{\frac{\theta}{25}}\\
+\frac{d}{d\theta}\ln{(L[\hat{\theta}])} &= \frac{-9}{10-\theta} + \frac{11}{\theta}\\
+0&= \frac{110-20\theta}{(10-\theta)\theta}\\
+\theta &= 5.5
+\end{align*}
+
+
+$\therefore \hat{\theta} = 5.5$

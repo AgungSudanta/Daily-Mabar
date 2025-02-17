@@ -1,0 +1,56 @@
+---
+title: "10.24"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+Random sample from loglogistic distribution where $80\%$ is more than $100$ dan $20\%$ is more than $400$.
+
+Find estimate for $\theta$ and $\gamma$ by percentile matching
+**Answer**
+
+$80\%$ is more than $100 \longrightarrow 20\%$ is less than $100$
+
+$$F(100) = 0.2$$
+$$\hat{\pi_{0.2}} = 100$$
+
+
+$20\%$ is more than $400 \longrightarrow 80\%$ is less than $400$
+
+$$F(400) = 0.8$$
+$$\hat{\pi_{0.8}} = 400$$
+
+$$F(x) = \frac{\left(\frac{x}{\theta}\right)^{\gamma}}{1+\left(\frac{x}{\theta}\right)^{\gamma}}
+
+
+
+$$F(x) = \frac{\left(\frac{x}{\theta}\right)^{\gamma}}{1+\left(\frac{x}{\theta}\right)^{\gamma}}$$
+
+
+Solving for $\theta$ and $\gamma$
+
+\begin{align*}
+\frac{\left(\frac{100}{\theta}\right)^{\gamma}}{1+\left(\frac{100}{\theta}\right)^{\gamma}}&=0.2\\
+\left(\frac{100}{\theta} \right)^{\gamma} &= 0.2+0.2\left(\frac{100}{\theta} \right)^{\gamma}\\
+0.8 \left(\frac{100}{\theta} \right)^{\gamma} &= 0.2\\
+\left(\frac{100}{\theta} \right)^{\gamma} = 0.25
+\end{align*}
+
+\begin{align*}
+\frac{\left(\frac{400}{\theta}\right)^{\gamma}}{1+\left(\frac{400}{\theta}\right)^{\gamma}}&=0.8\\
+\left(\frac{400}{\theta} \right)^{\gamma} &= 0.8+0.8\left(\frac{400}{\theta} \right)^{\gamma}\\
+0.2 \left(\frac{400}{\theta} \right)^{\gamma} &= 0.8\\
+\left(\frac{400}{\theta} \right)^{\gamma} = 4
+\end{align*}
+
+
+\begin{align*}
+\frac{100}{(0.25)^{1/\gamma}} = \frac{400}{4^{1/\gamma}}\\
+\gamma = 2\\
+\theta = 200\\
+\end{align*}

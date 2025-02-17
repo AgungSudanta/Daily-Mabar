@@ -1,0 +1,39 @@
+---
+title: "10.23"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+Observation: $1000, 850, 750, 1100, 1250, 900$
+
+$X \sim Gamma(\alpha, \theta)$
+
+Find estimate by moment method
+
+**Answer**
+
+\begin{align*}
+E[X] = \alpha \theta\\
+Var[X] = \alpha \theta^2\\
+E[X^2] = Var[X]+ (E[X])^2 = \alpha \theta^2 + \alpha^2 \theta^2
+\end{align*}
+
+
+\begin{align*}
+E[X] &= \bar{x}
+\alpha \theta &= 975\\
+\end{align*}
+
+
+\begin{align*}
+E[X^2] &= \frac{1}{6}\displaystyle{\sum_{i=1}^6 x_i^2}\\
+\alpha \theta^2 + \alpha^2 \theta^2 &= \frac{5867500}{6}\\
+975(\theta + 975) &= 977916.667\\
+\theta &= 27.991\\
+\alpha &= 34.832
+\end{align*}
