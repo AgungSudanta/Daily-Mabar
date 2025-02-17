@@ -11,4 +11,6 @@ format:
 
 [**Chapter 42 Types of Bonds**](./chapter/chapter42/ch42.qmd)
 
+[**Chapter 43 The Various Pricing Formula of a Bond**](./chapter/chapter43/ch43.qmd)
+
 [**Chapter 44 Amortization of Premium or Discount**](./chapter/chapter44/ch44.qmd)
