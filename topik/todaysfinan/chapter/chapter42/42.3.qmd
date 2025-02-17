@@ -25,7 +25,7 @@ $d = 7.5\%$, simple, assuming effective annualy
 Suppose P is the price paid for the bond. Observe that
 
 \begin{align*}
-(1-d) &= \left(1 - \frac{d_{(52)}} \right)^{52}\\
+(1-d) &= \left(1 - d_{(52)} \right)^{52}\\
 d_{52} &= 0.00149814
 \end{align*}
 

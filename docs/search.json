@@ -711,6 +711,6 @@
     "href": "topik/todaysfinan/chapter/chapter42/42.3.html",
     "title": "42.3",
     "section": "",
-    "text": "John buys a \\(13\\)-week T-bill with par value \\(\\$10,000\\) at a simple discount rate of \\(7.5\\%\\). What price did he pay for the bond?\nAnswer\n\\(F = 10000\\)\n\\(n = 13\\) week\n\\(d = 7.5\\%\\), simple, assuming effective annualy\nSuppose P is the price paid for the bond. Observe that\n\\[\\begin{align*}\n(1-d) &= \\left(1 - \\frac{d_{(52)}} \\right)^{52}\\\\\nd_{52} &= 0.00149814\n\\end{align*}\\]\nwhere $d_{(52)} is the discount rate effective weekly. Thus we have\n\\[\\begin{align*}\nP &= F \\cdot (1-n\\cdot d_{(52)})\\\\\n&= 10000 \\cdot (1-13\\cdot 0.00149814)\\\\\n&= 9805.2418\n\\end{align*}\\]\n\\(\\therefore\\) The price paid for the bond is \\(\\$ 9805.2418\\)"
+    "text": "John buys a \\(13\\)-week T-bill with par value \\(\\$10,000\\) at a simple discount rate of \\(7.5\\%\\). What price did he pay for the bond?\nAnswer\n\\(F = 10000\\)\n\\(n = 13\\) week\n\\(d = 7.5\\%\\), simple, assuming effective annualy\nSuppose P is the price paid for the bond. Observe that\n\\[\\begin{align*}\n(1-d) &= \\left(1 - d_{(52)} \\right)^{52}\\\\\nd_{52} &= 0.00149814\n\\end{align*}\\]\nwhere $d_{(52)} is the discount rate effective weekly. Thus we have\n\\[\\begin{align*}\nP &= F \\cdot (1-n\\cdot d_{(52)})\\\\\n&= 10000 \\cdot (1-13\\cdot 0.00149814)\\\\\n&= 9805.2418\n\\end{align*}\\]\n\\(\\therefore\\) The price paid for the bond is \\(\\$ 9805.2418\\)"
   }
 ]
