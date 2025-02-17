@@ -1,0 +1,11 @@
+---
+title: "Chapter 46 Approximation Methods of Bonds’ Yield Rates"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+[46.1](./46.1.qmd)

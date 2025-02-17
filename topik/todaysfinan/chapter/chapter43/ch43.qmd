@@ -1,5 +1,5 @@
 ---
-title: "Chapter 43 Types of Bonds"
+title: "Chapter 43 The Various Pricing Formula of a Bond"
 format:
   html:
     theme:
