@@ -1,0 +1,27 @@
+---
+title: "Chapter 43 Types of Bonds"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+[43.14](./43.14.qmd)
+
+[43.15](./43.14.qmd)
+
+[43.16](./43.14.qmd)
+
+[43.17](./43.14.qmd)
+
+[43.18](./43.14.qmd)
+
+[43.19](./43.14.qmd)
+
+[43.20](./43.14.qmd)
+
+[43.25](./43.14.qmd)
+
+[43.26](./43.14.qmd)
