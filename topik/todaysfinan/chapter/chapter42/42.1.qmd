@@ -1,0 +1,29 @@
+---
+title: "42.4"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+A zero bond will pay $\$1000$ at the end of $10$ years, and is currently selling for $\$500$. What is the annual return earned by the purchaser?
+
+**Answer**
+
+$P = 500$
+
+$C = 1000$
+
+Observe that
+
+\begin{align*}
+P &= C \cdot (1+i)^{-n}\\
+500 &= 1000 \cdot (1+i)^{-10}\\
+\end{align*}
+
+gives $i = 0.071773$ or $i =-2.0718$. 
+
+$\therefore$ Since the return must be positive, we have $i \approx 7.18\%$

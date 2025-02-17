@@ -368,7 +368,7 @@
     "href": "topik/todaysfinan/chapter/chapter42/ch42.html",
     "title": "Chapter 42 Types of Bonds",
     "section": "",
-    "text": "42.4\n42.7"
+    "text": "42.1\n42.2\n42.3\n42.4\n42.5\n42.6\n42.7\n42.8\n42.9"
   },
   {
     "objectID": "topik/todaysdickson/todaysdickson.html",
@@ -691,5 +691,12 @@
     "title": "10.24",
     "section": "",
     "text": "Random sample from loglogistic distribution where \\(80\\%\\) is more than \\(100\\) dan \\(20\\%\\) is more than \\(400\\).\nFind estimate for \\(\\theta\\) and \\(\\gamma\\) by percentile matching Answer\n\\(80\\%\\) is more than \\(100 \\longrightarrow 20\\%\\) is less than \\(100\\)\n\\[F(100) = 0.2\\] \\[\\hat{\\pi_{0.2}} = 100\\]\n\\(20\\%\\) is more than \\(400 \\longrightarrow 80\\%\\) is less than \\(400\\)\n\\[F(400) = 0.8\\] \\[\\hat{\\pi_{0.8}} = 400\\]\n$$F(x) = \n\\[F(x) = \\frac{\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}\\]\nSolving for \\(\\theta\\) and \\(\\gamma\\)\n\\[\\begin{align*}\n\\frac{\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}&=0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2+0.2\\left(\\frac{100}{\\theta} \\right)^{\\gamma}\\\\\n0.8 \\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} = 0.25\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}&=0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8+0.8\\left(\\frac{400}{\\theta} \\right)^{\\gamma}\\\\\n0.2 \\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} = 4\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{100}{(0.25)^{1/\\gamma}} = \\frac{400}{4^{1/\\gamma}}\\\\\n\\gamma = 2\\\\\n\\theta = 200\\\\\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.1.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.1.html",
+    "title": "42.4",
+    "section": "",
+    "text": "A zero bond will pay \\(\\$1000\\) at the end of \\(10\\) years, and is currently selling for \\(\\$500\\). What is the annual return earned by the purchaser?\nAnswer\n\\(P = 500\\)\n\\(C = 1000\\)\nObserve that\n\\[\\begin{align*}\nP &= C \\cdot (1+i)^{-n}\\\\\n500 &= 1000 \\cdot (1+i)^{-10}\\\\\n\\end{align*}\\]\ngives \\(i = 0.071773\\) or \\(i =-2.0718\\).\n\\(\\therefore\\) Since the return must be positive, we have \\(i \\approx 7.18\\%\\)"
   }
 ]
