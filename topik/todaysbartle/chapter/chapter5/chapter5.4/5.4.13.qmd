@@ -8,3 +8,23 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $A \subseteq \mathbb{R}$ and suppose that $f:A \to \mathbb{R}$ has the following property: for each $\epsilon > 0$ there exists a function $g_\epsilon : A \to \mathbb{R}$ such that $g_\epsilon$ is uniformly continuous on $A$ and $|f(x) - g_\epsilon(x)| < \epsilon$ for all $x \in A$. Prove that $f$ is uniformly continuous on $A$
+
+Answer
+
+It will be shown that $f$ is uniformly continuous on $A$
+
+Because $g_\epsilon$ is uniformly continuous, then by definition
+$$\forall \epsilon_1 > 0 \; \exists \delta(\epsilon_1) > 0 \ni \forall x,c_1 \in A, \; |x - c_1| < \delta(\epsilon_1) \implies |g_\epsilon(x) - g_\epsilon(c_1)| < \epsilon_1$$
+
+Let $c \in A$. Notice that
+\begin{align*}
+    |f(x) - f(c)| & = |f(x) -  g_\epsilon(x) +  g_\epsilon(x) -  g_\epsilon(c) +  g_\epsilon(c) + f(c)| \\
+    & \leq |f(x) -  g_\epsilon(x)| + |f(c) -  g_\epsilon(c)| + | g_\epsilon(x) - g(c)| \\
+    & < 2\epsilon_1 + \epsilon
+\end{align*}
+
+Because $\epsilon$ and $\epsilon_1$ arbitrary, choose $\epsilon_0 = 2\epsilon_1 + \epsilon$. Thus $$|f(x) - f(c)| < \epsilon_0$$ and $\delta$ must exists from definition that $g_\epsilon$ uniformly continuous. 
+
+Therefore $f$ is uniformly continuous on $A$
