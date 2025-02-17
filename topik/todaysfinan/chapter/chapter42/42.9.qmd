@@ -1,0 +1,40 @@
+---
+title: "42.9"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+A $\$1000$ par value bond bearing a $5\%$ coupon rate payable semi-annually will be redeemed at 108% at the end of 7 years. Find the price to yield an investor $5\%$ convertible semi-annually.
+
+**Answer**
+
+$F = 1000$
+
+$r^{(2)}= 5\%$
+
+$C = 108\% F = 108$
+
+$n = 7$ years
+
+$i^{(2)} = 5\%$
+
+
+Let $j$ be the semi annual effective yield rate, thus $j = i^{(2)}/2 = 2.5\%$
+
+Observe that
+
+\begin{align*}
+P &= F\cdot \frac{r^{(2)}}{2} \cdot a_{\enclose{actuarial}{2n}j} + C \cdot v_i^n\\
+&= 1000 \cdot 2.5\% \cdot \left(\frac{1-(1+2.5\%)^{-14}}{2.5\%}\right) + 1080 \cdot (1+2.5\%)^{-14}\\
+&= 1056.62
+\end{align*}
+
+$\therefore$ $ P \approx \$ 1056.62$
