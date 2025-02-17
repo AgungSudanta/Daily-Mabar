@@ -37,4 +37,4 @@ P &= F\cdot \frac{r^{(2)}}{2} \cdot a_{\enclose{actuarial}{2n}j} + C \cdot v_i^n
 &= 1056.62
 \end{align*}
 
-$\therefore$ $ P \approx \$ 1056.62$
+$\therefore$ $ P \approx \$1056.62 $
