@@ -1,0 +1,35 @@
+---
+title: "42.5"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+An investor purchases a $26$-week T-bill with face value $\$10,000$ for $\$X$ and earns an annual effective rate of $4.17\%$. Determine $X$.
+
+**Answer**
+
+$F = 10000$
+
+$P = X$
+
+$i = 4.17\%$ effective annually
+
+$n = 26$ weeks
+
+Observe that assuming $26$ weeks equal to half a year, we have $n = 0.5$ years
+
+\begin{align*}
+P &= F \cdot (1+i)^{-n}\\
+X &= 10000 \cdot(1+4.17\%)^{-0.5}\\
+&= 9797.8022
+\end{align*}
+
+$\therefore$ $X = 9797.8022$
