@@ -29,7 +29,7 @@ Suppose P is the price paid for the bond. Observe that
 d_{52} &= 0.00149814
 \end{align*}
 
-where $d_{(52)} is the discount rate effective weekly. Thus we have
+where $d_{(52)}$ is the discount rate effective weekly. Thus we have
 
 \begin{align*}
 P &= F \cdot (1-n\cdot d_{(52)})\\
