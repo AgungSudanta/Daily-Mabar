@@ -15,8 +15,8 @@ format:
 
 [**Chapter 44 Amortization of Premium or Discount**](./chapter/chapter44/ch44.qmd)
 
-[**Chapter 45 Valuation of Bonds Between Coupons Payment Dates**](./chapter/chapter44/ch44.qmd)
+[**Chapter 45 Valuation of Bonds Between Coupons Payment Dates**](./chapter/chapter45/ch45.qmd)
 
-[**Chapter 46 Approximation Methods of Bonds’ Yield Rates**](./chapter/chapter44/ch44.qmd)
+[**Chapter 46 Approximation Methods of Bonds’ Yield Rates**](./chapter/chapter46/ch46.qmd)
 
-[**Chapter 47 Callable Bonds and Serial Bonds**](./chapter/chapter44/ch44.qmd)
+[**Chapter 47 Callable Bonds and Serial Bonds**](./chapter/chapter47/ch47.qmd)
