@@ -1,5 +1,5 @@
 ---
-title: "42.4"
+title: "42.1"
 format:
   html:
     theme:
@@ -16,6 +16,8 @@ A zero bond will pay $\$1000$ at the end of $10$ years, and is currently selling
 $P = 500$
 
 $C = 1000$
+
+$n = 10$ years
 
 Observe that
 

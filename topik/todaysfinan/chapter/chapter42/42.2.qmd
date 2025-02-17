@@ -1,0 +1,44 @@
+---
+title: "42.2"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+Steve purchases a $10$-year zero-coupon bond for $\$400$ and has par value of  $\$1,000$. Find the yield rate convertible semiannually that would be earned by Steve.
+
+**Answer**
+
+$P = 400$
+
+$F = 1000$
+
+$n = 10$ years
+
+
+Suppose $i$ is the effective annual yield rate.  Observe that
+
+\begin{align*}
+P &= F \cdot (1+i)^{-n}\\
+400 &= 1000 \cdot (1+i)^{-10}
+\end{align*}
+
+gives positive $i = 0.095958$.
+
+Suppose $i^{(2)}$ is the yield rate convertible semiannualy. We have the relation
+
+\begin{align*}
+(1+i) &= \left(1+\frac{i^{(2)}}{2}\right)^2\\
+(1+0.095958) &= \left(1+\frac{i^{(2)}}{2}\right)^2\\
+\end{align*}
+
+Which result in $i^{(2)} = 0.0937603$.
+
+$\therefore$  the yield rate convertible semiannually is given by $i^{(2)} \approx 9.38\%$

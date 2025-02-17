@@ -695,8 +695,15 @@
   {
     "objectID": "topik/todaysfinan/chapter/chapter42/42.1.html",
     "href": "topik/todaysfinan/chapter/chapter42/42.1.html",
-    "title": "42.4",
+    "title": "42.1",
     "section": "",
-    "text": "A zero bond will pay \\(\\$1000\\) at the end of \\(10\\) years, and is currently selling for \\(\\$500\\). What is the annual return earned by the purchaser?\nAnswer\n\\(P = 500\\)\n\\(C = 1000\\)\nObserve that\n\\[\\begin{align*}\nP &= C \\cdot (1+i)^{-n}\\\\\n500 &= 1000 \\cdot (1+i)^{-10}\\\\\n\\end{align*}\\]\ngives \\(i = 0.071773\\) or \\(i =-2.0718\\).\n\\(\\therefore\\) Since the return must be positive, we have \\(i \\approx 7.18\\%\\)"
+    "text": "A zero bond will pay \\(\\$1000\\) at the end of \\(10\\) years, and is currently selling for \\(\\$500\\). What is the annual return earned by the purchaser?\nAnswer\n\\(P = 500\\)\n\\(C = 1000\\)\n\\(n = 10\\) years\nObserve that\n\\[\\begin{align*}\nP &= C \\cdot (1+i)^{-n}\\\\\n500 &= 1000 \\cdot (1+i)^{-10}\\\\\n\\end{align*}\\]\ngives \\(i = 0.071773\\) or \\(i =-2.0718\\).\n\\(\\therefore\\) Since the return must be positive, we have \\(i \\approx 7.18\\%\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.2.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.2.html",
+    "title": "42.2",
+    "section": "",
+    "text": "Steve purchases a \\(10\\)-year zero-coupon bond for \\(\\$400\\) and has par value of \\(\\$1,000\\). Find the yield rate convertible semiannually that would be earned by Steve.\nAnswer\n\\(P = 400\\)\n\\(F = 1000\\)\n\\(n = 10\\) years\nSuppose \\(i\\) is the effective annual yield rate. Observe that\n\\[\\begin{align*}\nP &= F \\cdot (1+i)^{-n}\\\\\n400 &= 1000 \\cdot (1+i)^{-10}\n\\end{align*}\\]\ngives positive \\(i = 0.095958\\).\nSuppose \\(i^{(2)}\\) is the yield rate convertible semiannualy. We have the relation\n\\[\\begin{align*}\n(1+i) &= \\left(1+\\frac{i^{(2)}}{2}\\right)^2\\\\\n(1+0.095958) &= \\left(1+\\frac{i^{(2)}}{2}\\right)^2\\\\\n\\end{align*}\\]\nWhich result in \\(i^{(2)} = 0.0937603\\).\n\\(\\therefore\\) the yield rate convertible semiannually is given by \\(i^{(2)} \\approx 9.38\\%\\)"
   }
 ]
