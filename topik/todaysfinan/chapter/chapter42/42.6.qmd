@@ -1,0 +1,35 @@
+---
+title: "42.6"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+An investor buys a zero-coupon bond with par value $\$1,000$ for $\$493.63$. The maturity date is $Y$ years and the yield rate convertible semi-annually is $8\%$. Calculate $Y$.
+
+**Answer**
+
+$F = 1000$
+
+$P = 493.63$
+
+$i^{(2)} = 8\%$
+
+$n = Y$ years
+
+Observe that
+
+\begin{align*}
+P &= F \cdot \left(1+\frac{i^{(2)}}{2}\right)^{-2Y}\\
+493.63 &= 1000 \cdot \left(1+\frac{8\%}{2}\right)^{-2Y}\\
+Y &= 8.99995
+\end{align*}
+
+$\therefore$ $Y \approx 9$ years
