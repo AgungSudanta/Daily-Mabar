@@ -8,3 +8,25 @@ format:
         css: styles.css
         toc: true
 ---
+
+A function $f : \mathbb{R} \to \mathbb{R}$ is said to be \textbf{periodic} on $\mathbb{R}$ if there exists $p > 0$ such that $f(x + p) = f(x)$ for all $x \in \mathbb{R}$. Prove that a continuous periodic function on $\mathbb{R}$ is bounded and uniformly continuous on $\mathbb{R}$
+
+Answer
+
+Notice the following :
+
+Let $I := [0, p]$. Based on theorem, $f$ must be bounded on $I$ and uniformly continuous on $\mathbb{R}$ or by definition
+$$\exists M > 0 \ni |f(x)| \leq M \; \forall x \in I$$
+\begin{center}
+    and
+\end{center}
+$$\forall \epsilon > 0 \; \exists \delta(\epsilon) > 0 \ni \forall x,c \in I, \; |x-c| < \delta(\epsilon) \implies |f(x) - f(c)| \leq \epsilon$$
+
+Let $x_k = x + kp$, and $c_k = c + kp$ for all $x,c \in I$ and $n \in \mathbb{Z}$. Notice that $x_n - c_n = x + kp - c - kp = x - c$, thus we have $$\exists M > 0 \ni |f(x)| = |f(x + kp)|  \leq M$$
+\begin{center}
+    and
+\end{center}
+$$\forall \epsilon > 0 \; \exists \delta(\epsilon) > 0 \ni \forall x,c \in I, \; |x_k - c_k| < \delta(\epsilon) \implies |f(x_n) - f(c_k)| \leq \epsilon$$
+Let $I_k := [(k-1)p, p]$, thus $x_k \in I_k \; \forall k \in \mathbb{Z}$ and from 2 condition above it assure that $f$ must be bounded and uniformly continuous on $I_k \; \forall k \in \mathbb{Z}$. It is trivial that $\bigcup_{k \in \mathbb{Z}} \; I_k = \mathbb{R}$
+
+Therefore $f$ is bounded and uniformly continuous on $\mathbb{R}$
