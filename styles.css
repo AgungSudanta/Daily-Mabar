@@ -1,1 +1,9 @@
 /* css styles */
+
+
+.test {
+    background:gray;
+    width:200px;
+    height:200px;
+    cursor:url("https://github.com/AgungSudanta/Daily-Mabar/blob/main/tebakkelakuan.jpeg"), auto;
+  }

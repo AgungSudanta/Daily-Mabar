@@ -12,6 +12,9 @@ format:
     toc: true
 ---
 
+<a href="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysfinan/chapter/chapter47/PdfFinan47/Todays_Finan_47_13.pdf">PDF version of this answer (may be slightly different)</a>
+
+
 A $1000$ par value bond pays annual coupons of $80$. The bond is redeemable at par in $30$ years, but is callable any time from the end of the 10th year at $1050$.
 
 Based on her desired yield rate, an investor calculates the following potential purchase prices, $P$ :

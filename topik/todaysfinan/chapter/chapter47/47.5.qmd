@@ -1,0 +1,17 @@
+---
+title: "47.13"
+author: "GD"
+date: last-modified
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+
+
+<a href="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysfinan/chapter/chapter47/PdfFinan47/Todays_Finan_47_5.pdf">Open The PDF by clicking this text</a>

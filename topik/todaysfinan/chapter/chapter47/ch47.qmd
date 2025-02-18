@@ -8,4 +8,7 @@ format:
     css: styles.css
     toc: true
 ---
+
+[47.5](./47.5.qmd)
+
 [47.13](./47.13.qmd)
