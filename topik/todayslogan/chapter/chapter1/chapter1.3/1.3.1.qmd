@@ -8,3 +8,70 @@ format:
         css: styles.css
         toc: true
 ---
+
+Heat flows longitudinally through a laterally insulated metal bar of length
+10 centimeters, and the temperature $u = u(x, t)$ satisfies the diffusion equation: $u_t = k u_{xx},$ where $k = 0.02$ square centimeters per second. Suppose the temperatures at some fixed time $T$ at $x = 4, 6, 8$ cm are given as: $u(4, T) = 58, u(6, T) = 64, u(8, T) = 72.$ Estimate $u_{xx}(6, T)$ using a difference approximation. Will the temperature at $x = 6$ increase or decrease in the next instant of time? Estimate the temperature at $x = 6$ at $T + 0.5$ seconds.
+
+**Hint:** Recall from calculus that
+
+\begin{equation}
+    f''(a) \approx \frac{f(a - h) - 2f(a) + f(a + h)}{h^2},
+\end{equation}
+
+where $h$ is a small increment. This approximation is also derived in Chapter 6.
+
+Answer
+
+We will find estimate $u_{xx}$ using the second-order central difference formula:
+
+\begin{equation*}
+    u_{xx}(x, T) \approx \frac{u(x-h,T) - 2u(x,T) + u(x + h,T)}{h^2},
+\end{equation*}
+
+Given:
+1. $x=6$ cm
+2. $h=2$ cm  (since the given temperature values are at $x=4,6,8$ cm)
+3. $u(4,T)=58$, $u(6,T)=64$, $u(8,T)=72$
+
+We can compute 
+
+\begin{align*}
+u_{xx}(6, T) &\approx \frac{u(6-2,T) - 2u(6,T) + u(6+2,T)}{2^2} \\ 
+& =\frac{u(4,T) - 2u(6,T) + u(8,T)}{4}\\
+& =\frac{58 - 2\times64 + 72}{4}\\
+& =\frac{58-128+72}{4} \\
+& =\frac{2}{4} \\
+& =\frac{1}{2} \\
+& =0.5
+\end{align*}
+
+Since the heat equation is $u_t=ku_{xx}$ with $k=0.02$, we find:
+
+\begin{align*}
+u_t(6,T)&=k\times u_{xx}(6,T) \\
+& =0.02\times0.5 \\
+& =0.01 \\
+& >0
+\end{align*}
+
+This implies that the temperature at $x=6$ cm will increase in the next instant of time
+
+Now we will estimate $u(6,T+0.5)$ using forward difference approximation respected due T:
+
+\begin{equation*}
+    u_t(x,T) \approx \frac{u(x,T+\Delta t) - u(x,T\Delta t)}{\Delta t}
+\end{equation*}
+
+Which can be arranged to:
+
+\begin{equation*}
+    u(x,T+\Delta t) \approx   u(x,T) + u_t(x,T)\Delta t
+\end{equation*}
+
+Using this formula, we can compute $u(x,T+\Delta t)$
+
+\begin{align*}
+u(6,T+0.5)&\approx u(6,T) + u_t(6,T)\times0.5 \\
+& = 64 + 0.01\times0.5 \\
+& = 64.005
+\end{align*}

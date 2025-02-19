@@ -8,3 +8,43 @@ format:
         css: styles.css
         toc: true
 ---
+
+Find the general solutions of advection decay equations $u_t + c \cdot u_x = - \lambda \cdot u$ by transforming to characteristic coordinates  $\xi = x - c \cdot t, \tau = t$
+
+Answer
+
+We will find $u_x$ and $u_t$ with partial chain rule so, $u_x$ and $u_t$ have $u_\xi$ and $u_\tau$.
+
+\begin{align*}
+u_x &= u_\xi \cdot \xi_x + u_\tau \cdot \tau_x \\
+&= u_\xi \cdot 1 + u_\tau \cdot 0\\
+&= u_\xi\\
+\\
+u_t &= u_\xi \cdot \xi_t + u_\tau \cdot \tau_t\\
+&= u_\xi \cdot (-c) + u_\tau \cdot 1\\
+&= u_\tau - c \cdot u_\xi
+\end{align*}
+
+By changing $u_x$ and $u_t$ from advection decay equations, we will have
+
+\begin{align*}
+&\iff u_t + c \cdot u_x &= - \lambda \cdot u\\
+&\iff u_\tau - c \cdot u_\xi + c \cdot u_\xi &= -\lambda \cdot u\\
+&\iff u_\tau &= - \lambda \cdot u\\
+&\iff \frac{\partial u}{\partial \tau} &= -\lambda \cdot u\\
+&\iff \frac{\partial u}{u} &= -\lambda \cdot \partial \tau\\
+&\iff \int \frac{1}{u} du &= \int -\lambda d\tau\\
+&\iff \ln{|u|} &= -\lambda \cdot t + f(\xi)\\
+&\iff u &= e^{- \lambda \cdot t + f(\xi)}\\
+\end{align*}
+
+Assume that $e^{f(\xi)} = g(\xi)$, therefore
+
+\begin{align*}
+&\iff u(\xi, \tau) &= g(\xi) \cdot e^{-\lambda \tau}\\
+&\iff u(x,t) &= g(x - c\cdot t) \cdot e^{- \lambda t}
+\end{align*}
+
+Now we got the general solutions of advection decay equations are\\
+$u(x,t) = g(x - c \cdot t) \cdot e^{-\lambda t}$\\
+for all function of $g$

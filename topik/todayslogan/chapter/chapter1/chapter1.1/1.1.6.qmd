@@ -8,3 +8,71 @@ format:
         css: styles.css
         toc: true
 ---
+
+Verify that
+
+\begin{align*}
+u(x,t) = \frac{1}{2c} \int_{x-ct}^{x+ct}{g(s) ds}
+\end{align*}
+
+is a solution to the wave equation $u_{tt} = c^2 \cdot u_{xx}$, where $c$ is a constant and $g$ is
+a given continuously differentiable function
+
+Answer
+
+Assume that $g(s)$ is integrable on the interval $[x - ct, x + ct]$ so that
+
+\begin{align*}
+    u(x,t) &= \frac{1}{2c} \int_{x-ct}^{x+ct}{g(s) ds} \\
+    &= \frac{G(x + ct) - G(x - ct)}{2c}
+\end{align*}
+
+We want to determine the value of $u_{xx}(x,t)$ so we first find $u_x(x,t)$:
+
+\begin{align*}
+    u_x(x,t) &= \frac{\partial \left(\frac{G(x + ct) - G(x - ct)}{2c}\right)}{\partial x} \\
+    &= \frac{1}{2c}\left(\frac{\partial \left(G(x + ct)\right)}{\partial x} -\frac{\partial \left(G(x - ct)\right)}{\partial x} \right) \\
+    &= \frac{1}{2c} \left(\frac{\partial \left(G(x + ct)\right)}{\partial \left(x + ct \right)} \cdot \frac{\partial \left(x + ct\right)}{\partial x} - \frac{\partial \left(G(x - ct)\right)}{\partial \left(x - ct \right)} \cdot \frac{\partial \left(x - ct\right)}{\partial x} \right) \\
+    &= \frac{1}{2c} \left(g(x + ct) \cdot 1 - g(x - ct) \cdot 1 \right) \\
+    &= \frac{g(x + ct) - g(x - ct)}{2c}
+\end{align*}
+
+Since $g$ is a continuously differentiable function, we have:
+
+\begin{align*}
+    u_{xx}(x,t) &= \frac{\partial \left(\frac{g(x + ct) - g(x - ct)}{2c}\right)}{\partial x} \\
+    &= \frac{1}{2c}\left(\frac{\partial \left(g(x + ct)\right)}{\partial x} -\frac{\partial \left(g(x - ct)\right)}{\partial x} \right) \\
+    &= \frac{1}{2c} \left(\frac{\partial \left(g(x + ct)\right)}{\partial \left(x + ct \right)} \cdot \frac{\partial \left(x + ct\right)}{\partial x} - \frac{\partial \left(g(x - ct)\right)}{\partial \left(x - ct \right)} \cdot \frac{\partial \left(x - ct\right)}{\partial x} \right) \\
+    &= \frac{1}{2c} \left(g'(x + ct) \cdot 1 - g'(x - ct) \cdot 1 \right) \\
+    &= \frac{g'(x + ct) - g'(x - ct)}{2c}
+\end{align*}
+
+Now, to find $u_{tt}(x,t)$  we first determine $u_t(x,t)$:
+
+\begin{align*}
+    u_t(x,t) &= \frac{\partial \left(\frac{G(x + ct) - G(x - ct)}{2c}\right)}{\partial t} \\
+    &= \frac{1}{2c}\left(\frac{\partial \left(G(x + ct)\right)}{\partial t} -\frac{\partial \left(G(x - ct)\right)}{\partial t} \right) \\
+    &= \frac{1}{2c} \left(\frac{\partial \left(G(x + ct)\right)}{\partial \left(x + ct \right)} \cdot \frac{\partial \left(x + ct\right)}{\partial t} - \frac{\partial \left(G(x - ct)\right)}{\partial \left(x - ct \right)} \cdot \frac{\partial \left(x - ct\right)}{\partial t} \right) \\
+    &= \frac{1}{2c} \left(g(x + ct) \cdot c - g(x - ct) \cdot (-c) \right) \\
+    &= \frac{g(x + ct) + g(x - ct)}{2}
+\end{align*}
+
+Since $g$ is a continuously differentiable function, we obtain:
+
+\begin{align*}
+    u_{tt}(x,t) &= \frac{\partial \left(\frac{g(x + ct) + g(x - ct)}{2c}\right)}{\partial t} \\
+    &= \frac{1}{2}\left(\frac{\partial \left(g(x + ct)\right)}{\partial t} +\frac{\partial \left(g(x - ct)\right)}{\partial t} \right) \\
+    &= \frac{1}{2} \left(\frac{\partial \left(g(x + ct)\right)}{\partial \left(x + ct \right)} \cdot \frac{\partial \left(x + ct\right)}{\partial t} + \frac{\partial \left(g(x - ct)\right)}{\partial \left(x - ct \right)} \cdot \frac{\partial \left(x - ct\right)}{\partial t} \right) \\
+    &= \frac{1}{2} \left(g'(x + ct) \cdot c + g'(x - ct) \cdot (-c) \right) \\
+    &= \frac{c \cdot (g'(x + ct) - g'(x - ct))}{2}
+\end{align*}
+
+Observe that:
+
+\begin{align*}
+    c^2 \cdot u_{xx} &= c^2 \cdot \frac{g'(x + ct) - g'(x - ct)}{2c} \\
+    &= \frac{c \cdot (g'(x + ct) - g'(x - ct))}{2}\\
+    &= u_{tt}
+\end{align*}
+
+Thus, it is proven that $u(x,tt) = \frac{1}{2c} \int_{x-ct}^{x+ct}{g(s) ds}$ is a solution to the wave equation $u_{tt} = c^2 \cdot u_{xx}$
