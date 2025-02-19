@@ -145,5 +145,12 @@
     "title": " Daily Mabar",
     "section": "",
     "text": "Topic\nReal Analysis\nToday’s Bartle\nDifferential Equation\nToday’s Logan\nRisk Modelling\nToday’s Klugman\nTime Series\nToday’s Cryer\nFinancial Mathematics\nToday’s Finan\nLife Contingencies\nToday’s Dickson\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "topik/todaysbartle/todaysbartle.html",
+    "href": "topik/todaysbartle/todaysbartle.html",
+    "title": "Today’s Bartle",
+    "section": "",
+    "text": "Chapter 2\nCh 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)\nCh 2.2 Absolute Value and the Real Line\nCh 2.3 The Completeness Property of \\(\\mathbb{R}\\)\nCh 2.4 Applications of the Supremum Property\nCh 2.5 Intervals\nChapter 3\nCh 3.1 Sequences and Their Limits\nCh 3.2 Limit Theorems\nCh 3.3 Monotone Sequences\nCh 3.4 Subsequences and the Bolzano-Weierstrass Theorem\nCh 3.5 The Cauchy Criterion\nCh 3.6 Properly Divergent Sequences\nCh 3.7 Introduction to Infinite Series\nChapter 4\nCh 4.1 Limits of Functions\nCh 4.2 Limit Theorems\nCh 4.3 Some Extensions of the Limit Concept\nChapter 5\nCh 5.1 Continuous Function\nCh 5.2 Combinations of Continuous Functions\nCh 5.3 Continuous Functions on Intervals\nCh 5.4 Uniform Continuity\nCh 5.5 Continuity and Gauges\nCh 5.6 Monotone and Inverse Functions\nChapter 6\nCh 6.1 The Derivative\nCh 6.2 The Mean Value Theorem\nCh 6.3 L’Hospital’s Rules\nCh 6.4 Taylor’s Theorem\nChapter 7\nCh 7.1 Riemann Integral\nCh 7.2 Riemann Integrable Functions\nCh 7.3 The Fundamental Theorem\nChapter 8\nCh 8.1 Pointwise and Uniform Convergence\nCh 8.2 Interchange of Limits"
   }
 ]
