@@ -1,17 +1,52 @@
 [
   {
-    "objectID": "topik/todaysfinan/chapter/chapter47/47.13.html",
-    "href": "topik/todaysfinan/chapter/chapter47/47.13.html",
-    "title": "47.13",
+    "objectID": "topik/todayslogan/todayslogan.html",
+    "href": "topik/todayslogan/todayslogan.html",
+    "title": "Today’s Logan",
     "section": "",
-    "text": "PDF version of this answer (may be slightly different)\nA \\(1000\\) par value bond pays annual coupons of \\(80\\). The bond is redeemable at par in \\(30\\) years, but is callable any time from the end of the 10th year at \\(1050\\).\nBased on her desired yield rate, an investor calculates the following potential purchase prices, \\(P\\) :\n\nAssuming the bond is called at the end of the 10th year, P = 957\nAssuming the bond is held until maturity, P = 897\n\nThe investor buys the bond at the highest price that guarantees she will receive at least her desired yield rate regardless of when the bond is called. The investor holds the bond for 20 years, after which time the bond is called.\nCalculate the annual yield rate the investor earns.\nAnswer\nWe have\n\n\\(F = 1000\\)\n\\(F \\cdot r = 80\\)\n\\(n = 30\\) years, callable from \\(t = 10\\)\n\\(C = 1050\\), given called at \\(t=10\\)\n\nLet \\(i\\) be the annual yield rate of a\nSolving for the yield rate given the bond is called at \\(t=10\\),\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n957 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-10}}{i}   \\right) + 1050 \\cdot (1+i)^{-10}\\\\\ni &= 0.0899911\n\\end{align*}\\]\nSolving for the yield rate given the bond is called at maturity,\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n897 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-30}}{i}   \\right) + 1000 \\cdot (1+i)^{-30}\\\\\ni &= 0.0900281\n\\end{align*}\\]\nThus, the desired yield rate is \\(0.0899911\\%\\)\nWe have \\(r = 80/1000 = 8\\% &lt; i\\), thus it is a discount case where the issuer would hold the bond as long as possible. Thus, the highest price that guarantees the desired yield rate will be received is \\(897\\)\nHowever, since the bond was called at \\(t=20\\),\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n897 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-20}}{i}   \\right) + 1000 \\cdot (1+i)^{-20}\\\\\ni &= 0.0924304\n\\end{align*}\\]\n\\(\\therefore i \\approx 9.24\\%\\)"
+    "text": "Chapter 1\nChapter 1.1 PDE Models\nChapter 1.2 Conservation Laws\nChapter 1.3 Diffusion\nChapter 1.5 Vibrations and Acoustics\nChapter 1.8 Laplace’s Equation\nChapter 1.9 Classification of PDEs"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.14.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.14.html",
-    "title": "5.4.14",
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.1.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.1.html",
+    "title": "1.3.1",
     "section": "",
-    "text": "A function \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is said to be on \\(\\mathbb{R}\\) if there exists \\(p &gt; 0\\) such that \\(f(x + p) = f(x)\\) for all \\(x \\in \\mathbb{R}\\). Prove that a continuous periodic function on \\(\\mathbb{R}\\) is bounded and uniformly continuous on \\(\\mathbb{R}\\)\nAnswer\nNotice the following :\nLet \\(I := [0, p]\\). Based on theorem, \\(f\\) must be bounded on \\(I\\) and uniformly continuous on \\(\\mathbb{R}\\) or by definition \\[\\exists M &gt; 0 \\ni |f(x)| \\leq M \\; \\forall x \\in I\\]\n\\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta(\\epsilon) &gt; 0 \\ni \\forall x,c \\in I, \\; |x-c| &lt; \\delta(\\epsilon) \\implies |f(x) - f(c)| \\leq \\epsilon\\]\nLet \\(x_k = x + kp\\), and \\(c_k = c + kp\\) for all \\(x,c \\in I\\) and \\(n \\in \\mathbb{Z}\\). Notice that \\(x_n - c_n = x + kp - c - kp = x - c\\), thus we have \\[\\exists M &gt; 0 \\ni |f(x)| = |f(x + kp)|  \\leq M\\]\n\\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta(\\epsilon) &gt; 0 \\ni \\forall x,c \\in I, \\; |x_k - c_k| &lt; \\delta(\\epsilon) \\implies |f(x_n) - f(c_k)| \\leq \\epsilon\\] Let \\(I_k := [(k-1)p, p]\\), thus \\(x_k \\in I_k \\; \\forall k \\in \\mathbb{Z}\\) and from 2 condition above it assure that \\(f\\) must be bounded and uniformly continuous on \\(I_k \\; \\forall k \\in \\mathbb{Z}\\). It is trivial that \\(\\bigcup_{k \\in \\mathbb{Z}} \\; I_k = \\mathbb{R}\\)\nTherefore \\(f\\) is bounded and uniformly continuous on \\(\\mathbb{R}\\)"
+    "text": "Heat flows longitudinally through a laterally insulated metal bar of length 10 centimeters, and the temperature \\(u = u(x, t)\\) satisfies the diffusion equation: \\(u_t = k u_{xx},\\) where \\(k = 0.02\\) square centimeters per second. Suppose the temperatures at some fixed time \\(T\\) at \\(x = 4, 6, 8\\) cm are given as: \\(u(4, T) = 58, u(6, T) = 64, u(8, T) = 72.\\) Estimate \\(u_{xx}(6, T)\\) using a difference approximation. Will the temperature at \\(x = 6\\) increase or decrease in the next instant of time? Estimate the temperature at \\(x = 6\\) at \\(T + 0.5\\) seconds.\nHint: Recall from calculus that\n\\[\\begin{equation}\n    f''(a) \\approx \\frac{f(a - h) - 2f(a) + f(a + h)}{h^2},\n\\end{equation}\\]\nwhere \\(h\\) is a small increment. This approximation is also derived in Chapter 6.\nAnswer\nWe will find estimate \\(u_{xx}\\) using the second-order central difference formula:\n\\[\\begin{equation*}\n    u_{xx}(x, T) \\approx \\frac{u(x-h,T) - 2u(x,T) + u(x + h,T)}{h^2},\n\\end{equation*}\\]\nGiven: 1. \\(x=6\\) cm 2. \\(h=2\\) cm (since the given temperature values are at \\(x=4,6,8\\) cm) 3. \\(u(4,T)=58\\), \\(u(6,T)=64\\), \\(u(8,T)=72\\)\nWe can compute\n\\[\\begin{align*}\nu_{xx}(6, T) &\\approx \\frac{u(6-2,T) - 2u(6,T) + u(6+2,T)}{2^2} \\\\\n& =\\frac{u(4,T) - 2u(6,T) + u(8,T)}{4}\\\\\n& =\\frac{58 - 2\\times64 + 72}{4}\\\\\n& =\\frac{58-128+72}{4} \\\\\n& =\\frac{2}{4} \\\\\n& =\\frac{1}{2} \\\\\n& =0.5\n\\end{align*}\\]\nSince the heat equation is \\(u_t=ku_{xx}\\) with \\(k=0.02\\), we find:\n\\[\\begin{align*}\nu_t(6,T)&=k\\times u_{xx}(6,T) \\\\\n& =0.02\\times0.5 \\\\\n& =0.01 \\\\\n& &gt;0\n\\end{align*}\\]\nThis implies that the temperature at \\(x=6\\) cm will increase in the next instant of time\nNow we will estimate \\(u(6,T+0.5)\\) using forward difference approximation respected due T:\n\\[\\begin{equation*}\n    u_t(x,T) \\approx \\frac{u(x,T+\\Delta t) - u(x,T\\Delta t)}{\\Delta t}\n\\end{equation*}\\]\nWhich can be arranged to:\n\\[\\begin{equation*}\n    u(x,T+\\Delta t) \\approx   u(x,T) + u_t(x,T)\\Delta t\n\\end{equation*}\\]\nUsing this formula, we can compute \\(u(x,T+\\Delta t)\\)\n\\[\\begin{align*}\nu(6,T+0.5)&\\approx u(6,T) + u_t(6,T)\\times0.5 \\\\\n& = 64 + 0.01\\times0.5 \\\\\n& = 64.005\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.8.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.8.html",
+    "title": "1.2.8",
+    "section": "",
+    "text": "Solve the pure initial value problem \\[u_t + u_x - 3u = t, \\; x \\in \\mathbb{R}, \\; t &gt; 0\\] \\[u(x,0) = x^2, \\; x \\in \\mathbb{R}\\]\nAnswer\nLet \\(\\xi = x - t\\), \\(\\tau = t\\), and \\(U(\\xi, \\tau) = u(x,t)\\) . By chain rule we have \\[u_x = U_\\xi \\xi_x + U_\\tau \\tau_x =   U_\\xi\\] \\[u_t = U_\\xi \\xi_t + U_\\tau \\tau_t = U_\\tau - U_\\xi\\] Substituting all the changes to the original PDE, we have \\[U_\\tau - 3U = \\tau\\] Integrating factor of above ODE is given by \\[e^{\\int -3 \\;d\\tau} = e^{-3\\tau}\\] Thus by multiplying the ODE with integrating factor we got \\[\\begin{align*}\n    e^{-3\\tau}U_\\tau - 3e^{-3\\tau}U & = e^{-3\\tau}\\tau \\\\\n    \\frac{d}{d\\tau}(e^{-3\\tau}U) & = e^{-3\\tau}\\tau \\\\\n    e^{-3\\tau}U = \\int e^{-3\\tau}\\tau \\; d\\tau\n\\end{align*}\\] Using partial integral we will obtain that \\[\\int e^{-3\\tau}\\tau \\; d\\tau = -\\frac{\\tau e^{-3\\tau}}{3} + \\frac{1}{3}\\int e^{-3\\tau} \\; d\\tau = -\\frac{\\tau e^{-3\\tau}}{3} - \\frac{e^{-3\\tau}}{9} + h(\\xi)\\] Therefore \\[U(\\xi, \\tau) = -\\frac{\\tau}{3} - \\frac{1}{9} + h(\\xi)e^{3\\tau}\\]\nChanging back our variable to \\(t\\) and \\(x\\) will result in \\[u(x, t) = - \\frac{t}{3} - \\frac{1}{9} + h(x - t)e^{3t}\\] If we apply the initial condition, then \\[\\begin{align*}\n    x^2 = h(x) - \\frac{1}{9} \\\\\n    h(x) = x^2 + \\frac{1}{9}\n\\end{align*}\\] Therefore our solution is \\[u(x, t) = -\\frac{t}{3} - \\frac{1}{9} +  ((x-t)^2 + \\frac{1}{9})e^{3t}\\]"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.13.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.13.html",
+    "title": "1.2 Conservation Laws",
+    "section": "",
+    "text": "Write a formula for the general solution of the equation \\[u_t + cu_x = f(x)u\\]\nAnswer\nAssume \\(c\\) a real valued constant, then we can do change of variables so that \\(U(\\xi, \\tau) = u(x,t)\\) where \\[\\xi = x - ct\\] \\[\\tau = t\\] Using chain rule, we got \\[u_t = U_\\xi \\xi_t + U_\\tau \\tau_t = U_\\tau - cU_\\xi\\] \\[u_x = U_\\xi \\xi_x + U_\\tau \\tau_x = U_\\xi\\] Substituting back to the original PDE will result in \\[U_\\tau = f(\\xi + c\\tau)U\\] Solving this ODE with Factor of Integration will result in\n\\[\\begin{align*}\n    e^{-\\int f(\\xi + c\\tau) \\; d\\tau}f(\\xi+\\tau)U & = h(\\xi) \\\\\n    U &  = \\frac{h(\\xi)}{f(\\xi+\\tau)}e^{\\int f(\\xi + c\\tau) \\; d\\tau} \\\\\n    u(x,t) & = \\frac{h(x - ct)}{f(x)} e^{\\int \\; f(x) dt}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.7.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.7.html",
+    "title": "1.1.7",
+    "section": "",
+    "text": "For what values of a and b is the function \\(u(x, t) = e^{at}\\sin bx\\) a solution to the heat equation \\[u_t = ku_{xx}\\]\nAnswer\nDifferentiating \\(u(x, t) = e^{at}\\sin bx\\) respect to \\(t\\) and \\(x\\) will result in \\[u_t = ae^{at}\\sin bx\\] \\[u_{xx} = -b^2e^{at}\\sin bx\\] Substituting into the heat equation will result in \\[ae^{at}\\sin bx = -kb^2e^{at}\\sin bx\\] Thus any arbitrary \\(a,b\\in\\mathbb{R}\\) with \\(a = -kb^2, \\; k \\in \\mathbb{R}\\) is a valid value so that \\(u(x, t) = e^{at}\\sin bx\\) a solution to the heat equation"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.5.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.5.html",
+    "title": "1.1.5",
+    "section": "",
+    "text": "Find a function \\(u = u(x,t)\\) that satisfies the PDE \\[u_{xx} = 0, \\; 0 &lt; x &lt; 1, \\; t &gt; 0\\] subject to the boundary conditions \\[u(0,t) = t^2, \\; u(1,t) = 1, \\; t &gt; 0\\]\nAnswer\nLet \\(u(x,t) = t^2 - xt^2 + x\\). thus \\(u_x = -1 + 1 = 0\\) and \\(u_{xx} = 0\\), also \\(u(0,t) = t^2 - 0 \\cdot t^2 + 0= t^2\\) and \\(u(1,t) = t^2 - 1 \\cdot t^2 + 1 = 1\\)\n\\(\\therefore u(x,t) = t^2 - xt^2 + x\\) satisfies \\(u_{xx} = 0\\) and the initial conditions \\(u(0,t) = t^2, \\; u(1,t) = 1, \\; t &gt; 0\\)"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.10.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.10.html",
+    "title": "1.1.10",
+    "section": "",
+    "text": "Show that the function \\(u(x, y) = \\arctan(\\frac{y}{x})\\) satisfies the two-dimensional Laplace’s equation \\(u_{xx} + u_{yy} = 0\\) \\\nAnswer\nBy taking partial derivative, we have \\[u_x = \\frac{1}{1 + (y/x)^2}\\cdot(-\\frac{y}{x^2}) = -\\frac{y}{x^2 + y^2}\\] \\[u_y = \\frac{1}{1 + (y/x)^2} \\cdot \\frac{1}{x} = \\frac{x}{x^2 + y^2}\\] \\[u_{xx} = \\frac{2xy}{(x^2 + y^2)^2}\\] \\[u_{yy} = \\frac{-2xy}{(x^2 + y^2)^2}\\] Substituting to the Laplace’s equation will result in \\(\\frac{2xy}{(x^2 + y^2)^2} - \\frac{2xy}{(x^2 + y^2)^2} = 0\\)\n\\(\\therefore u(x,y) = \\arctan(\\frac{y}{x})\\) satisfies \\(u_{xx} + u_{yy} = 0\\)"
   },
   {
     "objectID": "topik/todaysklugman/chapter/chapter11/ch11.html",
@@ -35,32 +70,18 @@
     "text": "10.1\n10.4\n10.20\n10.23\n10.24\n10.25\n10.28\n10.34"
   },
   {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.28.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.28.html",
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.34.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.34.html",
     "title": "10.1",
     "section": "",
     "text": "Click here to open the pdf document of this answer"
   },
   {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.24.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.24.html",
-    "title": "10.24",
-    "section": "",
-    "text": "Random sample from loglogistic distribution where \\(80\\%\\) is more than \\(100\\) dan \\(20\\%\\) is more than \\(400\\).\nFind estimate for \\(\\theta\\) and \\(\\gamma\\) by percentile matching Answer\n\\(80\\%\\) is more than \\(100 \\longrightarrow 20\\%\\) is less than \\(100\\)\n\\[F(100) = 0.2\\] \\[\\hat{\\pi_{0.2}} = 100\\]\n\\(20\\%\\) is more than \\(400 \\longrightarrow 80\\%\\) is less than \\(400\\)\n\\[F(400) = 0.8\\] \\[\\hat{\\pi_{0.8}} = 400\\]\n$$F(x) = \n\\[F(x) = \\frac{\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}\\]\nSolving for \\(\\theta\\) and \\(\\gamma\\)\n\\[\\begin{align*}\n\\frac{\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}&=0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2+0.2\\left(\\frac{100}{\\theta} \\right)^{\\gamma}\\\\\n0.8 \\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} = 0.25\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}&=0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8+0.8\\left(\\frac{400}{\\theta} \\right)^{\\gamma}\\\\\n0.2 \\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} = 4\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{100}{(0.25)^{1/\\gamma}} = \\frac{400}{4^{1/\\gamma}}\\\\\n\\gamma = 2\\\\\n\\theta = 200\\\\\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.20.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.20.html",
-    "title": "10.20",
-    "section": "",
-    "text": "A claim process is a mixtore of two r.v. \\(A\\) and \\(B\\)\n\\(A \\sim exp(\\theta=1)\\)\n\\(B \\sim exp(\\theta=10)\\)\nweight \\(p\\) to \\(A\\) and \\(1-p\\) to \\(B\\). Standard deviation of the mixture is \\(2\\)\nEstimate \\(p\\) by the methods of moment.\nAnswer\n\\[f(x) = pe^{-x}+(1-p)e^{\\frac{-x}{10}}\\]\nSifat distribusi eksponensial \\(X \\sim exp(\\theta)\\)\n\\(E[X] = \\frac{1}{\\theta}\\)\n\\(Var[X] = \\frac{1}{\\theta^2}\\)\n\\(E[X^2] = Var[X] + (E[X])^2\\)\n\\[\\begin{align*}\nE[X] &= p\\cdot E[A] + (1-p)\\cdot E[B]\\\\\n&= p \\cdot 1 + (1-p) \\cdot 10\\\\\n&= 10-9p\n\\end{align*}\\]\n\\[\\begin{align*}\nE[X^2] &= p\\cdot E[A^2] + (1-p)\\cdot E[B^2]\\\\\n&= p \\cdot 2 + (1-p) \\cdot 200\\\\\n&= 200-198p\n\\end{align*}\\]\n\\[\\begin{align*}\nVar[X] &= E[X^2] - (E[X])^2\\\\\n&= (200-198p) - (10-9p)^2\\\\\n&= 100-18p-81p^2\n\\end{align*}\\]\n\\[\\begin{align*}\nsd(x) &= \\sqrt{Var[X]}\\\\\n2 &= \\sqrt{100-18p-81p^2}\\\\\n\\end{align*}\\]\nDidapat \\(\\hat{p_1}=0.983206\\) dan \\(\\hat{p_2} = -1.20543\\).\n\\(\\therefore p = 0.983206\\)"
-  },
-  {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.1.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.1.html",
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.25.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.25.html",
     "title": "10.1",
     "section": "",
-    "text": "Tes"
+    "text": "Click here to open the pdf document of this answer"
   },
   {
     "objectID": "topik/todaysklugman/chapter/chapter10/10.23.html",
@@ -70,8 +91,701 @@
     "text": "Observation: \\(1000, 850, 750, 1100, 1250, 900\\)\n\\(X \\sim Gamma(\\alpha, \\theta)\\)\nFind estimate by moment method\nAnswer\n\\[\\begin{align*}\nE[X] = \\alpha \\theta\\\\\nVar[X] = \\alpha \\theta^2\\\\\nE[X^2] = Var[X]+ (E[X])^2 = \\alpha \\theta^2 + \\alpha^2 \\theta^2\n\\end{align*}\\]\n\\[\\begin{align*}\nE[X] &= \\bar{x}\n\\alpha \\theta &= 975\\\\\n\\end{align*}\\]\n\\[\\begin{align*}\nE[X^2] &= \\frac{1}{6}\\displaystyle{\\sum_{i=1}^6 x_i^2}\\\\\n\\alpha \\theta^2 + \\alpha^2 \\theta^2 &= \\frac{5867500}{6}\\\\\n975(\\theta + 975) &= 977916.667\\\\\n\\theta &= 27.991\\\\\n\\alpha &= 34.832\n\\end{align*}\\]"
   },
   {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.25.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.25.html",
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.1.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.1.html",
+    "title": "10.1",
+    "section": "",
+    "text": "Tes"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter47/ch47.html",
+    "href": "topik/todaysfinan/chapter/chapter47/ch47.html",
+    "title": "Chapter 47 Callable Bonds and Serial Bonds",
+    "section": "",
+    "text": "47.5\n47.13"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter47/47.13.html",
+    "href": "topik/todaysfinan/chapter/chapter47/47.13.html",
+    "title": "47.13",
+    "section": "",
+    "text": "PDF version of this answer (may be slightly different)\nA \\(1000\\) par value bond pays annual coupons of \\(80\\). The bond is redeemable at par in \\(30\\) years, but is callable any time from the end of the 10th year at \\(1050\\).\nBased on her desired yield rate, an investor calculates the following potential purchase prices, \\(P\\) :\n\nAssuming the bond is called at the end of the 10th year, P = 957\nAssuming the bond is held until maturity, P = 897\n\nThe investor buys the bond at the highest price that guarantees she will receive at least her desired yield rate regardless of when the bond is called. The investor holds the bond for 20 years, after which time the bond is called.\nCalculate the annual yield rate the investor earns.\nAnswer\nWe have\n\n\\(F = 1000\\)\n\\(F \\cdot r = 80\\)\n\\(n = 30\\) years, callable from \\(t = 10\\)\n\\(C = 1050\\), given called at \\(t=10\\)\n\nLet \\(i\\) be the annual yield rate of a\nSolving for the yield rate given the bond is called at \\(t=10\\),\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n957 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-10}}{i}   \\right) + 1050 \\cdot (1+i)^{-10}\\\\\ni &= 0.0899911\n\\end{align*}\\]\nSolving for the yield rate given the bond is called at maturity,\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n897 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-30}}{i}   \\right) + 1000 \\cdot (1+i)^{-30}\\\\\ni &= 0.0900281\n\\end{align*}\\]\nThus, the desired yield rate is \\(0.0899911\\%\\)\nWe have \\(r = 80/1000 = 8\\% &lt; i\\), thus it is a discount case where the issuer would hold the bond as long as possible. Thus, the highest price that guarantees the desired yield rate will be received is \\(897\\)\nHowever, since the bond was called at \\(t=20\\),\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{n}i} + C \\cdot v_i^n\\\\\n897 &= 80 \\cdot \\left( \\frac{1-(1+i)^{-20}}{i}   \\right) + 1000 \\cdot (1+i)^{-20}\\\\\ni &= 0.0924304\n\\end{align*}\\]\n\\(\\therefore i \\approx 9.24\\%\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter46/46.1.html",
+    "href": "topik/todaysfinan/chapter/chapter46/46.1.html",
+    "title": "43.14",
+    "section": "",
+    "text": "A \\(\\$1000\\) par value bond bearing a \\(5\\%\\) coupon rate payable semi-annually will be redeemed at 108% at the end of 7 years. Find the price to yield an investor \\(5\\%\\) convertible semi-annually.\nAnswer\n\\(F = 1000\\)\n\\(r^{(2)}= 5\\%\\)\n\\(C = 108\\% F = 108\\)\n\\(n = 7\\) years\n\\(i^{(2)} = 5\\%\\)\nLet \\(j\\) be the semi annual effective yield rate, thus \\(j = i^{(2)}/2 = 2.5\\%\\)\nObserve that\n\\[\\begin{align*}\nP &= F\\cdot \\frac{r^{(2)}}{2} \\cdot a_{\\enclose{actuarial}{2n}j} + C \\cdot v_i^n\\\\\n&= 1000 \\cdot 2.5\\% \\cdot \\left(\\frac{1-(1+2.5\\%)^{-14}}{2.5\\%}\\right) + 1080 \\cdot (1+2.5\\%)^{-14}\\\\\n&= 1056.62\n\\end{align*}\\]\n\\(\\therefore\\) $ P $1056.62 $"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter45/45.1.html",
+    "href": "topik/todaysfinan/chapter/chapter45/45.1.html",
+    "title": "43.14",
+    "section": "",
+    "text": "A \\(\\$1000\\) par value bond bearing a \\(5\\%\\) coupon rate payable semi-annually will be redeemed at 108% at the end of 7 years. Find the price to yield an investor \\(5\\%\\) convertible semi-annually.\nAnswer\n\\(F = 1000\\)\n\\(r^{(2)}= 5\\%\\)\n\\(C = 108\\% F = 108\\)\n\\(n = 7\\) years\n\\(i^{(2)} = 5\\%\\)\nLet \\(j\\) be the semi annual effective yield rate, thus \\(j = i^{(2)}/2 = 2.5\\%\\)\nObserve that\n\\[\\begin{align*}\nP &= F\\cdot \\frac{r^{(2)}}{2} \\cdot a_{\\enclose{actuarial}{2n}j} + C \\cdot v_i^n\\\\\n&= 1000 \\cdot 2.5\\% \\cdot \\left(\\frac{1-(1+2.5\\%)^{-14}}{2.5\\%}\\right) + 1080 \\cdot (1+2.5\\%)^{-14}\\\\\n&= 1056.62\n\\end{align*}\\]\n\\(\\therefore\\) $ P $1056.62 $"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "href": "topik/todaysfinan/chapter/chapter44/44.18.html",
+    "title": "44.18",
+    "section": "",
+    "text": "Laura buys two bonds at time \\(0\\).\nBond \\(X\\) is a \\(1000\\) par value \\(14\\) year bond with \\(10\\%\\) annual coupons. It is bought at a price to yield an annual effective rate of \\(8\\%\\).\nBond \\(Y\\) is a \\(14\\) year par value bond with \\(6.75\\%\\) annual coupons and a face amount of \\(F\\).\nLaura pays \\(P\\) for the bond to yield an annual effective rate of \\(8\\%\\). During year \\(6\\) the writedown in premium (principal adjustment) on bond \\(X\\) is equal to the writeup in discount (principal adjustment) on bond \\(Y\\). Calculate \\(P\\).\nAnswer\nBond \\(X\\)\n\n\\(F = 1000\\)\n\\(r = 10\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nBond \\(Y\\)\n\n\\(r = 6.75\\%\\) p.a.\n\\(i = 8\\%\\) p.a.\n\\(n = 14\\) years\n\nAssume F = C\nCalculating \\(P_6\\) for Bond \\(X\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(X)} &= 1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\nCalculating \\(P_6\\) for Bond \\(Y\\) \\[\\begin{align*}\nP_t &= C\\left(\\frac{Fr}{C}-i\\right)v^{n-t+1} \\\\\nP_{6(Y)} &= F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1}\n\\end{align*}\\]\n\\[\\begin{align*}\nP_{6(X)} & = P_{6(Y)} \\\\\n1000\\left(\\frac{1000 \\cdot 10\\%}{1000}-8\\%\\right)(1+8\\%)^{-14+6-1} & = F\\left(\\frac{F \\cdot 6.75\\%}{F}-8\\%\\right)(1+8\\%)^{-14+6-1} \\\\\n1000\\left(10\\%-8\\%\\right) & = F\\left(6.75\\%-8\\%\\right) \\\\\nF = 1600\n\\end{align*}\\]\nThus,\n\\[\\begin{align*}\nP &= Fr\\left(\\frac{1-(1+i)^{-n}}{i}\\right) + F(1+i)^{-n} \\\\\n&= 1435.11\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter43/43.14.html",
+    "href": "topik/todaysfinan/chapter/chapter43/43.14.html",
+    "title": "43.14",
+    "section": "",
+    "text": "A \\(\\$1000\\) par value bond bearing a \\(5\\%\\) coupon rate payable semi-annually will be redeemed at 108% at the end of 7 years. Find the price to yield an investor \\(5\\%\\) convertible semi-annually.\nAnswer\n\\(F = 1000\\)\n\\(r^{(2)}= 5\\%\\)\n\\(C = 108\\% F = 108\\)\n\\(n = 7\\) years\n\\(i^{(2)} = 5\\%\\)\nLet \\(j\\) be the semi annual effective yield rate, thus \\(j = i^{(2)}/2 = 2.5\\%\\)\nObserve that\n\\[\\begin{align*}\nP &= F\\cdot \\frac{r^{(2)}}{2} \\cdot a_{\\enclose{actuarial}{2n}j} + C \\cdot v_i^n\\\\\n&= 1000 \\cdot 2.5\\% \\cdot \\left(\\frac{1-(1+2.5\\%)^{-14}}{2.5\\%}\\right) + 1080 \\cdot (1+2.5\\%)^{-14}\\\\\n&= 1056.62\n\\end{align*}\\]\n\\(\\therefore\\) $ P $1056.62 $"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.9.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.9.html",
+    "title": "42.9",
+    "section": "",
+    "text": "A \\(\\$1000\\) par value bond bearing a \\(5\\%\\) coupon rate payable semi-annually will be redeemed at 108% at the end of 7 years. Find the price to yield an investor \\(5\\%\\) convertible semi-annually.\nAnswer\n\\(F = 1000\\)\n\\(r^{(2)}= 5\\%\\)\n\\(C = 108\\% F = 108\\)\n\\(n = 7\\) years\n\\(i^{(2)} = 5\\%\\)\nLet \\(j\\) be the semi annual effective yield rate, thus \\(j = i^{(2)}/2 = 2.5\\%\\)\nObserve that\n\\[\\begin{align*}\nP &= F\\cdot \\frac{r^{(2)}}{2} \\cdot a_{\\enclose{actuarial}{2n}j} + C \\cdot v_i^n\\\\\n&= 1000 \\cdot 2.5\\% \\cdot \\left(\\frac{1-(1+2.5\\%)^{-14}}{2.5\\%}\\right) + 1080 \\cdot (1+2.5\\%)^{-14}\\\\\n&= 1056.62\n\\end{align*}\\]\n\\(\\therefore\\) $ P $1056.62 $"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.7.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.7.html",
+    "title": "42.7",
+    "section": "",
+    "text": "It appears you don’t have a PDF plugin for this browser. No biggie… you can click here to download the PDF file.\n\n\nTes tex to HTML converter\n\n\n\n\n\n\nTodayFinan42-7\n\n\n\n\n\nMatematika Keuangan 2 Section 42 No 42.7 Andhika N. (6 Feb 2025)\n\n\n\nProblem 1. A 20 year bond matures for its par value of 10,000. The coupon payable semi-annually is 400. Calculate the price of the bond at a 6% yield rate convertible semi-annually.\n\n\n\n\nSolution 1. Diketahui: \n\n\n\n\nF = 10,000\n\n\n\n\nKupon Semi-annual (semesteran) sebesar 400 ΓÇäΓƒ╣ΓÇäFΓÇà├ùΓÇàrΓÇä=ΓÇä400\n\n\n\n\nyield rate convertible semi annually ΓÇäΓƒ╣ΓÇäi(2)ΓÇä=ΓÇä6%Γƒ╣ yield rate efektif semesteran (dinotasikan i di jawaban ini): \\(i = \\frac{i^{(2)}}{2} = 3\\% =\n0.03\\)\n\n\n\n\n20 tahun dengan kupon semesteran ΓÇäΓƒ╣ΓÇänΓÇä=ΓÇä20ΓÇà├ùΓÇà2ΓÇä=ΓÇä40\n\n\n\n\nC = F = 10,000 (tidak diberitahu, berarti asumsikan sama dengan Face Value)\n\n\n\n\nDitanya: Harga dari obligasi Jawab: \\[\\begin{aligned}\n    P &amp;= F \\times r \\times \\ax{\\angl{n}i} +  C \\times v_{i}^{n}\\\\\n    &amp;= (F \\times r) \\times \\ax{\\angl{40}3\\%} + C \\times\nv_{3\\%}^{40}\\\\\n    &amp;= 400 \\times \\frac{1-v^{40}}{i} + 10,000 \\times v_{3\\%}^{40}\\\\\n    &amp;= 400 \\times \\frac{1-(1.03)^{-40}}{0.03} + 10,000 \\times\n{(1.03)}^{-40}\\\\\n    &amp;=12,311.4772 \\approx 12,311.48\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.5.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.5.html",
+    "title": "42.5",
+    "section": "",
+    "text": "An investor purchases a \\(26\\)-week T-bill with face value \\(\\$10,000\\) for \\(\\$X\\) and earns an annual effective rate of \\(4.17\\%\\). Determine \\(X\\).\nAnswer\n\\(F = 10000\\)\n\\(P = X\\)\n\\(i = 4.17\\%\\) effective annually\n\\(n = 26\\) weeks\nObserve that assuming \\(26\\) weeks equal to half a year, we have \\(n = 0.5\\) years\n\\[\\begin{align*}\nP &= F \\cdot (1+i)^{-n}\\\\\nX &= 10000 \\cdot(1+4.17\\%)^{-0.5}\\\\\n&= 9797.8022\n\\end{align*}\\]\n\\(\\therefore\\) \\(X = 9797.8022\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.3.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.3.html",
+    "title": "42.3",
+    "section": "",
+    "text": "John buys a \\(13\\)-week T-bill with par value \\(\\$10,000\\) at a simple discount rate of \\(7.5\\%\\). What price did he pay for the bond?\nAnswer\n\\(F = 10000\\)\n\\(n = 13\\) week\n\\(d = 7.5\\%\\), simple, assuming effective annualy\nSuppose P is the price paid for the bond. Observe that\n\\[\\begin{align*}\n(1-d) &= \\left(1 - d_{(52)} \\right)^{52}\\\\\nd_{52} &= 0.00149814\n\\end{align*}\\]\nwhere \\(d_{(52)}\\) is the discount rate effective weekly. Thus we have\n\\[\\begin{align*}\nP &= F \\cdot (1-n\\cdot d_{(52)})\\\\\n&= 10000 \\cdot (1-13\\cdot 0.00149814)\\\\\n&= 9805.2418\n\\end{align*}\\]\n\\(\\therefore\\) The price paid for the bond is \\(\\$ 9805.2418\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.1.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.1.html",
+    "title": "42.1",
+    "section": "",
+    "text": "A zero bond will pay \\(\\$1000\\) at the end of \\(10\\) years, and is currently selling for \\(\\$500\\). What is the annual return earned by the purchaser?\nAnswer\n\\(P = 500\\)\n\\(C = 1000\\)\n\\(n = 10\\) years\nObserve that\n\\[\\begin{align*}\nP &= C \\cdot (1+i)^{-n}\\\\\n500 &= 1000 \\cdot (1+i)^{-10}\\\\\n\\end{align*}\\]\ngives \\(i = 0.071773\\) or \\(i =-2.0718\\).\n\\(\\therefore\\) Since the return must be positive, we have \\(i \\approx 7.18\\%\\)"
+  },
+  {
+    "objectID": "topik/todaysdickson/rangkumankonji1.html",
+    "href": "topik/todaysdickson/rangkumankonji1.html",
+    "title": "Kontingensi Jiwa 1",
+    "section": "",
+    "text": "Notasi:\n\n\\((x)\\) menyatakan seseorang berusia \\(x\\) tahun, \\(x \\geq 0\\)\n\\(T_x\\) menyatakan variabel acak sisa hidup (future lifetime), \\(T_x \\geq 0\\)\nUsia meninggal dari \\((x)\\) adalah \\(x+T_x\\)\n\n\\(a_{\\enclose{actuarial}{1}}\\)"
+  },
+  {
+    "objectID": "topik/todaysdickson/rangkumankonji1.html#variabel-acak-future-lifetime",
+    "href": "topik/todaysdickson/rangkumankonji1.html#variabel-acak-future-lifetime",
+    "title": "Kontingensi Jiwa 1",
+    "section": "",
+    "text": "Notasi:\n\n\\((x)\\) menyatakan seseorang berusia \\(x\\) tahun, \\(x \\geq 0\\)\n\\(T_x\\) menyatakan variabel acak sisa hidup (future lifetime), \\(T_x \\geq 0\\)\nUsia meninggal dari \\((x)\\) adalah \\(x+T_x\\)\n\n\\(a_{\\enclose{actuarial}{1}}\\)"
+  },
+  {
+    "objectID": "topik/todayscryer/chapter/chapter1/1.1.1.html",
+    "href": "topik/todayscryer/chapter/chapter1/1.1.1.html",
+    "title": "1.1.1",
+    "section": "",
+    "text": "Tes"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
+    "href": "topik/todaysbartle/chapter/chapter8/chapter8.2/8.2.html",
+    "title": "8.2 Interchange of Limits",
+    "section": "",
+    "text": "8.2.1\n8.2.2\n8.2.3\n8.2.4\n8.2.5\n8.2.6\n8.2.7\n8.2.8\n8.2.9\n8.2.10\n8.2.11\n8.2.12\n8.2.13\n8.2.14\n8.2.15\n8.2.16\n8.2.17\n8.2.18\n8.2.19\n8.2.20"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
+    "href": "topik/todaysbartle/chapter/chapter7/chapter7.3/7.3.html",
+    "title": "7.3 The Fundamental Theorem",
+    "section": "",
+    "text": "7.3.1\n7.3.2\n7.3.3\n7.3.4\n7.3.5\n7.3.6\n7.3.7\n7.3.8\n7.3.9\n7.3.10\n7.3.11\n7.3.12\n7.3.13\n7.3.14\n7.3.15\n7.3.16\n7.3.17\n7.3.18\n7.3.19\n7.3.20\n7.3.21\n7.3.22"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
+    "href": "topik/todaysbartle/chapter/chapter7/chapter7.1/7.1.html",
+    "title": "7.1 Riemann Integral",
+    "section": "",
+    "text": "7.1.1\n7.1.2\n7.1.3\n7.1.4\n7.1.5\n7.1.6\n7.1.7\n7.1.8\n7.1.9\n7.1.10\n7.1.11\n7.1.12\n7.1.13\n7.1.14\n7.1.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.4/6.4.html",
+    "title": "6.4 Taylor�s Theorem",
+    "section": "",
+    "text": "6.4.1\n6.4.2\n6.4.3\n6.4.4\n6.4.5\n6.4.6\n6.4.7\n6.4.8\n6.4.9\n6.4.10\n6.4.11\n6.4.12\n6.4.13\n6.4.14\n6.4.15\n6.4.16\n6.4.17\n6.4.18\n6.4.19\n6.4.20\n6.4.21\n6.4.22\n6.4.23\n6.4.24"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.2/6.2.html",
+    "title": "6.2 The Mean Value Theorem",
+    "section": "",
+    "text": "6.2.1\n6.2.2\n6.2.3\n6.2.4\n6.2.5\n6.2.6\n6.2.7\n6.2.8\n6.2.9\n6.2.10\n6.2.11\n6.2.12\n6.2.13\n6.2.14\n6.2.15\n6.2.16\n6.2.17\n6.2.18\n6.2.19\n6.2.20"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.html",
+    "title": "5.4 Uniform Continuity",
+    "section": "",
+    "text": "5.4.1\n5.4.2\n5.4.3\n5.4.4\n5.4.5\n5.4.6\n5.4.7\n5.4.8\n5.4.9\n5.4.10\n5.4.11\n5.4.12\n5.4.13\n5.4.14\n5.4.15\n5.4.16"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.8.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.8.html",
+    "title": "5.4.8",
+    "section": "",
+    "text": "Prove that if \\(f\\) and \\(g\\) are each uniformly continuous on \\(\\mathbb{R}\\), then the composite function \\(f \\circ g\\) is uniformly continuous on \\(\\mathbb{R}\\)\nAnswer\nIt will be shown that if \\(f\\) and \\(g\\) are each uniformly continuous on \\(\\mathbb{R}\\), then \\(f \\circ g\\) is uniformly continuous on \\(\\mathbb{R}\\)\nBecause \\(f\\) and \\(g\\) are uniformly continuous, then by definition \\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta(\\epsilon) &gt; 0 \\ni \\forall x,c \\in \\mathbb{R} \\text{ where } |x-c| &lt; \\delta \\implies |f(x) - f(c)| &lt; \\epsilon\\]\n\\[\\forall \\epsilon_1 &gt; 0 \\; \\exists \\delta_1(\\epsilon_1) &gt; 0 \\ni \\forall x,c \\in \\mathbb{R} \\text{ where } |x-c| &lt; \\delta_1 \\implies |g(x) - g(c)| &lt; \\epsilon_1\\]\nBecause \\(\\epsilon_1\\) is arbitrary and from definition of \\(f\\), if we choose \\(\\delta = \\epsilon_1\\) then \\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta &gt;0 \\text{ where } \\delta = \\epsilon_1 \\ni \\forall x,c \\in \\mathbb{R}, \\; |g(x) - g(c)| &lt; \\delta \\implies |f(g(x)) - f(g(c))| &lt; \\epsilon\\]"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.6.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.6.html",
+    "title": "5.4.6",
+    "section": "",
+    "text": "Show that if \\(f\\) and \\(g\\) are uniformly continuous on \\(A \\subseteq \\mathbb{R}\\) and if they are bounded on \\(A\\), then their product \\(fg\\) is uniformly continuous on \\(A\\)\nAnswer\nIt will be shown that if \\(f\\) and \\(g\\) are uniformly continuous on \\(A \\subseteq \\mathbb{R}\\) and if they are bounded on \\(A\\), then their product \\(fg\\) is uniformly continuous on \\(A\\)\nWe will consider 2 cases for \\(A\\) which is 1. \\(A := (a,b)\\) where \\(a,b \\in \\mathbb{R}, \\; a &lt; b\\)\nBecause $f$ and $g$ is uniformly continuous on $A$, then by continuous extension theorem $F(x) := \\begin{cases}\n    f(x), & x \\in A \\\\\n    \\displaystyle{\\lim_{x \\to a}}\\; f(x), & x = a \\\\\n    \\displaystyle{\\lim_{x \\to b}}\\; f(x), & x = b\n\\end{cases}$ and $G(x) := \\begin{cases}\n    g(x), & x \\in A \\\\\n    \\displaystyle{\\lim_{x \\to a}}\\; g(x), & x = a \\\\\n    \\displaystyle{\\lim_{x \\to b}}\\; g(x), & x = b\n    \\end{cases}$ must also be continuous\n\nThus $F(x)G(x) = \\begin{cases}\n    f(x)g(x), & x \\in A \\\\\n    \\displaystyle{\\lim_{x \\to a}}\\; f(x)g(x), & x = a \\\\\n    \\displaystyle{\\lim_{x \\to b}}\\; f(x)g(x), & x = b\n\\end{cases}$ is continuous on $A$, which by the same theorem implies $fg$ is uniformly continuous on $A$\n\n*Note : Proof for $A:(a,b]$, $A:=[a,b)$ is similar\n\n\\(A := [a,b]\\) where \\(a,b \\in \\mathbb{R}, \\; a &lt; b\\)\nLet \\(M,N&gt;0\\) such that \\(|f(x)| \\leq M\\) and \\(|g(x)| \\leq N\\) for all \\(x \\in A\\). Because \\(f\\) and \\(g\\) is uniformly continuous, then \\[\\forall \\epsilon_1 &gt;0 \\; \\exists \\zeta(\\epsilon_1) &gt;0 \\ni \\forall x,c \\in A, \\; |x - c| &lt; \\zeta(\\epsilon_1) \\implies |f(x) - f(c)| &lt; \\epsilon_1\\] \\[\\forall \\epsilon_2 &gt; 0 \\; \\exists \\gamma(\\epsilon_2) &gt; 0 \\ni \\forall x,c \\in A, \\; |x - c| &lt; \\gamma(\\epsilon_2) \\implies |g(x) - g(c)| &lt; \\epsilon_2\\]\nNotice that \\[\\begin{align*}\n     |f(x)g(x) - f(c)g(c)| & = |f(x)g(x) - f(c)g(x) - f(c)g(c) + f(c)g(x)| \\\\\n     & = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\\\\n     & \\leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\\\\n     & &lt; N\\epsilon_1 + M\\epsilon_2 \\quad\n\\end{align*}\\]\nThus if we choose \\(\\epsilon = N\\epsilon_1 + M\\epsilon_2\\) and \\(\\delta = \\max\\{\\zeta(\\epsilon_1), \\gamma(\\epsilon_2)\\), \\(fg\\) uniformly continuous by definition\n\nTherefore \\(fg\\) must uniformly continuous on \\(A\\) from the 2 cases"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.4.html",
+    "title": "5.4.4",
+    "section": "",
+    "text": "Show that the function \\(f(x) := \\frac{1}{1+x^2}\\) for \\(x \\in \\mathbb{R}\\) is uniformly continuous on \\(\\mathbb{R}\\)\nAnswer\nIt will be shown that \\(f\\) uniformly continuous on \\(\\mathbb{R}\\)\nLet \\(c \\in \\mathbb{R}\\) and \\(\\epsilon &gt; 0\\). We will search for \\(\\delta &gt; 0\\) such that if \\(x,c \\in \\mathbb{R}\\) and \\(|x - c| &lt; \\delta\\), then \\(|f(x) - f(c)| &lt; \\delta\\)\nNotice the following \\[\\begin{align*}\n    |f(x) - f(c)| & = |\\frac{1}{1+x^2} - \\frac{1}{1+c^2}| \\\\\n    & = |\\frac{(1+c^2) - (1+x^2)}{(1+x^2)(1+c^2)}| \\\\\n    & = \\frac{|x^2 - c^2|}{|(1+x^2)(1+c^2)|} \\\\\n    & = \\frac{|(x+c)(x-c)|}{(1+x^2)(1+c^2)} \\\\\n    & = \\frac{|x+c||x-c|}{(1+x^2)(1+c^2)} \\\\\n\\end{align*}\\]\nBecause \\(x^2 \\geq 0 \\; \\forall x \\in \\mathbb{R}\\), then \\(\\frac{1}{1+x^2} \\leq 1\\). Thus \\[|f(x) - f(c)| \\leq \\frac{|x+c|}{1 + c^2}|x-c| \\leq \\frac{|x| + |c|}{1 + c^2}|x-c|\\] Let \\(\\delta_1 = 1\\), then it follows that \\(|x| &lt; 1 + |c|\\) thus \\[\\begin{align*}\n    |f(x) - f(c)| & &lt; \\frac{1 + 2|c|}{1 + c^2}|x-c| \\\\\n    & \\leq \\frac{(1 + |c|)^2}{1 + c^2}|x-c| \\quad\\text{(Bernoulli Inequality)} \\\\\n    & = \\frac{c^2 + 2|c| + 1}{1 + c^2}|x-c| \\\\\n    & = (\\frac{c^2 + 1}{1 + c^2} + 2\\frac{|c|}{1 + c^2})|x-c| \\\\\n    & = (1 + \\frac{|c|}{\\frac{1}{2}(1 + |c|^2)})|x-c|\n\\end{align*}\\]\nIf \\(c = 0\\), then it instantly follows that \\(|f(x) - f(c)| &lt; |x-c|\\)\nIf \\(c \\neq 0\\), then by Arithmetic-Geometric Mean Inequality \\(|c| = \\sqrt{|c|^2} \\leq \\frac{1}{2}(1 + |c|^2)\\) or \\(\\frac{1}{\\frac{1}{2}(1+|c|^2)} \\leq \\frac{1}{|c|}\\) thus \\[|f(x)-f(c)| &lt; (1 + \\frac{|c|}{|c|})|x-c| = 2|x-c| &lt; 2\\delta\\]\nChoose \\(\\delta_2 = \\frac{\\epsilon}{2}\\), thus \\(|f(x) - f(c)| &lt; \\epsilon\\) for all cases of \\(c\\)\nTherefore if we choose \\(\\delta = \\min(1, \\frac{\\epsilon}{2})\\) it satisfies the definition of continuity, and because \\(\\delta\\) does not depend on \\(c\\), it is uniformly continuous"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.2.html",
+    "title": "5.4.2",
+    "section": "",
+    "text": "Show that the function \\(f(x) := \\frac{1}{x^2}\\) is uniformly continuous on the set \\(A:=[1, \\infty)\\), but that it is not uniformly continuous on \\(B:= (0, \\infty)\\)\nAnswer\nIt will be shown that \\(f\\) is uniformly continuous on \\(A\\) but does not uniformly continuous on \\(B\\)\nLet \\(c &gt; 0\\) and \\(\\epsilon &gt; 0\\). We will search for \\(\\delta &gt; 0\\) such that if \\(|x - c| &lt; \\delta\\) for all \\(x\\) in domain, then \\(|f(x) - f(c)| &lt; \\delta\\)\nNotice the following \\[\\begin{align*}\n    |f(x) - f(c)| & = |\\frac{1}{x^2} - \\frac{1}{c^2}| \\\\\n    & = |\\frac{x^2 - c^2}{x^2c^2}| \\\\\n    & = \\frac{|x^2 - c^2|}{|x^2c^2|} \\\\\n    & = \\frac{|(x-c)(x+c)|}{(xc)^2} \\\\\n    & = \\frac{|x-c||x+c|}{(xc)^2}\n\\end{align*}\\]\n\nIf we choose \\(x,c \\in A\\), then it follows that \\[|f(x) - f(c)| \\leq |x-c|\\frac{|x+c|}{c^2}\\] Choose \\(\\delta_1 = 1\\), then \\(||x| - |c|| \\leq |x-c| &lt; 1\\) or \\(|x| &lt; 1 + |c|\\). Because \\(x,c \\in A\\), it follows that \\(|x+c| = x+c\\), \\(|x| = x\\), and \\(|c| = c\\) thus \\[|f(x) - f(c)| &lt; |x-c|\\frac{2c + 1}{c^2} = |x-c|(\\frac{2}{c} + \\frac{1}{c^2}) \\leq |x-c|(2 + 1) = 3|x-c|\\] Now we choose \\(\\delta_2 = \\frac{\\epsilon}{3}\\) such that \\(|x-c| &lt; \\delta\\), thus \\[|f(x) - f(c)| &lt; 3\\frac{\\epsilon}{3} = \\epsilon\\]\nTherefore if we choose \\(\\delta = \\min(1, \\frac{\\epsilon}{3})\\) will result in \\(|f(x) - f(c)| &lt; \\epsilon\\) which by definition \\(f\\) uniformly continuous\nIf we choose \\(x,c \\in (0,1)\\), then it follows that \\[|f(x) - f(c)| \\leq |x-c|\\frac{2}{(xc)^2}\\]\nChoose \\(\\delta_1 = \\frac{1}{2}c\\), thus \\[\\begin{align*}\n  -\\frac{1}{2}c &lt; x - c &lt; \\frac{1}{2}c \\\\\n  \\frac{1}{2}c &lt; x &lt; \\frac{3}{2}c\n\\end{align*}\\] From this, we can rewrite the inequality into \\[|f(x) - f(c)| \\leq |x-c|\\frac{1}{x^2}\\frac{2}{c^2} &lt; |x-c|\\frac{4}{c^2}\\frac{2}{c^2} = |x-c|\\frac{8}{c^2} &lt; \\frac{8\\delta_2}{c^2}\\]\nChoose \\(\\delta_2 = \\frac{c^2\\epsilon}{8}\\), thus \\[|f(x) - f(c)| &lt; \\frac{8}{c^2}\\frac{c^2\\epsilon}{8} = \\epsilon\\]\nTherefore if we choose \\(\\delta = \\min(\\frac{1}{2}c, \\frac{c^2\\epsilon}{8})\\) then it will assure that if \\(|x-c| &lt; \\delta\\) then \\(|f(x) - f(c)| &lt; \\epsilon\\), but \\(\\delta\\) depends on \\(c\\) thus by definition \\(f\\) does not uniformly continuous on \\((0,1)\\) which also implies \\(f\\) does not uniformly continuous on \\(B\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.15.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.15.html",
+    "title": "5.4.15",
+    "section": "",
+    "text": "Let \\(f\\) and \\(g\\) be Lipschitz functions on \\(A\\) (a). Show that the sum \\(f + g\\) is also a Lipschitz function on \\(A\\)\n(b). Show that if \\(f\\) and \\(g\\) are bounded on \\(A\\), then the product is a Lipshictz function on \\(A\\)\n(c). Give an example of a Lipschitz function \\(f\\) on \\([0, \\infty)\\) such that it’s square \\(f^2\\) is a Lipschitz function\nAnswer\n(a). It will be shown that \\(f + g\\) is also a Lipschitz function on \\(A\\)\nBecause $f$ and $g$ is a Lipschitz function on $A$, then by definition\n$$\\exists K &gt; 0 \\ni |f(x) - f(c)| \\leq K|x - c| \\; \\forall x,c \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L &gt; 0 \\ni |g(x) - g(c)| \\leq L|x - c| \\; \\forall x,c \\in A$$\n\nFrom the inequalty, we will have $$|(f(x) + g(x)) - (f(c) + g(c))| \\leq |f(x) - f(c)| + |g(x) - g(c)| \\leq (K + L)|x - c| \\; \\forall x,c \\in A$$\n\nTherefore $f + g$ is also a Lipschitz function on $A$ by definition because $\\exists M &gt; 0$ where $M = K + L$ such that $|(f(x) + g(x)) - (f(c) + g(c))| \\leq M|x - c| \\; \\forall x,c \\in A$ \\\\\n(b). It will be shown that if \\(f\\) and \\(g\\) are bounded on \\(A\\), then the product is a Lipshictz function on \\(A\\)\nBecause $f$ and $g$ is a Lipschitz function on $A$, then by definition\n$$\\exists K &gt; 0 \\ni |f(x) - f(c)| \\leq K|x - c| \\; \\forall x,c \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L &gt; 0 \\ni |g(x) - g(c)| \\leq L|x - c| \\; \\forall x,c \\in A$$\n\nWe also know that $f$ and $g$ is bounded on $A$, thus\n$$\\exists K_1 &gt; 0 \\ni |f(x)| \\leq K_1 \\; \\forall x \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L_1 &gt; 0 \\ni |g(x)| \\leq L_1 \\; \\forall x \\in A$$\n\nNotice that\n\\begin{align*}\n    |f(x)g(x) - f(c)g(c)| & = |f(x)g(x) - g(x)f(c) + g(x)f(c) - f(c)g(c)| \\\\\n    & = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\\\\n    & \\leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\\\\n    & \\leq L_1K|x-c| + K_1L|x-c| \\\\\n    & = (L_1K + K_1L)|x-c|\n\\end{align*}\n\nTherefore $fg$ is also a Lipschitz function on $A$ by definition because $\\exists M &gt; 0$ where $M =(L_1K + K_1L)$ such that $|(f(x)g(x)) - (f(c)g(c))| \\leq M|x - c| \\; \\forall x,c \\in A$ \\\\\n(c). Let \\(f(x) = x\\). It is trivially follow that \\(f\\) is Lipschitz function on \\([0, \\infty)\\). It will be shown that \\(f^2(x) = x^2\\) is not a Lipschitz function on \\([0, \\infty)\\) by contradiction\nLet $A := [0, \\infty)$ and assume that $f^2$ is a Lipschitz function on $A$. Then it must follow that $\\exists K &gt; 0 \\ni |x^2 - c^2| \\leq K|x-c| \\; \\forall x,c \\in A$\n\nNotice that $|x^2 - c^2| = |x-c||x+c|$, and because $x,c \\in A$ it follows that $x + c = |x+c|$ thus $|x^2 - c^2| = |x-c|(x+c)$. Because $A$ does not have an upper bound, then $x + c$ also does not have an upper bound, thus we can't choose $K &gt; 0$ such that $x + c \\leq K$ which contradicts our assumption that $|x^2 - c^2| \\leq K|x-c|$\n\nTherefore our assumption must be false, which means $f^2$ is not a Lipschitz function on $A$"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.13.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.13.html",
+    "title": "5.4.13",
+    "section": "",
+    "text": "Let \\(A \\subseteq \\mathbb{R}\\) and suppose that \\(f:A \\to \\mathbb{R}\\) has the following property: for each \\(\\epsilon &gt; 0\\) there exists a function \\(g_\\epsilon : A \\to \\mathbb{R}\\) such that \\(g_\\epsilon\\) is uniformly continuous on \\(A\\) and \\(|f(x) - g_\\epsilon(x)| &lt; \\epsilon\\) for all \\(x \\in A\\). Prove that \\(f\\) is uniformly continuous on \\(A\\)\nAnswer\nIt will be shown that \\(f\\) is uniformly continuous on \\(A\\)\nBecause \\(g_\\epsilon\\) is uniformly continuous, then by definition \\[\\forall \\epsilon_1 &gt; 0 \\; \\exists \\delta(\\epsilon_1) &gt; 0 \\ni \\forall x,c_1 \\in A, \\; |x - c_1| &lt; \\delta(\\epsilon_1) \\implies |g_\\epsilon(x) - g_\\epsilon(c_1)| &lt; \\epsilon_1\\]\nLet \\(c \\in A\\). Notice that \\[\\begin{align*}\n    |f(x) - f(c)| & = |f(x) -  g_\\epsilon(x) +  g_\\epsilon(x) -  g_\\epsilon(c) +  g_\\epsilon(c) + f(c)| \\\\\n    & \\leq |f(x) -  g_\\epsilon(x)| + |f(c) -  g_\\epsilon(c)| + | g_\\epsilon(x) - g(c)| \\\\\n    & &lt; 2\\epsilon_1 + \\epsilon\n\\end{align*}\\]\nBecause \\(\\epsilon\\) and \\(\\epsilon_1\\) arbitrary, choose \\(\\epsilon_0 = 2\\epsilon_1 + \\epsilon\\). Thus \\[|f(x) - f(c)| &lt; \\epsilon_0\\] and \\(\\delta\\) must exists from definition that \\(g_\\epsilon\\) uniformly continuous.\nTherefore \\(f\\) is uniformly continuous on \\(A\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.11.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.11.html",
+    "title": "5.4.11",
+    "section": "",
+    "text": "If \\(g(x) := \\sqrt{x}\\) for \\(x \\in [0,1]\\), show that there does not exists a constant \\(K\\) such that \\(|g(x)| \\leq K|x|\\) for all \\(x \\in [0,1]\\). Conclude that the uniformly continuous \\(g\\) is not a Lipschitz function on [0,1]\nAnswer\nIt will be shown that \\(\\nexists K &gt; 0 \\ni |g(x)| \\leq K|x| \\; \\forall x \\in [0,1]\\) by contradiction\nAssume that \\(\\exists K &gt; 0 \\ni |g(x)| \\leq K|x| \\; \\forall x \\in [0,1]\\). Notice the following \\[\\begin{align*}\n    |\\sqrt{x}| & \\leq K|x| \\\\\n    |\\frac{\\sqrt{x}}{x}| & \\leq K \\\\\n    |\\frac{1}{\\sqrt{x}}| = \\frac{1}{\\sqrt{x}} & \\leq K\n\\end{align*}\\]\nIt can be shown that \\(\\displaystyle{\\lim_{x \\to 0^+}} \\; \\frac{1}{\\sqrt{x}} = \\infty\\), thus by definition \\(\\nexists K &gt; 0 \\ni \\frac{1}{\\sqrt{x}} \\leq K \\; \\forall x \\in [0,1]\\) which contradicts our assumption. Therefore \\(K\\) does not exists \\\nBecause \\(\\displaystyle{\\lim_{x\\to c}} \\; \\sqrt{x} = \\sqrt{c} \\; \\forall c \\in [0,1]\\), then \\(g\\) must be continuous and by Uniform Continuity Theorem \\(g\\) must be uniformly continuous\nNotice the following \\[\\begin{align*}\n    |\\sqrt{x}| & = |\\sqrt{x} - \\sqrt{0}| \\\\\n    & &gt; K|x| = K|x-0|\n\\end{align*}\\] Thus it does not satisfy Lipschitz condition because \\(c = 0\\) will not result in \\(|\\sqrt{x} - \\sqrt{c}| \\leq L|x-c|\\) where \\(L &gt; 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.1.html",
+    "title": "5.4.1",
+    "section": "",
+    "text": "Show that the function \\(f(x) := \\frac{1}{x}\\) is uniformly continuous on the set \\(A:=[a, \\infty)\\), where \\(a\\) is a positive constant\nAnswer\nLet \\(c \\in A\\) and \\(\\epsilon &gt; 0\\)\nIt will be shown that there exists \\(\\delta &gt; 0\\) where \\(\\delta\\) does not depends on \\(c\\), such that \\(\\forall x \\in A, \\; |x - c| &lt; \\delta \\implies |f(x) - f(c)| &lt; \\epsilon\\)\nNotice the following \\[\\begin{align*}\n    |f(x) - f(c)| & = |\\frac{1}{x} - \\frac{1}{c}| \\\\\n    & = |\\frac{c - x}{xc}| \\\\\n    & = |\\frac{x - c}{xc}| \\\\\n    & = \\frac{|x - c|}{|x||c|}\n\\end{align*}\\]\nBecause \\(x,c \\in A\\) then \\(x \\geq a &gt; 0\\) and \\(c \\geq a &gt; 0\\) which result in \\[|f(x) - f(c)| = \\frac{|x-c|}{xc} \\leq \\frac{|x-c|}{a^2}\\]\nThus if \\(|x-c| &lt; \\delta\\), it follows that if we choose \\(\\delta = a^2\\epsilon\\) then \\[|f(x) - f(c)| &lt; \\frac{\\delta}{a^2} = \\frac{a^2\\epsilon}{a^2} = \\epsilon\\]\nTherefore \\(f(x) = \\frac{1}{x}\\) is uniformly continuous on \\(A\\) by definition"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.9.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.9.html",
+    "title": "5.3.9",
+    "section": "",
+    "text": "The function \\(f(x) := (x-1)(x-2)(x-3)(x-4)(x-5)\\) has five roots in the interval [0, 7]. If the Bisection Method is applied on this interval, which of the roots is located?\nSame question for \\(g(x) := (x-2)(x-3)(x-4)(x-5)(x-6)\\) on the interval [0,7]\n\nAnswer\n\nChoose \\(p_1 = \\frac{7}{2}\\) thus \\(f(p_1) &gt; 0\\). Now let \\(I_2 = [0, \\frac{7}{2}]\\) then choose \\(p_2 = \\frac{7}{4}\\) thus \\(f(p_2) &lt; 0\\)\nNow let \\(I_3 = [0, \\frac{7}{4}]\\) then choose \\(p_3 = \\frac{7}{8}\\) thus \\(f(p_3) &lt; 0\\)\nNow let \\(I_4 = [\\frac{7}{8}, \\frac{7}{4}]\\) then choose \\(p_4 = \\frac{7}{16}\\) thus \\(f(p_4) &lt; 0\\). Doing this over and over will eventually result in \\(f(p_n) = 0\\) as \\(p_n\\) approach 1\nTherefore by bisection method \\(f\\) has a root 1\nSimiliarly like (a), by choosing midpoint \\(p_1 = \\frac{7}{2}\\) thus \\(g(p_1) &lt; 0\\) and choosing \\(I_2 = [\\frac{7}{2}, 7]\\). Repeating this process will result in \\(g(p_n) = 0\\) where \\(p_n\\). approach 6 Therefore by bisection method \\(g\\) has a root 6"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.7.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.7.html",
+    "title": "5.3.7",
+    "section": "",
+    "text": "Show that the equation \\(x = \\cos x\\) has a solution in the interval \\([0, \\frac{\\pi}{2}]\\)\nAnswer\nLet \\(I := [0, \\frac{\\pi}{2}]\\) and let \\(g:I \\to \\mathbb{R}\\) be defined as \\(g(x) := x - \\cos x\\). Notice that \\(g(0) = 0 - \\cos 0 = -1\\) and \\(g(\\frac{\\pi}{2}) = \\frac{\\pi}{2} - \\cos \\frac{\\pi}{2} = \\frac{\\pi}{2} - \\frac{\\sqrt{2}}{2} &gt; 0\\). Thus \\(g(0) &lt; 0 &lt; g(\\frac{\\pi}{2})\\), and \\(g\\) continuous because \\(f(x) = x\\) and \\(h(x) = \\cos x\\) continuous on \\(I\\) thus by continuity property \\(g\\) also continuous. Therefore by Location of Root Theorem \\(\\exists c \\in I \\ni g(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.5.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.5.html",
+    "title": "5.3.5",
+    "section": "",
+    "text": "Show that the polynomial \\(p(x) := x^4 + 7x^3 - 9\\) has at least two real roots. Use a calculator to locate these roots to within two decimal places\nAnswer\nIt will be shown that \\(p(x) := x^4 + 7x^3 - 9\\) has at least two real roots\nNotice that \\(p\\) is continuous on any \\(I \\subseteq \\mathbb{R}\\) because \\(\\forall c \\in \\mathbb{R}, \\; p(c) = \\displaystyle{\\lim_{x \\to c}} \\; p(x)\\). Let \\(a = 0\\), then \\(p(a) = -9\\) which mean \\(a\\) is not root of \\(p\\)\nIf \\(p(\\alpha) \\geq 0\\), then \\[\\begin{align}\n    \\alpha^4 + 7\\alpha^3 - 9 \\geq 0\n\\end{align}\\]\nBecause \\(c^4 \\geq 0 \\; \\forall c \\in \\mathbb{R}\\), then the above equation always hold if \\(7\\alpha^3 \\geq 9\\) which have a real solution \\(\\alpha \\geq \\sqrt[3]{\\frac{9}{7}}\\). Thus if we let \\(I_1 := [a, b_1]\\) where \\(b_1 = \\sqrt[3]{\\frac{9}{7}}\\), then \\(p(a_1) &lt; 0\\) and \\(p(b_1) &gt; 0\\). Therefore by Location of Root Theorem \\(\\exists c_1 \\in I_1 \\ni p(c_1) = 0\\)\nNotice that ^4 + 7^3 - 9 also true if \\(\\alpha = -10\\) because \\((-10)^4 + 7(-10)^3 - 9 = 10000 - 7000 - 9 &gt; 0\\), thus if we let \\(I_2 := [a, b_2]\\) where \\(b_2 = -10\\), then by Location of Root Theorem \\(\\exists c_2 \\in I_2 \\ni p(c_2) = 0\\)\n\\(\\therefore p(x)\\) has at least 2 real roots because there are 2 closed intervals \\(I_1\\) and \\(I_2\\) which have \\(c_1 \\in I_!\\) and \\(c_2 \\in I2\\) where \\(c_1 \\neq c_2\\) resulting in \\(p(c_1) = 0 = p(c_2)\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.3.html",
+    "title": "5.3.3",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\) such that for each \\(x\\) in \\(I\\) there exist \\(y\\) in \\(I\\) such that \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\). Prove there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nAnswer\nIt will be shown that there exist a point \\(c\\) in \\(I\\) such that \\(f(c) = 0\\)\nBecause for any \\(x \\in I\\) the inequality \\(|f(y)| \\leq \\frac{1}{2}|f(x)|\\) is true, then we have the following\n\\[\\begin{align*}\n    |f(y_0)| & \\leq \\frac{1}{2}|f(x)| \\\\\n    |f(y_1)| & \\leq \\frac{1}{2}|f(y_0)|  \\leq \\frac{1}{2^2}|f(x)|\\\\\n    .\\\\\n    .\\\\\n    .\\\\\n    |f(y_n)| & \\leq \\frac{1}{2}|f(y_{n-1})| \\leq \\frac{1}{2^n+1}|f(x)|\n\\end{align*}\\]\nThus we can construct a sequence \\(|y| = (|f(y_n)|)\\) which has a property that it is monotonically decreasing sequence. By definition of absolute value, infimum of \\(\\{|y_n| : n \\in \\mathbb{N}\\}\\) is equal to 0. Thus from Monotone Convergence Theorem \\(\\lim |f(y_n)| = 0\\). From property of continuity function, \\(|f|\\) also continuous because \\(f\\) continuous thus \\(|f(c)| = 0\\) which implies \\(f(c) = 0\\)\n\\(\\therefore \\exists c \\in I \\ni f(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.19.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.19.html",
+    "title": "5.3.19",
+    "section": "",
+    "text": "Let \\(J := (a,b)\\) and let \\(g : J \\to \\mathbb{R}\\) be a continuous function with the property that for every \\(x \\in J\\), the function \\(g\\) is bounded on neighborhood \\(V_{\\delta_x}(x)\\) of \\(x\\). Show by example that \\(g\\) is not necessarily bounded on \\(J\\)\nAnswer\nLet \\(g(y) := \\frac{1}{y}\\). It can be proven that \\(g\\) is continuous on \\(J\\), thus by definition \\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta_x &gt; 0 \\ni \\forall y \\in J, |y - x| &lt; \\delta_x \\implies |\\frac{1}{y} - \\frac{1}{x}| &lt; \\epsilon\\]\nThis means that \\(\\exists V_{\\delta_x}(x) := \\{y \\in J : |y - x| &lt; \\delta_x \\}\\) such that \\(g\\) is bounded on neighborhood. Now notice that \\(\\displaystyle{\\lim_{y \\to 0^+}} \\; g(y) = \\infty\\) or by definition \\(f(x) &gt; \\alpha \\; \\forall \\alpha \\in \\mathbb{R}\\) or implies that \\(g\\) is unbounded"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.17.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.17.html",
+    "title": "5.3.17",
+    "section": "",
+    "text": "If \\(f : [0,1] \\to \\mathbb{R}\\) is continuous and has only rational [respectively, irrational] values, must \\(f\\) be constant? Prove your assertion\nAnswer\nIt will be shown that if \\(f : [0,1] \\to \\mathbb{R}\\) is continuous and has only rational [respectively, irrational] values, must \\(f\\) be constant by contradiction\nAssume that \\(f : [0,1] \\to \\mathbb{R}\\) is continuous and has only rational [respectively, irrational] values, and \\(f\\) does not necessarily constant\nif \\(f\\) constant, then it trivially follows that \\(f : [0,1] \\to \\mathbb{R}\\) is continuous and has only rational [respectively, irrational] values\nIf \\(f\\) is not a constant function, then if we let \\(I := [0,1]\\), and choose \\(a,b \\in I \\ni f(a) &lt; f(b)\\). We know that \\(f\\) has only rational [respectively, irrational], thus \\(f(a),f(b) \\in \\mathbb{Q}\\) [respectively, \\(f(a),f(b) \\in \\mathbb{Q}^c\\)]. By Density Theorem, there must be \\(k \\in \\mathbb{Q}^c\\) [respectively, \\(k \\in \\mathbb{Q}\\)] between \\(f(a)\\) and \\(f(b)\\)\nBy Intermediate Value Theorem, then it must follow that \\(\\exists c \\in (a,b)\\) such that \\(f(c) = k\\). But we know that \\(\\forall x \\in I, \\; f(x) \\in \\mathbb{Q}\\) [respectively, \\(\\forall x \\in I, \\; f(x) \\in \\mathbb{Q}^c\\)], which implies that \\(f(c) = k\\) does not exists\nThis contradicts our assumption that \\(f\\) does not necessarily a constant\n\\(\\Therefore\\) \\(f\\) must be constant"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.15.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.15.html",
+    "title": "5.3.15",
+    "section": "",
+    "text": "Examine which open [respectively, closed] intervals are mapped by \\(f(x) := x^2\\) for \\(x\\in \\mathbb{R}\\) onto open [respectively, closed] intervals\nAnswer\nWe consider 3 cases for \\(a,b \\in \\mathbb{R}\\)\n\n\\(0 &lt; a &lt; b\\)\nThen an open interval \\((a,b)\\) will be mapped into \\((a^2, b^2)\\), and for closed interval \\([a,b]\\) will be mapped into \\([a^2, b^2]\\)\n\\(a &lt; b &lt; 0\\)\nThen an open interval \\((a,b)\\) will be mapped into \\((b^2, a^2)\\), and for closed interval \\([a,b]\\) will be mapped into \\([b^2, a^2]\\)\n\\(a &lt; 0 &lt; b\\)\nThen an open interval \\((a,b)\\) will be mapped into \\([0, c)\\) where \\(c = \\max\\{ a^2, b^2\\}\\), and for closed interval \\([a,b]\\) will be mapped into \\([0, c]\\)\n\nFor an unbounded interval such as \\((-\\infty, a)\\), \\((a, \\infty)\\), the mapping will be similar with above cases except there won’t be an upper bound for the mapping intervals"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.13.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.13.html",
+    "title": "5.3.13",
+    "section": "",
+    "text": "Suppose that \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is continuous on \\(\\mathbb{R}\\) and that \\(\\displaystyle{\\lim_{x \\to -\\infty}} \\; f = 0\\) and \\(\\displaystyle{\\lim_{x\\to \\infty}} \\; f = 0\\). Prove that \\(f\\) is bounded on \\(\\mathbb{R}\\) and attains either a maximum or minimum on \\(\\mathbb{R}\\). Give an example to show that both a maximum and a minimum need not be attained.\nAnswer\nIt will be shown that \\(f\\) is bounded on \\(\\mathbb{R}\\), then show that \\(f\\) attains either a maximum or minimum\nLet \\(a_1, a_2\\in \\mathbb{R}\\) where \\(a_1 &lt; a_2\\). By limit definition, we have\n\\[\\begin{equation}\n    \\forall \\epsilon_1 &gt; 0 \\; \\exists K(\\epsilon_1) &lt; a_1 \\ni \\forall x_1 &lt; K(\\epsilon_1) \\implies |f(x_1)| &lt; \\epsilon_1\n\\end{equation}\\]\n\\[\\begin{equation}\n    \\forall \\epsilon_2 &gt; 0 \\; \\exists K(\\epsilon_2) &gt; a_2 \\ni \\forall x_2 &gt; K(\\epsilon_2) \\implies |f(x_2)| &lt; \\epsilon_2\n\\end{equation}\\]\nLet \\(I := [a_1, a_2]\\). Because \\(I \\subset \\mathbb{R}\\) and \\(f\\) continuous on \\(\\mathbb{R}\\) then \\(\\exists c_1 \\in I \\ni f(x) \\geq f(c_1) \\; \\forall x \\in I\\) and \\(\\exists c_2 \\in I \\ni f(x) \\leq f(c_2) \\; \\forall x \\in I\\). Thus \\[f(c_1) \\leq f(x) \\leq f(c_2)\\] Choose \\(M_0 = \\max\\{|f(c_1)|, |f(c_2)|\\}\\), thus \\[\\begin{equation}\n    |f(x)| \\leq M_0 \\; \\forall x \\in I\n\\end{equation}\\]\nFrom the 3 equation, we can now choose \\(M = \\max \\{|f(c_1)|, |f(c_2)|, \\epsilon_1, \\epsilon_2\\}\\) which result in \\[|f(x)| \\leq M \\; \\forall x \\in \\mathbb{R}\\]\nTherefore by definition \\(f\\) is bounded on \\(\\mathbb{R}\\)\nBecause \\(c_1\\) and \\(c_2\\) is absolute minimum and absolute maximum on \\(I\\) respecively, then \\(f\\) must have either one of them because \\(\\displaystyle{\\lim_{x \\to -\\infty}} \\; f = 0\\) and \\(\\displaystyle{\\lim_{x\\to \\infty}} \\; f = 0\\).\nExample that \\(f\\) only has absolute maximum\nLet \\(f(x) = \\frac{x^2 + 1}{x^4 + 1}\\). It can be shown that \\(\\sup f(\\mathbb{R}) = \\frac{1 + \\sqrt{2}}{2} = f(\\frac{1}{\\sqrt{1 + \\sqrt{2}}})\\) while \\(\\inf f(\\mathbb{R}) = 0\\) and \\(\\nexists x \\in \\mathbb{R} \\ni f(x) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.11.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.11.html",
+    "title": "5.3.11",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\), let \\(f:I \\to \\mathbb{R}\\) be continuous on \\(I\\), and assume that \\(f(a) &lt; 0\\), \\(f(b) &gt; 0\\). Let \\(W := \\{x \\in I : f(x) &lt; 0 \\}\\), and let \\(w := \\sup W\\). Prove that \\(f(w) = 0\\)\nAnswer\nIt will be shown that \\(f(w) = 0\\) by contradiction\nBy supremum definition, we have \\(x \\leq w \\; \\forall x \\in W\\). Because \\(f\\) is continuous, then \\(f(w) = \\displaystyle{\\lim_{x \\to w^-}} \\; f(x)\\) and by limit property \\(\\displaystyle{\\lim_{x \\to w^-}} \\; f(x) \\leq 0\\) because \\(f(x) &lt; 0\\) which means \\(f(w) \\leq 0\\). Notice that if \\(f(w) \\neq 0\\), then \\(w \\in W\\) which implies \\(\\exists \\delta \\neq 0 \\ni f(w) &lt; f(w+\\delta) &lt; 0\\) (Density Theorem). Thus \\(w \\neq \\sup W\\) which is a contradiction. Therefore \\(f(w)\\) must equal to 0"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.1.html",
+    "title": "5.3.1",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) be a continuous function such that \\(f(x) &gt; 0\\) for each \\(x\\) in \\(I\\). Prove that there exist a number \\(\\alpha &gt; 0\\) such that \\(f(x) \\geq \\alpha\\) for all \\(x \\in I\\)\nAnswer\nIt will be proven that \\(\\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)\nBecause \\(I\\) is closed bounded interval and \\(f\\) continuous on \\(I\\), by boundedness theorem it follows that \\(f\\) is bounded on \\(I\\) thus \\(\\exists M &gt; 0 \\ni |f(x)| &lt; M \\;  \\forall x \\in I\\). Because \\(f(x) &gt; 0 \\; \\forall x \\in I\\), then \\(0 &lt; f(x) &lt; M \\; \\forall x \\in I\\). Now let \\(f(I) := \\{f(x) : x \\in I\\}\\). Because 0 is lower bound, by completeness property \\(f(I)\\) must have an infimum. Let \\(\\alpha = \\inf f(I)\\), thus by definition of infimum \\(\\alpha \\leq c \\; \\forall c \\in f(I)\\) which implies \\(\\alpha \\leq f(x) \\; \\forall x \\in I\\)\n\\(\\therefore \\; \\exists\\alpha&gt;0 \\ni f(x) \\geq \\alpha \\; \\forall x \\in I\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.3.html",
+    "title": "5.1.3",
+    "section": "",
+    "text": "Let \\(a &lt; b &lt; c\\). Suppose that \\(f\\) is continuous on \\([a, b]\\), that \\(g\\) is continuous on \\([b, c]\\), and that \\(f(b) = g(b)\\). Define \\(h\\) on \\([a,c]\\) by \\(h(x) := f(x)\\) for \\(x \\in [a, b]\\) and \\(h(x) = := g(x)\\) for \\(x \\in [b,c]\\). Prove that \\(h\\) is continuous on \\([a, c]\\)\nAnswer\nPreliminary Analysis\nNotice that \\(h(x) = \\begin{cases}\n    f(x) & x \\in [a,b] \\\\\n    g(x) & x \\in [b,c]\n\\end{cases}\\).\nThus for \\([a,b]\\), \\(h\\) continuous because \\(f\\) continuous, and for \\([b,c]\\), \\(h\\) continuous because \\(g\\) continuous. Also, because \\(f(b) = g(b)\\), then it follows that \\(h(b) = f(b) = g(b)\\) which implies that \\(h\\) continuous at \\(x = b\\). Therefore \\(h\\) continuous on \\([a,c]\\) \\\nFormal Proof\n\\(h\\) continuous on \\([a,c]\\) because \\(h\\) continuous on \\([a,b]\\) and \\([b,c]\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.5/3.5.html",
+    "title": "3.5 The Cauchy Criterion",
+    "section": "",
+    "text": "3.5.1\n3.5.2\n3.5.3\n3.5.4\n3.5.5\n3.5.6\n3.5.7\n3.5.8\n3.5.9\n3.5.10\n3.5.11\n3.5.12\n3.5.13\n3.5.14"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.2/3.2.html",
+    "title": "3.2 Limit Theorems",
+    "section": "",
+    "text": "3.2.1\n3.2.2\n3.2.3\n3.2.4\n3.2.5\n3.2.6\n3.2.7\n3.2.8\n3.2.9\n3.2.10\n3.2.11\n3.2.12\n3.2.13\n3.2.14\n3.2.15\n3.2.16\n3.2.17\n3.2.18\n3.2.19\n3.2.20\n3.2.21\n3.2.22\n3.2.23\n3.2.24"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.5/2.5.html",
+    "href": "topik/todaysbartle/chapter/chapter2/chapter2.5/2.5.html",
+    "title": "Ch 2.5 Intervals",
+    "section": "",
+    "text": "2.5.1\n2.5.2\n2.5.3\n2.5.4\n2.5.5\n2.5.6\n2.5.7\n2.5.8\n2.5.9\n2.5.10\n2.5.11\n2.5.12\n2.5.13\n2.5.14\n2.5.15\n2.5.16\n2.5.17"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.4/2.4.html",
+    "href": "topik/todaysbartle/chapter/chapter2/chapter2.4/2.4.html",
+    "title": "Ch 2.4 Applications of the Supremum Property",
+    "section": "",
+    "text": "2.4.1\n2.4.2\n2.4.3\n2.4.4\n2.4.5\n2.4.6\n2.4.7\n2.4.8\n2.4.9\n2.4.10\n2.4.11\n2.4.12\n2.4.13\n2.4.14\n2.4.15\n2.4.16\n2.4.17\n2.4.18\n2.4.19"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.3/2.3.html",
+    "href": "topik/todaysbartle/chapter/chapter2/chapter2.3/2.3.html",
+    "title": "Ch 2.3 The Completeness Property of \\(\\mathbb{R}\\)",
+    "section": "",
+    "text": "2.3.1\n2.3.2\n2.3.3\n2.3.4\n2.3.5\n2.3.6\n2.3.7\n2.3.8\n2.3.9\n2.3.10\n2.3.11\n2.3.12\n2.3.13\n2.3.14"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": " Daily Mabar",
+    "section": "",
+    "text": "Topic\nReal Analysis\nToday’s Bartle\nDifferential Equation\nToday’s Logan\nRisk Modelling\nToday’s Klugman\nTime Series\nToday’s Cryer\nFinancial Mathematics\nToday’s Finan\nLife Contingencies\nToday’s Dickson\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Mabar Analysis fr"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.1/2.1.html",
+    "href": "topik/todaysbartle/chapter/chapter2/chapter2.1/2.1.html",
+    "title": "Ch 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)",
+    "section": "",
+    "text": "2.1.1\n2.1.2\n2.1.3\n2.1.4\n2.1.5\n2.1.6\n2.1.7\n2.1.8\n2.1.9\n2.1.10\n2.1.11\n2.1.12\n2.1.13\n2.1.14\n2.1.15\n2.1.16\n2.1.17\n2.1.18\n2.1.19\n2.1.20\n2.1.21\n2.1.22\n2.1.23\n2.1.24\n2.1.25\n2.1.26"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter2/chapter2.2/2.2.html",
+    "href": "topik/todaysbartle/chapter/chapter2/chapter2.2/2.2.html",
+    "title": "Ch 2.2 Absolute Value and the Real Line",
+    "section": "",
+    "text": "2.2.1\n2.2.2\n2.2.3\n2.2.4\n2.2.5\n2.2.6\n2.2.7\n2.2.8\n2.2.9\n2.2.10\n2.2.11\n2.2.12\n2.2.13\n2.2.14\n2.2.15\n2.2.16\n2.2.17\n2.2.18\n2.2.19"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.1/3.1.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.1/3.1.html",
+    "title": "3.1 Sequences and Their Limits",
+    "section": "",
+    "text": "3.1.1\n3.1.2\n3.1.3\n3.1.4\n3.1.5\n3.1.6\n3.1.7\n3.1.8\n3.1.9\n3.1.10\n3.1.11\n3.1.12\n3.1.13\n3.1.14\n3.1.15\n3.1.16\n3.1.17\n3.1.18"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.3/3.3.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.3/3.3.html",
+    "title": "3.3 Monotone Sequences",
+    "section": "",
+    "text": "3.3.1\n3.3.2\n3.3.3\n3.3.4\n3.3.5\n3.3.6\n3.3.7\n3.3.8\n3.3.9\n3.3.10\n3.3.11\n3.3.12\n3.3.13\n3.3.14\n3.3.15\n3.3.16"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.4/3.4.html",
+    "title": "3.4 Subsequences and the Bolzano-Weierstrass Theorem",
+    "section": "",
+    "text": "3.4.1\n3.4.2\n3.4.3\n3.4.4\n3.4.5\n3.4.6\n3.4.7\n3.4.8\n3.4.9\n3.4.10\n3.4.11\n3.4.12\n3.4.13\n3.4.14\n3.4.15\n3.4.16\n3.4.17\n3.4.18\n3.4.19"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
+    "href": "topik/todaysbartle/chapter/chapter3/chapter3.6/3.6.html",
+    "title": "3.6 Properly Divergent Sequences",
+    "section": "",
+    "text": "3.6.1\n3.6.2\n3.6.3\n3.6.4\n3.6.5\n3.6.6\n3.6.7\n3.6.8\n3.6.9\n3.6.10"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.1/4.1.html",
+    "href": "topik/todaysbartle/chapter/chapter4/chapter4.1/4.1.html",
+    "title": "4.1 Limits of Functions",
+    "section": "",
+    "text": "4.1.1\n4.1.2\n4.1.3\n4.1.4\n4.1.5\n4.1.6\n4.1.7\n4.1.8\n4.1.9\n4.1.10\n4.1.11\n4.1.12\n4.1.13\n4.1.14\n4.1.15\n4.1.16\n4.1.17"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
+    "href": "topik/todaysbartle/chapter/chapter4/chapter4.2/4.2.html",
+    "title": "4.2 Limit Theorems",
+    "section": "",
+    "text": "4.2.1\n4.2.2\n4.2.3\n4.2.4\n4.2.5\n4.2.6\n4.2.7\n4.2.8\n4.2.9\n4.2.10\n4.2.11\n4.2.12\n4.2.13\n4.2.14\n4.2.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
+    "href": "topik/todaysbartle/chapter/chapter4/chapter4.3/4.3.html",
+    "title": "4.3 Some Extensions of the Limit Concept",
+    "section": "",
+    "text": "4.3.1\n4.3.2\n4.3.3\n4.3.4\n4.3.5\n4.3.6\n4.3.7\n4.3.8\n4.3.9\n4.3.10\n4.3.11\n4.3.12\n4.3.13"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.1/5.1.html",
+    "title": "5.1 Continuous Functions",
+    "section": "",
+    "text": "5.1.1\n5.1.2\n5.1.3\n5.1.4\n5.1.5\n5.1.6\n5.1.7\n5.1.8\n5.1.9\n5.1.10\n5.1.11\n5.1.12\n5.1.13\n5.1.14\n5.1.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.2/5.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.2/5.2.html",
+    "title": "5.2 Combinations of Continuous Functions",
+    "section": "",
+    "text": "5.2.1\n5.2.2\n5.2.3\n5.2.4\n5.2.5\n5.2.6\n5.2.7\n5.2.8\n5.2.9\n5.2.10\n5.2.11\n5.2.12\n5.2.13\n5.2.14\n5.2.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.10.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.10.html",
+    "title": "5.3.10",
+    "section": "",
+    "text": "If the Bisection Method is used on an interval of length 1 to find \\(p_n\\) with error \\(|p_n-c| &lt; 10^{-5}\\). determine the least value of \\(n\\) that will assure this accuracy\nAnswer\nLet \\(I_1 = [a,b]\\) where \\(b-a = 1\\) and let \\(f\\) be a random continuous function. Now let \\(p_n := \\frac{\\sup I_n + \\inf I_n}{2}\\) and let \\(I_n = \\begin{cases}\n    [p_{n-1}, c_1] & \\text{if } f(p_{n-1}) &lt; 0 \\\\\n    [c_2, p_{n-1}] & \\text{if } f(p_{n-1}) &gt; 0\n\\end{cases}\\), where \\(c_1 = \\sup I_{n-1}\\) and \\(c_2 = \\inf I_{n-1}\\)\nIt will be shown that \\(p_n = \\inf I_n + \\frac{1}{2^n} \\; \\forall n \\in \\mathbb{N}\\) using mathematical induction\nBasic step :\nfor \\(n = 1\\), then \\(p_1 = \\frac{b+a}{2} = \\frac{1 + a + a}{2} = \\frac{1}{2} + a = \\frac{1}{2} + \\inf I_1\\)\nInduction step :\nAssume for \\(n = k\\), \\(p_k = \\inf I_k + \\frac{1}{2^k}\\) is true\nIt will be shown that for \\(n = k+1\\) then \\(p_{k+1} = \\inf I_k + \\frac{1}{2^{k+1}}\\)\nFrom definition, we have \\(p_{k+1} = \\frac{\\sup I_{k+1} + \\inf I_{k+1}}{2}\\). Without Loss of Generality, assume \\(I_{k+1} = [p_k, \\; c]\\) where \\(c = \\sup I_k\\). It can be shown that \\(p_k = \\inf I_{k+1}\\) and \\(c = \\sup I_{k+1}\\), thus \\(p_{k+1} = \\frac{c + p_k}{2}\\). From our ossumption we have \\[p_{k+1} = \\frac{c + \\inf I_k + 1/2^k}{2} = \\frac{c + \\inf I_k}{2} + \\frac{1}{2^{k+1}} = p_k + \\frac{1}{2^{k+1}} = \\inf I_k + \\frac{1}{2^{k+1}}\\]\nTherefore by mathematical induction \\(p_n = \\inf I_n + \\frac{1}{2^n}\\)\nBecause we need \\(c \\in [a,b]\\) to use Bisection Method, then \\(c &gt; a \\geq \\inf I_n \\; \\forall n \\in \\mathbb{N}\\). Therefore \\(0 &lt; \\frac{1}{2^k} &lt; p_n - c = \\inf I_n + \\frac{1}{2^n}\\) which implies \\(\\frac{1}{2^n} &lt; 10^{-5}\\) is achieved if \\(n &gt; 5\\log_2(10) \\approx 16.6\\)\n\\(\\therefore n &gt; 5\\log_2(10), n \\in \\mathbb{N}\\) will assure that \\(|p_n - c| &lt; 10^{-5}\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.12.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.12.html",
+    "title": "5.3.12",
+    "section": "",
+    "text": "Let \\(I := [0, \\frac{\\pi}{2}]\\) and let \\(f : I \\to \\mathbb{R}\\) be defined by \\(f(x) := \\sup\\{x^2, \\cos x\\}\\) for \\(x \\in I\\). Show there exists an absolute minimum point \\(x_0 \\in I\\) for \\(f\\) on \\(I\\). Show that \\(x_0\\) is a solution to the equation \\(\\cos x = x^2\\)\nAnswer\nIt will be shown that \\(\\exists x_0 \\in I \\ni f(x_0) \\leq f(x) \\; \\forall x \\in I\\), and then show that \\(\\cos x_0 = x_0^2\\)\nLet \\(g:I \\to \\mathbb{R}\\) and \\(h : I \\to \\mathbb{R}\\) be defined by \\(g(x) := x^2\\) and \\(h(x) := \\cos x\\) which can be proven continuous on \\(I\\). Now let \\(k(x) := g(x) - h(x)\\) which also continuous on \\(I\\), notice that \\(k(0) = 0 - 1 &lt; 0\\) and \\(k(\\frac{\\pi}{2}) &gt; 0\\) because \\(\\cos x \\leq x^2 \\; \\forall x \\geq 1\\). Therefore by Location of Roots Theorem \\(\\exists x_1 \\in I \\ni g(x_1) = h(x_1)\\). This implies that \\(\\exists x_1 \\in I \\ni x^2 &lt; \\cos x \\; \\forall x &lt; x_1\\) because \\(x_1\\) is the only root for \\(k\\) on \\(I\\).\nThus we can define \\(f\\) as \\[f(x) = \\begin{cases}\n    \\cos x & 0 \\leq x &lt; x_1 \\\\\n    x^2 & x_1 \\leq x \\leq \\frac{\\pi}{2}\n\\end{cases}\\]\nThis implies that \\(f\\) continuous, thus there must be absolute minimum point \\(x_0\\) for \\(f\\) on \\(I\\).\nThus \\(g\\) have absolute minimum point \\(x_0\\) on \\([0, x_1)\\) say \\(c_1\\), and \\(h\\) have absolute minimum point \\(x_0\\) on \\([x_1, \\frac{\\pi}{2}]\\) say \\(c_2\\), which can be proven that \\(c_1 = c_2\\). Therefore \\(c_1 = \\cos x_0 = x_0^2 = c_2\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.14.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.14.html",
+    "title": "5.3.14",
+    "section": "",
+    "text": "Let \\(f: \\mathbb{R} \\to \\mathbb{R}\\) be continuous on \\(\\mathbb{R}\\) and let \\(\\beta \\in \\mathbb{R}\\). Show that if \\(x_0 \\in \\mathbb{R}\\) is such that \\(f(x_0) &lt; \\beta\\), then there exists a \\(\\delta\\)-neighborhood \\(U\\) of \\(x_0\\) such that \\(f(x) &lt; \\beta\\) for all \\(x \\in U\\)\nAnswer\nIt will be shown that if \\(x_0 \\in \\mathbb{R}\\) is such that \\(f(x_0) &lt; \\beta\\), then there exists a \\(\\delta\\)-neighborhood \\(U\\) of \\(x_0\\) such that \\(f(x) &lt; \\beta\\) for all \\(x \\in U\\)\nBecause \\(f\\) continuous on \\(\\mathbb{R}\\), then by definition \\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta &gt; 0 \\ni \\text{ if } |x - x_0| &lt; \\delta \\implies |f(x) - f(x_0)| &lt; \\epsilon\\] Thus we also have\n\\[\\begin{align*}\n    & |f(x) - f(x_0)| &lt; \\epsilon \\\\\n    -\\epsilon &lt; & f(x) - f(x_0) &lt; \\epsilon \\\\\n    f(x_0) - \\epsilon &lt;  & f(x) &lt; \\epsilon + f(x_0) \\\\\n\\end{align*}\\]\nBecause \\(f(x_0) &lt; \\beta\\), then \\(b - f(x_0) &gt; 0\\). Thus if we choose \\(\\epsilon = b - f(x_0)\\) we have \\[f(x) &lt; \\epsilon + f(x_0) = \\beta - f(x_0) + f(x_0) = \\beta\\]\nWe also have \\(\\delta &gt; 0\\) that satisfies the condition from continuous definition, thus we can define \\(\\delta\\)-neighborhood as \\(U_\\delta(x_0) := \\{x \\in \\mathbb{R} : |x - x_0| &lt; \\delta\\}\\)\n\\(\\therefore \\; \\exists \\delta &gt; 0 \\ni U_\\delta(x_0) := \\{x \\in \\mathbb{R} : |x - x_0| &lt; \\delta \\}\\) must exist, and satisfy \\(f(x) &lt; \\epsilon + f(x_0) = \\beta - f(x_0) + f(x_0) = \\beta\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.16.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.16.html",
+    "title": "5.3.16",
+    "section": "",
+    "text": "Examine the mapping of open [respectively, closed] intervals under the functions \\(g(x) := \\frac{1}{x^2 + 1}\\) and \\(h(x) := x^3\\) for \\(x \\in \\mathbb{R}\\)\nAnswer\nFirstly we will search the mapping for \\(g\\). We consider 3 cases for \\(a,b \\in \\mathbb{R}\\)\n\n\\(a &lt; 0 &lt; b\\)\nThen an open interval \\((a,b)\\) will be mapped into \\((c, 1]\\) where \\(c:=\\inf\\{ \\frac{1}{a^2 + 1}, \\frac{1}{b^2 + 1} \\}\\), and for closed interval \\([a,b]\\) will be mapped into \\([c, 1]\\)\n\\(a &lt; b &lt; 0\\) and $ 0 &lt; a &lt; b$\nThen an open interval \\((a,b)\\) will be mapped into \\((\\frac{1}{b^2 + 1}, \\frac{1}{a^2 + 1})\\), and for closed interval \\([a,b]\\) will be mapped into \\([\\frac{1}{b^2 + 1}, \\frac{1}{a^2 + 1}]\\)\n\\(a = -1, \\; b = 1\\)\nThen an open interval \\((-1, 1)\\) will be mapped into \\((\\frac{1}{2}, 1)\\), and for closed interval \\([-1, 1]\\) will be mapped into \\([\\frac{1}{2}, 1]\\)\n\nFor an unbounded open interval, then the map of \\(g\\) will become \\((0, \\alpha)\\) or \\(0, \\alpha]\\) where \\(\\alpha\\) can be found using the first 2 cases\nNow for \\(h\\), there’s only 1 case for \\(c,d \\in \\mathbb{R}\\) which is \\(a &lt; b\\).\nAn open interval \\((c,d)\\) will be mapped into \\((c^3, d^3)\\), and for closed interval \\([c,d]\\) will be mapped into \\([c^3, d^3]\\). If the interval does not have lower bound (respectively for upper bound), then the mapping interval also doesn’t have lower bound (respectively for upper bound)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.18.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.18.html",
+    "title": "5.3.18",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f: I \\to \\mathbb{R}\\) be a (not necessarily continuous) function with the property that for every \\(x \\in I\\), the function \\(f\\) is bounded on a neighborhood \\(V_{\\delta_x}(x)\\) of \\(x\\). Prove that \\(f\\) is bounded on \\(I\\)\nAnswer\nIf \\(f\\) is continuous on \\(I\\), then by Boundedness Theorem \\(f\\) must be bounded\nIf \\(f\\) is not continuous, It will be shown that if \\(f\\) have property that \\(\\forall x \\in I\\), \\(f\\) is bounded on \\(V_{\\delta_x}(x)\\) of \\(x\\), then \\(f\\) is bounded on \\(I\\) by contradiction\nAssume \\(f\\) have property that \\(\\forall x \\in I\\), \\(f\\) is bounded on \\(V_{\\delta_x}(x)\\) of \\(x\\), and \\(f\\) is not bounded on \\(I\\)\nLet \\(M\\) be arbitrary positive value, Let \\((x_n)\\) be a sequence in \\(I\\) that will result in \\(f\\) not bounded. Then by definition \\[|f(x_n)| &gt; M \\; \\forall n \\in \\mathbb{N}\\]\nBecause \\((x_n)\\) in \\(I\\), then there exists a subsequence \\((x_{n_k})\\) of \\((x_n)\\) that converge, say \\(x_0\\) which is in \\(I\\). Let \\(K &gt;0\\), from our function property it follows that \\[|f(y)| \\leq K \\; \\forall y \\in I \\cap V_{\\delta_{x_0}}(x_0)\\] Because \\(x_n \\to x_0\\), it follows that \\(x_n \\in V_{\\delta_{x_0}}(x_0)\\) for \\(n \\geq K(\\epsilon)\\) where \\(K(\\epsilon)\\) a natural number\nThis contradicts from the first inequality, thus our assumption does not true.\n\\(\\Therefore\\) \\(f\\) is bounded on \\(I\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.2.html",
+    "title": "5.3.2",
+    "section": "",
+    "text": "Let \\(I := [a,b]\\) and let \\(f : I \\to \\mathbb{R}\\) and \\(g : I \\to \\mathbb{R}\\) be a continuous function on \\(I\\). Show that the set \\(E := \\{x \\in I : f(x) = g(x)\\}\\) has the property that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nAnswer\nIt will be shown that if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)\nBecause \\((x_n) \\subseteq E\\), then it follows that \\(f(x_n) = g(x_n)\\). Because \\(f\\) and \\(g\\) a continuous function on \\(I\\), then by sequential criteria it follows that if \\(x_0 \\in I\\) implies \\(f(x_n) \\to f(x_0)\\) and \\(g(x_n) \\to g(x_0)\\). Because \\(f(x_n) = g(x_n)\\), then by sequential limit property \\(f(x_0)\\) must equal to \\(g(x_0)\\) which means \\(x_0 \\in E\\)\n\\(\\therefore\\) if \\((x_n) \\subseteq E\\) and \\(x_n \\to x_0\\), then \\(x_0 \\in E\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.4.html",
+    "title": "5.3.4",
+    "section": "",
+    "text": "Show that every polynomial of odd degree with real coefficients has at least one real root\nAnswer\nIt will be shown that every polynomial of odd degree with real coefficients has at least one real root\nLet \\(p:I \\to \\mathbb{R}\\) be an odd degree polynomial. It can be shown that \\(p\\) is continuous on any real-valued interval. If n is odd, then \\(x^n \\leq 0 \\; \\forall x \\leq 0\\). Thus we can choose \\(a \\in I\\) and \\(a \\leq 0\\) such that \\(p(a) &lt; 0\\) for big enough \\(a\\). With similiar reasoning, we can choose \\(b \\in I\\) and \\(b \\geq 0\\) such that \\(p(b) &gt; 0\\). Thus \\(p(a) &lt; 0 &lt; p(b)\\), which by Intermediate Value Theorem guaranteed the existence of \\(c \\in I \\ni f(c) = 0\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.6.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.6.html",
+    "title": "5.3.6",
+    "section": "",
+    "text": "Let \\(f\\) be continuous on the interval [0, 1] to \\(\\mathbb{R}\\) and such that \\(f(0) = f(1)\\). Prove that there exists a point \\(c\\) in \\([0, \\frac{1}{2}]\\) such that \\(f(c) = f(c + \\frac{1}{2})\\)\nAnswer\nIt will be shown that \\(\\exists c \\in [0, \\frac{1}{2}] \\ni f(c) = f(c + \\frac{1}{2})\\)\nLet \\(g\\) be a function defined as \\(g(x) := f(x) - f(x + \\frac{1}{2})\\). We have \\[g(0) = f(0) - f(\\frac{1}{2})\\] \\[g(\\frac{1}{2}) = f(\\frac{1}{2}) - f(1)\\]\nBy adding the two equation then \\(g(0) + g(\\frac{1}{2}) = 0\\) thus \\(g(0) = -g(\\frac{1}{2})\\)\nThus by Intermediate Value Theorem, \\(g(c) = 0\\) must exist if \\(c \\in [0, \\frac{1}{2}]\\). Therefore \\(f(c) - f(c + \\frac{1}{2}) = 0\\) or \\(f(c) = f(c+\\frac{1}{2})\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.8.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.8.html",
+    "title": "5.3.8",
+    "section": "",
+    "text": "Show that the function \\(f(x) := 2\\ln x + \\sqrt{x} - 2\\) has root in the interval \\([1,2]\\)\nAnswer\nIt will be shown that \\(f(x) := 2\\ln x + \\sqrt{x} - 2\\) has root in the interval \\([1,2]\\)\nNotice that \\(f(1) = 2\\ln 1 + \\sqrt{1} - 2 = 1 - 2 = -1\\) and \\(f(2) = 2\\ln 2 + \\sqrt{2} - 2 = \\ln(\\frac{4e^\\sqrt{2}}{e^2})\\). Because \\(\\sqrt{2} &lt; 2\\), then \\(f(2) = \\ln(\\frac{4}{e^{2 - \\sqrt{2}}})\\). We know that \\(1 &lt; \\sqrt{2} &lt; 2\\) thus \\(e^{2 - \\sqrt{2}} &lt; e &lt; 3\\) which means \\(f(2) &gt; \\ln(\\frac{4}{3}) &gt; 0\\). Therefore we have \\(f(1) &lt; 0 &lt; f(2)\\) which by Location of Root Theorem \\(f\\) has a root in the interval \\([1,2]\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.3/5.3.html",
+    "title": "5.3 Continuous Functions on Intervals",
+    "section": "",
+    "text": "5.3.1\n5.3.2\n5.3.3\n5.3.4\n5.3.5\n5.3.6\n5.3.7\n5.3.8\n5.3.9\n5.3.10\n5.3.11\n5.3.12\n5.3.13\n5.3.14\n5.3.15\n5.3.16\n5.3.17\n5.3.18\n5.3.19"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.10.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.10.html",
+    "title": "5.4.10",
+    "section": "",
+    "text": "Prove that if \\(f\\) is uniformly continuous on a bounded subset \\(A\\) of \\(\\mathbb{R}\\), then \\(f\\) is bounded on \\(A\\)\nAnswer\nIt will be shown by contradiction that if \\(f\\) is uniformly continuous on a bounded subset \\(A\\) of \\(\\mathbb{R}\\), then \\(f\\) is bounded on \\(A\\)\nSuppose \\(f\\) is uniformly continuous on a bounded subset \\(A\\) of \\(\\mathbb{R}\\) and \\(f\\) is not bounded on \\(A\\). Then by definition \\[\\nexists M &gt; 0 \\ni |f(x)| \\leq M \\; \\forall x \\in A\\]\nLet \\((x_n)\\) be a sequence in \\(A\\). Because \\(A\\) is bounded, then by theorem \\(x_n \\in A \\; \\forall n \\in \\mathbb{N}\\) and must be bounded. By Bolzano Theorem, there must exists a subsequence \\((x_{n_k})\\) of \\((x_n)\\) that converge to some \\(c \\in A\\). Because \\(f\\) is uniformly continuous, then \\((f(x_{n_k}))\\) converge to \\(f(c)\\). Thus by theorem \\((f(x_{n_k}))\\) must be bounded or \\(\\exists K &gt; 0 \\ni |f(x_{n_k})| \\leq K\\). This contradicts the assumption, therefore \\(f\\) must be bounded on \\(A\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.12.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.12.html",
+    "title": "5.4.12",
+    "section": "",
+    "text": "Show that if \\(f\\) is continuous on [0, \\(\\infty\\)) and uniformly continuous on [\\(a, \\infty\\)) for some positive constant \\(a\\), then \\(f\\) is uniformly continuous on [0, \\(\\infty\\))\nAnswer\n\\(f\\) is continuous on \\([0, \\infty]\\), thus \\(f\\) is continuous on \\(I := [0, a+1]\\) because \\(I \\subset [0, \\infty)\\). By Uniform Continuity Theorem, then \\(f\\) must be uniformly continuous on \\(I\\)., and uniformly continuous on [\\(a, \\infty\\)) thus by definition \\[\\forall \\epsilon_1 &gt; 0 \\; \\exists \\delta_1 &gt; 0 \\ni \\forall x,c \\in I. \\; |x - c| &lt; \\delta_1 \\implies |f(x) - f(c)| &lt; \\epsilon_1\\]\n\\[\\forall \\epsilon_2 &gt; 0 \\; \\exists \\delta_2 &gt; 0 \\ni \\forall x,c [a, \\infty) \\; |x - c| &lt; \\delta_2 \\implies |f(x) - f(c)| &lt; \\epsilon_1\\]\nChoose \\(\\delta = \\min(\\delta_1, \\delta_2)\\), then it must implies that \\(|f(x) - f(c)| &lt; \\epsilon_1\\) or \\(|f(x) - f(c)| &lt; \\epsilon_2\\). Therefore \\(f\\) must be uniformly continuous"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.14.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.14.html",
+    "title": "5.4.14",
+    "section": "",
+    "text": "A function \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is said to be on \\(\\mathbb{R}\\) if there exists \\(p &gt; 0\\) such that \\(f(x + p) = f(x)\\) for all \\(x \\in \\mathbb{R}\\). Prove that a continuous periodic function on \\(\\mathbb{R}\\) is bounded and uniformly continuous on \\(\\mathbb{R}\\)\nAnswer\nNotice the following :\nLet \\(I := [0, p]\\). Based on theorem, \\(f\\) must be bounded on \\(I\\) and uniformly continuous on \\(\\mathbb{R}\\) or by definition \\[\\exists M &gt; 0 \\ni |f(x)| \\leq M \\; \\forall x \\in I\\]\n\\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta(\\epsilon) &gt; 0 \\ni \\forall x,c \\in I, \\; |x-c| &lt; \\delta(\\epsilon) \\implies |f(x) - f(c)| \\leq \\epsilon\\]\nLet \\(x_k = x + kp\\), and \\(c_k = c + kp\\) for all \\(x,c \\in I\\) and \\(n \\in \\mathbb{Z}\\). Notice that \\(x_n - c_n = x + kp - c - kp = x - c\\), thus we have \\[\\exists M &gt; 0 \\ni |f(x)| = |f(x + kp)|  \\leq M\\]\n\\[\\forall \\epsilon &gt; 0 \\; \\exists \\delta(\\epsilon) &gt; 0 \\ni \\forall x,c \\in I, \\; |x_k - c_k| &lt; \\delta(\\epsilon) \\implies |f(x_n) - f(c_k)| \\leq \\epsilon\\] Let \\(I_k := [(k-1)p, p]\\), thus \\(x_k \\in I_k \\; \\forall k \\in \\mathbb{Z}\\) and from 2 condition above it assure that \\(f\\) must be bounded and uniformly continuous on \\(I_k \\; \\forall k \\in \\mathbb{Z}\\). It is trivial that \\(\\bigcup_{k \\in \\mathbb{Z}} \\; I_k = \\mathbb{R}\\)\nTherefore \\(f\\) is bounded and uniformly continuous on \\(\\mathbb{R}\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.16.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.16.html",
+    "title": "5.4.16",
+    "section": "",
+    "text": "A function is called on an interval \\(I\\) if for any \\(\\epsilon &gt; 0\\) there exists \\(\\delta &gt; 0\\) such that for any pair-wise disjoint subintervals \\([x_k, y_k]\\), \\(k = 1,2,...,n\\), of \\(I\\) such that \\(\\sum|x_k - y_k| &lt; \\delta\\) we have \\(\\sum|f(x_k) - f(y_k)| &lt; \\epsilon\\). Show that if \\(f\\) satisfies a Lipschitz condition on \\(I\\), then \\(f\\) is absolutely continuous on \\(I\\)\nAnswer\n\\(f\\) is a Lipschitz function on \\(I\\) and \\([x_k, y_k] \\subset I\\) for all \\(k\\), thus by definition \\[\\exists M &gt; 0 \\ni |f(x_k) - f(y_k)| \\leq M|x_k - y_k|\\]\nThus we have \\[\\begin{align*}\n    \\sum |f(x_k) - f(y_k)| & = |f(x_1) - f(y_1)| + |f(x_2) - f(y_2)| + ... + |f(x_n) - f(y_n)| \\\\\n    & \\leq M(|x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|) \\\\\n    & = M \\sum|x_k - y_k| \\leq M\\delta\n\\end{align*}\\]\nTherefore if we choose \\(\\delta = \\epsilon\\) it follows that for any \\(\\epsilon &gt; 0\\) there exists \\(\\delta &gt; 0\\) where \\(\\delta = \\epsilon\\) such that for any pair-wise disjoint subintervals \\([x_k, y_k]\\), \\(k = 1,2,...,n\\), of \\(I\\) such that \\(\\sum|x_k - y_k| &lt; \\delta\\) we have \\(\\sum|f(x_k) - f(y_k)| &lt; \\epsilon\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.3.html",
+    "title": "5.4.3",
+    "section": "",
+    "text": "Use the Nonuniform Continuity Criterion 5.4.2 to show that the following functions are not uniformly continuous on the given sets\n\n\\(f(x) := x^2, \\quad A := [0, \\infty)\\)\n\\(g(x) := \\sin(\\frac{1}{x}), \\quad B:=(0, \\infty)\\)\n\nAnswer\n\nIt will be shown that \\(f\\) are not uniformly continuous on \\(A\\)\nChoose \\(\\epsilon_0 = \\frac{1}{2}\\), \\((x_n) = (\\sqrt{n})\\), and \\((u_n) = (\\sqrt{n+1})\\). Notice that \\(x_n,u_n \\in A \\; \\forall n \\in \\mathbb{N}\\), and \\(\\lim(x_n - u_n) = 0\\)\nThus we have\n\\[\\begin{align*}\n      |f(x_n) - f(u_n)| & = |n - (n+1)| \\\\\n      & = |-1| = 1 &gt; \\frac{1}{2} = \\epsilon_0\n  \\end{align*}\\]\nTherefore by Nonuniform Continuity Theorem it follows that \\(f\\) are not uniformly continuous on \\(A\\) because \\(\\exists \\epsilon_0 &gt; 0\\) where \\(\\epsilon_0 = \\frac{1}{2}\\) and two sequences \\((x_n), \\; (u_n)\\) in \\(A\\) such that \\(\\lim(x_n - u_n) = 0\\) and $ |f(x_n) - f(u_n)| = |n - (n+1)| = |-1| = 1 &gt; = _0 ; n $\nIt will be shown that \\(g\\) are not uniformly continuous on \\(B\\)\nChoose \\(\\epsilon_0 = \\frac{1}{2}\\), \\((x_n) = (\\frac{\\pi(2n + 1)}{2})\\), and \\((u_n) = (\\frac{1}{\\pi n})\\). Because \\(\\sin (x_n) = \\sin(\\frac{\\pi}{2} + \\pi n) = \\pm 1\\) and \\(\\sin (u_n) = \\sin(\\pi n) = 0\\) for all \\(n \\in \\mathbb{N}\\) then \\[|g(x_n) - g(u_n)| = 1 &gt; \\frac{1}{2} = \\epsilon_9\\] Therefore by Nonuniform Continuity Theorem it follows that \\(g\\) are not uniformly continuous on \\(B\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.5.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.5.html",
+    "title": "5.4.5",
+    "section": "",
+    "text": "Show that if \\(f\\) and \\(g\\) are uniformly continuous on a subset \\(A\\) of \\(\\mathbb{R}\\), then \\(f + g\\) is uniformly continuous on \\(A\\)\nAnswer\nIt will be shown that if \\(f\\) and \\(g\\) are uniformly continuous on a subset \\(A\\), then \\(f+g\\) is uniformly continuous on \\(A\\)\nBecause \\(f\\) and \\(g\\) is uniformly continuous, then by definition \\[\\forall \\epsilon_1 &gt;0 \\; \\exists \\zeta(\\epsilon_1) &gt;0 \\ni \\forall x,c \\in A, \\; |x - c| &lt; \\zeta(\\epsilon_1) \\implies |f(x) - f(c)| &lt; \\epsilon_1\\] \\[\\forall \\epsilon_2 &gt; 0 \\; \\exists \\gamma(\\epsilon_2) &gt; 0 \\ni \\forall x,c \\in A, \\; |x - c| &lt; \\gamma(\\epsilon_2) \\implies |g(x) - g(c)| &lt; \\epsilon_2\\]\nNotice the following \\[\\begin{align*}\n    |f(x) + g(x) - f(c) - g(c)| & = |(f(x) - f(c)) + (g(x) - g(c))| \\\\\n    & \\leq |f(x) - f(c)| + |g(x) - g(c)| \\\\\n    & &lt; \\epsilon_1 + \\epsilon_2\n\\end{align*}\\]\nLet \\(\\epsilon = \\epsilon_1 + \\epsilon_2\\), and choose \\(\\delta = \\max\\{\\zeta(\\epsilon_1), \\gamma(\\epsilon_2)\\}\\) which must exist because \\(f\\) and \\(g\\) uniformly continuous and does not depends on any \\(c \\in A\\), then by definition \\(f+g\\) is uniformly continuous on \\(A\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.7.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.7.html",
+    "title": "5.4.7",
+    "section": "",
+    "text": "If \\(f(x) := x\\) and \\(g(x) := \\sin x\\), show that both \\(f\\) and \\(g\\) are uniformly continuous on \\(\\mathbb{R}\\), but that their product \\(fg\\) is not uniformly continuous on \\(\\mathbb{R}\\)\nAnswer\nIt will be shown that \\(f\\) and \\(g\\) are uniformly continuous on \\(\\mathbb{R}\\)\n\\(f\\) is trivially a uniformly continuous function because \\(|f(x) - f(c)| = |x - c| &lt; 2|x-c| \\; \\forall x,c \\in \\mathbb{R}\\) which satisfy Lipschitz condition, and by theorem \\(f\\) is uniformly continuous\nFor \\(g\\), notice the following \\[\\begin{align*}\n    |\\sin x - \\sin c| & = |2\\cos(\\frac{x + c}{2})\\sin(\\frac{x - c}{2})| \\\\\n    & \\leq2|1 \\cdot \\frac{x-c}{2}| \\quad \\text{ (Because $\\cos x \\leq 1$ and $|\\sin x| \\leq x$)} \\\\\n    & = |x-c|\n\\end{align*}\\] Thus \\(g\\) satisfy Lipschitz condition which implies \\(g\\) is uniformly continuous\nNow we will show that \\(fg\\) is not uniformly continuous on \\(\\mathbb{R}\\)\nChoose \\((x_n) = (2n\\pi)\\), and \\((u_n) = (2n\\pi + \\frac{1}{n})\\). Notice that \\(\\lim(x_n - u_n) = 0\\) and \\(\\sin(u_n) = \\sin (2n\\pi + \\frac{1}{n}) = \\sin(2n\\pi)\\cos(\\frac{1}{n}) + \\sin(\\frac{1}{n})\\cos(2n\\pi) = \\sin(\\frac{1}{n})\\). Thus \\[\\begin{align*}\n    |x_n\\sin x_n - u_n\\sin u_n| & = |(2n\\pi + \\frac{1}{n})\\sin(\\frac{1}{n})| \\\\\n    & &gt; |2n\\pi\\sin(\\frac{1}{n})|\\\\\n      & &gt; |\\sin(\\frac{1}{n}) \\\\\n      & \\geq \\frac{1}{n}|\\sin(\\frac{1}{n}) | \\quad \\text{ (Because $n \\in \\mathbb{N}$, then $\\frac{1}{n}\\leq 1$)} \\\\\n      & \\geq |\\sin(\\frac{1}{n})||\\sin(\\frac{1}{n})| \\\\\n      & = \\sin^2(\\frac{1}{n})\n\\end{align*}\\] Because \\(\\frac{1}{n} \\neq 2n\\pi \\; \\forall n \\in \\mathbb{N}\\), this implies that \\(\\sin^2(\\frac{1}{n}) \\neq 0\\). Thus by density theorem we can always choose \\(\\epsilon_0\\) where \\(0 &lt; \\epsilon_0 \\leq \\sin^2{\\frac{1}{n}}\\) such that \\[|x_n\\sin x_n - u_n\\sin u_n| \\geq \\epsilon_0\\]\nTherefore by Nonuniform Continuity Theorem, \\(fg\\) is not uniformly continuous on \\(\\mathbb{R}\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.9.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.9.html",
+    "title": "5.4.9",
+    "section": "",
+    "text": "If \\(f\\) is uniformly continuous on \\(A \\subseteq \\mathbb{R}\\), and \\(|f(x)| \\geq k &gt; 0\\) for all \\(x \\in A\\), show that \\(\\frac{1}{f}\\) is uniformly continuous on \\(A\\)\nAnswer\nIf \\(f\\) is uniformly continuous on \\(A \\subseteq \\mathbb{R}\\), and \\(|f(x)| \\geq k &gt; 0\\) for all \\(x \\in A\\), show that \\(\\frac{1}{f}\\) is uniformly continuous on \\(A\\)\nLet \\(c \\in A\\) and \\(\\epsilon &gt;0\\). We will search for \\(\\delta &gt; 0\\) such that if \\(|x-c| &lt; \\delta \\implies |\\frac{1}{f(x)} - \\frac{1}{f(c)}| &lt; \\epsilon\\)\nBecause \\(|f(x)| \\geq k &gt; 0\\) for all \\(x \\in A\\) then \\(|f(c)| \\geq k\\) or \\(\\frac{1}{|f(c)|} \\leq \\frac{1}{k}\\)\n\\(f\\) is uniformly continuous on \\(A\\), then by definition \\[\\forall \\epsilon_0 \\; \\exists \\delta_0 &gt; 0 \\ni \\forall x,c\\in A,  \\; |x-c| &lt; \\delta_0 \\implies |f(x) - f(c)| &lt; \\epsilon\\]\nNotice that \\[\\begin{align*}\n    |\\frac{1}{f(x)} - \\frac{1}{f(c)}| & = |\\frac{f(x)-f(c)}{f(x)f(c)}|\\\\\n    & \\leq \\frac{|f(x)-f(c)|}{k^2} \\\\\n    & &lt; \\frac{\\epsilon_0}{k^2}\n\\end{align*}\\]\nBecause \\(\\epsilon_0\\) is arbitrary, then we can choose \\(\\epsilon = \\frac{\\epsilon_0}{k^2}\\), and \\(\\delta\\) must exist. Therefore \\(\\frac{1}{f}\\) is uniformly continuous on \\(A\\) by definition"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.5/5.5.html",
+    "title": "5.5 Continuity and Gauges",
+    "section": "",
+    "text": "5.5.1\n5.5.2\n5.5.3\n5.5.4\n5.5.5\n5.5.6\n5.5.7\n5.5.8\n5.5.9\n5.5.10"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.html",
+    "title": "5.6 Monotone and Inverse Functions",
+    "section": "",
+    "text": "5.6.1\n5.6.2\n5.6.3\n5.6.4\n5.6.5\n5.6.6\n5.6.7\n5.6.8\n5.6.9\n5.6.10\n5.6.11\n5.6.12\n5.6.13\n5.6.14\n5.6.15"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.1/6.1.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.1/6.1.html",
+    "title": "6.1 The Derivative",
+    "section": "",
+    "text": "6.1.1\n6.1.2\n6.1.3\n6.1.4\n6.1.5\n6.1.6\n6.1.7\n6.1.8\n6.1.9\n6.1.10\n6.1.11\n6.1.12\n6.1.13\n6.1.14\n6.1.15\n6.1.16\n6.1.17"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter6/chapter6.3/6.3.html",
+    "href": "topik/todaysbartle/chapter/chapter6/chapter6.3/6.3.html",
+    "title": "6.3 L�Hospital�s Rules",
+    "section": "",
+    "text": "6.3.1\n6.3.2\n6.3.3\n6.3.4\n6.3.5\n6.3.6\n6.3.7\n6.3.8\n6.3.9\n6.3.10\n6.3.11\n6.3.12\n6.3.13\n6.3.14"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter7/chapter7.2/7.2.html",
+    "href": "topik/todaysbartle/chapter/chapter7/chapter7.2/7.2.html",
+    "title": "7.2 Riemann Integrable Functions",
+    "section": "",
+    "text": "7.2.1\n7.2.2\n7.2.3\n7.2.4\n7.2.5\n7.2.6\n7.2.7\n7.2.8\n7.2.9\n7.2.10\n7.2.11\n7.2.12\n7.2.13\n7.2.14\n7.2.15\n7.2.16\n7.2.17\n7.2.18\n7.2.19\n7.2.20"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter8/chapter8.1/8.1.html",
+    "href": "topik/todaysbartle/chapter/chapter8/chapter8.1/8.1.html",
+    "title": "8.1 Pointwise and Uniform Convergence",
+    "section": "",
+    "text": "8.1.1\n8.1.2\n8.1.3\n8.1.4\n8.1.5\n8.1.6\n8.1.7\n8.1.8\n8.1.9\n8.1.10\n8.1.11\n8.1.12\n8.1.13\n8.1.14\n8.1.15\n8.1.16\n8.1.17\n8.1.18\n8.1.19\n8.1.20\n8.1.21\n8.1.22\n8.1.23\n8.1.24"
+  },
+  {
+    "objectID": "topik/todaysbartle/todaysbartle.html",
+    "href": "topik/todaysbartle/todaysbartle.html",
+    "title": "Today’s Bartle",
+    "section": "",
+    "text": "Chapter 2\nCh 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)\nCh 2.2 Absolute Value and the Real Line\nCh 2.3 The Completeness Property of \\(\\mathbb{R}\\)\nCh 2.4 Applications of the Supremum Property\nCh 2.5 Intervals\nChapter 3\nCh 3.1 Sequences and Their Limits\nCh 3.2 Limit Theorems\nCh 3.3 Monotone Sequences\nCh 3.4 Subsequences and the Bolzano-Weierstrass Theorem\nCh 3.5 The Cauchy Criterion\nCh 3.6 Properly Divergent Sequences\nCh 3.7 Introduction to Infinite Series\nChapter 4\nCh 4.1 Limits of Functions\nCh 4.2 Limit Theorems\nCh 4.3 Some Extensions of the Limit Concept\nChapter 5\nCh 5.1 Continuous Function\nCh 5.2 Combinations of Continuous Functions\nCh 5.3 Continuous Functions on Intervals\nCh 5.4 Uniform Continuity\nCh 5.5 Continuity and Gauges\nCh 5.6 Monotone and Inverse Functions\nChapter 6\nCh 6.1 The Derivative\nCh 6.2 The Mean Value Theorem\nCh 6.3 L’Hospital’s Rules\nCh 6.4 Taylor’s Theorem\nChapter 7\nCh 7.1 Riemann Integral\nCh 7.2 Riemann Integrable Functions\nCh 7.3 The Fundamental Theorem\nChapter 8\nCh 8.1 Pointwise and Uniform Convergence\nCh 8.2 Interchange of Limits"
+  },
+  {
+    "objectID": "topik/todayscryer/chapter/chapter1/ch1.html",
+    "href": "topik/todayscryer/chapter/chapter1/ch1.html",
+    "title": "Chapter 1 Introduction",
+    "section": "",
+    "text": "Single Exponential Smoothing - Alpha Animation\n1.1.1"
+  },
+  {
+    "objectID": "topik/todayscryer/todayscryer.html",
+    "href": "topik/todayscryer/todayscryer.html",
+    "title": "Today’s Cryer",
+    "section": "",
+    "text": "Chapter 1 Introduction"
+  },
+  {
+    "objectID": "topik/todaysdickson/todaysdickson.html",
+    "href": "topik/todaysdickson/todaysdickson.html",
+    "title": "Today’s Dickson",
+    "section": "",
+    "text": "Rangkuman Kontingensi Jiwa 1\nChapter 42 Types of Bonds"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.2.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.2.html",
+    "title": "42.2",
+    "section": "",
+    "text": "Steve purchases a \\(10\\)-year zero-coupon bond for \\(\\$400\\) and has par value of \\(\\$1,000\\). Find the yield rate convertible semiannually that would be earned by Steve.\nAnswer\n\\(P = 400\\)\n\\(F = 1000\\)\n\\(n = 10\\) years\nSuppose \\(i\\) is the effective annual yield rate. Observe that\n\\[\\begin{align*}\nP &= F \\cdot (1+i)^{-n}\\\\\n400 &= 1000 \\cdot (1+i)^{-10}\n\\end{align*}\\]\ngives positive \\(i = 0.095958\\).\nSuppose \\(i^{(2)}\\) is the yield rate convertible semiannualy. We have the relation\n\\[\\begin{align*}\n(1+i) &= \\left(1+\\frac{i^{(2)}}{2}\\right)^2\\\\\n(1+0.095958) &= \\left(1+\\frac{i^{(2)}}{2}\\right)^2\\\\\n\\end{align*}\\]\nWhich result in \\(i^{(2)} = 0.0937603\\).\n\\(\\therefore\\) the yield rate convertible semiannually is given by \\(i^{(2)} \\approx 9.38\\%\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.4.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.4.html",
+    "title": "42.4",
+    "section": "",
+    "text": "An investor purchases a \\(26\\)-week T-bill with face value of \\(\\$10,000\\) and with a discount yield of \\(d\\) for \\(\\$9,600\\).\n\nFind \\(d\\).\nEven though T-bills are not usually quoted on an annual effective yield basis, the annual effective yield can still be determined. Find the annual effective rate of interest of this investment, assuming the investment period is exactly half a year.\n\nAnswer\n\n\\(F = 10000\\)\n\\(P = 9600\\)\n\\(n = 26\\) week\n\nLet \\(d'\\) is the weekly effective disount yield rate, thus\n\\[\\begin{align*}\nP &= F(1-d')^n\\\\\n\n9600 &=  1000(1-d')^{26}\\\\\n\nd' &= 0.00156884\n\n\\end{align*}\\]\nWe must find the annual effective discount yield rate as \\(d\\), and the annual effective rate of interest as \\(i\\)\n\\[\\begin{align*}\n(1-d')^26 &= (1-d)^{0.5}\\\\\nd &= 0.0783998\n\\end{align*}\\]\n\\[\\begin{align*}\n(1-d')^26 &= (1+i)^{-0.5}\\\\\ni &=0.0850692\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.6.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.6.html",
+    "title": "42.6",
+    "section": "",
+    "text": "An investor buys a zero-coupon bond with par value \\(\\$1,000\\) for \\(\\$493.63\\). The maturity date is \\(Y\\) years and the yield rate convertible semi-annually is \\(8\\%\\). Calculate \\(Y\\).\nAnswer\n\\(F = 1000\\)\n\\(P = 493.63\\)\n\\(i^{(2)} = 8\\%\\)\n\\(n = Y\\) years\nObserve that\n\\[\\begin{align*}\nP &= F \\cdot \\left(1+\\frac{i^{(2)}}{2}\\right)^{-2Y}\\\\\n493.63 &= 1000 \\cdot \\left(1+\\frac{8\\%}{2}\\right)^{-2Y}\\\\\nY &= 8.99995\n\\end{align*}\\]\n\\(\\therefore\\) \\(Y \\approx 9\\) years"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/42.8.html",
+    "href": "topik/todaysfinan/chapter/chapter42/42.8.html",
+    "title": "42.8",
+    "section": "",
+    "text": "A \\(20\\) year bond matures for its par value of \\(10,000\\). The coupon payable semi annually is \\(400\\). Calculate the price of the bond at a \\(6\\%\\) annual effective yield rate.\nAnswer\n\\(F = 10000\\)\n\\(F \\cdot r = 400\\)\n\\(i = 6\\%\\)\n\\(n = 20\\) years\nLet \\(j\\) be the semi annual effective yield rate, thus \\[\\begin{align*}\n(1+i) &= (1+j)^2\\\\\nj &= 0.029563\n\\end{align*}\\] Observe that\n\\[\\begin{align*}\nP &= F\\cdot r \\cdot a_{\\enclose{actuarial}{2n}j} + F \\cdot v_i^n\\\\\n&= 400 \\cdot \\left(\\frac{1-(1+0.029563)^{-40}}{0.029563} + (1+6\\%)^{-20}  \\right)\\\\\n&= 12,429.62\n\\end{align*}\\]\n\\(\\therefore\\) \\(P \\approx \\$12,429.62\\)"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter42/ch42.html",
+    "href": "topik/todaysfinan/chapter/chapter42/ch42.html",
+    "title": "Chapter 42 Types of Bonds",
+    "section": "",
+    "text": "42.1\n42.2\n42.3\n42.4\n42.5\n42.6\n42.7\n42.8\n42.9"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter43/ch43.html",
+    "href": "topik/todaysfinan/chapter/chapter43/ch43.html",
+    "title": "Chapter 43 The Various Pricing Formula of a Bond",
+    "section": "",
+    "text": "43.14\n43.15\n43.16\n43.17\n43.18\n43.19\n43.20\n43.25\n43.26"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter44/ch44.html",
+    "href": "topik/todaysfinan/chapter/chapter44/ch44.html",
+    "title": "Chapter 44 Amortization of Premium or Discount",
+    "section": "",
+    "text": "44.18"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter45/ch45.html",
+    "href": "topik/todaysfinan/chapter/chapter45/ch45.html",
+    "title": "Chapter 45 Valuation of Bonds Between Coupons Payment Dates",
+    "section": "",
+    "text": "45.1"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter46/ch46.html",
+    "href": "topik/todaysfinan/chapter/chapter46/ch46.html",
+    "title": "Chapter 46 Approximation Methods of Bonds’ Yield Rates",
+    "section": "",
+    "text": "46.1"
+  },
+  {
+    "objectID": "topik/todaysfinan/chapter/chapter47/47.5.html",
+    "href": "topik/todaysfinan/chapter/chapter47/47.5.html",
+    "title": "47.13",
+    "section": "",
+    "text": "Open The PDF by clicking this text"
+  },
+  {
+    "objectID": "topik/todaysfinan/todaysfinan.html",
+    "href": "topik/todaysfinan/todaysfinan.html",
+    "title": "Today’s Finan",
+    "section": "",
+    "text": "Chapter 42 Types of Bonds\nChapter 43 The Various Pricing Formula of a Bond\nChapter 44 Amortization of Premium or Discount\nChapter 45 Valuation of Bonds Between Coupons Payment Dates\nChapter 46 Approximation Methods of Bonds’ Yield Rates\nChapter 47 Callable Bonds and Serial Bonds"
+  },
+  {
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.20.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.20.html",
+    "title": "10.20",
+    "section": "",
+    "text": "A claim process is a mixtore of two r.v. \\(A\\) and \\(B\\)\n\\(A \\sim exp(\\theta=1)\\)\n\\(B \\sim exp(\\theta=10)\\)\nweight \\(p\\) to \\(A\\) and \\(1-p\\) to \\(B\\). Standard deviation of the mixture is \\(2\\)\nEstimate \\(p\\) by the methods of moment.\nAnswer\n\\[f(x) = pe^{-x}+(1-p)e^{\\frac{-x}{10}}\\]\nSifat distribusi eksponensial \\(X \\sim exp(\\theta)\\)\n\\(E[X] = \\frac{1}{\\theta}\\)\n\\(Var[X] = \\frac{1}{\\theta^2}\\)\n\\(E[X^2] = Var[X] + (E[X])^2\\)\n\\[\\begin{align*}\nE[X] &= p\\cdot E[A] + (1-p)\\cdot E[B]\\\\\n&= p \\cdot 1 + (1-p) \\cdot 10\\\\\n&= 10-9p\n\\end{align*}\\]\n\\[\\begin{align*}\nE[X^2] &= p\\cdot E[A^2] + (1-p)\\cdot E[B^2]\\\\\n&= p \\cdot 2 + (1-p) \\cdot 200\\\\\n&= 200-198p\n\\end{align*}\\]\n\\[\\begin{align*}\nVar[X] &= E[X^2] - (E[X])^2\\\\\n&= (200-198p) - (10-9p)^2\\\\\n&= 100-18p-81p^2\n\\end{align*}\\]\n\\[\\begin{align*}\nsd(x) &= \\sqrt{Var[X]}\\\\\n2 &= \\sqrt{100-18p-81p^2}\\\\\n\\end{align*}\\]\nDidapat \\(\\hat{p_1}=0.983206\\) dan \\(\\hat{p_2} = -1.20543\\).\n\\(\\therefore p = 0.983206\\)"
+  },
+  {
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.24.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.24.html",
+    "title": "10.24",
+    "section": "",
+    "text": "Random sample from loglogistic distribution where \\(80\\%\\) is more than \\(100\\) dan \\(20\\%\\) is more than \\(400\\).\nFind estimate for \\(\\theta\\) and \\(\\gamma\\) by percentile matching Answer\n\\(80\\%\\) is more than \\(100 \\longrightarrow 20\\%\\) is less than \\(100\\)\n\\[F(100) = 0.2\\] \\[\\hat{\\pi_{0.2}} = 100\\]\n\\(20\\%\\) is more than \\(400 \\longrightarrow 80\\%\\) is less than \\(400\\)\n\\[F(400) = 0.8\\] \\[\\hat{\\pi_{0.8}} = 400\\]\n$$F(x) = \n\\[F(x) = \\frac{\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{x}{\\theta}\\right)^{\\gamma}}\\]\nSolving for \\(\\theta\\) and \\(\\gamma\\)\n\\[\\begin{align*}\n\\frac{\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{100}{\\theta}\\right)^{\\gamma}}&=0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2+0.2\\left(\\frac{100}{\\theta} \\right)^{\\gamma}\\\\\n0.8 \\left(\\frac{100}{\\theta} \\right)^{\\gamma} &= 0.2\\\\\n\\left(\\frac{100}{\\theta} \\right)^{\\gamma} = 0.25\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}{1+\\left(\\frac{400}{\\theta}\\right)^{\\gamma}}&=0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8+0.8\\left(\\frac{400}{\\theta} \\right)^{\\gamma}\\\\\n0.2 \\left(\\frac{400}{\\theta} \\right)^{\\gamma} &= 0.8\\\\\n\\left(\\frac{400}{\\theta} \\right)^{\\gamma} = 4\n\\end{align*}\\]\n\\[\\begin{align*}\n\\frac{100}{(0.25)^{1/\\gamma}} = \\frac{400}{4^{1/\\gamma}}\\\\\n\\gamma = 2\\\\\n\\theta = 200\\\\\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "topik/todaysklugman/chapter/chapter10/10.28.html",
+    "href": "topik/todaysklugman/chapter/chapter10/10.28.html",
     "title": "10.1",
     "section": "",
     "text": "Click here to open the pdf document of this answer"
@@ -98,39 +812,18 @@
     "text": "Click here to open the pdf document of this answer"
   },
   {
-    "objectID": "topik/todaysklugman/chapter/chapter10/10.34.html",
-    "href": "topik/todaysklugman/chapter/chapter10/10.34.html",
-    "title": "10.1",
+    "objectID": "topik/todaysklugman/todaysklugman.html",
+    "href": "topik/todaysklugman/todaysklugman.html",
+    "title": "Today’s Klugman",
     "section": "",
-    "text": "Click here to open the pdf document of this answer"
+    "text": "Chapter 10 Review of Mathematical Statistics\nChapter 11 Review of Mathematical Statistics"
   },
   {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.16.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.16.html",
-    "title": "5.4.16",
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.4.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.4.html",
+    "title": "1.1.4",
     "section": "",
-    "text": "A function is called on an interval \\(I\\) if for any \\(\\epsilon &gt; 0\\) there exists \\(\\delta &gt; 0\\) such that for any pair-wise disjoint subintervals \\([x_k, y_k]\\), \\(k = 1,2,...,n\\), of \\(I\\) such that \\(\\sum|x_k - y_k| &lt; \\delta\\) we have \\(\\sum|f(x_k) - f(y_k)| &lt; \\epsilon\\). Show that if \\(f\\) satisfies a Lipschitz condition on \\(I\\), then \\(f\\) is absolutely continuous on \\(I\\)\nAnswer\n\\(f\\) is a Lipschitz function on \\(I\\) and \\([x_k, y_k] \\subset I\\) for all \\(k\\), thus by definition \\[\\exists M &gt; 0 \\ni |f(x_k) - f(y_k)| \\leq M|x_k - y_k|\\]\nThus we have \\[\\begin{align*}\n    \\sum |f(x_k) - f(y_k)| & = |f(x_1) - f(y_1)| + |f(x_2) - f(y_2)| + ... + |f(x_n) - f(y_n)| \\\\\n    & \\leq M(|x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|) \\\\\n    & = M \\sum|x_k - y_k| \\leq M\\delta\n\\end{align*}\\]\nTherefore if we choose \\(\\delta = \\epsilon\\) it follows that for any \\(\\epsilon &gt; 0\\) there exists \\(\\delta &gt; 0\\) where \\(\\delta = \\epsilon\\) such that for any pair-wise disjoint subintervals \\([x_k, y_k]\\), \\(k = 1,2,...,n\\), of \\(I\\) such that \\(\\sum|x_k - y_k| &lt; \\delta\\) we have \\(\\sum|f(x_k) - f(y_k)| &lt; \\epsilon\\)"
-  },
-  {
-    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.15.html",
-    "href": "topik/todaysbartle/chapter/chapter5/chapter5.4/5.4.15.html",
-    "title": "5.4.15",
-    "section": "",
-    "text": "Let \\(f\\) and \\(g\\) be Lipschitz functions on \\(A\\) (a). Show that the sum \\(f + g\\) is also a Lipschitz function on \\(A\\)\n(b). Show that if \\(f\\) and \\(g\\) are bounded on \\(A\\), then the product is a Lipshictz function on \\(A\\)\n(c). Give an example of a Lipschitz function \\(f\\) on \\([0, \\infty)\\) such that it’s square \\(f^2\\) is a Lipschitz function\nAnswer\n(a). It will be shown that \\(f + g\\) is also a Lipschitz function on \\(A\\)\nBecause $f$ and $g$ is a Lipschitz function on $A$, then by definition\n$$\\exists K &gt; 0 \\ni |f(x) - f(c)| \\leq K|x - c| \\; \\forall x,c \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L &gt; 0 \\ni |g(x) - g(c)| \\leq L|x - c| \\; \\forall x,c \\in A$$\n\nFrom the inequalty, we will have $$|(f(x) + g(x)) - (f(c) + g(c))| \\leq |f(x) - f(c)| + |g(x) - g(c)| \\leq (K + L)|x - c| \\; \\forall x,c \\in A$$\n\nTherefore $f + g$ is also a Lipschitz function on $A$ by definition because $\\exists M &gt; 0$ where $M = K + L$ such that $|(f(x) + g(x)) - (f(c) + g(c))| \\leq M|x - c| \\; \\forall x,c \\in A$ \\\\\n(b). It will be shown that if \\(f\\) and \\(g\\) are bounded on \\(A\\), then the product is a Lipshictz function on \\(A\\)\nBecause $f$ and $g$ is a Lipschitz function on $A$, then by definition\n$$\\exists K &gt; 0 \\ni |f(x) - f(c)| \\leq K|x - c| \\; \\forall x,c \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L &gt; 0 \\ni |g(x) - g(c)| \\leq L|x - c| \\; \\forall x,c \\in A$$\n\nWe also know that $f$ and $g$ is bounded on $A$, thus\n$$\\exists K_1 &gt; 0 \\ni |f(x)| \\leq K_1 \\; \\forall x \\in A$$\n\\begin{center}\n    and\n\\end{center}\n$$\\exists L_1 &gt; 0 \\ni |g(x)| \\leq L_1 \\; \\forall x \\in A$$\n\nNotice that\n\\begin{align*}\n    |f(x)g(x) - f(c)g(c)| & = |f(x)g(x) - g(x)f(c) + g(x)f(c) - f(c)g(c)| \\\\\n    & = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\\\\n    & \\leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\\\\n    & \\leq L_1K|x-c| + K_1L|x-c| \\\\\n    & = (L_1K + K_1L)|x-c|\n\\end{align*}\n\nTherefore $fg$ is also a Lipschitz function on $A$ by definition because $\\exists M &gt; 0$ where $M =(L_1K + K_1L)$ such that $|(f(x)g(x)) - (f(c)g(c))| \\leq M|x - c| \\; \\forall x,c \\in A$ \\\\\n(c). Let \\(f(x) = x\\). It is trivially follow that \\(f\\) is Lipschitz function on \\([0, \\infty)\\). It will be shown that \\(f^2(x) = x^2\\) is not a Lipschitz function on \\([0, \\infty)\\) by contradiction\nLet $A := [0, \\infty)$ and assume that $f^2$ is a Lipschitz function on $A$. Then it must follow that $\\exists K &gt; 0 \\ni |x^2 - c^2| \\leq K|x-c| \\; \\forall x,c \\in A$\n\nNotice that $|x^2 - c^2| = |x-c||x+c|$, and because $x,c \\in A$ it follows that $x + c = |x+c|$ thus $|x^2 - c^2| = |x-c|(x+c)$. Because $A$ does not have an upper bound, then $x + c$ also does not have an upper bound, thus we can't choose $K &gt; 0$ such that $x + c \\leq K$ which contradicts our assumption that $|x^2 - c^2| \\leq K|x-c|$\n\nTherefore our assumption must be false, which means $f^2$ is not a Lipschitz function on $A$"
-  },
-  {
-    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.1.html",
-    "href": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.1.html",
-    "title": "1.3.1",
-    "section": "",
-    "text": "Heat flows longitudinally through a laterally insulated metal bar of length 10 centimeters, and the temperature \\(u = u(x, t)\\) satisfies the diffusion equation: \\(u_t = k u_{xx},\\) where \\(k = 0.02\\) square centimeters per second. Suppose the temperatures at some fixed time \\(T\\) at \\(x = 4, 6, 8\\) cm are given as: \\(u(4, T) = 58, u(6, T) = 64, u(8, T) = 72.\\) Estimate \\(u_{xx}(6, T)\\) using a difference approximation. Will the temperature at \\(x = 6\\) increase or decrease in the next instant of time? Estimate the temperature at \\(x = 6\\) at \\(T + 0.5\\) seconds.\nHint: Recall from calculus that\n\\[\\begin{equation}\n    f''(a) \\approx \\frac{f(a - h) - 2f(a) + f(a + h)}{h^2},\n\\end{equation}\\]\nwhere \\(h\\) is a small increment. This approximation is also derived in Chapter 6.\nAnswer\nWe will find estimate \\(u_{xx}\\) using the second-order central difference formula:\n\\[\\begin{equation*}\n    u_{xx}(x, T) \\approx \\frac{u(x-h,T) - 2u(x,T) + u(x + h,T)}{h^2},\n\\end{equation*}\\]\nGiven: 1. \\(x=6\\) cm 2. \\(h=2\\) cm (since the given temperature values are at \\(x=4,6,8\\) cm) 3. \\(u(4,T)=58\\), \\(u(6,T)=64\\), \\(u(8,T)=72\\)\nWe can compute\n\\[\\begin{align*}\nu_{xx}(6, T) &\\approx \\frac{u(6-2,T) - 2u(6,T) + u(6+2,T)}{2^2} \\\\\n& =\\frac{u(4,T) - 2u(6,T) + u(8,T)}{4}\\\\\n& =\\frac{58 - 2\\times64 + 72}{4}\\\\\n& =\\frac{58-128+72}{4} \\\\\n& =\\frac{2}{4} \\\\\n& =\\frac{1}{2} \\\\\n& =0.5\n\\end{align*}\\]\nSince the heat equation is \\(u_t=ku_{xx}\\) with \\(k=0.02\\), we find:\n\\[\\begin{align*}\nu_t(6,T)&=k\\times u_{xx}(6,T) \\\\\n& =0.02\\times0.5 \\\\\n& =0.01 \\\\\n& &gt;0\n\\end{align*}\\]\nThis implies that the temperature at \\(x=6\\) cm will increase in the next instant of time\nNow we will estimate \\(u(6,T+0.5)\\) using forward difference approximation respected due T:\n\\[\\begin{equation*}\n    u_t(x,T) \\approx \\frac{u(x,T+\\Delta t) - u(x,T\\Delta t)}{\\Delta t}\n\\end{equation*}\\]\nWhich can be arranged to:\n\\[\\begin{equation*}\n    u(x,T+\\Delta t) \\approx   u(x,T) + u_t(x,T)\\Delta t\n\\end{equation*}\\]\nUsing this formula, we can compute \\(u(x,T+\\Delta t)\\)\n\\[\\begin{align*}\nu(6,T+0.5)&\\approx u(6,T) + u_t(6,T)\\times0.5 \\\\\n& = 64 + 0.01\\times0.5 \\\\\n& = 64.005\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.3.html",
-    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.3.html",
-    "title": "1.2.3",
-    "section": "",
-    "text": "Find the general solutions of advection decay equations \\(u_t + c \\cdot u_x = - \\lambda \\cdot u\\) by transforming to characteristic coordinates \\(\\xi = x - c \\cdot t, \\tau = t\\)\nAnswer\nWe will find \\(u_x\\) and \\(u_t\\) with partial chain rule so, \\(u_x\\) and \\(u_t\\) have \\(u_\\xi\\) and \\(u_\\tau\\).\n\\[\\begin{align*}\nu_x &= u_\\xi \\cdot \\xi_x + u_\\tau \\cdot \\tau_x \\\\\n&= u_\\xi \\cdot 1 + u_\\tau \\cdot 0\\\\\n&= u_\\xi\\\\\n\\\\\nu_t &= u_\\xi \\cdot \\xi_t + u_\\tau \\cdot \\tau_t\\\\\n&= u_\\xi \\cdot (-c) + u_\\tau \\cdot 1\\\\\n&= u_\\tau - c \\cdot u_\\xi\n\\end{align*}\\]\nBy changing \\(u_x\\) and \\(u_t\\) from advection decay equations, we will have\n\\[\\begin{align*}\n&\\iff u_t + c \\cdot u_x &= - \\lambda \\cdot u\\\\\n&\\iff u_\\tau - c \\cdot u_\\xi + c \\cdot u_\\xi &= -\\lambda \\cdot u\\\\\n&\\iff u_\\tau &= - \\lambda \\cdot u\\\\\n&\\iff \\frac{\\partial u}{\\partial \\tau} &= -\\lambda \\cdot u\\\\\n&\\iff \\frac{\\partial u}{u} &= -\\lambda \\cdot \\partial \\tau\\\\\n&\\iff \\int \\frac{1}{u} du &= \\int -\\lambda d\\tau\\\\\n&\\iff \\ln{|u|} &= -\\lambda \\cdot t + f(\\xi)\\\\\n&\\iff u &= e^{- \\lambda \\cdot t + f(\\xi)}\\\\\n\\end{align*}\\]\nAssume that \\(e^{f(\\xi)} = g(\\xi)\\), therefore\n\\[\\begin{align*}\n&\\iff u(\\xi, \\tau) &= g(\\xi) \\cdot e^{-\\lambda \\tau}\\\\\n&\\iff u(x,t) &= g(x - c\\cdot t) \\cdot e^{- \\lambda t}\n\\end{align*}\\]\nNow we got the general solutions of advection decay equations are\\ \\(u(x,t) = g(x - c \\cdot t) \\cdot e^{-\\lambda t}\\)\\ for all function of \\(g\\)"
+    "text": "Derive the solution \\(u(x,y) = axy + bx + cy + d\\) of the PDE \\[u_{xx}^2 + u_{yy}^2 = 0\\]\nAnswer\nNotice that \\(x^2 \\geq 0 \\; \\forall x \\in \\mathbb{R}\\), thus the PDE can be separated into \\[u_{xx}^2 = 0 \\quad \\land \\quad u_{yy}^2 = 0\\]\nFor \\(u_{xx}^2 = 0\\), then \\(u(x,x)\\) must contain degree 1 or 0 of x because \\(\\frac{d^2}{dx^2} ax = 0\\) where \\(a\\) a constant. Similarly for \\(u_{yy}^2 = 0\\), it only contain degree 1 or 0 of y. Therefore by combining the two condition, the only solution for both \\(u_{yy}^2 = 0\\) and \\(u_{xx}^2 = 0\\) is in the form of \\(u(x,y) = axy + bx + cy + d\\) where \\(a,b,c,d \\in \\mathbb{R}\\)"
   },
   {
     "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.6.html",
@@ -140,17 +833,52 @@
     "text": "Verify that\n\\[\\begin{align*}\nu(x,t) = \\frac{1}{2c} \\int_{x-ct}^{x+ct}{g(s) ds}\n\\end{align*}\\]\nis a solution to the wave equation \\(u_{tt} = c^2 \\cdot u_{xx}\\), where \\(c\\) is a constant and \\(g\\) is a given continuously differentiable function\nAnswer\nAssume that \\(g(s)\\) is integrable on the interval \\([x - ct, x + ct]\\) so that\n\\[\\begin{align*}\n    u(x,t) &= \\frac{1}{2c} \\int_{x-ct}^{x+ct}{g(s) ds} \\\\\n    &= \\frac{G(x + ct) - G(x - ct)}{2c}\n\\end{align*}\\]\nWe want to determine the value of \\(u_{xx}(x,t)\\) so we first find \\(u_x(x,t)\\):\n\\[\\begin{align*}\n    u_x(x,t) &= \\frac{\\partial \\left(\\frac{G(x + ct) - G(x - ct)}{2c}\\right)}{\\partial x} \\\\\n    &= \\frac{1}{2c}\\left(\\frac{\\partial \\left(G(x + ct)\\right)}{\\partial x} -\\frac{\\partial \\left(G(x - ct)\\right)}{\\partial x} \\right) \\\\\n    &= \\frac{1}{2c} \\left(\\frac{\\partial \\left(G(x + ct)\\right)}{\\partial \\left(x + ct \\right)} \\cdot \\frac{\\partial \\left(x + ct\\right)}{\\partial x} - \\frac{\\partial \\left(G(x - ct)\\right)}{\\partial \\left(x - ct \\right)} \\cdot \\frac{\\partial \\left(x - ct\\right)}{\\partial x} \\right) \\\\\n    &= \\frac{1}{2c} \\left(g(x + ct) \\cdot 1 - g(x - ct) \\cdot 1 \\right) \\\\\n    &= \\frac{g(x + ct) - g(x - ct)}{2c}\n\\end{align*}\\]\nSince \\(g\\) is a continuously differentiable function, we have:\n\\[\\begin{align*}\n    u_{xx}(x,t) &= \\frac{\\partial \\left(\\frac{g(x + ct) - g(x - ct)}{2c}\\right)}{\\partial x} \\\\\n    &= \\frac{1}{2c}\\left(\\frac{\\partial \\left(g(x + ct)\\right)}{\\partial x} -\\frac{\\partial \\left(g(x - ct)\\right)}{\\partial x} \\right) \\\\\n    &= \\frac{1}{2c} \\left(\\frac{\\partial \\left(g(x + ct)\\right)}{\\partial \\left(x + ct \\right)} \\cdot \\frac{\\partial \\left(x + ct\\right)}{\\partial x} - \\frac{\\partial \\left(g(x - ct)\\right)}{\\partial \\left(x - ct \\right)} \\cdot \\frac{\\partial \\left(x - ct\\right)}{\\partial x} \\right) \\\\\n    &= \\frac{1}{2c} \\left(g'(x + ct) \\cdot 1 - g'(x - ct) \\cdot 1 \\right) \\\\\n    &= \\frac{g'(x + ct) - g'(x - ct)}{2c}\n\\end{align*}\\]\nNow, to find \\(u_{tt}(x,t)\\) we first determine \\(u_t(x,t)\\):\n\\[\\begin{align*}\n    u_t(x,t) &= \\frac{\\partial \\left(\\frac{G(x + ct) - G(x - ct)}{2c}\\right)}{\\partial t} \\\\\n    &= \\frac{1}{2c}\\left(\\frac{\\partial \\left(G(x + ct)\\right)}{\\partial t} -\\frac{\\partial \\left(G(x - ct)\\right)}{\\partial t} \\right) \\\\\n    &= \\frac{1}{2c} \\left(\\frac{\\partial \\left(G(x + ct)\\right)}{\\partial \\left(x + ct \\right)} \\cdot \\frac{\\partial \\left(x + ct\\right)}{\\partial t} - \\frac{\\partial \\left(G(x - ct)\\right)}{\\partial \\left(x - ct \\right)} \\cdot \\frac{\\partial \\left(x - ct\\right)}{\\partial t} \\right) \\\\\n    &= \\frac{1}{2c} \\left(g(x + ct) \\cdot c - g(x - ct) \\cdot (-c) \\right) \\\\\n    &= \\frac{g(x + ct) + g(x - ct)}{2}\n\\end{align*}\\]\nSince \\(g\\) is a continuously differentiable function, we obtain:\n\\[\\begin{align*}\n    u_{tt}(x,t) &= \\frac{\\partial \\left(\\frac{g(x + ct) + g(x - ct)}{2c}\\right)}{\\partial t} \\\\\n    &= \\frac{1}{2}\\left(\\frac{\\partial \\left(g(x + ct)\\right)}{\\partial t} +\\frac{\\partial \\left(g(x - ct)\\right)}{\\partial t} \\right) \\\\\n    &= \\frac{1}{2} \\left(\\frac{\\partial \\left(g(x + ct)\\right)}{\\partial \\left(x + ct \\right)} \\cdot \\frac{\\partial \\left(x + ct\\right)}{\\partial t} + \\frac{\\partial \\left(g(x - ct)\\right)}{\\partial \\left(x - ct \\right)} \\cdot \\frac{\\partial \\left(x - ct\\right)}{\\partial t} \\right) \\\\\n    &= \\frac{1}{2} \\left(g'(x + ct) \\cdot c + g'(x - ct) \\cdot (-c) \\right) \\\\\n    &= \\frac{c \\cdot (g'(x + ct) - g'(x - ct))}{2}\n\\end{align*}\\]\nObserve that:\n\\[\\begin{align*}\n    c^2 \\cdot u_{xx} &= c^2 \\cdot \\frac{g'(x + ct) - g'(x - ct)}{2c} \\\\\n    &= \\frac{c \\cdot (g'(x + ct) - g'(x - ct))}{2}\\\\\n    &= u_{tt}\n\\end{align*}\\]\nThus, it is proven that \\(u(x,tt) = \\frac{1}{2c} \\int_{x-ct}^{x+ct}{g(s) ds}\\) is a solution to the wave equation \\(u_{tt} = c^2 \\cdot u_{xx}\\)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": " Daily Mabar",
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.1/1.1.html",
+    "title": "1.1 PDE Models",
     "section": "",
-    "text": "Topic\nReal Analysis\nToday’s Bartle\nDifferential Equation\nToday’s Logan\nRisk Modelling\nToday’s Klugman\nTime Series\nToday’s Cryer\nFinancial Mathematics\nToday’s Finan\nLife Contingencies\nToday’s Dickson\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "1.1.4\n1.1.5\n1.1.6\n1.1.7\n1.1.10"
   },
   {
-    "objectID": "topik/todaysbartle/todaysbartle.html",
-    "href": "topik/todaysbartle/todaysbartle.html",
-    "title": "Today’s Bartle",
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.3.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.3.html",
+    "title": "1.2.3",
     "section": "",
-    "text": "Chapter 2\nCh 2.1 The Algebraic and Order Properties of \\(\\mathbb{R}\\)\nCh 2.2 Absolute Value and the Real Line\nCh 2.3 The Completeness Property of \\(\\mathbb{R}\\)\nCh 2.4 Applications of the Supremum Property\nCh 2.5 Intervals\nChapter 3\nCh 3.1 Sequences and Their Limits\nCh 3.2 Limit Theorems\nCh 3.3 Monotone Sequences\nCh 3.4 Subsequences and the Bolzano-Weierstrass Theorem\nCh 3.5 The Cauchy Criterion\nCh 3.6 Properly Divergent Sequences\nCh 3.7 Introduction to Infinite Series\nChapter 4\nCh 4.1 Limits of Functions\nCh 4.2 Limit Theorems\nCh 4.3 Some Extensions of the Limit Concept\nChapter 5\nCh 5.1 Continuous Function\nCh 5.2 Combinations of Continuous Functions\nCh 5.3 Continuous Functions on Intervals\nCh 5.4 Uniform Continuity\nCh 5.5 Continuity and Gauges\nCh 5.6 Monotone and Inverse Functions\nChapter 6\nCh 6.1 The Derivative\nCh 6.2 The Mean Value Theorem\nCh 6.3 L’Hospital’s Rules\nCh 6.4 Taylor’s Theorem\nChapter 7\nCh 7.1 Riemann Integral\nCh 7.2 Riemann Integrable Functions\nCh 7.3 The Fundamental Theorem\nChapter 8\nCh 8.1 Pointwise and Uniform Convergence\nCh 8.2 Interchange of Limits"
+    "text": "Find the general solutions of advection decay equations \\(u_t + c \\cdot u_x = - \\lambda \\cdot u\\) by transforming to characteristic coordinates \\(\\xi = x - c \\cdot t, \\tau = t\\)\nAnswer\nWe will find \\(u_x\\) and \\(u_t\\) with partial chain rule so, \\(u_x\\) and \\(u_t\\) have \\(u_\\xi\\) and \\(u_\\tau\\).\n\\[\\begin{align*}\nu_x &= u_\\xi \\cdot \\xi_x + u_\\tau \\cdot \\tau_x \\\\\n&= u_\\xi \\cdot 1 + u_\\tau \\cdot 0\\\\\n&= u_\\xi\\\\\n\\\\\nu_t &= u_\\xi \\cdot \\xi_t + u_\\tau \\cdot \\tau_t\\\\\n&= u_\\xi \\cdot (-c) + u_\\tau \\cdot 1\\\\\n&= u_\\tau - c \\cdot u_\\xi\n\\end{align*}\\]\nBy changing \\(u_x\\) and \\(u_t\\) from advection decay equations, we will have\n\\[\\begin{align*}\n&\\iff u_t + c \\cdot u_x &= - \\lambda \\cdot u\\\\\n&\\iff u_\\tau - c \\cdot u_\\xi + c \\cdot u_\\xi &= -\\lambda \\cdot u\\\\\n&\\iff u_\\tau &= - \\lambda \\cdot u\\\\\n&\\iff \\frac{\\partial u}{\\partial \\tau} &= -\\lambda \\cdot u\\\\\n&\\iff \\frac{\\partial u}{u} &= -\\lambda \\cdot \\partial \\tau\\\\\n&\\iff \\int \\frac{1}{u} du &= \\int -\\lambda d\\tau\\\\\n&\\iff \\ln{|u|} &= -\\lambda \\cdot t + f(\\xi)\\\\\n&\\iff u &= e^{- \\lambda \\cdot t + f(\\xi)}\\\\\n\\end{align*}\\]\nAssume that \\(e^{f(\\xi)} = g(\\xi)\\), therefore\n\\[\\begin{align*}\n&\\iff u(\\xi, \\tau) &= g(\\xi) \\cdot e^{-\\lambda \\tau}\\\\\n&\\iff u(x,t) &= g(x - c\\cdot t) \\cdot e^{- \\lambda t}\n\\end{align*}\\]\nNow we got the general solutions of advection decay equations are\\ \\(u(x,t) = g(x - c \\cdot t) \\cdot e^{-\\lambda t}\\)\\ for all function of \\(g\\)"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.2/1.2.html",
+    "title": "1.2 Conservation Laws",
+    "section": "",
+    "text": "1.2.3\n1.2.8"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.3/1.3.html",
+    "title": "1.3 Diffusion",
+    "section": "",
+    "text": "1.3.1"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.5/1.5.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.5/1.5.html",
+    "title": "1.5 Vibrations and Acoustics",
+    "section": "",
+    "text": "1.5.5"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.8/1.8.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.8/1.8.html",
+    "title": "1.8 Laplace’s Equation",
+    "section": "",
+    "text": "1.8.3"
+  },
+  {
+    "objectID": "topik/todayslogan/chapter/chapter1/chapter1.9/1.9.html",
+    "href": "topik/todayslogan/chapter/chapter1/chapter1.9/1.9.html",
+    "title": "1.9 Classification of PDEs",
+    "section": "",
+    "text": "1.9.3"
   }
 ]
