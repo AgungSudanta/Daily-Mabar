@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ch 2.1 The Algebraic and Order Properties of \mathbb{R} – Daily Mabar</title>
+<title>5.4.16 – Daily Mabar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ch 2.1 The Algebraic and Order Properties of <span class="math inline">\(\mathbb{R}\)</span></h1>
+<h1 class="title">5.4.16</h1>
 </div>
 
 
@@ -165,6 +165,15 @@ window.Quarto = {
 </header>
 
 
+<p>A function is called on an interval <span class="math inline">\(I\)</span> if for any <span class="math inline">\(\epsilon &gt; 0\)</span> there exists <span class="math inline">\(\delta &gt; 0\)</span> such that for any pair-wise disjoint subintervals <span class="math inline">\([x_k, y_k]\)</span>, <span class="math inline">\(k = 1,2,...,n\)</span>, of <span class="math inline">\(I\)</span> such that <span class="math inline">\(\sum|x_k - y_k| &lt; \delta\)</span> we have <span class="math inline">\(\sum|f(x_k) - f(y_k)| &lt; \epsilon\)</span>. Show that if <span class="math inline">\(f\)</span> satisfies a Lipschitz condition on <span class="math inline">\(I\)</span>, then <span class="math inline">\(f\)</span> is absolutely continuous on <span class="math inline">\(I\)</span></p>
+<p>Answer</p>
+<p><span class="math inline">\(f\)</span> is a Lipschitz function on <span class="math inline">\(I\)</span> and <span class="math inline">\([x_k, y_k] \subset I\)</span> for all <span class="math inline">\(k\)</span>, thus by definition <span class="math display">\[\exists M &gt; 0 \ni |f(x_k) - f(y_k)| \leq M|x_k - y_k|\]</span></p>
+<p>Thus we have <span class="math display">\[\begin{align*}
+    \sum |f(x_k) - f(y_k)| &amp; = |f(x_1) - f(y_1)| + |f(x_2) - f(y_2)| + ... + |f(x_n) - f(y_n)| \\
+    &amp; \leq M(|x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|) \\
+    &amp; = M \sum|x_k - y_k| \leq M\delta
+\end{align*}\]</span></p>
+<p>Therefore if we choose <span class="math inline">\(\delta = \epsilon\)</span> it follows that for any <span class="math inline">\(\epsilon &gt; 0\)</span> there exists <span class="math inline">\(\delta &gt; 0\)</span> where <span class="math inline">\(\delta = \epsilon\)</span> such that for any pair-wise disjoint subintervals <span class="math inline">\([x_k, y_k]\)</span>, <span class="math inline">\(k = 1,2,...,n\)</span>, of <span class="math inline">\(I\)</span> such that <span class="math inline">\(\sum|x_k - y_k| &lt; \delta\)</span> we have <span class="math inline">\(\sum|f(x_k) - f(y_k)| &lt; \epsilon\)</span></p>
 
 
 

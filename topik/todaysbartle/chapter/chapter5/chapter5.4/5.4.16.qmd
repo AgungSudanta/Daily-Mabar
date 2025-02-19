@@ -8,3 +8,18 @@ format:
         css: styles.css
         toc: true
 ---
+
+A function is called \textit{absolutely continuous} on an interval $I$ if for any $\epsilon > 0$ there exists $\delta > 0$ such that for any pair-wise disjoint subintervals $[x_k, y_k]$, $k = 1,2,...,n$, of $I$ such that $\sum|x_k - y_k| < \delta$ we have $\sum|f(x_k) - f(y_k)| < \epsilon$. Show that if $f$ satisfies a Lipschitz condition on $I$, then $f$ is absolutely continuous on $I$
+
+Answer
+
+$f$ is a Lipschitz function on $I$ and $[x_k, y_k] \subset I$ for all $k$, thus by definition $$\exists M > 0 \ni |f(x_k) - f(y_k)| \leq M|x_k - y_k|$$
+
+Thus we have 
+\begin{align*}
+    \sum |f(x_k) - f(y_k)| & = |f(x_1) - f(y_1)| + |f(x_2) - f(y_2)| + ... + |f(x_n) - f(y_n)| \\
+    & \leq M(|x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|) \\
+    & = M \sum|x_k - y_k| \leq M\delta
+\end{align*}
+
+Therefore if we choose $\delta = \epsilon$ it follows that for any $\epsilon > 0$ there exists $\delta > 0$ where $\delta = \epsilon$ such that for any pair-wise disjoint subintervals $[x_k, y_k]$, $k = 1,2,...,n$, of $I$ such that $\sum|x_k - y_k| < \delta$ we have $\sum|f(x_k) - f(y_k)| < \epsilon$
