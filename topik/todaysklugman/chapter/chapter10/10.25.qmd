@@ -1,0 +1,12 @@
+---
+title: "10.1"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+---
+
+<a href="https://github.com/AgungSudanta/Daily-Mabar/blob/main/topik/todaysklugman/chapter/chapter10/klugmanpdf10/Todays_Klugman_10_25.pdf">Click here to open the pdf document of this answer</a>
