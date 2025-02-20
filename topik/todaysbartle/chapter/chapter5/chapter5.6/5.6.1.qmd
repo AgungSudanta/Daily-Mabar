@@ -8,3 +8,12 @@ format:
         css: styles.css
         toc: true
 ---
+
+If I := [$a, b$] is an interval and $f : I \to \mathbb{R}$ is an increasing function, then the point $a$ [respectively,
+$b$] is an absolute minimum [respectively, maximum] point for $f$ on $I$. If $f$ is strictly increasing, then $a$ is the only absolute minimum point for $f$ on $I$
+
+Answer
+
+$f$ is an increasing function, then by definition $\forall x_1,x_2 \in I, \; x_1 \leq x_2 \implies f(x_1) \leq f(x_2)$. Let $f(I) := \{ f(x) : x \in I \}$. Because $a = \inf I$ and $b = \sup I$, then it must follow that $f(a) = \inf f(I)$ and $f(b) = \sup f(I)$. Therefore $a$ is an absolute minimum and $b$ is an absolute maximum
+
+If $f$ strictly increasing, then $\forall x_1,x_2 \in I, \; x_1 < x_2 \implies f(x_1) < f(x_2)$. Thus by the same reasoning $a$ is an absolute minimum, and because $f(a) \neq f(x) \; \forall x \in I, \; x \neq a$, thus the only point for $f$ in $I$ 

@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>If I := [<span class="math inline">\(a, b\)</span>] is an interval and <span class="math inline">\(f : I \to \mathbb{R}\)</span> is an increasing function, then the point <span class="math inline">\(a\)</span> [respectively, <span class="math inline">\(b\)</span>] is an absolute minimum [respectively, maximum] point for <span class="math inline">\(f\)</span> on <span class="math inline">\(I\)</span>. If <span class="math inline">\(f\)</span> is strictly increasing, then <span class="math inline">\(a\)</span> is the only absolute minimum point for <span class="math inline">\(f\)</span> on <span class="math inline">\(I\)</span></p>
+<p>Answer</p>
+<p><span class="math inline">\(f\)</span> is an increasing function, then by definition <span class="math inline">\(\forall x_1,x_2 \in I, \; x_1 \leq x_2 \implies f(x_1) \leq f(x_2)\)</span>. Let <span class="math inline">\(f(I) := \{ f(x) : x \in I \}\)</span>. Because <span class="math inline">\(a = \inf I\)</span> and <span class="math inline">\(b = \sup I\)</span>, then it must follow that <span class="math inline">\(f(a) = \inf f(I)\)</span> and <span class="math inline">\(f(b) = \sup f(I)\)</span>. Therefore <span class="math inline">\(a\)</span> is an absolute minimum and <span class="math inline">\(b\)</span> is an absolute maximum</p>
+<p>If <span class="math inline">\(f\)</span> strictly increasing, then <span class="math inline">\(\forall x_1,x_2 \in I, \; x_1 &lt; x_2 \implies f(x_1) &lt; f(x_2)\)</span>. Thus by the same reasoning <span class="math inline">\(a\)</span> is an absolute minimum, and because <span class="math inline">\(f(a) \neq f(x) \; \forall x \in I, \; x \neq a\)</span>, thus the only point for <span class="math inline">\(f\)</span> in <span class="math inline">\(I\)</span></p>
 
 
 
