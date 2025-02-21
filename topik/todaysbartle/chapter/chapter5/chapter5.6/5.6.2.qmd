@@ -8,3 +8,20 @@ format:
         css: styles.css
         toc: true
 ---
+
+If $f$ and $g$ are increasing functions on an interval $I \subseteq \mathbb{R}$, show that     $f+g$ is an increasing function on $I$. If $f$ is also strictly increasing on $I$, then $f + g$ is strictly increasing on $I$
+
+Answer
+
+$f$ and $g$ are increasing on $I$, then by definition
+$$f(x_1) \leq f(x_2) \; \forall x_1, x_2 \in I, \; x_1 < x_2$$
+\begin{center}
+    and
+\end{center}
+$$g(x_1) \leq g(x_2) \; \forall x_1, x_2 \in I, \; x_1 < x_2$$
+
+By adding the 2 inequality it follows that $f(x_1) + g(x_1) \leq f(x_2) + g(x_2) \; \forall x_1, x_2 \in I, \; x_1 < x_2$. Thus $f +g$ is an increasing function on $I$ by definition. 
+
+If $f$ is strictly increasing, then by definition
+$$f(x_1) < f(x_2) \; \forall x_1, x_2 \in I, \; x_1 < x_2$$
+Thus it follows that $f(x_1) + g(x_1) < f(x_2) + g(x_2) \; \forall x_1, x_2 \in I, \; x_1 < x_2$ which by definition $f + g$ is strictly increasing on $I$

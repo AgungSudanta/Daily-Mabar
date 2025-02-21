@@ -887,5 +887,12 @@
     "title": "5.6.1",
     "section": "",
     "text": "If I := [\\(a, b\\)] is an interval and \\(f : I \\to \\mathbb{R}\\) is an increasing function, then the point \\(a\\) [respectively, \\(b\\)] is an absolute minimum [respectively, maximum] point for \\(f\\) on \\(I\\). If \\(f\\) is strictly increasing, then \\(a\\) is the only absolute minimum point for \\(f\\) on \\(I\\)\nAnswer\n\\(f\\) is an increasing function, then by definition \\(\\forall x_1,x_2 \\in I, \\; x_1 \\leq x_2 \\implies f(x_1) \\leq f(x_2)\\). Let \\(f(I) := \\{ f(x) : x \\in I \\}\\). Because \\(a = \\inf I\\) and \\(b = \\sup I\\), then it must follow that \\(f(a) = \\inf f(I)\\) and \\(f(b) = \\sup f(I)\\). Therefore \\(a\\) is an absolute minimum and \\(b\\) is an absolute maximum\nIf \\(f\\) strictly increasing, then \\(\\forall x_1,x_2 \\in I, \\; x_1 &lt; x_2 \\implies f(x_1) &lt; f(x_2)\\). Thus by the same reasoning \\(a\\) is an absolute minimum, and because \\(f(a) \\neq f(x) \\; \\forall x \\in I, \\; x \\neq a\\), thus the only point for \\(f\\) in \\(I\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.2.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.2.html",
+    "title": "5.6.2",
+    "section": "",
+    "text": "If \\(f\\) and \\(g\\) are increasing functions on an interval \\(I \\subseteq \\mathbb{R}\\), show that \\(f+g\\) is an increasing function on \\(I\\). If \\(f\\) is also strictly increasing on \\(I\\), then \\(f + g\\) is strictly increasing on \\(I\\)\nAnswer\n\\(f\\) and \\(g\\) are increasing on \\(I\\), then by definition \\[f(x_1) \\leq f(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\]\n\\[g(x_1) \\leq g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\]\nBy adding the 2 inequality it follows that \\(f(x_1) + g(x_1) \\leq f(x_2) + g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\). Thus \\(f +g\\) is an increasing function on \\(I\\) by definition.\nIf \\(f\\) is strictly increasing, then by definition \\[f(x_1) &lt; f(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\] Thus it follows that \\(f(x_1) + g(x_1) &lt; f(x_2) + g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\) which by definition \\(f + g\\) is strictly increasing on \\(I\\)"
   }
 ]
