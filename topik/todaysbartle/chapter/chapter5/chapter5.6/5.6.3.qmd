@@ -8,3 +8,13 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that both $f(x) := x$ and $g(x) : = x - 1$ are strictly increasingly  on $I := [0,1]$, but their product $fg$ is not increasing on $I$
+
+Answer
+
+It will be shown that $f(x) := x$ and $g(x) : = x - 1$ are strictly increasingly  on $I := [0,1]$, but their product $fg$ is not increasing on $I$
+
+Remember that $x < x + 1 \; \forall x \in \mathbb{R}$, thus it trivially follows that $f$ and $g$ are strictly increasing on $I$
+
+Notice that for $fg(x) = x^2 -x$, if we choose $x_0 = 0$, $x_1 = \frac{1}{2}$, and $x_2 = 1$ then it follows that $fg(x_0) = 0$, $fg(x_1) = -\frac{1}{4}$, and $fg(x_2) = 0$. Thus $fg$ not increasing on $I$ because $f(x_1) < f(x_2) = f(x_0)$ where $x_0 < x_1 < x_2$

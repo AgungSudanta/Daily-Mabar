@@ -894,5 +894,12 @@
     "title": "5.6.2",
     "section": "",
     "text": "If \\(f\\) and \\(g\\) are increasing functions on an interval \\(I \\subseteq \\mathbb{R}\\), show that \\(f+g\\) is an increasing function on \\(I\\). If \\(f\\) is also strictly increasing on \\(I\\), then \\(f + g\\) is strictly increasing on \\(I\\)\nAnswer\n\\(f\\) and \\(g\\) are increasing on \\(I\\), then by definition \\[f(x_1) \\leq f(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\]\n\\[g(x_1) \\leq g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\]\nBy adding the 2 inequality it follows that \\(f(x_1) + g(x_1) \\leq f(x_2) + g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\). Thus \\(f +g\\) is an increasing function on \\(I\\) by definition.\nIf \\(f\\) is strictly increasing, then by definition \\[f(x_1) &lt; f(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\] Thus it follows that \\(f(x_1) + g(x_1) &lt; f(x_2) + g(x_2) \\; \\forall x_1, x_2 \\in I, \\; x_1 &lt; x_2\\) which by definition \\(f + g\\) is strictly increasing on \\(I\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.3.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.3.html",
+    "title": "5.6.3",
+    "section": "",
+    "text": "Show that both \\(f(x) := x\\) and \\(g(x) : = x - 1\\) are strictly increasingly on \\(I := [0,1]\\), but their product \\(fg\\) is not increasing on \\(I\\)\nAnswer\nIt will be shown that \\(f(x) := x\\) and \\(g(x) : = x - 1\\) are strictly increasingly on \\(I := [0,1]\\), but their product \\(fg\\) is not increasing on \\(I\\)\nRemember that \\(x &lt; x + 1 \\; \\forall x \\in \\mathbb{R}\\), thus it trivially follows that \\(f\\) and \\(g\\) are strictly increasing on \\(I\\)\nNotice that for \\(fg(x) = x^2 -x\\), if we choose \\(x_0 = 0\\), \\(x_1 = \\frac{1}{2}\\), and \\(x_2 = 1\\) then it follows that \\(fg(x_0) = 0\\), \\(fg(x_1) = -\\frac{1}{4}\\), and \\(fg(x_2) = 0\\). Thus \\(fg\\) not increasing on \\(I\\) because \\(f(x_1) &lt; f(x_2) = f(x_0)\\) where \\(x_0 &lt; x_1 &lt; x_2\\)"
   }
 ]
