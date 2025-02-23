@@ -19,7 +19,7 @@ Answer
 
 (a). It will be shown that $f + g$ is also a Lipschitz function on $A$
 
-```         
+
 Because $f$ and $g$ is a Lipschitz function on $A$, then by definition
 $$\exists K > 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A$$
 \begin{center}
@@ -30,11 +30,11 @@ $$\exists L > 0 \ni |g(x) - g(c)| \leq L|x - c| \; \forall x,c \in A$$
 From the inequalty, we will have $$|(f(x) + g(x)) - (f(c) + g(c))| \leq |f(x) - f(c)| + |g(x) - g(c)| \leq (K + L)|x - c| \; \forall x,c \in A$$
 
 Therefore $f + g$ is also a Lipschitz function on $A$ by definition because $\exists M > 0$ where $M = K + L$ such that $|(f(x) + g(x)) - (f(c) + g(c))| \leq M|x - c| \; \forall x,c \in A$ \\
-```
+
 
 (b). It will be shown that if $f$ and $g$ are bounded on $A$, then the product is a Lipshictz function on $A$
 
-```         
+
 Because $f$ and $g$ is a Lipschitz function on $A$, then by definition
 $$\exists K > 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A$$
 \begin{center}
@@ -59,14 +59,14 @@ Notice that
 \end{align*}
 
 Therefore $fg$ is also a Lipschitz function on $A$ by definition because $\exists M > 0$ where $M =(L_1K + K_1L)$ such that $|(f(x)g(x)) - (f(c)g(c))| \leq M|x - c| \; \forall x,c \in A$ \\
-```
+
 
 (c). Let $f(x) = x$. It is trivially follow that $f$ is Lipschitz function on $[0, \infty)$. It will be shown that $f^2(x) = x^2$ is not a Lipschitz function on $[0, \infty)$ by contradiction
 
-```         
+     
 Let $A := [0, \infty)$ and assume that $f^2$ is a Lipschitz function on $A$. Then it must follow that $\exists K > 0 \ni |x^2 - c^2| \leq K|x-c| \; \forall x,c \in A$
 
 Notice that $|x^2 - c^2| = |x-c||x+c|$, and because $x,c \in A$ it follows that $x + c = |x+c|$ thus $|x^2 - c^2| = |x-c|(x+c)$. Because $A$ does not have an upper bound, then $x + c$ also does not have an upper bound, thus we can't choose $K > 0$ such that $x + c \leq K$ which contradicts our assumption that $|x^2 - c^2| \leq K|x-c|$
 
 Therefore our assumption must be false, which means $f^2$ is not a Lipschitz function on $A$
-```
+

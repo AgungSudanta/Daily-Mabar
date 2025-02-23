@@ -170,47 +170,27 @@ window.Quarto = {
 <p>(c). Give an example of a Lipschitz function <span class="math inline">\(f\)</span> on <span class="math inline">\([0, \infty)\)</span> such that it’s square <span class="math inline">\(f^2\)</span> is a Lipschitz function</p>
 <p>Answer</p>
 <p>(a). It will be shown that <span class="math inline">\(f + g\)</span> is also a Lipschitz function on <span class="math inline">\(A\)</span></p>
-<pre><code>Because $f$ and $g$ is a Lipschitz function on $A$, then by definition
-$$\exists K &gt; 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A$$
-\begin{center}
-    and
-\end{center}
-$$\exists L &gt; 0 \ni |g(x) - g(c)| \leq L|x - c| \; \forall x,c \in A$$
-
-From the inequalty, we will have $$|(f(x) + g(x)) - (f(c) + g(c))| \leq |f(x) - f(c)| + |g(x) - g(c)| \leq (K + L)|x - c| \; \forall x,c \in A$$
-
-Therefore $f + g$ is also a Lipschitz function on $A$ by definition because $\exists M &gt; 0$ where $M = K + L$ such that $|(f(x) + g(x)) - (f(c) + g(c))| \leq M|x - c| \; \forall x,c \in A$ \\</code></pre>
+Because <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> is a Lipschitz function on <span class="math inline">\(A\)</span>, then by definition <span class="math display">\[\exists K &gt; 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A\]</span>
+<p><span class="math display">\[\exists L &gt; 0 \ni |g(x) - g(c)| \leq L|x - c| \; \forall x,c \in A\]</span></p>
+<p>From the inequalty, we will have <span class="math display">\[|(f(x) + g(x)) - (f(c) + g(c))| \leq |f(x) - f(c)| + |g(x) - g(c)| \leq (K + L)|x - c| \; \forall x,c \in A\]</span></p>
+<p>Therefore <span class="math inline">\(f + g\)</span> is also a Lipschitz function on <span class="math inline">\(A\)</span> by definition because <span class="math inline">\(\exists M &gt; 0\)</span> where <span class="math inline">\(M = K + L\)</span> such that <span class="math inline">\(|(f(x) + g(x)) - (f(c) + g(c))| \leq M|x - c| \; \forall x,c \in A\)</span> \</p>
 <p>(b). It will be shown that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are bounded on <span class="math inline">\(A\)</span>, then the product is a Lipshictz function on <span class="math inline">\(A\)</span></p>
-<pre><code>Because $f$ and $g$ is a Lipschitz function on $A$, then by definition
-$$\exists K &gt; 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A$$
-\begin{center}
-    and
-\end{center}
-$$\exists L &gt; 0 \ni |g(x) - g(c)| \leq L|x - c| \; \forall x,c \in A$$
-
-We also know that $f$ and $g$ is bounded on $A$, thus
-$$\exists K_1 &gt; 0 \ni |f(x)| \leq K_1 \; \forall x \in A$$
-\begin{center}
-    and
-\end{center}
-$$\exists L_1 &gt; 0 \ni |g(x)| \leq L_1 \; \forall x \in A$$
-
-Notice that
-\begin{align*}
+Because <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> is a Lipschitz function on <span class="math inline">\(A\)</span>, then by definition <span class="math display">\[\exists K &gt; 0 \ni |f(x) - f(c)| \leq K|x - c| \; \forall x,c \in A\]</span>
+<p><span class="math display">\[\exists L &gt; 0 \ni |g(x) - g(c)| \leq L|x - c| \; \forall x,c \in A\]</span></p>
+We also know that <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> is bounded on <span class="math inline">\(A\)</span>, thus <span class="math display">\[\exists K_1 &gt; 0 \ni |f(x)| \leq K_1 \; \forall x \in A\]</span>
+<p><span class="math display">\[\exists L_1 &gt; 0 \ni |g(x)| \leq L_1 \; \forall x \in A\]</span></p>
+<p>Notice that <span class="math display">\[\begin{align*}
     |f(x)g(x) - f(c)g(c)| &amp; = |f(x)g(x) - g(x)f(c) + g(x)f(c) - f(c)g(c)| \\
     &amp; = |g(x)(f(x) - f(c)) - f(c)(g(x) - g(c))| \\
     &amp; \leq |g(x)||f(x) - f(c)| + |f(c)||g(x) - g(c)| \\
     &amp; \leq L_1K|x-c| + K_1L|x-c| \\
     &amp; = (L_1K + K_1L)|x-c|
-\end{align*}
-
-Therefore $fg$ is also a Lipschitz function on $A$ by definition because $\exists M &gt; 0$ where $M =(L_1K + K_1L)$ such that $|(f(x)g(x)) - (f(c)g(c))| \leq M|x - c| \; \forall x,c \in A$ \\</code></pre>
+\end{align*}\]</span></p>
+<p>Therefore <span class="math inline">\(fg\)</span> is also a Lipschitz function on <span class="math inline">\(A\)</span> by definition because <span class="math inline">\(\exists M &gt; 0\)</span> where <span class="math inline">\(M =(L_1K + K_1L)\)</span> such that <span class="math inline">\(|(f(x)g(x)) - (f(c)g(c))| \leq M|x - c| \; \forall x,c \in A\)</span> \</p>
 <p>(c). Let <span class="math inline">\(f(x) = x\)</span>. It is trivially follow that <span class="math inline">\(f\)</span> is Lipschitz function on <span class="math inline">\([0, \infty)\)</span>. It will be shown that <span class="math inline">\(f^2(x) = x^2\)</span> is not a Lipschitz function on <span class="math inline">\([0, \infty)\)</span> by contradiction</p>
-<pre><code>Let $A := [0, \infty)$ and assume that $f^2$ is a Lipschitz function on $A$. Then it must follow that $\exists K &gt; 0 \ni |x^2 - c^2| \leq K|x-c| \; \forall x,c \in A$
-
-Notice that $|x^2 - c^2| = |x-c||x+c|$, and because $x,c \in A$ it follows that $x + c = |x+c|$ thus $|x^2 - c^2| = |x-c|(x+c)$. Because $A$ does not have an upper bound, then $x + c$ also does not have an upper bound, thus we can't choose $K &gt; 0$ such that $x + c \leq K$ which contradicts our assumption that $|x^2 - c^2| \leq K|x-c|$
-
-Therefore our assumption must be false, which means $f^2$ is not a Lipschitz function on $A$</code></pre>
+<p>Let <span class="math inline">\(A := [0, \infty)\)</span> and assume that <span class="math inline">\(f^2\)</span> is a Lipschitz function on <span class="math inline">\(A\)</span>. Then it must follow that <span class="math inline">\(\exists K &gt; 0 \ni |x^2 - c^2| \leq K|x-c| \; \forall x,c \in A\)</span></p>
+<p>Notice that <span class="math inline">\(|x^2 - c^2| = |x-c||x+c|\)</span>, and because <span class="math inline">\(x,c \in A\)</span> it follows that <span class="math inline">\(x + c = |x+c|\)</span> thus <span class="math inline">\(|x^2 - c^2| = |x-c|(x+c)\)</span>. Because <span class="math inline">\(A\)</span> does not have an upper bound, then <span class="math inline">\(x + c\)</span> also does not have an upper bound, thus we can’t choose <span class="math inline">\(K &gt; 0\)</span> such that <span class="math inline">\(x + c \leq K\)</span> which contradicts our assumption that <span class="math inline">\(|x^2 - c^2| \leq K|x-c|\)</span></p>
+<p>Therefore our assumption must be false, which means <span class="math inline">\(f^2\)</span> is not a Lipschitz function on <span class="math inline">\(A\)</span></p>
 
 
 
