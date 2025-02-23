@@ -901,5 +901,12 @@
     "title": "5.6.3",
     "section": "",
     "text": "Show that both \\(f(x) := x\\) and \\(g(x) : = x - 1\\) are strictly increasingly on \\(I := [0,1]\\), but their product \\(fg\\) is not increasing on \\(I\\)\nAnswer\nIt will be shown that \\(f(x) := x\\) and \\(g(x) : = x - 1\\) are strictly increasingly on \\(I := [0,1]\\), but their product \\(fg\\) is not increasing on \\(I\\)\nRemember that \\(x &lt; x + 1 \\; \\forall x \\in \\mathbb{R}\\), thus it trivially follows that \\(f\\) and \\(g\\) are strictly increasing on \\(I\\)\nNotice that for \\(fg(x) = x^2 -x\\), if we choose \\(x_0 = 0\\), \\(x_1 = \\frac{1}{2}\\), and \\(x_2 = 1\\) then it follows that \\(fg(x_0) = 0\\), \\(fg(x_1) = -\\frac{1}{4}\\), and \\(fg(x_2) = 0\\). Thus \\(fg\\) not increasing on \\(I\\) because \\(f(x_1) &lt; f(x_2) = f(x_0)\\) where \\(x_0 &lt; x_1 &lt; x_2\\)"
+  },
+  {
+    "objectID": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.4.html",
+    "href": "topik/todaysbartle/chapter/chapter5/chapter5.6/5.6.4.html",
+    "title": "5.6.4",
+    "section": "",
+    "text": "Show that if \\(f\\) and \\(g\\) are positive increasing functions on an interval \\(I\\), then their product \\(fg\\) is increasing on \\(I\\)\nAnswer\nIt will be shown that if \\(f\\) and \\(g\\) are positive increasing functions on an interval \\(I\\), then their product \\(fg\\) is increasing on \\(I\\)\n\\(f\\) and \\(g\\) are positive increasing functions, then by definition \\[\\forall x_1,x_2 \\in I, \\; x_1 &lt; x_2 \\implies 0 &lt;f(x_1) \\leq f(x_2)\\]\n\\[\\forall x_1,x_2 \\in I, \\; x_1 &lt; x_2 \\implies 0 &lt; g(x_1) \\leq g(x_2)\\] Because \\(f\\) and \\(g\\) are positive, multiplying the 2 inequality will ensure that \\(0 &lt; f(x_1) \\cdot g(x_1) = fg(x_1) &lt; fg(x_2) = f(x_2) \\cdot g(x_2)\\)\nTherefore \\(fg\\) is increasing on \\(I\\) by definition"
   }
 ]

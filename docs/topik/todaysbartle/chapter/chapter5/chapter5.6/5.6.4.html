@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Show that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are positive increasing functions on an interval <span class="math inline">\(I\)</span>, then their product <span class="math inline">\(fg\)</span> is increasing on <span class="math inline">\(I\)</span></p>
+<p>Answer</p>
+<p>It will be shown that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are positive increasing functions on an interval <span class="math inline">\(I\)</span>, then their product <span class="math inline">\(fg\)</span> is increasing on <span class="math inline">\(I\)</span></p>
+<span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are positive increasing functions, then by definition <span class="math display">\[\forall x_1,x_2 \in I, \; x_1 &lt; x_2 \implies 0 &lt;f(x_1) \leq f(x_2)\]</span>
+<p><span class="math display">\[\forall x_1,x_2 \in I, \; x_1 &lt; x_2 \implies 0 &lt; g(x_1) \leq g(x_2)\]</span> Because <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are positive, multiplying the 2 inequality will ensure that <span class="math inline">\(0 &lt; f(x_1) \cdot g(x_1) = fg(x_1) &lt; fg(x_2) = f(x_2) \cdot g(x_2)\)</span></p>
+<p>Therefore <span class="math inline">\(fg\)</span> is increasing on <span class="math inline">\(I\)</span> by definition</p>
 
 
 

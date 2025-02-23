@@ -8,3 +8,19 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that if $f$ and $g$ are positive increasing functions on an interval $I$, then their product $fg$ is increasing on $I$ 
+
+Answer
+
+It will be shown that if $f$ and $g$ are positive increasing functions on an interval $I$, then their product $fg$ is increasing on $I$ 
+
+$f$ and $g$ are positive increasing functions, then by definition 
+$$\forall x_1,x_2 \in I, \; x_1 < x_2 \implies 0 <f(x_1) \leq f(x_2)$$
+\begin{center}
+    and
+\end{center}
+$$\forall x_1,x_2 \in I, \; x_1 < x_2 \implies 0 < g(x_1) \leq g(x_2)$$
+Because $f$ and $g$ are positive, multiplying the 2 inequality will ensure that $0 < f(x_1) \cdot g(x_1) = fg(x_1) < fg(x_2) = f(x_2) \cdot g(x_2)$
+
+Therefore $fg$ is increasing on $I$ by definition
