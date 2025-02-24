@@ -8,3 +8,16 @@ format:
         css: styles.css
         toc: true
 ---
+
+Show that if $I \in [a, b]$ and $f : I \to \mathbb{R}$ is increasing on $I$, then $f$ is continuous at $a$ if and only if $f (a) = \inf\{ f (x) : x \in (a, b]\}$
+
+Answer
+
+
+It will be shown that if $f$ is continuous on $a$ then $f(a) = \inf\{ f (x) : x \in (a, b]\}$
+
+$f$ is continuous on $a$, then by definition $\displaystyle{\lim_{x \to a^+}} f = f(a)$ because $a$ is the left endpoint. Let $I_1 := (a,b]$. Notice that $a \notin I_1$ thus $a$ not an endpoint on $I_1$ thus by theorem $\displaystyle{\lim_{x \to a^+}} f = \inf\{ f (x) : x \in I_1\}$. Therefore we have $f(a) = \inf\{ f (x) : x \in I_1\}$
+
+It will be shown that if $f(a) = \inf\{ f (x) : x \in (a, b]\}$ then $f$ is continuous on $a$
+
+Notice that $a$ is the left endpoint of $I$, thus using definition of \textit{jump} we have $J_f(a) = \displaystyle{\lim_{x \to a^-}} f - f(a)$. Using similar way as before, it can be shown that $\displaystyle{\lim_{x \to a^+}} f = \inf\{ f (x) : x \in I_1\}$, and we know that $f(a) = \inf\{ f (x) : x \in (a, b]\}$ thus $J_f(a) = 0$ which by theorem $f$ continuous on $a$

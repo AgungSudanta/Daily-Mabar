@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Show that if <span class="math inline">\(I \in [a, b]\)</span> and <span class="math inline">\(f : I \to \mathbb{R}\)</span> is increasing on <span class="math inline">\(I\)</span>, then <span class="math inline">\(f\)</span> is continuous at <span class="math inline">\(a\)</span> if and only if <span class="math inline">\(f (a) = \inf\{ f (x) : x \in (a, b]\}\)</span></p>
+<p>Answer</p>
+<p>It will be shown that if <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(a\)</span> then <span class="math inline">\(f(a) = \inf\{ f (x) : x \in (a, b]\}\)</span></p>
+<p><span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(a\)</span>, then by definition <span class="math inline">\(\displaystyle{\lim_{x \to a^+}} f = f(a)\)</span> because <span class="math inline">\(a\)</span> is the left endpoint. Let <span class="math inline">\(I_1 := (a,b]\)</span>. Notice that <span class="math inline">\(a \notin I_1\)</span> thus <span class="math inline">\(a\)</span> not an endpoint on <span class="math inline">\(I_1\)</span> thus by theorem <span class="math inline">\(\displaystyle{\lim_{x \to a^+}} f = \inf\{ f (x) : x \in I_1\}\)</span>. Therefore we have <span class="math inline">\(f(a) = \inf\{ f (x) : x \in I_1\}\)</span></p>
+<p>It will be shown that if <span class="math inline">\(f(a) = \inf\{ f (x) : x \in (a, b]\}\)</span> then <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(a\)</span></p>
+<p>Notice that <span class="math inline">\(a\)</span> is the left endpoint of <span class="math inline">\(I\)</span>, thus using definition of we have <span class="math inline">\(J_f(a) = \displaystyle{\lim_{x \to a^-}} f - f(a)\)</span>. Using similar way as before, it can be shown that <span class="math inline">\(\displaystyle{\lim_{x \to a^+}} f = \inf\{ f (x) : x \in I_1\}\)</span>, and we know that <span class="math inline">\(f(a) = \inf\{ f (x) : x \in (a, b]\}\)</span> thus <span class="math inline">\(J_f(a) = 0\)</span> which by theorem <span class="math inline">\(f\)</span> continuous on <span class="math inline">\(a\)</span></p>
 
 
 
