@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(f : \mathbb{R} \to \mathbb{R}\)</span> be defined by <span class="math inline">\(f(x) : = x^2\)</span> for <span class="math inline">\(x\)</span> rational, <span class="math inline">\(f(x) := 0\)</span> for <span class="math inline">\(x\)</span> irrational. Show that <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(x = 0\)</span>, and find <span class="math inline">\(f'(0)\)</span></p>
+<p>Answer</p>
+<p>It will be shown that <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(c = 0\)</span> using Carath'eodory’s Theorem</p>
+<p>Let <span class="math inline">\(\varphi(x) := \begin{cases}
+    x, &amp; x \in \mathbb{Q} \\
+    0, &amp; x \notin \mathbb{Q}
+\end{cases}\)</span> Notice that <span class="math inline">\(\varphi(x)\)</span> have 2 cases which is</p>
+<p><span class="math inline">\(x \in \mathbb{Q}\)</span>, then <span class="math inline">\(\varphi(x) \cdot x = x^2 = f(x)\)</span> and <span class="math inline">\(\displaystyle{\lim_{x \to 0}} \; \varphi(x) = 0\)</span></p>
+<p><span class="math inline">\(x \notin \mathbb{Q}\)</span>, then <span class="math inline">\(\varphi(x) \cdot x = 0 = f(x)\)</span> <span class="math inline">\(\displaystyle{\lim_{x \to 0}} \; \varphi(x) = 0\)</span></p>
+<p>Because <span class="math inline">\(f(0) = 0\)</span>, then it follows that <span class="math inline">\(\varphi\)</span> continuous at <span class="math inline">\(c = 0\)</span> and <span class="math inline">\(f(x) - f(0) = \varphi(x)(x-0)\)</span> which by Carath'eodory’s Theorem <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(c = 0\)</span>. Also by the same theorem we have <span class="math inline">\(f'(0) = \varphi(0) = 0\)</span></p>
 
 
 

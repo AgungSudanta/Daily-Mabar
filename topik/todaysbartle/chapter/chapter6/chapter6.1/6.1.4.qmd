@@ -8,3 +8,21 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) : = x^2$ for $x$ rational, $f(x) := 0$ for $x$ irrational. Show that $f$ is differentiable at $x = 0$, and find $f'(0)$
+
+Answer
+
+It will be shown that $f$ is differentiable at $c = 0$ using Carath\'eodory's Theorem
+
+Let $\varphi(x) := \begin{cases}
+    x, & x \in \mathbb{Q} \\
+    0, & x \notin \mathbb{Q}
+\end{cases}$
+Notice that $\varphi(x)$ have 2 cases which is
+
+$x \in \mathbb{Q}$, then $\varphi(x) \cdot x = x^2 = f(x)$ and $\displaystyle{\lim_{x \to 0}} \; \varphi(x) = 0$
+
+$x \notin \mathbb{Q}$, then $\varphi(x) \cdot x = 0 = f(x)$ $\displaystyle{\lim_{x \to 0}} \; \varphi(x) = 0$
+
+Because $f(0) = 0$, then it follows that $\varphi$ continuous at $c = 0$ and $f(x) - f(0) = \varphi(x)(x-0)$ which by Carath\'eodory's Theorem $f$ is differentiable at $c = 0$. Also by the same theorem we have $f'(0) = \varphi(0) = 0$
