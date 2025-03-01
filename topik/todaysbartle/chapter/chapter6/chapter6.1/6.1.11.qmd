@@ -8,3 +8,37 @@ format:
         css: styles.css
         toc: true
 ---
+
+Assume that there exists a function $L : (0, \infty)$ such that $L'(x) = 1/x$ for $x >0$. Calculate the derivatives of the following function
+
+(a). $f(x) := L(2x+3)$ for $x >0$
+
+(b). $g(x) := (L(x^2))^3$ for $x > 0$
+
+(c). $h(x) := L(ax)$ for $a >0 , \; x > 0$
+
+(d). $k(x) := L(L(x))$ when $L(x) > 0, \; x > 0$
+
+Answer
+
+(a). Let $g(x) := 2x+3$. It will be shown that $g'(x) = 2$ by charath\'eodory's Theorem
+
+Notice that $2x - 2c = 2(x-c)$ thus if $\varphi(x) = 2$ which continuous on $x > 0$, by caratheodory theorem $g'(x) = \varphi(x)$
+
+Because $g$ and $L$ are differentiable for $x >0$, then by Chain Rule $f'(x) = L'(g(x))\cdot g'(x) = \frac{2}{2x+3}$
+
+(b). Let $F(x) := x^2$. It will be shown that $g_0'(c) = 2c \; \forall c \in (0, \infty)$
+
+Let $c \in (0, \infty)$. Notice that $x^2 - c^2 = (x-c)(x+c)$. Thus if let $\varphi(x) = x+c$ it follows that $F(x) - F(c) = x^2 - c^2 = \varphi(x)(x-c)$. Because $\varphi(x)$ is polynomial function, then it is continuous on $c$, thus by Charath\'eodory's Theorem $F'(c) = 2c$
+
+Now let $G(x) := x^3$. It will be shown that $G'(c) = 3c^2 \; \forall c \in (0, \infty)$
+
+Let $c \in (0, \infty)$. Notice that $x^3 - c^3 = (x-c)(x^2 + xc + c^2)$. Thus if let $\varphi(x) = x^2 + xc + c^2$ it follows that $G(x) - G(c) = x^3 - c^3 = \varphi(x)(x-c)$. Because $\varphi(x)$ is polynomial function, then it is continuous on $c$, thus by Charath\'eodory's Theorem $G'(c) = 3c^2$
+
+Because $L$, $F$, and $G$ differentiable at any $c \in (0, \infty)$ then by Chain rule it follows that $g'(x) = G'(L(F(x))) \cdot L'(F(x)) \cdot F'(x) = \frac{3(L(f(x))^3 \cdot 2x}{x^2} = \frac{6(L(f(x)))^3}{x}$
+
+(c). Let $g(x) = ax$ and let $c \in (0, \infty)$. Notice that $g(x) - g(c) = ax - ac = a(x-c)$. Thus if we let $\varphi(x) = a$ which is a constant function and must continuous at $c$, then it follows that by Carath\'eodoy's theorem that $g'(c) = a$
+
+Because $L$ and $g$ are differentiable at $c \in (0 ,\infty)$, then by Chain Rule it follows that $h'(x) = L'(g(x)) \cdot g'(x) = \frac{a}{ax} = \frac{1}{x}$
+
+(d). Because $L(x) > 0$ and $L$ differentiable $\forall c \in (0, \infty)$, it follows by Chain Rule that $k'(x) = L'(L(x)) \cdot L'(x) = \frac{1}{L(x)} \cdot \frac{1}{x} = \frac{1}{xL(x)}$

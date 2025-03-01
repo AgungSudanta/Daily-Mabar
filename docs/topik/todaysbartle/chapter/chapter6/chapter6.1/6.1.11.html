@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Assume that there exists a function <span class="math inline">\(L : (0, \infty)\)</span> such that <span class="math inline">\(L'(x) = 1/x\)</span> for <span class="math inline">\(x &gt;0\)</span>. Calculate the derivatives of the following function</p>
+<p>(a). <span class="math inline">\(f(x) := L(2x+3)\)</span> for <span class="math inline">\(x &gt;0\)</span></p>
+<p>(b). <span class="math inline">\(g(x) := (L(x^2))^3\)</span> for <span class="math inline">\(x &gt; 0\)</span></p>
+<p>(c). <span class="math inline">\(h(x) := L(ax)\)</span> for <span class="math inline">\(a &gt;0 , \; x &gt; 0\)</span></p>
+<p>(d). <span class="math inline">\(k(x) := L(L(x))\)</span> when <span class="math inline">\(L(x) &gt; 0, \; x &gt; 0\)</span></p>
+<p>Answer</p>
+<p>(a). Let <span class="math inline">\(g(x) := 2x+3\)</span>. It will be shown that <span class="math inline">\(g'(x) = 2\)</span> by charath'eodory’s Theorem</p>
+<p>Notice that <span class="math inline">\(2x - 2c = 2(x-c)\)</span> thus if <span class="math inline">\(\varphi(x) = 2\)</span> which continuous on <span class="math inline">\(x &gt; 0\)</span>, by caratheodory theorem <span class="math inline">\(g'(x) = \varphi(x)\)</span></p>
+<p>Because <span class="math inline">\(g\)</span> and <span class="math inline">\(L\)</span> are differentiable for <span class="math inline">\(x &gt;0\)</span>, then by Chain Rule <span class="math inline">\(f'(x) = L'(g(x))\cdot g'(x) = \frac{2}{2x+3}\)</span></p>
+<p>(b). Let <span class="math inline">\(F(x) := x^2\)</span>. It will be shown that <span class="math inline">\(g_0'(c) = 2c \; \forall c \in (0, \infty)\)</span></p>
+<p>Let <span class="math inline">\(c \in (0, \infty)\)</span>. Notice that <span class="math inline">\(x^2 - c^2 = (x-c)(x+c)\)</span>. Thus if let <span class="math inline">\(\varphi(x) = x+c\)</span> it follows that <span class="math inline">\(F(x) - F(c) = x^2 - c^2 = \varphi(x)(x-c)\)</span>. Because <span class="math inline">\(\varphi(x)\)</span> is polynomial function, then it is continuous on <span class="math inline">\(c\)</span>, thus by Charath'eodory’s Theorem <span class="math inline">\(F'(c) = 2c\)</span></p>
+<p>Now let <span class="math inline">\(G(x) := x^3\)</span>. It will be shown that <span class="math inline">\(G'(c) = 3c^2 \; \forall c \in (0, \infty)\)</span></p>
+<p>Let <span class="math inline">\(c \in (0, \infty)\)</span>. Notice that <span class="math inline">\(x^3 - c^3 = (x-c)(x^2 + xc + c^2)\)</span>. Thus if let <span class="math inline">\(\varphi(x) = x^2 + xc + c^2\)</span> it follows that <span class="math inline">\(G(x) - G(c) = x^3 - c^3 = \varphi(x)(x-c)\)</span>. Because <span class="math inline">\(\varphi(x)\)</span> is polynomial function, then it is continuous on <span class="math inline">\(c\)</span>, thus by Charath'eodory’s Theorem <span class="math inline">\(G'(c) = 3c^2\)</span></p>
+<p>Because <span class="math inline">\(L\)</span>, <span class="math inline">\(F\)</span>, and <span class="math inline">\(G\)</span> differentiable at any <span class="math inline">\(c \in (0, \infty)\)</span> then by Chain rule it follows that <span class="math inline">\(g'(x) = G'(L(F(x))) \cdot L'(F(x)) \cdot F'(x) = \frac{3(L(f(x))^3 \cdot 2x}{x^2} = \frac{6(L(f(x)))^3}{x}\)</span></p>
+<p>(c). Let <span class="math inline">\(g(x) = ax\)</span> and let <span class="math inline">\(c \in (0, \infty)\)</span>. Notice that <span class="math inline">\(g(x) - g(c) = ax - ac = a(x-c)\)</span>. Thus if we let <span class="math inline">\(\varphi(x) = a\)</span> which is a constant function and must continuous at <span class="math inline">\(c\)</span>, then it follows that by Carath'eodoy’s theorem that <span class="math inline">\(g'(c) = a\)</span></p>
+<p>Because <span class="math inline">\(L\)</span> and <span class="math inline">\(g\)</span> are differentiable at <span class="math inline">\(c \in (0 ,\infty)\)</span>, then by Chain Rule it follows that <span class="math inline">\(h'(x) = L'(g(x)) \cdot g'(x) = \frac{a}{ax} = \frac{1}{x}\)</span></p>
+<p>(d). Because <span class="math inline">\(L(x) &gt; 0\)</span> and <span class="math inline">\(L\)</span> differentiable <span class="math inline">\(\forall c \in (0, \infty)\)</span>, it follows by Chain Rule that <span class="math inline">\(k'(x) = L'(L(x)) \cdot L'(x) = \frac{1}{L(x)} \cdot \frac{1}{x} = \frac{1}{xL(x)}\)</span></p>
 
 
 
