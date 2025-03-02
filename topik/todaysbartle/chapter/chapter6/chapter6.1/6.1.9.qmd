@@ -8,3 +8,42 @@ format:
         css: styles.css
         toc: true
 ---
+
+Prove that if $f: \mathbb{R} \to \mathbb{R}$ is an \textbf{even function}[that is, $f(-x) = f(x)$ for all $x \in \mathbb{R}$] and has a derivative at every point, then the derivative $f'$ is an \textbf{odd function} [that is, $f(-x) = -f(x)$ for all $x \in \mathbb{R}$]. Also prove that if $g: \mathbb{R} \to \mathbb{R}$ is a differentiable odd function, then $g'$ is an even function
+
+Answer
+
+
+It will be shown that if $f$ is an even function and have derivative at every point in $\mathbb{R}$, then the $f'$ is an odd function
+
+Let $c \in \mathbb{R}$. It's known that $f$ has derivative at $c$, thus by Carathéodory's Theorem it follows that there exist a function $\varphi : \mathbb{R} \to \mathbb{R}$ where $\varphi$ continuous at $c$ such that for all $x \in \mathbb{R}$ then
+\begin{equation}
+    f(x) - f(c) = \varphi(x)(x-c)
+\end{equation}
+
+Because $f$ is an even function, then above equation can be rewritten as
+
+\begin{equation}
+    f(x) - f(c) = f(-x) - f(-c) = \varphi(-x)(-x+c) = -\varphi(-x)(x-c)
+\end{equation}
+
+From the two equation, it follows that $\varphi(x) = -\varphi(-x) \; \forall x \in \mathbb{R}$, and by Charathéodory's Theorem it's known that $f'(c) = \varphi(c)$. Because $c$ is arbitrary, then $f' = \varphi$ which is an odd function
+
+It will be shown that if $g$ is an odd function and have derivative at every point in $\mathbb{R}$, then the $g'$ is an even function
+
+Let $a \in \mathbb{R}$. It's known that $g$ has derivative at $a$, thus by Carathéodory's Theorem it follows that there exist a function $\phi : \mathbb{R} \to \mathbb{R}$ where $\phi$ continuous at $a$ such that for all $x \in \mathbb{R}$ then
+
+\begin{equation}
+    g(x) - g(a) = \phi(x)(x-a) \label{third}
+\end{equation}
+
+Because $g$ is an odd function, above equation can be rewritten as
+
+$$f(x) - f(a) = -f(-x) + f(-a) & = \phi(-x)(-x+a)$$
+
+\begin{center}
+    or
+\end{center}
+$$f(x) - f(a) = f(-x) - f(-a) & = \phi(-x)(x-a)$$
+
+From the two equation, it follows that $\phi(x) = \phi(-x) \; \forall x \in \mathbb{R}$, and by Charathéodory's Theorem it's known that $g'(a) = \phi(a)$. Because $a$ is arbitrary, then $g' = \phi$ which is an even function
