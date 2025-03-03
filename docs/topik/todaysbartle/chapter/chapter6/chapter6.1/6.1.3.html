@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(I \subseteq \mathbb{R}\)</span> be an interval, let <span class="math inline">\(c \in I\)</span>, and let <span class="math inline">\(f : I \to \mathbb{R}\)</span> and <span class="math inline">\(g : I \to \mathbb{R}\)</span> be functions that are differentiable at <span class="math inline">\(c\)</span>. Prove that</p>
+<ul>
+<li><p>If <span class="math inline">\(a \in \mathbb{R}\)</span>, then the function <span class="math inline">\(af\)</span> is differentiable at <span class="math inline">\(c\)</span>, and <span class="math inline">\((af)'(c) = af'(c)\)</span></p></li>
+<li><p>The function <span class="math inline">\(f + g\)</span> is differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\((f+g)'(c) = f'(c) + g'(c)\)</span></p></li>
+</ul>
+<p>Answer</p>
+<ul>
+<li>It will be shown that if <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\(a \in \mathbb{R}\)</span>, then <span class="math inline">\(af\)</span> differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\((af)'(c) = af'(c)\)</span></li>
+</ul>
+<p>Let <span class="math inline">\(h := af\)</span>. Because <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(c\)</span>, then <span class="math inline">\(f'(c) = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c}\)</span>. By multiplying both sides by <span class="math inline">\(a\)</span> we got <span class="math display">\[af'(c) = \displaystyle{\lim_{x \to c}} \; \frac{af(x) - af(c)}{x - c} = \displaystyle{\lim_{x \to c}} \; \frac{h(x) - h(c)}{x - c}\]</span></p>
+<p>Thus by limit definition <span class="math inline">\(h\)</span> is differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\(h'(c) = (af)'(c) = af'(c)\)</span></p>
+<ul>
+<li>It will be shown that if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> is differentiable at <span class="math inline">\(c\)</span>, then <span class="math inline">\(f + g\)</span> is differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\((f+g)'(c) = f'(c) + g'(c)\)</span></li>
+</ul>
+<p>Let <span class="math inline">\(H := f + g\)</span>. Because <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are differentiable at <span class="math inline">\(c\)</span>, then the following limit must exist</p>
+<p><span class="math display">\[f'(c) = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c}\]</span></p>
+<p><span class="math display">\[g'(c) = \displaystyle{\lim_{x \to c}} \; \frac{g(x) - g(c)}{x - c}\]</span></p>
+<p>By adding the 2 equation will result in <span class="math display">\[\begin{align*}
+    f'(c) + g'(c) &amp; = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c} + \displaystyle{\lim_{x \to c}} \; \frac{g(x) - g(c)}{x - c}\\
+    &amp; = \displaystyle{\lim_{x \to c}} \; \frac{(f(x) + g(x)) - (f(c) + g(c))}{x - c} \\
+    &amp; = \displaystyle{\lim_{x \to c}} \; \frac{H(x) - H(c)}{x - c}
+\end{align*}\]</span></p>
+<p>Thus by limit definition <span class="math inline">\(H\)</span> is differentiable at <span class="math inline">\(c\)</span> and <span class="math inline">\(H'(c) = (f+g)'(c) = f'(c) + g'(c)\)</span></p>
 
 
 

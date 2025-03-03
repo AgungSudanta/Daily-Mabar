@@ -8,3 +8,35 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I \subseteq \mathbb{R}$ be an interval, let $c \in I$, and let $f : I \to \mathbb{R}$ and $g : I \to \mathbb{R}$ be functions that are differentiable at $c$. Prove that
+
+- If $a \in \mathbb{R}$, then the function $af$ is differentiable at $c$, and $(af)'(c) = af'(c)$
+
+- The function $f + g$ is differentiable at $c$ and $(f+g)'(c) = f'(c) + g'(c)$
+
+
+Answer
+
+- It will be shown that if $f$ is differentiable at $c$ and $a \in \mathbb{R}$, then $af$ differentiable at $c$ and $(af)'(c) = af'(c)$
+
+Let $h := af$. Because $f$ is differentiable at $c$, then $f'(c) = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c}$. By multiplying both sides by $a$ we got $$af'(c) = \displaystyle{\lim_{x \to c}} \; \frac{af(x) - af(c)}{x - c} = \displaystyle{\lim_{x \to c}} \; \frac{h(x) - h(c)}{x - c}$$
+
+Thus by limit definition $h$ is differentiable at $c$ and $h'(c) = (af)'(c) = af'(c)$
+
+- It will be shown that if $f$ and $g$ is differentiable at $c$, then $f + g$ is differentiable at $c$ and $(f+g)'(c) = f'(c) + g'(c)$
+
+Let $H := f + g$. Because $f$ and $g$ are differentiable at $c$, then the following limit must exist
+
+$$f'(c) = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c}$$
+
+$$g'(c) = \displaystyle{\lim_{x \to c}} \; \frac{g(x) - g(c)}{x - c}$$
+
+By adding the 2 equation will result in
+\begin{align*}
+    f'(c) + g'(c) & = \displaystyle{\lim_{x \to c}} \; \frac{f(x) - f(c)}{x - c} + \displaystyle{\lim_{x \to c}} \; \frac{g(x) - g(c)}{x - c}\\
+    & = \displaystyle{\lim_{x \to c}} \; \frac{(f(x) + g(x)) - (f(c) + g(c))}{x - c} \\
+    & = \displaystyle{\lim_{x \to c}} \; \frac{H(x) - H(c)}{x - c}
+\end{align*}
+
+Thus by limit definition $H$ is differentiable at $c$ and $H'(c) = (f+g)'(c) = f'(c) + g'(c)$
