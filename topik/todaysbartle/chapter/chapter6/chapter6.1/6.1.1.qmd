@@ -8,3 +8,77 @@ format:
         css: styles.css
         toc: true
 ---
+
+Use the definition to find the derivatives of each of the following functions
+
+- $f(x) := x^3$ for $x \in \mathbb{R}$
+
+- $g(x) := \frac{1}{x}$ for $x \in \mathbb{R}, \; x \neq 0$
+
+- $h(x) := \sqrt{x}$ for $x > 0$
+
+- $k(x) := \frac{1}{\sqrt{x}}$ for $x > 0$
+
+Answer
+
+- It will be shown that $f'(x) = 3x^2$ using epsilon-delta definition
+
+Let $\epsilon > 0$ be arbitrary and $c \in \mathbb{R}$. We will search for $\delta > 0$ such that $\forall x \in \mathbb{R}$ and satisfy $0 < |x - c| < \delta$ implies $|\frac{f(x) - f(c)}{x-c} - f'(c)| < \epsilon$
+
+Notice the following
+
+\begin{align*}
+    |\frac{f(x) - f(c)}{x - c} - f'(x)| & = |\frac{x^3 - c^3}{x - c} - 3c^2| \\
+    & = |\frac{(x-c)(x^2 + xc + c^2)}{x - c} - 3c^2| \\
+    & = |x^2 + xc + c^2 - 3c^2| \\
+    & = |x^2 + xc - 2c^2| \\
+    & = |x^2 - c^2 + xc - c^2| \\
+    & = |(x-c)(x+c) + c(x-c)| \\
+    & = |x-c||x+2c|
+\end{align*}
+
+Choose $\delta_1 = 1$, thus $0 < |x-c| < 1$. Because $|x + 2c| = |x - c + 3c| \leq |x - c| + 3|c|$, then $|x - 2c|  < 1 + 3|c|$. Thus we have $$ |\frac{f(x) - f(c)}{x - c} - f'(x)| < \delta(1 + 3|c|)$$
+
+Choose $\delta_2 = \frac{\epsilon}{1 + 3|c|}$, thus result in $|\frac{f(x) - f(c)}{x - c} - f'(x)| < \epsilon$
+
+Therefore if $\delta = \min(1, \frac{\epsilon}{1 + 3|c|})$ it will satisfy $|\frac{f(x) - f(c)}{x - c} - f'(x)| < \epsilon$
+    
+- It will be shown that $g'(x) = -\frac{1}{x^2}$ using epsilon-delta definition
+
+Let $\epsilon >0$ be arbitrary and $c \in \mathbb{R}, \; c \neq 0$. We will search for $\delta > 0$ such that $\forall x \in \mathbb{R}$ where $0 < |x-c| < \delta$ and $x \neq 0$ implies $|\frac{g(x) - g(c)}{x - c} - g'(c)| < \epsilon$
+
+Notice the following
+\begin{align*}
+    |\frac{g(x) - g(c)}{x - c} - g(c)| & = |\frac{1/x - 1/c}{x - c} + \frac{1}{c^2}| \\
+    & = |\frac{c-x/xc}{x-c} + \frac{1}{c^2}| \\
+    & = |-\frac{1}{xc} + \frac{1}{c^2}| \\
+    & = |\frac{x-+ c}{xc^2}|
+\end{align*}
+
+Choose $\delta_1 = \frac{1}{2}|c|$, thus we have $||x| - |c|| < \frac{1}{2}|c|$ or $|x| > \frac{1}{2}|c|$ or $\frac{1}{|x|} < \frac{2}{|c|}$. from here will result in $|\frac{g(x) - g(c)}{x - c} - g'(x)| < \frac{2|x-c|}{|c^3|}$
+
+Choose $\delta_2 = \frac{\epsilon|c^3|}{2}$, thus $|\frac{g(x) - g(c)}{x - c} - g'(x)| < \epsilon$
+
+Therefore if $\delta = \min(\frac{1}{2}|c|, \frac{\epsilon|c^3|}{2})$ will ensure that $|\frac{g(x) - g(c)}{x - c} - g'(x)| < \epsilon$
+
+- It will be shown that $h'(x) = \frac{1}{2\sqrt{x}}$ by limit definition
+
+Let $c > 0$ be arbitrary. Notice that
+\begin{align*}
+    \lim_{x \to c} \frac{h(x) - h(c)}{x - c} & = \lim_{x \to c} \frac{\sqrt{x} - \sqrt{c}}{x-c} \\
+    & = \lim_{x \to c} \frac{1 }{\sqrt{x} + \sqrt{c}} = \frac{1}{2\sqrt{c}}
+\end{align*}
+
+Thus by limit definition of derivative $h'(c) = \frac{1}{2\sqrt{c}}$ for any $c > 0$
+
+- It will be shown that $k'(x) = -\frac{1}{2\sqrt{x^3}}$ by limit definition
+
+Let $c > 0$ be arbitrary. Notice that
+\begin{align*}
+    \lim_{x \to c} \frac{k(x) - k(c)}{x - c} & = \lim_{x \to c} \frac{1/\sqrt{x} - 1\sqrt{c}}{x - c} \\
+    & = \lim_{x \to c} \frac{\frac{\sqrt{c} - \sqrt{x}}{\sqrt{xc}}}{x - c} \\
+    & = - \lim_{x \to c}\frac{\sqrt{x} - \sqrt{c}}{(x-c)\sqrt{xc}} \\
+    & = - \lim_{x \to c} \frac{1}{\sqrt{xc}(\sqrt{x} + \sqrt{c})} = - \frac{1}{2\sqrt{c^3}}
+\end{align*}
+
+Thus by limit definition of derivative $k'(c) = -\frac{1}{2\sqrt{c^3}}$ for any $c > 0$
