@@ -8,3 +8,25 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I \subseteq \mathbb{R}$ be an interval and let $f : I \to \mathbb{R}$ be increasing on $I$. If $c$ is not an \textit{endpoint} of $I$, show that the jump $j_f(c)$ of $f$ at $c$ is given by $\inf\{ 
+f(y) - f(x) : x < c < y; x,y \in I \}$
+
+Answer
+
+It will be shown that $j_f(c) = \inf\{ f(y) - f(x) : x < c < y ; x,y \in I \}$
+
+$f$ is increasing on $I$ and $c$ is not an endpoint of $I$, then by definition $$j_f(c) = \inf\{ f(y) : c < y ; y \in I \} - \sup\{ f(x) : x < c ; x \in I \}$$
+
+Let $R :=  \inf\{ f(y) : c < y ; y \in I \}$ and $L := \sup\{ f(x) : x < c ; x \in I \}$. By definition of supremum and infimum, it follows that $f(x) \leq L \; \forall x \in I, x < c$ and $R \leq f(y) \; \forall y \in I, c < y$. From the 2 inequality, then $$R - L \leq f(y) - f(x) \; \forall x,y \in I, x < c < y$$
+
+Because the inequality hold for any $x,y \in I$ that satisfies $x < c <y$, then $$R - L \leq \inf \{ f(y) - f(x) : x < c < y ; x,y \in I \}$$
+
+$R$ are infimum and $L$ are supremum, then any arbitrary $\epsilon > 0$ will result in $f(x) > L - \epsilon\; \forall x \in I, x < c$ and $R + \epsilon > f(y) \; \forall y \in I, c < y$. From the 2 inequality, it follows that
+$$f(y) - f(x) < R - L + 2\epsilon$$
+
+Since $\epsilon > 0$ is arbitrary, it must follows that $f(y) - f(x) \leq R - L$
+
+Because the inequality hold for any $x,y \in I$ that satisfies $x < c <y$, then $$\inf \{ f(y) - f(x) : x < c < y ; x,y \in I \} \leq R - L$$
+
+Therefore by Trichotomoy $\inf \{ f(y) - f(x) : x < c < y ; x,y \in I \} = R -L$. Consequently, it follows that $j_f(c) = \inf \{ f(y) - f(x) : x < c < y ; x,y \in I \}$

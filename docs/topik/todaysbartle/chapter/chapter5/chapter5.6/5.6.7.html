@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(I \subseteq \mathbb{R}\)</span> be an interval and let <span class="math inline">\(f : I \to \mathbb{R}\)</span> be increasing on <span class="math inline">\(I\)</span>. If <span class="math inline">\(c\)</span> is not an of <span class="math inline">\(I\)</span>, show that the jump <span class="math inline">\(j_f(c)\)</span> of <span class="math inline">\(f\)</span> at <span class="math inline">\(c\)</span> is given by <span class="math inline">\(\inf\{
+f(y) - f(x) : x &lt; c &lt; y; x,y \in I \}\)</span></p>
+<p>Answer</p>
+<p>It will be shown that <span class="math inline">\(j_f(c) = \inf\{ f(y) - f(x) : x &lt; c &lt; y ; x,y \in I \}\)</span></p>
+<p><span class="math inline">\(f\)</span> is increasing on <span class="math inline">\(I\)</span> and <span class="math inline">\(c\)</span> is not an endpoint of <span class="math inline">\(I\)</span>, then by definition <span class="math display">\[j_f(c) = \inf\{ f(y) : c &lt; y ; y \in I \} - \sup\{ f(x) : x &lt; c ; x \in I \}\]</span></p>
+<p>Let <span class="math inline">\(R :=  \inf\{ f(y) : c &lt; y ; y \in I \}\)</span> and <span class="math inline">\(L := \sup\{ f(x) : x &lt; c ; x \in I \}\)</span>. By definition of supremum and infimum, it follows that <span class="math inline">\(f(x) \leq L \; \forall x \in I, x &lt; c\)</span> and <span class="math inline">\(R \leq f(y) \; \forall y \in I, c &lt; y\)</span>. From the 2 inequality, then <span class="math display">\[R - L \leq f(y) - f(x) \; \forall x,y \in I, x &lt; c &lt; y\]</span></p>
+<p>Because the inequality hold for any <span class="math inline">\(x,y \in I\)</span> that satisfies <span class="math inline">\(x &lt; c &lt;y\)</span>, then <span class="math display">\[R - L \leq \inf \{ f(y) - f(x) : x &lt; c &lt; y ; x,y \in I \}\]</span></p>
+<p><span class="math inline">\(R\)</span> are infimum and <span class="math inline">\(L\)</span> are supremum, then any arbitrary <span class="math inline">\(\epsilon &gt; 0\)</span> will result in <span class="math inline">\(f(x) &gt; L - \epsilon\; \forall x \in I, x &lt; c\)</span> and <span class="math inline">\(R + \epsilon &gt; f(y) \; \forall y \in I, c &lt; y\)</span>. From the 2 inequality, it follows that <span class="math display">\[f(y) - f(x) &lt; R - L + 2\epsilon\]</span></p>
+<p>Since <span class="math inline">\(\epsilon &gt; 0\)</span> is arbitrary, it must follows that <span class="math inline">\(f(y) - f(x) \leq R - L\)</span></p>
+<p>Because the inequality hold for any <span class="math inline">\(x,y \in I\)</span> that satisfies <span class="math inline">\(x &lt; c &lt;y\)</span>, then <span class="math display">\[\inf \{ f(y) - f(x) : x &lt; c &lt; y ; x,y \in I \} \leq R - L\]</span></p>
+<p>Therefore by Trichotomoy <span class="math inline">\(\inf \{ f(y) - f(x) : x &lt; c &lt; y ; x,y \in I \} = R -L\)</span>. Consequently, it follows that <span class="math inline">\(j_f(c) = \inf \{ f(y) - f(x) : x &lt; c &lt; y ; x,y \in I \}\)</span></p>
 
 
 

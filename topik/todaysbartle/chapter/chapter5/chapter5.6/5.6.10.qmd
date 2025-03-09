@@ -8,3 +8,21 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $I := [a,b]$ and let $f : I \to \mathbb{R}$ be continuous on $I$. If $f$ has an absolute maximum [respectively, minimum] at an interior point $c$ of $I$, show that $f$ is not injective on $I$
+
+Answer
+
+It will be shown that $f$ is not injective on $I$
+
+Let $c \in (a,b)$. Because $f$ has an absolute maximum [respectively, minimum] at $c$, then it follows that 
+
+$f(x) \leq f(c) \; \forall x \in I$ [respectively, $f(c) \leq f(x) \; \forall x \in I$]. Now let $I_1 := [a,c]$ and let $I_2 := [c,b]$
+
+Choose $c_1 \in I_1$ and $c_2 \in I_2$. If $f(c_1) = f(c_2)$ then $f$ is not injective
+
+Without Loss of Generality, assume $f(c_1) < f(c_2)$. 
+
+Then we have $f(c_1) < f(c_2) < f(c)$ [respectively, $f(c) < f(x_1) < f(x_2)$]. By intermediate value theorem, then there exists $c_3 \in I_1 \ni f(c_3) = f(x_2)$ [respectively, $f(c_3) = f(c_1)$]
+
+Therefore $f$ is not injective on $I$

@@ -8,3 +8,27 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $f(x) := \begin{cases}
+    x, & x \in [0,1] \\
+    1 + x, & x \in (1, 2]
+\end{cases}$. Show that $f$ and $f^{-1}$ are strictly increasing. Are $f$ and $f^{-1}$ continuous at every point?
+
+Answer
+
+It will be shown that $f$ is strictly increasing
+
+Let $x,y \in [0,2]$ and $x < y$. If $x,y \in [0,1]$, then $f(x) = x < y = f(y)$. If $x \in [0,1]$ and $y \in (1,2]$, then $f(x) = x < 1+x < 1+y = f(y)$. If $x,y \in (1,2]$, then $f(x) = 1 + x < 1 + y = f(y)$. Thus $f$ is strictly increasing
+
+It will be shown that $f^{-1}$ is strictly increasing
+
+Let $y = f(x)$. If $x \in [0,1]$ then $y = x$ thus $f^{-1}(y) = y$. If $x \in (1, 2]$ then $y = x + 1 \iff x = y-1$ thus $f^{-1}(y) = y-1$. Therefore the inverse of $f$ is $f^{-1}(y) := \begin{cases}
+    y, & y \in [0,1] \\
+    y -1, & y \in (2,3]
+\end{cases}$
+
+let $a,b \in [0,1] \cap (2,3]$ and $a < b$. $f^{-1}$ is strictly increasing on $[0,1]$ with the same reasoning from before. If $a \in [0,1]$ and $b \in (2,3]$, then $f^{-1}(b) = b - 1 > 1 \geq a = f(a)$. If $a,b \in (2,3]$, then $f(a) = a - 1 < b-1 = f(b)$. Thus $f^{-1}$ is strictly increasing.
+
+Notice that $f$ is a polynomial function on $[0,1]$ and $(1,2]$. But notice that $\displaystyle{\lim_{x \to 1^+}} \; f(x) = 1 \neq 2 = \displaystyle{\lim_{x \to 1^-}} \; f(x)$ thus $f$ does not continuous on $1$ but continuous on $[0,1) \cap (1,2]$
+
+Notice that $f^{-1}$ is a polynomial function on $[0,1]$ and $(2,3]$. Thus $f^{-1}$ continuous at every point on the domain

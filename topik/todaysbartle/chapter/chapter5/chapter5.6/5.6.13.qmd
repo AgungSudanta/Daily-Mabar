@@ -8,3 +8,13 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $h := [0,1] \to \mathbb{R}$ be a function that takes on each of it's value exactly twice. Show that $h$ cannot be continuous at every point
+
+Answer
+
+It will be shown that $h$ is no continuous at every point by contradiction
+
+Assume that $h$ is continuous on $[0,1]$. Then by theorem there must exists absolute maximum and minimum of $h$
+
+Let $c_1,c_2 \in [0,1]$ and $c_1 < c_2$ such that $h(c_1) = h(c_2) = \sup\{ h(x) : x \in [0,1]\}$. Notice that if $c_1 \neq 0$ or $c_2 \neq 1$, then from exercises 10 there must be at least 2 point with the same value for each of $c_1$ and $c_2$, thus it must at least have 3 point that have the same value. This contradicts with our assumption that $h$ take on each value exactly twice. Thus $c_1 = 0$ and $c_2 = 1$. By the same reasoning, the absolute minimum of $h$ must be obtained at 0 and 1. Thus it must follows that $\inf\{h(x) : x \in [0,1] \} = \sup\{ h(x) : x\in [0,1]\}$ which implies $h$ a constant function. Because $h$ constant function and continuous, then the values of $h$ is not twice which contradicts our assumption. Therefore $h$ must not be continuous at every point
