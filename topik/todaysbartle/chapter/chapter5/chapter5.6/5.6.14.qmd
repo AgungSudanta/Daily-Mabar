@@ -8,3 +8,9 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $x \in \mathbb{R}$, $x >0$. Show that if $m, p \in \mathbb{Z}$, $n,q \in \mathbb{N}$, and $mq = np$, then $(x^{1/n})^m = (x^{1/q})^p$
+
+Answer
+
+Because $mq = np$ and $n,q \in \mathbb{N}$, then $\frac{m}{n} = \frac{p}{q}$. Because $x > 0$, $m, p \in \mathbb{Z}$, $n,q \in \mathbb{N}$, then $x^{m/n} = x^{p/q}$ and by theorem $x^{m/n} = (x^{1/n})^m = (x^{1/q})^p = x^{p/q}$. Therefore $(x^{1/n})^m = (x^{1/q})^p$
