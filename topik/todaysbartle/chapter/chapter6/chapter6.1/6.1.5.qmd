@@ -22,34 +22,33 @@ Answer
 
 - Let $a(x) := x$ and $b(x) ;= \frac{1}{1 + x^2}$. Let $c \in \mathbb{R}$ be arbitrary. Notice that $a(x) - a(c) = 1 \cdot(x-c)$ and $b(x) - b(c) = \frac{1}{1 + x^2} - \frac{1}{1 + c^2} = \frac{c^2 - x^2}{(1+x^2)(1+c^2)} = -\frac{x + c}{(1+x^2)(1 + c^2)}(x-c)$. Choose $\varphi(x) = 1$ and $\phi(x) = -\frac{x + c}{(1+x^2)(1 + c^2)}$ which both continuous on $c$ then $a'(c) = 1$ and $b'(c) = -\frac{2c}{(1 + c^2)^2}$ by Carath\'edory's Theorem
 
-Because both are differentiable $\forall c \in \mathbb{R}$, thus by Product Rule $$f'(x) = a'(x)b(x) + a(x)b'(x) = \frac{1}{1 + x^2} - \frac{2x^2}{(1+x^2)^2} = \frac{1 + x^2 - x^2}{(1+x^2)^2} = \frac{1 - x^2}{(1+x^2)^2}$$
+    Because both are differentiable $\forall c \in \mathbb{R}$, thus by Product Rule $$f'(x) = a'(x)b(x) + a(x)b'(x) = \frac{1}{1 + x^2} - \frac{2x^2}{(1+x^2)^2} = \frac{1 + x^2 - x^2}{(1+x^2)^2} = \frac{1 - x^2}{(1+x^2)^2}$$
 
 - Let $u(x) := \sqrt{x}$ and $v(x) := 5 - 2x + x^2$. Let $c \in \mathbb{R}$  be arbitrary. Notice that $u(x) - u(c) = \sqrt{x} - \sqrt{c} = \frac{x-c}{\sqrt{x} + \sqrt{c}}$ and $v(x) - v(c) = x^2 - 2x + 2c - c^2 = (x + c - 2)(x - c)$. Choose $\psi(x) = \frac{1}{\sqrt{x} + \sqrt{c}}$ and $\omega(x) := x + c - 2$ which is continuous on $c$. Thus by Carath\'edory's Theorem it follows that $u'(c) = \frac{1}{2\sqrt{c}}$ and $v'(c) = 2c - 2$
 
-Because both are differentiable at any $c \in \mathbb{R}$, then by Chain Rule $$g'(x) = u'(v(x))v'(x) = \frac{2x - 2}{2\sqrt{5 - 2x + x^2}}$$
+    Because both are differentiable at any $c \in \mathbb{R}$, then by Chain Rule $$g'(x) = u'(v(x))v'(x) = \frac{2x - 2}{2\sqrt{5 - 2x + x^2}}$$
 
 - Let $l(x) := x^a$ where $a \in \mathbb{N}$. It will be shown that $x^a - c^a = (\displaystyle{\sum_{i = 0}^{a-1}} x^{a-i-1}c^i)(x-c)$ Using Mathematical induction
 
-Basic step: $a = 2$
+    Basic step: $a = 2$
 
-If $a = 2$, then $x^2 - c^2 = (x+c)(x-c) = (x^1 + c^1)(x-c) = (\displaystyle{\sum_{i = 0}^{1}}x^{1-i}c^i)(x-c)$
+    If $a = 2$, then $x^2 - c^2 = (x+c)(x-c) = (x^1 + c^1)(x-c) = (\displaystyle{\sum_{i = 0}^{1}}x^{1-i}c^i)(x-c)$
 
-Inductive step:
+    Inductive step:
 
-Assume for $n = k; k \in \mathbb{N}, k >2$ then $x^n - c^n = (\displaystyle{\sum_{i = 0}^{n-1}}x^{n-i-1}c^i)(x-c)$ are true
+    Assume for $n = k; k \in \mathbb{N}, k >2$ then $x^n - c^n = (\displaystyle{\sum_{i = 0}^{n-1}}x^{n-i-1}c^i)(x-c)$ are true
 
-We will show that for $n = k+1$ then the equality also holds
+    We will show that for $n = k+1$ then the equality also holds
 
-If $a = n+1$, then $x^{n+1} - c^{n+1} = x \cdot x^n - c \cdot c^n + xc^n - xc^n = x(x^n-c^n) + c^n(x - c)$. From inductive hypothesis, then $$x^{n+1} - c^{n+1} = x(x-c)(\sum_{i = 0}^{n-1} x^{n-i-1}c^i) - c^n(x-c) = (\sum_{i = 0}^{n-1} x^{n-i}c^i + c^n)(x-c) = (\sum_{i = 0}^{n-1} x^{n-i}c^i)(x-c) + (x-c)c^n$$
+    If $a = n+1$, then $x^{n+1} - c^{n+1} = x \cdot x^n - c \cdot c^n + xc^n - xc^n = x(x^n-c^n) + c^n(x - c)$. From inductive hypothesis, then $$x^{n+1} - c^{n+1} = x(x-c)(\sum_{i = 0}^{n-1} x^{n-i-1}c^i) - c^n(x-c) = (\sum_{i = 0}^{n-1} x^{n-i}c^i + c^n)(x-c) = (\sum_{i = 0}^{n-1} x^{n-i}c^i)(x-c) + (x-c)c^n$$
 
-Notice that $c^n(x-c) =  \displaystyle{\sum_{i=n-1}^{n-1}} x^{n-i-1}c^{i+1}$, thus $$x^{n+1} - c^{n+1} = (\sum_{i = 0}^{n-1} x^{n-i}c^i)(x-c) + (\displaystyle{\sum_{i=n-1}^{n-1}} x^{n-i-1}c^{i+1})(x - c) =  (\displaystyle{\sum_{i = 0}^{n}}x^{n-i-1}c^i)(x-c)$$
+    Notice that $c^n(x-c) =  \displaystyle{\sum_{i=n-1}^{n-1}} x^{n-i-1}c^{i+1}$, thus $$x^{n+1} - c^{n+1} = (\sum_{i = 0}^{n-1} x^{n-i}c^i)(x-c) + (\displaystyle{\sum_{i=n-1}^{n-1}} x^{n-i-1}c^{i+1})(x - c) =  (\displaystyle{\sum_{i = 0}^{n}}x^{n-i-1}c^i)(x-c)$$
 
-Therefore by Mathematical induction $x^a - c^a = (\displaystyle{\sum_{i = 0}^{a-1}} x^{a-i-1}c^i)(x-c)$
+    Therefore by Mathematical induction $x^a - c^a = (\displaystyle{\sum_{i = 0}^{a-1}} x^{a-i-1}c^i)(x-c)$
 
-Thus if choose $\gamma(x) = \displaystyle{\sum_{i = 0}^{a-1}} x^{a-i-1}c^i$ which is continuous because polynomial function, then by Carath\'eodory's Theorem it follows that $l'(c) = \displaystyle{\sum_{i = 0}^{a-1}} c^{a-i-1}c^i = \displaystyle{\sum_{i = 0}^{a-1}} c^{a-1} = ac^{a-1}$
+    Thus if choose $\gamma(x) = \displaystyle{\sum_{i = 0}^{a-1}} x^{a-i-1}c^i$ which is continuous because polynomial function, then by Carath\'eodory's Theorem it follows that $l'(c) = \displaystyle{\sum_{i = 0}^{a-1}} c^{a-i-1}c^i = \displaystyle{\sum_{i = 0}^{a-1}} c^{a-1} = ac^{a-1}$
 
-It was known that if $m(x) := \sin x$, then $m'(x) = \cos x$ thus By Chain Rule
-$$h'(x) = l'(m(l(x))) \cdot m'(l(x)) \cdot l'(x) = m(\sin(x^k))^{m-1} \cdot \cos (x^k) \cdot kx^{k-1}$$
+    It was known that if $m(x) := \sin x$, then $m'(x) = \cos x$ thus By Chain Rule
+    $$h'(x) = l'(m(l(x))) \cdot m'(l(x)) \cdot l'(x) = m(\sin(x^k))^{m-1} \cdot \cos (x^k) \cdot kx^{k-1}$$
 
-- from example 6.1.7 (d), it was known that if $n(x) := \tan x$ then $n'(x) = (\sec x)^2$ and it was already shown on part (c) that if we choose $a = $ and let $p(x) = x^2$ then $p'(x) = 2x$. Therefore by Chain rule
-$$k'(x) = (\sec x^2)^2 \cdot 2x$$
+- from example 6.1.7 (d), it was known that if $n(x) := \tan x$ then $n'(x) = (\sec x)^2$ and it was already shown on part (c) that if we choose $a = $ and let $p(x) = x^2$ then $p'(x) = 2x$. Therefore by Chain rule $$k'(x) = (\sec x^2)^2 \cdot 2x$$
