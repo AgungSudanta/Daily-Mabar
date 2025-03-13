@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../../styles.css">
 <link rel="stylesheet" href="styles.css">
@@ -136,6 +165,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let <span class="math inline">\(f : \mathbb{R} \to \mathbb{R}\)</span> be defined by <span class="math inline">\(f(x) :=
+\begin{cases}
+    2x^4 + x^4\sin(\frac{1}{x}) &amp; x \neq 0 \\
+    0 &amp; x = 0
+\end{cases}\)</span>. Show that <span class="math inline">\(f\)</span> has an absolute minimum at <span class="math inline">\(x = 0\)</span>, but it’s derivative has both positive and negative values in every neighborhood of 0 \</p>
+<p>Answer</p>
+<p>Firstly, It will be shown that <span class="math inline">\(f\)</span> has an absolute minimum at 0</p>
+<p>Let <span class="math inline">\(c \in \mathbb{R}, \; c \neq 0\)</span> be arbitrary. Because <span class="math inline">\(-1 \leq \sin(z) \leq 1 \; \forall z \in \mathbb{R}\)</span>, then it follows that <span class="math inline">\(-1 \leq \sin(\frac{1}{c}) \leq 1\)</span> thus result in <span class="math display">\[\begin{equation}
+    2c^4 - c^4 = c^4 \leq 2c^4 + c^4\sin(\frac{1}{c}) \leq 2c^4 + c^4 = 3c^4 \label{bound}
+\end{equation}\]</span></p>
+<p>Because <span class="math inline">\(c^4 &gt; 0\)</span>, then it must follow that <span class="math inline">\(2c^4 + c^4\sin(\frac{1}{c}) &gt; 0 = f(0)\)</span>. Therefore <span class="math inline">\(f\)</span> has an absolute minimum at 0 \</p>
+<p>Next, we will search for <span class="math inline">\(f'\)</span></p>
+<p>For <span class="math inline">\(x = 0\)</span>, then <span class="math inline">\(f'\)</span> exists if below limit exists <span class="math display">\[\lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} \quad\]</span></p>
+<p>By substituting the value of <span class="math inline">\(f(0)\)</span>, then <span class="math display">\[\begin{align*}
+    \lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} &amp; = \lim_{x \to 0} \frac{f(x)}{x} = \lim_{x \to 0} \frac{2x^4 + x^4\sin(\frac{1}{x})}{x}  = \lim_{x \to 0} 2x^3 + x^3\sin(\frac{1}{x})
+\end{align*}\]</span></p>
+<p>From <span class="math inline">\(\ref{bound}\)</span>, if we divide all by <span class="math inline">\(c\)</span> then <span class="math display">\[\begin{equation}
+    x^3 \leq 2x^3 + x^3\sin(\frac{1}{x}) \leq 3x^3 \label{bounds}
+\end{equation}\]</span></p>
+<p>Thus by applying squeeze theorem to <span class="math inline">\(\ref{bounds}\)</span> will result in <span class="math inline">\(\lim_{x \to 0} 2x^3 + x^3\sin(\frac{1}{x}) = 0\)</span>. Therefore by definition <span class="math inline">\(f'(0) = 0\)</span></p>
+<p>For <span class="math inline">\(x \neq 0\)</span> :</p>
+<p>Firstly, we show that <span class="math inline">\(g(x) := x^4\)</span> have a derivative <span class="math inline">\(g'(x) = 4x^3\)</span> for any <span class="math inline">\(x \in \mathbb{R}\)</span>. Notice that <span class="math display">\[g(x) - g(c) = x^4 - c^4 = (x^2 + c^2)(x^2 - c^2) = (x^2 + c^2)(x + c)(x-c) = (x^3 + x^2c + xc^2 + c^3)(x-c)\]</span> Choose <span class="math inline">\(\varphi(x) = (x^3 + x^2c + xc^2 + c^3)\)</span>. Because <span class="math inline">\(\varphi\)</span> a polynomial function, then it must be continuous on any <span class="math inline">\(x \in \mathbb{R}\)</span> thus by Carath'eodory’s Theorem <span class="math inline">\(g'(x) = 4x^3\)</span></p>
+<p>It was shown in Chapter 8.4 that <span class="math inline">\(h(x) = \sin(x)\)</span> has a derivative <span class="math inline">\(h'(x) = \cos(x)\)</span>.</p>
+<p>Lastly we will show that <span class="math inline">\(k(x) := \frac{1}{x}\)</span> have a derivative at any <span class="math inline">\(x \neq 0\)</span> which is <span class="math inline">\(k'(x) = -\frac{1}{x^2}\)</span>. Notice that <span class="math display">\[k(x) - k(c) = \frac{1}{x} - \frac{1}{c} = \frac{c - x}{xc} = -\frac{1}{xc}(x-c)\]</span></p>
+<p>Choose <span class="math inline">\(\phi(x) = -\frac{1}{xc}\)</span> which continuous on any <span class="math inline">\(x \neq 0\)</span>, thus by Carath'eodory’s Theorem <span class="math inline">\(g'(x) = -\frac{1}{x^2}\)</span></p>
+<p>Because <span class="math inline">\(g\)</span>, <span class="math inline">\(h\)</span> and <span class="math inline">\(k\)</span> differentiable, then it follows that <span class="math inline">\(f'(x) = 6x^3 + 4x^3\sin(\frac{1}{x}) - x^2\cos(\frac{1}{x}) = x^2(6x + 4x\sin(\frac{1}{x}) - \cos(\frac{1}{x}))\)</span>. Therefore <span class="math display">\[f'(x) = \begin{cases}
+    x^2(6x + 4x\sin(\frac{1}{x}) - \cos(\frac{1}{x})), &amp; x \neq 0 \\
+    0, &amp; x = 0
+\end{cases}\]</span></p>
+<p>Now, it will be shown that for every neighborhood of 0, then <span class="math inline">\(\exists a,b\)</span> in the neighborhood such that <span class="math inline">\(f'(a) &gt; 0\)</span> and <span class="math inline">\(f'(b) &lt; 0\)</span></p>
+<p>Let <span class="math inline">\(V_\delta(0)\)</span> be the neighborhood of 0. By density theorem, it follows that <span class="math inline">\(\exists n\in \mathbb{N} \ni \frac{1}{2n\pi} \in V_\delta(0)\)</span>. Because <span class="math inline">\(2n \pi &lt; (4n + 1/2)\pi\)</span>, then <span class="math inline">\(\frac{1}{(4n+1/2)\pi} \in V_\delta(0)\)</span>. Choose <span class="math inline">\(a =  \frac{1}{2n\pi}\)</span>, <span class="math inline">\(b = \frac{1}{(4n+1/2)\pi}\)</span>. Substituting <span class="math inline">\(a,b\)</span> to <span class="math inline">\(f'\)</span> will result in <span class="math inline">\(f'(a) &lt; 0\)</span> and <span class="math inline">\(f'(b) &gt; 0\)</span></p>
 
 
 

@@ -8,3 +8,56 @@ format:
         css: styles.css
         toc: true
 ---
+
+Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) := 
+\begin{cases}
+    2x^4 + x^4\sin(\frac{1}{x}) & x \neq 0 \\
+    0 & x = 0
+\end{cases}$. Show that $f$ has an absolute minimum at $x = 0$, but it's derivative has both positive and negative values in every neighborhood of 0 \\
+
+Answer
+
+Firstly, It will be shown that $f$ has an absolute minimum at 0
+
+Let $c \in \mathbb{R}, \; c \neq 0$ be arbitrary. Because $-1 \leq \sin(z) \leq 1 \; \forall z \in \mathbb{R}$, then it follows that $-1 \leq \sin(\frac{1}{c}) \leq 1$ thus result in 
+\begin{equation}
+    2c^4 - c^4 = c^4 \leq 2c^4 + c^4\sin(\frac{1}{c}) \leq 2c^4 + c^4 = 3c^4 \label{bound}
+\end{equation}
+
+Because $c^4 > 0$, then it must follow that $2c^4 + c^4\sin(\frac{1}{c}) > 0 = f(0)$. Therefore $f$ has an absolute minimum at 0 \\
+
+Next, we will search for $f'$
+
+For $x = 0$, then $f'$ exists if below limit exists $$\lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} \quad$$
+
+By substituting the value of $f(0)$, then
+\begin{align*}
+    \lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} & = \lim_{x \to 0} \frac{f(x)}{x} = \lim_{x \to 0} \frac{2x^4 + x^4\sin(\frac{1}{x})}{x}  = \lim_{x \to 0} 2x^3 + x^3\sin(\frac{1}{x})
+\end{align*}
+
+From \ref{bound}, if we divide all by $c$ then
+\begin{equation}
+    x^3 \leq 2x^3 + x^3\sin(\frac{1}{x}) \leq 3x^3 \label{bounds}
+\end{equation}
+
+Thus by applying squeeze theorem to \ref{bounds} will result in $\lim_{x \to 0} 2x^3 + x^3\sin(\frac{1}{x}) = 0$. Therefore by definition $f'(0) = 0$
+
+For $x \neq 0$ :
+
+Firstly, we show that $g(x) := x^4$ have a derivative $g'(x) = 4x^3$ for any $x \in \mathbb{R}$. Notice that $$g(x) - g(c) = x^4 - c^4 = (x^2 + c^2)(x^2 - c^2) = (x^2 + c^2)(x + c)(x-c) = (x^3 + x^2c + xc^2 + c^3)(x-c)$$
+Choose $\varphi(x) = (x^3 + x^2c + xc^2 + c^3)$. Because $\varphi$ a polynomial function, then it must be continuous on any $x \in \mathbb{R}$ thus by Carath\'eodory's Theorem $g'(x) = 4x^3$
+
+It was shown in Chapter 8.4 that $h(x) = \sin(x)$ has a derivative $h'(x) = \cos(x)$.
+
+Lastly we will show that $k(x) := \frac{1}{x}$ have a derivative at any $x \neq 0$ which is $k'(x) = -\frac{1}{x^2}$. Notice that $$k(x) - k(c) = \frac{1}{x} - \frac{1}{c} = \frac{c - x}{xc} = -\frac{1}{xc}(x-c)$$
+
+Choose $\phi(x) = -\frac{1}{xc}$ which continuous on any $x \neq 0$, thus by Carath\'eodory's Theorem $g'(x) = -\frac{1}{x^2}$
+
+Because $g$, $h$ and $k$ differentiable, then it follows that $f'(x) = 6x^3 + 4x^3\sin(\frac{1}{x}) - x^2\cos(\frac{1}{x}) = x^2(6x + 4x\sin(\frac{1}{x}) - \cos(\frac{1}{x}))$. Therefore $$f'(x) = \begin{cases}
+    x^2(6x + 4x\sin(\frac{1}{x}) - \cos(\frac{1}{x})), & x \neq 0 \\
+    0, & x = 0
+\end{cases}$$
+
+Now, it will be shown that for every neighborhood of 0, then $\exists a,b$ in the neighborhood such that $f'(a) > 0$ and $f'(b) < 0$
+
+Let $V_\delta(0)$ be the neighborhood of 0. By density theorem, it follows that $\exists n\in \mathbb{N} \ni \frac{1}{2n\pi} \in V_\delta(0)$. Because $2n \pi < (4n + 1/2)\pi$, then $\frac{1}{(4n+1/2)\pi} \in V_\delta(0)$. Choose $a =  \frac{1}{2n\pi}$, $b = \frac{1}{(4n+1/2)\pi}$. Substituting $a,b$ to $f'$ will result in $f'(a) < 0$ and $f'(b) > 0$
